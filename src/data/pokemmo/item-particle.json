@@ -1,0 +1,240 @@
+[
+  {
+    "festival": 0,
+    "limitation": 0,
+    "month": 0,
+    "year": 0,
+    "item_id": 901
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2018,
+    "item_id": 902
+  },
+  {
+    "festival": 1,
+    "limitation": 8,
+    "month": 11,
+    "year": 2018,
+    "item_id": 903
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2018,
+    "item_id": 904
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2018,
+    "item_id": 905
+  },
+  {
+    "festival": 1,
+    "limitation": 12,
+    "month": 11,
+    "year": 2018,
+    "item_id": 906
+  },
+  {
+    "festival": 3,
+    "limitation": 8,
+    "month": 12,
+    "year": 2018,
+    "item_id": 907
+  },
+  {
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "year": 2018,
+    "item_id": 908
+  },
+  {
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "year": 2018,
+    "item_id": 909
+  },
+  {
+    "festival": 4,
+    "limitation": 4,
+    "month": 2,
+    "year": 2019,
+    "item_id": 910
+  },
+  {
+    "festival": 4,
+    "limitation": 8,
+    "month": 2,
+    "year": 2019,
+    "item_id": 911
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2019,
+    "item_id": 912
+  },
+  {
+    "festival": 0,
+    "limitation": 0,
+    "month": 11,
+    "year": 2019,
+    "item_id": 913
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2019,
+    "item_id": 914
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2019,
+    "item_id": 915
+  },
+  {
+    "festival": 1,
+    "limitation": 0,
+    "month": 11,
+    "year": 2020,
+    "item_id": 916
+  },
+  {
+    "festival": 1,
+    "limitation": 8,
+    "month": 11,
+    "year": 2020,
+    "item_id": 917
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2020,
+    "item_id": 918
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2020,
+    "item_id": 919
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2020,
+    "item_id": 920
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2020,
+    "item_id": 921
+  },
+  {
+    "festival": 4,
+    "limitation": 4,
+    "month": 2,
+    "year": 2021,
+    "item_id": 922
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 10,
+    "year": 2021,
+    "item_id": 923
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 10,
+    "year": 2021,
+    "item_id": 924
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 10,
+    "year": 2021,
+    "item_id": 925
+  },
+  {
+    "festival": 4,
+    "limitation": 1,
+    "month": 1,
+    "year": 2022,
+    "item_id": 926
+  },
+  {
+    "festival": 0,
+    "limitation": 0,
+    "month": 0,
+    "year": 0,
+    "item_id": 1450
+  },
+  {
+    "festival": 10,
+    "limitation": 4,
+    "month": 6,
+    "year": 2022,
+    "item_id": 1451
+  },
+  {
+    "festival": 10,
+    "limitation": 20,
+    "month": 6,
+    "year": 2022,
+    "item_id": 1452
+  },
+  {
+    "festival": 10,
+    "limitation": 12,
+    "month": 6,
+    "year": 2022,
+    "item_id": 1453
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2022,
+    "item_id": 1491
+  },
+  {
+    "festival": 1,
+    "limitation": 4,
+    "month": 11,
+    "year": 2022,
+    "item_id": 1492
+  },
+  {
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "year": 2022,
+    "item_id": 1525
+  },
+  {
+    "festival": 4,
+    "limitation": 8,
+    "month": 1,
+    "year": 2023,
+    "item_id": 1535
+  }
+]

@@ -1,0 +1,2172 @@
+[
+  {
+    "en_name": "Route 5",
+    "id": 1,
+    "key": "kanto-route-5",
+    "name": "5号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Rock Tunnel",
+    "id": 2,
+    "key": "kanto-rock-tunnel",
+    "name": "岩山隧道",
+    "region": 1
+  },
+  {
+    "en_name": "Seafoam Islands",
+    "id": 3,
+    "key": "kanto-seafoam-islands",
+    "name": "双子岛",
+    "region": 1
+  },
+  {
+    "en_name": "Pattern Bush",
+    "id": 4,
+    "key": "kanto-pattern-bush",
+    "name": "记号树林",
+    "region": 1
+  },
+  {
+    "en_name": "Route 2",
+    "id": 5,
+    "key": "kanto-route-2",
+    "name": "2号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 24",
+    "id": 6,
+    "key": "kanto-route-24",
+    "name": "24号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 25",
+    "id": 7,
+    "key": "kanto-route-25",
+    "name": "25号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Viridian Forest",
+    "id": 8,
+    "key": "kanto-viridian-forest",
+    "name": "常磐森林",
+    "region": 1
+  },
+  {
+    "en_name": "Route 12",
+    "id": 9,
+    "key": "unova-route-12",
+    "name": "12号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Pinwheel Forest",
+    "id": 10,
+    "key": "unova-pinwheel-forest",
+    "name": "矢车森林",
+    "region": 5
+  },
+  {
+    "en_name": "Berry Forest",
+    "id": 11,
+    "key": "kanto-berry-forest",
+    "name": "果实森林",
+    "region": 1
+  },
+  {
+    "en_name": "Bond Bridge",
+    "id": 12,
+    "key": "kanto-bond-bridge",
+    "name": "索桥",
+    "region": 1
+  },
+  {
+    "en_name": "Five Isle Meadow",
+    "id": 13,
+    "key": "kanto-five-isle-meadow",
+    "name": "五之岛空地",
+    "region": 1
+  },
+  {
+    "en_name": "Route 1",
+    "id": 14,
+    "key": "kanto-route-1",
+    "name": "1号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 3",
+    "id": 15,
+    "key": "kanto-route-3",
+    "name": "3号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 6",
+    "id": 16,
+    "key": "kanto-route-6",
+    "name": "6号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 7",
+    "id": 17,
+    "key": "kanto-route-7",
+    "name": "7号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 8",
+    "id": 18,
+    "key": "kanto-route-8",
+    "name": "8号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 11",
+    "id": 19,
+    "key": "kanto-route-11",
+    "name": "11号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 12",
+    "id": 20,
+    "key": "kanto-route-12",
+    "name": "12号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 13",
+    "id": 21,
+    "key": "kanto-route-13",
+    "name": "13号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 14",
+    "id": 22,
+    "key": "kanto-route-14",
+    "name": "14号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 15",
+    "id": 23,
+    "key": "kanto-route-15",
+    "name": "15号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 21",
+    "id": 24,
+    "key": "kanto-route-21",
+    "name": "21号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 229",
+    "id": 25,
+    "key": "sinnoh-route-229",
+    "name": "229号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Pokémon Mansion",
+    "id": 26,
+    "key": "kanto-pokemon-mansion",
+    "name": "宝可梦屋",
+    "region": 1
+  },
+  {
+    "en_name": "Route 4",
+    "id": 27,
+    "key": "kanto-route-4",
+    "name": "4号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 9",
+    "id": 28,
+    "key": "kanto-route-9",
+    "name": "9号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 10",
+    "id": 29,
+    "key": "kanto-route-10",
+    "name": "10号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 16",
+    "id": 30,
+    "key": "kanto-route-16",
+    "name": "16号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 17",
+    "id": 31,
+    "key": "kanto-route-17",
+    "name": "17号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 18",
+    "id": 32,
+    "key": "kanto-route-18",
+    "name": "18号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 22",
+    "id": 33,
+    "key": "kanto-route-22",
+    "name": "22号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 225",
+    "id": 34,
+    "key": "sinnoh-route-225",
+    "name": "225号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 226",
+    "id": 35,
+    "key": "sinnoh-route-226",
+    "name": "226号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Dreamyard",
+    "id": 36,
+    "key": "unova-dreamyard",
+    "name": "梦的遗址",
+    "region": 5
+  },
+  {
+    "en_name": "Canyon Entrance",
+    "id": 37,
+    "key": "kanto-canyon-entrance",
+    "name": "溪谷入口",
+    "region": 1
+  },
+  {
+    "en_name": "Cape Brink",
+    "id": 38,
+    "key": "kanto-cape-brink",
+    "name": "歧波海湾",
+    "region": 1
+  },
+  {
+    "en_name": "Kindle Road",
+    "id": 39,
+    "key": "kanto-kindle-road",
+    "name": "火照山道",
+    "region": 1
+  },
+  {
+    "en_name": "Mt. Ember",
+    "id": 40,
+    "key": "kanto-mt-ember",
+    "name": "灯火山",
+    "region": 1
+  },
+  {
+    "en_name": "Route 23",
+    "id": 41,
+    "key": "kanto-route-23",
+    "name": "23号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Ruin Valley",
+    "id": 42,
+    "key": "kanto-ruin-valley",
+    "name": "遗迹山谷",
+    "region": 1
+  },
+  {
+    "en_name": "Treasure Beach",
+    "id": 43,
+    "key": "kanto-treasure-beach",
+    "name": "宝物海滩",
+    "region": 1
+  },
+  {
+    "en_name": "Water Path",
+    "id": 44,
+    "key": "kanto-water-path",
+    "name": "水之步道",
+    "region": 1
+  },
+  {
+    "en_name": "Route 2",
+    "id": 45,
+    "key": "unova-route-2",
+    "name": "2号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 18",
+    "id": 46,
+    "key": "unova-route-18",
+    "name": "18号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Sevault Canyon",
+    "id": 47,
+    "key": "kanto-sevault-canyon",
+    "name": "七宝溪谷",
+    "region": 1
+  },
+  {
+    "en_name": "Route 1",
+    "id": 48,
+    "key": "unova-route-1",
+    "name": "1号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 10",
+    "id": 49,
+    "key": "unova-route-10",
+    "name": "10号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 11",
+    "id": 50,
+    "key": "unova-route-11",
+    "name": "11号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 15",
+    "id": 51,
+    "key": "unova-route-15",
+    "name": "15号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Victory Road",
+    "id": 52,
+    "key": "unova-victory-road",
+    "name": "冠军之路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 227",
+    "id": 53,
+    "key": "sinnoh-route-227",
+    "name": "227号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Stark Mountain",
+    "id": 54,
+    "key": "sinnoh-stark-mountain",
+    "name": "严酷山",
+    "region": 4
+  },
+  {
+    "en_name": "Victory Road",
+    "id": 55,
+    "key": "kanto-victory-road",
+    "name": "冠军之路",
+    "region": 1
+  },
+  {
+    "en_name": "Power Plant",
+    "id": 56,
+    "key": "kanto-power-plant",
+    "name": "无人发电厂",
+    "region": 1
+  },
+  {
+    "en_name": "Safari Zone",
+    "id": 57,
+    "key": "hoenn-safari-zone",
+    "name": "狩猎地带",
+    "region": 3
+  },
+  {
+    "en_name": "Trophy Garden",
+    "id": 58,
+    "key": "sinnoh-trophy-garden",
+    "name": "最自豪的后院",
+    "region": 4
+  },
+  {
+    "en_name": "Mt. Moon",
+    "id": 59,
+    "key": "kanto-mt-moon",
+    "name": "月见山",
+    "region": 1
+  },
+  {
+    "en_name": "Mirage Tower",
+    "id": 60,
+    "key": "hoenn-mirage-tower",
+    "name": "幻影之塔",
+    "region": 3
+  },
+  {
+    "en_name": "Route 111",
+    "id": 61,
+    "key": "hoenn-route-111",
+    "name": "111号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 113",
+    "id": 62,
+    "key": "hoenn-route-113",
+    "name": "113号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Relic Castle",
+    "id": 63,
+    "key": "unova-relic-castle",
+    "name": "古代城堡",
+    "region": 5
+  },
+  {
+    "en_name": "Safari Zone",
+    "id": 64,
+    "key": "kanto-safari-zone",
+    "name": "狩猎地带",
+    "region": 1
+  },
+  {
+    "en_name": "Giant Chasm",
+    "id": 65,
+    "key": "unova-giant-chasm",
+    "name": "巨人洞窟",
+    "region": 5
+  },
+  {
+    "en_name": "Village Bridge",
+    "id": 66,
+    "key": "unova-village-bridge",
+    "name": "村庄桥",
+    "region": 5
+  },
+  {
+    "en_name": "Mt. Coronet",
+    "id": 67,
+    "key": "sinnoh-mt-coronet",
+    "name": "天冠山",
+    "region": 4
+  },
+  {
+    "en_name": "Mt. Pyre",
+    "id": 68,
+    "key": "hoenn-mt-pyre",
+    "name": "送火山",
+    "region": 3
+  },
+  {
+    "en_name": "Abundant Shrine",
+    "id": 69,
+    "key": "unova-abundant-shrine",
+    "name": "丰饶之社",
+    "region": 5
+  },
+  {
+    "en_name": "Route 16",
+    "id": 70,
+    "key": "unova-route-16",
+    "name": "16号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 115",
+    "id": 71,
+    "key": "hoenn-route-115",
+    "name": "115号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 14",
+    "id": 72,
+    "key": "unova-route-14",
+    "name": "14号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Altering Cave",
+    "id": 73,
+    "key": "kanto-altering-cave",
+    "name": "变化洞窟",
+    "region": 1
+  },
+  {
+    "en_name": "Diglett's Cave",
+    "id": 74,
+    "key": "kanto-diglett-s-cave",
+    "name": "地鼠洞穴",
+    "region": 1
+  },
+  {
+    "en_name": "Icefall Cave",
+    "id": 75,
+    "key": "kanto-icefall-cave",
+    "name": "冻瀑洞窟",
+    "region": 1
+  },
+  {
+    "en_name": "Lost Cave",
+    "id": 76,
+    "key": "kanto-lost-cave",
+    "name": "不归之穴",
+    "region": 1
+  },
+  {
+    "en_name": "Pokémon Tower",
+    "id": 77,
+    "key": "kanto-pokemon-tower",
+    "name": "宝可梦的灵骨塔",
+    "region": 1
+  },
+  {
+    "en_name": "Altering Cave",
+    "id": 78,
+    "key": "hoenn-altering-cave",
+    "name": "变化洞窟",
+    "region": 3
+  },
+  {
+    "en_name": "Granite Cave",
+    "id": 79,
+    "key": "hoenn-granite-cave",
+    "name": "石之洞窟",
+    "region": 3
+  },
+  {
+    "en_name": "Meteor Falls",
+    "id": 80,
+    "key": "hoenn-meteor-falls",
+    "name": "流星瀑布",
+    "region": 3
+  },
+  {
+    "en_name": "Scorched Slab",
+    "id": 81,
+    "key": "hoenn-scorched-slab",
+    "name": "天旱焦岩",
+    "region": 3
+  },
+  {
+    "en_name": "Seafloor Cavern",
+    "id": 82,
+    "key": "hoenn-seafloor-cavern",
+    "name": "海底洞窟",
+    "region": 3
+  },
+  {
+    "en_name": "Sealed Chamber",
+    "id": 83,
+    "key": "hoenn-sealed-chamber",
+    "name": "布告石室",
+    "region": 3
+  },
+  {
+    "en_name": "Shoal Cave",
+    "id": 84,
+    "key": "hoenn-shoal-cave",
+    "name": "浅滩洞穴",
+    "region": 3
+  },
+  {
+    "en_name": "Victory Road",
+    "id": 85,
+    "key": "hoenn-victory-road",
+    "name": "冠军之路",
+    "region": 3
+  },
+  {
+    "en_name": "Acuity Lakefront",
+    "id": 86,
+    "key": "sinnoh-acuity-lakefront",
+    "name": "睿智湖畔",
+    "region": 4
+  },
+  {
+    "en_name": "Iron Island",
+    "id": 87,
+    "key": "sinnoh-iron-island",
+    "name": "钢铁岛",
+    "region": 4
+  },
+  {
+    "en_name": "Oreburgh Gate",
+    "id": 88,
+    "key": "sinnoh-oreburgh-gate",
+    "name": "钢铁关口",
+    "region": 4
+  },
+  {
+    "en_name": "Oreburgh Mine",
+    "id": 89,
+    "key": "sinnoh-oreburgh-mine",
+    "name": "黑金炭坑",
+    "region": 4
+  },
+  {
+    "en_name": "Ravaged Path",
+    "id": 90,
+    "key": "sinnoh-ravaged-path",
+    "name": "荒芜小道",
+    "region": 4
+  },
+  {
+    "en_name": "Route 203",
+    "id": 91,
+    "key": "sinnoh-route-203",
+    "name": "203号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 204",
+    "id": 92,
+    "key": "sinnoh-route-204",
+    "name": "204号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 206",
+    "id": 93,
+    "key": "sinnoh-route-206",
+    "name": "206号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 207",
+    "id": 94,
+    "key": "sinnoh-route-207",
+    "name": "207号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 208",
+    "id": 95,
+    "key": "sinnoh-route-208",
+    "name": "208号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 209",
+    "id": 96,
+    "key": "sinnoh-route-209",
+    "name": "209号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 211",
+    "id": 97,
+    "key": "sinnoh-route-211",
+    "name": "211号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 214",
+    "id": 98,
+    "key": "sinnoh-route-214",
+    "name": "214号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 216",
+    "id": 99,
+    "key": "sinnoh-route-216",
+    "name": "216号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 217",
+    "id": 100,
+    "key": "sinnoh-route-217",
+    "name": "217号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Wayward Cave",
+    "id": 101,
+    "key": "sinnoh-wayward-cave",
+    "name": "迷幻洞窟",
+    "region": 4
+  },
+  {
+    "en_name": "Cerulean Cave",
+    "id": 102,
+    "key": "kanto-cerulean-cave",
+    "name": "华蓝洞窟",
+    "region": 1
+  },
+  {
+    "en_name": "Cave Of Origin",
+    "id": 103,
+    "key": "hoenn-cave-of-origin",
+    "name": "觉醒祠堂",
+    "region": 3
+  },
+  {
+    "en_name": "Sky Pillar",
+    "id": 104,
+    "key": "hoenn-sky-pillar",
+    "name": "天空之柱",
+    "region": 3
+  },
+  {
+    "en_name": "Route 13",
+    "id": 105,
+    "key": "unova-route-13",
+    "name": "13号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Sendoff Spring",
+    "id": 106,
+    "key": "sinnoh-sendoff-spring",
+    "name": "送泉",
+    "region": 4
+  },
+  {
+    "en_name": "Snowpoint Temple",
+    "id": 107,
+    "key": "sinnoh-snowpoint-temple",
+    "name": "切锋神殿",
+    "region": 4
+  },
+  {
+    "en_name": "Turnback Cave",
+    "id": 108,
+    "key": "sinnoh-turnback-cave",
+    "name": "归途洞窟",
+    "region": 4
+  },
+  {
+    "en_name": "Victory Road",
+    "id": 109,
+    "key": "sinnoh-victory-road",
+    "name": "冠军之路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 110",
+    "id": 110,
+    "key": "hoenn-route-110",
+    "name": "110号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 117",
+    "id": 111,
+    "key": "hoenn-route-117",
+    "name": "117号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 119",
+    "id": 112,
+    "key": "hoenn-route-119",
+    "name": "119号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 120",
+    "id": 113,
+    "key": "hoenn-route-120",
+    "name": "120号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 121",
+    "id": 114,
+    "key": "hoenn-route-121",
+    "name": "121号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 123",
+    "id": 115,
+    "key": "hoenn-route-123",
+    "name": "123号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 224",
+    "id": 116,
+    "key": "sinnoh-route-224",
+    "name": "224号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 230",
+    "id": 117,
+    "key": "sinnoh-route-230",
+    "name": "230号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 228",
+    "id": 118,
+    "key": "sinnoh-route-228",
+    "name": "228号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Celadon City",
+    "id": 119,
+    "key": "kanto-celadon-city",
+    "name": "彩虹市",
+    "region": 1
+  },
+  {
+    "en_name": "Cerulean City",
+    "id": 120,
+    "key": "kanto-cerulean-city",
+    "name": "华蓝市",
+    "region": 1
+  },
+  {
+    "en_name": "Cinnabar Island",
+    "id": 121,
+    "key": "kanto-cinnabar-island",
+    "name": "红莲岛",
+    "region": 1
+  },
+  {
+    "en_name": "Five Island",
+    "id": 122,
+    "key": "kanto-five-island",
+    "name": "五之岛",
+    "region": 1
+  },
+  {
+    "en_name": "Four Island",
+    "id": 123,
+    "key": "kanto-four-island",
+    "name": "四之岛",
+    "region": 1
+  },
+  {
+    "en_name": "Fuchsia City",
+    "id": 124,
+    "key": "kanto-fuchsia-city",
+    "name": "浅红市",
+    "region": 1
+  },
+  {
+    "en_name": "Green Path",
+    "id": 125,
+    "key": "kanto-green-path",
+    "name": "绿之步道",
+    "region": 1
+  },
+  {
+    "en_name": "Memorial Pillar",
+    "id": 126,
+    "key": "kanto-memorial-pillar",
+    "name": "回忆之塔",
+    "region": 1
+  },
+  {
+    "en_name": "One Island",
+    "id": 127,
+    "key": "kanto-one-island",
+    "name": "一之岛",
+    "region": 1
+  },
+  {
+    "en_name": "Outcast Island",
+    "id": 128,
+    "key": "kanto-outcast-island",
+    "name": "外岛",
+    "region": 1
+  },
+  {
+    "en_name": "Pallet Town",
+    "id": 129,
+    "key": "kanto-pallet-town",
+    "name": "真新镇",
+    "region": 1
+  },
+  {
+    "en_name": "Resort Gorgeous",
+    "id": 130,
+    "key": "kanto-resort-gorgeous",
+    "name": "高级度假村",
+    "region": 1
+  },
+  {
+    "en_name": "Route 19",
+    "id": 131,
+    "key": "kanto-route-19",
+    "name": "19号道路",
+    "region": 1
+  },
+  {
+    "en_name": "Route 20",
+    "id": 132,
+    "key": "kanto-route-20",
+    "name": "20号道路",
+    "region": 1
+  },
+  {
+    "en_name": "S.s. Anne",
+    "id": 133,
+    "key": "kanto-s-s-anne",
+    "name": "圣特安努号",
+    "region": 1
+  },
+  {
+    "en_name": "Tanoby Ruins",
+    "id": 134,
+    "key": "kanto-tanoby-ruins",
+    "name": "阿斯卡纳遗迹",
+    "region": 1
+  },
+  {
+    "en_name": "Trainer Tower",
+    "id": 135,
+    "key": "kanto-trainer-tower",
+    "name": "训练家之塔",
+    "region": 1
+  },
+  {
+    "en_name": "Vermilion City",
+    "id": 136,
+    "key": "kanto-vermilion-city",
+    "name": "枯叶市",
+    "region": 1
+  },
+  {
+    "en_name": "Viridian City",
+    "id": 137,
+    "key": "kanto-viridian-city",
+    "name": "常磐市",
+    "region": 1
+  },
+  {
+    "en_name": "Water Labyrinth",
+    "id": 138,
+    "key": "kanto-water-labyrinth",
+    "name": "水之迷宫",
+    "region": 1
+  },
+  {
+    "en_name": "Route 3",
+    "id": 139,
+    "key": "unova-route-3",
+    "name": "3号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Striaton City",
+    "id": 140,
+    "key": "unova-striaton-city",
+    "name": "三曜市",
+    "region": 5
+  },
+  {
+    "en_name": "Celestic Town",
+    "id": 141,
+    "key": "sinnoh-celestic-town",
+    "name": "神和镇",
+    "region": 4
+  },
+  {
+    "en_name": "Eterna City",
+    "id": 142,
+    "key": "sinnoh-eterna-city",
+    "name": "百代市",
+    "region": 4
+  },
+  {
+    "en_name": "Great Marsh",
+    "id": 143,
+    "key": "sinnoh-great-marsh",
+    "name": "大湿地",
+    "region": 4
+  },
+  {
+    "en_name": "Lake Acuity",
+    "id": 144,
+    "key": "sinnoh-lake-acuity",
+    "name": "睿智湖",
+    "region": 4
+  },
+  {
+    "en_name": "Lake Valor",
+    "id": 145,
+    "key": "sinnoh-lake-valor",
+    "name": "立志湖",
+    "region": 4
+  },
+  {
+    "en_name": "Lake Verity",
+    "id": 146,
+    "key": "sinnoh-lake-verity",
+    "name": "心齐湖",
+    "region": 4
+  },
+  {
+    "en_name": "Resort Area",
+    "id": 147,
+    "key": "sinnoh-resort-area",
+    "name": "名胜区",
+    "region": 4
+  },
+  {
+    "en_name": "Route 205",
+    "id": 148,
+    "key": "sinnoh-route-205",
+    "name": "205号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 210",
+    "id": 149,
+    "key": "sinnoh-route-210",
+    "name": "210号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 212",
+    "id": 150,
+    "key": "sinnoh-route-212",
+    "name": "212号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Twinleaf Town",
+    "id": 151,
+    "key": "sinnoh-twinleaf-town",
+    "name": "双叶镇",
+    "region": 4
+  },
+  {
+    "en_name": "Challenger's Cave",
+    "id": 152,
+    "key": "unova-challenger-s-cave",
+    "name": "修行岩屋",
+    "region": 5
+  },
+  {
+    "en_name": "Route 6",
+    "id": 153,
+    "key": "unova-route-6",
+    "name": "6号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Wellspring Cave",
+    "id": 154,
+    "key": "unova-wellspring-cave",
+    "name": "地下水脉之穴",
+    "region": 5
+  },
+  {
+    "en_name": "Route 116",
+    "id": 155,
+    "key": "hoenn-route-116",
+    "name": "116号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 215",
+    "id": 156,
+    "key": "sinnoh-route-215",
+    "name": "215号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Fiery Path",
+    "id": 157,
+    "key": "hoenn-fiery-path",
+    "name": "热焰小径",
+    "region": 3
+  },
+  {
+    "en_name": "Jagged Pass",
+    "id": 158,
+    "key": "hoenn-jagged-pass",
+    "name": "凹凸山道",
+    "region": 3
+  },
+  {
+    "en_name": "Route 112",
+    "id": 159,
+    "key": "hoenn-route-112",
+    "name": "112号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Abandoned Ship",
+    "id": 160,
+    "key": "hoenn-abandoned-ship",
+    "name": "弃船",
+    "region": 3
+  },
+  {
+    "en_name": "Aqua Hideout",
+    "id": 161,
+    "key": "hoenn-aqua-hideout",
+    "name": "水舰队本部",
+    "region": 3
+  },
+  {
+    "en_name": "Battle Frontier",
+    "id": 162,
+    "key": "hoenn-battle-frontier",
+    "name": "对战开拓区",
+    "region": 3
+  },
+  {
+    "en_name": "Dewford Town",
+    "id": 163,
+    "key": "hoenn-dewford-town",
+    "name": "武斗镇",
+    "region": 3
+  },
+  {
+    "en_name": "Ever Grande City",
+    "id": 164,
+    "key": "hoenn-ever-grande-city",
+    "name": "彩幽市",
+    "region": 3
+  },
+  {
+    "en_name": "Lilycove City",
+    "id": 165,
+    "key": "hoenn-lilycove-city",
+    "name": "水静市",
+    "region": 3
+  },
+  {
+    "en_name": "Mossdeep City",
+    "id": 166,
+    "key": "hoenn-mossdeep-city",
+    "name": "绿岭市",
+    "region": 3
+  },
+  {
+    "en_name": "Pacifidlog Town",
+    "id": 167,
+    "key": "hoenn-pacifidlog-town",
+    "name": "暮水镇",
+    "region": 3
+  },
+  {
+    "en_name": "Route 103",
+    "id": 168,
+    "key": "hoenn-route-103",
+    "name": "103号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 105",
+    "id": 169,
+    "key": "hoenn-route-105",
+    "name": "105号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 106",
+    "id": 170,
+    "key": "hoenn-route-106",
+    "name": "106号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 107",
+    "id": 171,
+    "key": "hoenn-route-107",
+    "name": "107号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 108",
+    "id": 172,
+    "key": "hoenn-route-108",
+    "name": "108号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 109",
+    "id": 173,
+    "key": "hoenn-route-109",
+    "name": "109号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 118",
+    "id": 174,
+    "key": "hoenn-route-118",
+    "name": "118号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 122",
+    "id": 175,
+    "key": "hoenn-route-122",
+    "name": "122号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 124",
+    "id": 176,
+    "key": "hoenn-route-124",
+    "name": "124号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 125",
+    "id": 177,
+    "key": "hoenn-route-125",
+    "name": "125号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 126",
+    "id": 178,
+    "key": "hoenn-route-126",
+    "name": "126号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 127",
+    "id": 179,
+    "key": "hoenn-route-127",
+    "name": "127号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 128",
+    "id": 180,
+    "key": "hoenn-route-128",
+    "name": "128号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 129",
+    "id": 181,
+    "key": "hoenn-route-129",
+    "name": "129号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 130",
+    "id": 182,
+    "key": "hoenn-route-130",
+    "name": "130号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 131",
+    "id": 183,
+    "key": "hoenn-route-131",
+    "name": "131号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 132",
+    "id": 184,
+    "key": "hoenn-route-132",
+    "name": "132号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 133",
+    "id": 185,
+    "key": "hoenn-route-133",
+    "name": "133号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Route 134",
+    "id": 186,
+    "key": "hoenn-route-134",
+    "name": "134号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Slateport City",
+    "id": 187,
+    "key": "hoenn-slateport-city",
+    "name": "凯那市",
+    "region": 3
+  },
+  {
+    "en_name": "Canalave City",
+    "id": 188,
+    "key": "sinnoh-canalave-city",
+    "name": "水脉市",
+    "region": 4
+  },
+  {
+    "en_name": "Fuego Ironworks",
+    "id": 189,
+    "key": "sinnoh-fuego-ironworks",
+    "name": "多多罗铁工厂",
+    "region": 4
+  },
+  {
+    "en_name": "Pastoria City",
+    "id": 190,
+    "key": "sinnoh-pastoria-city",
+    "name": "湿原市",
+    "region": 4
+  },
+  {
+    "en_name": "Route 213",
+    "id": 191,
+    "key": "sinnoh-route-213",
+    "name": "213号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 218",
+    "id": 192,
+    "key": "sinnoh-route-218",
+    "name": "218号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 219",
+    "id": 193,
+    "key": "sinnoh-route-219",
+    "name": "219号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 220",
+    "id": 194,
+    "key": "sinnoh-route-220",
+    "name": "220号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 221",
+    "id": 195,
+    "key": "sinnoh-route-221",
+    "name": "221号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 222",
+    "id": 196,
+    "key": "sinnoh-route-222",
+    "name": "222号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Sunyshore City",
+    "id": 197,
+    "key": "sinnoh-sunyshore-city",
+    "name": "滨海市",
+    "region": 4
+  },
+  {
+    "en_name": "Valley Windworks",
+    "id": 198,
+    "key": "sinnoh-valley-windworks",
+    "name": "山谷发电厂",
+    "region": 4
+  },
+  {
+    "en_name": "Pokémon League",
+    "id": 199,
+    "key": "sinnoh-pokemon-league",
+    "name": "宝可梦联盟",
+    "region": 4
+  },
+  {
+    "en_name": "Route 223",
+    "id": 200,
+    "key": "sinnoh-route-223",
+    "name": "223号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Magma Hideout",
+    "id": 201,
+    "key": "hoenn-magma-hideout",
+    "name": "火岩队本部",
+    "region": 3
+  },
+  {
+    "en_name": "Route 114",
+    "id": 202,
+    "key": "hoenn-route-114",
+    "name": "114号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Maniac Tunnel",
+    "id": 203,
+    "key": "sinnoh-maniac-tunnel",
+    "name": "遗迹迷隧道",
+    "region": 4
+  },
+  {
+    "en_name": "Ruin Maniac Cave",
+    "id": 204,
+    "key": "sinnoh-ruin-maniac-cave",
+    "name": "遗迹迷之穴",
+    "region": 4
+  },
+  {
+    "en_name": "Valor Lakefront",
+    "id": 205,
+    "key": "sinnoh-valor-lakefront",
+    "name": "立志湖畔",
+    "region": 4
+  },
+  {
+    "en_name": "Route 7",
+    "id": 206,
+    "key": "unova-route-7",
+    "name": "7号道路",
+    "region": 5
+  },
+  {
+    "en_name": "New Mauville",
+    "id": 207,
+    "key": "hoenn-new-mauville",
+    "name": "新紫堇",
+    "region": 3
+  },
+  {
+    "en_name": "Icirrus City",
+    "id": 208,
+    "key": "unova-icirrus-city",
+    "name": "雪花市",
+    "region": 5
+  },
+  {
+    "en_name": "Moor Of Icirrus",
+    "id": 209,
+    "key": "unova-moor-of-icirrus",
+    "name": "雪花湿地",
+    "region": 5
+  },
+  {
+    "en_name": "Route 8",
+    "id": 210,
+    "key": "unova-route-8",
+    "name": "8号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Undella Bay",
+    "id": 211,
+    "key": "unova-undella-bay",
+    "name": "小波湾",
+    "region": 5
+  },
+  {
+    "en_name": "Undella Town",
+    "id": 212,
+    "key": "unova-undella-town",
+    "name": "小波镇",
+    "region": 5
+  },
+  {
+    "en_name": "Eterna Forest",
+    "id": 213,
+    "key": "sinnoh-eterna-forest",
+    "name": "百代森林",
+    "region": 4
+  },
+  {
+    "en_name": "Old Chateau",
+    "id": 214,
+    "key": "sinnoh-old-chateau",
+    "name": "森之洋馆",
+    "region": 4
+  },
+  {
+    "en_name": "Driftveil City",
+    "id": 215,
+    "key": "unova-driftveil-city",
+    "name": "帆巴市",
+    "region": 5
+  },
+  {
+    "en_name": "Route 4",
+    "id": 216,
+    "key": "unova-route-4",
+    "name": "4号道路",
+    "region": 5
+  },
+  {
+    "en_name": "P2 Laboratory",
+    "id": 217,
+    "key": "unova-p2-laboratory",
+    "name": "P2实验室",
+    "region": 5
+  },
+  {
+    "en_name": "Route 17",
+    "id": 218,
+    "key": "unova-route-17",
+    "name": "17号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Petalburg City",
+    "id": 219,
+    "key": "hoenn-petalburg-city",
+    "name": "橙华市",
+    "region": 3
+  },
+  {
+    "en_name": "Route 102",
+    "id": 220,
+    "key": "hoenn-route-102",
+    "name": "102号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Lostlorn Forest",
+    "id": 221,
+    "key": "unova-lostlorn-forest",
+    "name": "迷幻森林",
+    "region": 5
+  },
+  {
+    "en_name": "Route 104",
+    "id": 222,
+    "key": "hoenn-route-104",
+    "name": "104号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Sootopolis City",
+    "id": 223,
+    "key": "hoenn-sootopolis-city",
+    "name": "琉璃市",
+    "region": 3
+  },
+  {
+    "en_name": "Dragonspiral Tower",
+    "id": 224,
+    "key": "unova-dragonspiral-tower",
+    "name": "龙螺旋之塔",
+    "region": 5
+  },
+  {
+    "en_name": "Desert Underpass",
+    "id": 225,
+    "key": "hoenn-desert-underpass",
+    "name": "沙漠的地下道",
+    "region": 3
+  },
+  {
+    "en_name": "Route 5",
+    "id": 226,
+    "key": "unova-route-5",
+    "name": "5号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Underwater",
+    "id": 227,
+    "key": "hoenn-underwater",
+    "name": "水中",
+    "region": 3
+  },
+  {
+    "en_name": "Honey Tree",
+    "id": 228,
+    "key": "sinnoh-honey-tree",
+    "name": "甜甜蜜树",
+    "region": 4
+  },
+  {
+    "en_name": "Celestial Tower",
+    "id": 229,
+    "key": "unova-celestial-tower",
+    "name": "天堂之塔",
+    "region": 5
+  },
+  {
+    "en_name": "Dilford Chamber",
+    "id": 230,
+    "key": "kanto-dilford-chamber",
+    "name": "阿利波卡石室",
+    "region": 1
+  },
+  {
+    "en_name": "Liptoo Chamber",
+    "id": 231,
+    "key": "kanto-liptoo-chamber",
+    "name": "那藏石室",
+    "region": 1
+  },
+  {
+    "en_name": "Monean Chamber",
+    "id": 232,
+    "key": "kanto-monean-chamber",
+    "name": "伊莱斯石室",
+    "region": 1
+  },
+  {
+    "en_name": "Rixy Chamber",
+    "id": 233,
+    "key": "kanto-rixy-chamber",
+    "name": "阿努泽石室",
+    "region": 1
+  },
+  {
+    "en_name": "Scufib Chamber",
+    "id": 234,
+    "key": "kanto-scufib-chamber",
+    "name": "科斗石室",
+    "region": 1
+  },
+  {
+    "en_name": "Viapois Chamber",
+    "id": 235,
+    "key": "kanto-viapois-chamber",
+    "name": "澳利弗石室",
+    "region": 1
+  },
+  {
+    "en_name": "Weepth Chamber",
+    "id": 236,
+    "key": "kanto-weepth-chamber",
+    "name": "由格石室",
+    "region": 1
+  },
+  {
+    "en_name": "Solaceon Ruins",
+    "id": 237,
+    "key": "sinnoh-solaceon-ruins",
+    "name": "随意遗迹",
+    "region": 4
+  },
+  {
+    "en_name": "Three Isle Port",
+    "id": 238,
+    "key": "kanto-three-isle-port",
+    "name": "三之岛码头",
+    "region": 1
+  },
+  {
+    "en_name": "Cold Storage",
+    "id": 239,
+    "key": "unova-cold-storage",
+    "name": "冷冻仓库",
+    "region": 5
+  },
+  {
+    "en_name": "Twist Mountain",
+    "id": 240,
+    "key": "unova-twist-mountain",
+    "name": "罗斯山",
+    "region": 5
+  },
+  {
+    "en_name": "Artisan Cave",
+    "id": 241,
+    "key": "hoenn-artisan-cave",
+    "name": "工匠之穴",
+    "region": 3
+  },
+  {
+    "en_name": "Petalburg Woods",
+    "id": 242,
+    "key": "hoenn-petalburg-woods",
+    "name": "橙华森林",
+    "region": 3
+  },
+  {
+    "en_name": "Route 101",
+    "id": 243,
+    "key": "hoenn-route-101",
+    "name": "101号道路",
+    "region": 3
+  },
+  {
+    "en_name": "Driftveil Drawbridge",
+    "id": 244,
+    "key": "unova-driftveil-drawbridge",
+    "name": "帆巴吊桥",
+    "region": 5
+  },
+  {
+    "en_name": "Marvelous Bridge",
+    "id": 245,
+    "key": "unova-marvelous-bridge",
+    "name": "奇幻桥",
+    "region": 5
+  },
+  {
+    "en_name": "Rusturf Tunnel",
+    "id": 246,
+    "key": "hoenn-rusturf-tunnel",
+    "name": "卡绿隧道",
+    "region": 3
+  },
+  {
+    "en_name": "Chargestone Cave",
+    "id": 247,
+    "key": "unova-chargestone-cave",
+    "name": "电石洞穴",
+    "region": 5
+  },
+  {
+    "en_name": "Route 9",
+    "id": 248,
+    "key": "unova-route-9",
+    "name": "9号道路",
+    "region": 5
+  },
+  {
+    "en_name": "Route 201",
+    "id": 249,
+    "key": "sinnoh-route-201",
+    "name": "201号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Route 202",
+    "id": 250,
+    "key": "sinnoh-route-202",
+    "name": "202号道路",
+    "region": 4
+  },
+  {
+    "en_name": "Guidance Chamber",
+    "id": 251,
+    "key": "unova-guidance-chamber",
+    "name": "引导之间",
+    "region": 5
+  },
+  {
+    "en_name": "Mistralton Cave",
+    "id": 252,
+    "key": "unova-mistralton-cave",
+    "name": "吹寄洞穴",
+    "region": 5
+  },
+  {
+    "en_name": "Trial Chamber",
+    "id": 253,
+    "key": "unova-trial-chamber",
+    "name": "试炼之室",
+    "region": 5
+  },
+  {
+    "en_name": "Desert Resort",
+    "id": 254,
+    "key": "unova-desert-resort",
+    "name": "荒野名胜区",
+    "region": 5
+  },
+  {
+    "en_name": "Ilex Forest",
+    "id": 255,
+    "key": "johto-ilex-forest",
+    "name": "栎树林",
+    "region": 2
+  },
+  {
+    "en_name": "National Park",
+    "id": 256,
+    "key": "johto-national-park",
+    "name": "自然公园",
+    "region": 2
+  },
+  {
+    "en_name": "Route 30",
+    "id": 257,
+    "key": "johto-route-30",
+    "name": "30号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 31",
+    "id": 258,
+    "key": "johto-route-31",
+    "name": "31号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Azalea Town",
+    "id": 259,
+    "key": "johto-azalea-town",
+    "name": "桧皮镇",
+    "region": 2
+  },
+  {
+    "en_name": "Route 34",
+    "id": 260,
+    "key": "johto-route-34",
+    "name": "34号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Safari Zone",
+    "id": 261,
+    "key": "johto-safari-zone",
+    "name": "狩猎地带",
+    "region": 2
+  },
+  {
+    "en_name": "Lake of Rage",
+    "id": 262,
+    "key": "johto-lake-of-rage",
+    "name": "愤怒之湖",
+    "region": 2
+  },
+  {
+    "en_name": "Mahogany Town",
+    "id": 263,
+    "key": "johto-mahogany-town",
+    "name": "卡吉镇",
+    "region": 2
+  },
+  {
+    "en_name": "Route 43",
+    "id": 264,
+    "key": "johto-route-43",
+    "name": "43号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 44",
+    "id": 265,
+    "key": "johto-route-44",
+    "name": "44号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Cherrygrove City",
+    "id": 266,
+    "key": "johto-cherrygrove-city",
+    "name": "吉花市",
+    "region": 2
+  },
+  {
+    "en_name": "New Bark Town",
+    "id": 267,
+    "key": "johto-new-bark-town",
+    "name": "若叶镇",
+    "region": 2
+  },
+  {
+    "en_name": "Route 29",
+    "id": 268,
+    "key": "johto-route-29",
+    "name": "29号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 32",
+    "id": 269,
+    "key": "johto-route-32",
+    "name": "32号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 33",
+    "id": 270,
+    "key": "johto-route-33",
+    "name": "33号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 35",
+    "id": 271,
+    "key": "johto-route-35",
+    "name": "35号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 36",
+    "id": 272,
+    "key": "johto-route-36",
+    "name": "36号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 37",
+    "id": 273,
+    "key": "johto-route-37",
+    "name": "37号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 46",
+    "id": 274,
+    "key": "johto-route-46",
+    "name": "46号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 38",
+    "id": 275,
+    "key": "johto-route-38",
+    "name": "38号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 39",
+    "id": 276,
+    "key": "johto-route-39",
+    "name": "39号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 47",
+    "id": 277,
+    "key": "johto-route-47",
+    "name": "47号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 48",
+    "id": 278,
+    "key": "johto-route-48",
+    "name": "48号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Safari Zone Gate",
+    "id": 279,
+    "key": "johto-safari-zone-gate",
+    "name": "狩猎地带入口",
+    "region": 2
+  },
+  {
+    "en_name": "Burned Tower",
+    "id": 280,
+    "key": "johto-burned-tower",
+    "name": "烧焦塔",
+    "region": 2
+  },
+  {
+    "en_name": "Mt. Mortar",
+    "id": 281,
+    "key": "johto-mt-mortar",
+    "name": "擂钵山",
+    "region": 2
+  },
+  {
+    "en_name": "Route 42",
+    "id": 282,
+    "key": "johto-route-42",
+    "name": "42号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Sprout Tower",
+    "id": 283,
+    "key": "johto-sprout-tower",
+    "name": "喇叭芽之塔",
+    "region": 2
+  },
+  {
+    "en_name": "Tohjo Falls",
+    "id": 284,
+    "key": "johto-tohjo-falls",
+    "name": "都城瀑布",
+    "region": 2
+  },
+  {
+    "en_name": "Union Cave",
+    "id": 285,
+    "key": "johto-union-cave",
+    "name": "互连洞",
+    "region": 2
+  },
+  {
+    "en_name": "Bell Tower",
+    "id": 286,
+    "key": "johto-bell-tower",
+    "name": "铃铛塔",
+    "region": 2
+  },
+  {
+    "en_name": "Route 26",
+    "id": 287,
+    "key": "johto-route-26",
+    "name": "26号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 27",
+    "id": 288,
+    "key": "johto-route-27",
+    "name": "27号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Mt. Silver",
+    "id": 289,
+    "key": "johto-mt-silver",
+    "name": "白银山",
+    "region": 2
+  },
+  {
+    "en_name": "Route 28",
+    "id": 290,
+    "key": "johto-route-28",
+    "name": "28号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 45",
+    "id": 291,
+    "key": "johto-route-45",
+    "name": "45号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Ruins of Alph",
+    "id": 292,
+    "key": "johto-ruins-of-alph",
+    "name": "阿露福遗迹",
+    "region": 2
+  },
+  {
+    "en_name": "Violet City",
+    "id": 293,
+    "key": "johto-violet-city",
+    "name": "桔梗市",
+    "region": 2
+  },
+  {
+    "en_name": "Victory Road",
+    "id": 294,
+    "key": "johto-victory-road",
+    "name": "冠军之路",
+    "region": 2
+  },
+  {
+    "en_name": "Cliff Cave",
+    "id": 295,
+    "key": "johto-cliff-cave",
+    "name": "断崖洞窟",
+    "region": 2
+  },
+  {
+    "en_name": "Dark Cave",
+    "id": 296,
+    "key": "johto-dark-cave",
+    "name": "黑暗穴",
+    "region": 2
+  },
+  {
+    "en_name": "Ice Path",
+    "id": 297,
+    "key": "johto-ice-path",
+    "name": "冰雪小径",
+    "region": 2
+  },
+  {
+    "en_name": "SLOWPOKE Well",
+    "id": 298,
+    "key": "johto-slowpoke-well",
+    "name": "呆呆兽之井",
+    "region": 2
+  },
+  {
+    "en_name": "Whirl Islands",
+    "id": 299,
+    "key": "johto-whirl-islands",
+    "name": "漩涡岛",
+    "region": 2
+  },
+  {
+    "en_name": "Mt. Silver Cave",
+    "id": 300,
+    "key": "johto-mt-silver-cave",
+    "name": "白银窟",
+    "region": 2
+  },
+  {
+    "en_name": "Ecruteak City",
+    "id": 301,
+    "key": "johto-ecruteak-city",
+    "name": "缘朱市",
+    "region": 2
+  },
+  {
+    "en_name": "Pokéathlon Dome",
+    "id": 302,
+    "key": "johto-pokeathlon-dome",
+    "name": "宝可全能竞技赛巨蛋",
+    "region": 2
+  },
+  {
+    "en_name": "Blackthorn City",
+    "id": 303,
+    "key": "johto-blackthorn-city",
+    "name": "烟墨市",
+    "region": 2
+  },
+  {
+    "en_name": "Cliff Edge Gate",
+    "id": 304,
+    "key": "johto-cliff-edge-gate",
+    "name": "断崖入口",
+    "region": 2
+  },
+  {
+    "en_name": "Cianwood City",
+    "id": 305,
+    "key": "johto-cianwood-city",
+    "name": "湛蓝市",
+    "region": 2
+  },
+  {
+    "en_name": "Olivine City",
+    "id": 306,
+    "key": "johto-olivine-city",
+    "name": "浅葱市",
+    "region": 2
+  },
+  {
+    "en_name": "Route 40",
+    "id": 307,
+    "key": "johto-route-40",
+    "name": "40号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Route 41",
+    "id": 308,
+    "key": "johto-route-41",
+    "name": "41号道路",
+    "region": 2
+  },
+  {
+    "en_name": "Team Rocket HQ",
+    "id": 309,
+    "key": "johto-team-rocket-hq",
+    "name": "火箭队基地",
+    "region": 2
+  },
+  {
+    "en_name": "Dragon's Den",
+    "id": 310,
+    "key": "johto-dragon-s-den",
+    "name": "龙穴",
+    "region": 2
+  }
+]

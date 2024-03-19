@@ -1,0 +1,79 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[BUG]: "
+labels: bug
+body:
+  - type: markdown
+    attributes:
+        value: |
+          Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: I was trying to do X, and Y happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I expected Y to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: A clear and concise description of what actually happened.
+      placeholder: Instead, X happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: |
+        If applicable, add screenshots to help explain your problem.
+        You can drag and drop images here to add them.
+    validations:
+      required: false
+  - type: dropdown
+    id: desktop-or-mobile
+    attributes:
+      label: Desktop or mobile?
+      description: Is this bug happening on desktop or mobile?
+      options:
+        - Desktop
+        - Mobile
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser are you using?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Internet Explorer
+        - Other
+    validations:
+      required: true

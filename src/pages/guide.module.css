@@ -1,0 +1,16 @@
+.toc {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    position: sticky;
+    top: 30px;
+    height: calc(100vh - 3rem);
+}
+
+.toc::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}

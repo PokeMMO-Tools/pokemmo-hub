@@ -1,0 +1,122 @@
+[
+  {
+    "capture": 99,
+    "fix_description": "必定捕捉",
+    "item_id": 512
+  },
+  {
+    "capture": 2,
+    "fix_description": "捕捉修正x2",
+    "item_id": 513
+  },
+  {
+    "capture": 1.5,
+    "fix_description": "捕捉修正x1.5",
+    "item_id": 514
+  },
+  {
+    "capture": 1,
+    "fix_description": "捕捉无修正",
+    "item_id": 515
+  },
+  {
+    "capture": 1.5,
+    "fix_description": "捕捉修正x1.5，仅沙湖地区使用",
+    "item_id": 516
+  },
+  {
+    "capture": 3.5,
+    "fix_description": "当捕捉的精灵的当前属性是水系或者虫系时，捕捉修正x3.5",
+    "item_id": 517
+  },
+  {
+    "capture": 3.5,
+    "fix_description": "水面、钓竿、潜水时，捕捉修正x3.5",
+    "item_id": 518
+  },
+  {
+    "capture": 4,
+    "fix_description": "加成的目标等级最大值为[30]。捕捉修正=(7-(0.2*(等级-1))且最大为4",
+    "item_id": 519
+  },
+  {
+    "capture": 2.5,
+    "fix_description": "重复球初始捕捉修正为x1。每次成功捕获同一种族时，即便不是用的重复球，捕捉修正也增加x0.1，最高可增至x2.5。一旦捕捉了其他种族的精灵，则捕捉修正重置为x1",
+    "item_id": 520
+  },
+  {
+    "capture": 4,
+    "fix_description": "捕捉修正=(1+(回合数*0.3))且最大为4。第一回合计算在内",
+    "item_id": 521
+  },
+  {
+    "capture": 2,
+    "fix_description": "若目标是含幸福度进化的精灵家族，捕捉修正x2",
+    "item_id": 522
+  },
+  {
+    "capture": 1.5,
+    "fix_description": "捕捉修正x1.5",
+    "item_id": 523
+  },
+  {
+    "capture": 2.5,
+    "fix_description": "在夜晚，或者洞窟内捕捉精灵，捕捉修正x2.5",
+    "item_id": 524
+  },
+  {
+    "capture": 1,
+    "fix_description": "捕捉无修正",
+    "item_id": 525
+  },
+  {
+    "capture": 5,
+    "fix_description": "战斗第一回合就捕捉精灵，捕捉修正x5",
+    "item_id": 526
+  },
+  {
+    "capture": 4,
+    "fix_description": "若目标的速度种族值≥100，捕捉修正x4",
+    "item_id": 1550
+  },
+  {
+    "capture": 4,
+    "fix_description": "若目标与当前出战的精灵等级相同，捕捉修正x4",
+    "item_id": 1551
+  },
+  {
+    "capture": 8,
+    "fix_description": "若目标与当前出战的精灵处于同一进化家族中，且性别相异，捕捉修正x8。对无性别无效",
+    "item_id": 1552
+  },
+  {
+    "capture": 2,
+    "fix_description": "若目标是含幸福度进化的精灵家族，捕捉修正x2",
+    "item_id": 1553
+  },
+  {
+    "capture": 4,
+    "fix_description": "若目标睡眠了至少2回合，捕捉修正x4",
+    "item_id": 1554
+  },
+  {
+    "capture": 4,
+    "fix_description": "若目标是用[月之石]进化的精灵家族，捕捉修正x4",
+    "item_id": 1555
+  },
+  {
+    "capture": 4,
+    "fix_description": "最低体重<100kg，捕捉修正x1。最低体重<200kg，捕捉修正x2。最低体重<300kg，捕捉修正x3。最低体重≥300kg，捕捉修正x4",
+    "item_id": 1556
+  },
+  {
+    "capture": 4,
+    "fix_description": "若当前的战斗是由垂钓引发（包括奇遇和丑丑鱼钓点），捕捉修正x4",
+    "item_id": 1557
+  },
+  {
+    "capture": 4,
+    "fix_description": "捕捉无修正",
+    "item_id": 1558
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "degree": 1,
+    "index1": 0,
+    "index2": 0,
+    "item_id": 701
+  },
+  {
+    "degree": 1,
+    "index1": 1,
+    "index2": 1,
+    "item_id": 702
+  },
+  {
+    "degree": 1,
+    "index1": 2,
+    "index2": 2,
+    "item_id": 703
+  },
+  {
+    "degree": 1,
+    "index1": 3,
+    "index2": 3,
+    "item_id": 704
+  },
+  {
+    "degree": 1,
+    "index1": 4,
+    "index2": 4,
+    "item_id": 705
+  },
+  {
+    "degree": 2,
+    "index1": 0,
+    "index2": 5,
+    "item_id": 706
+  },
+  {
+    "degree": 2,
+    "index1": 1,
+    "index2": 6,
+    "item_id": 707
+  },
+  {
+    "degree": 2,
+    "index1": 2,
+    "index2": 7,
+    "item_id": 708
+  },
+  {
+    "degree": 2,
+    "index1": 3,
+    "index2": 8,
+    "item_id": 709
+  },
+  {
+    "degree": 2,
+    "index1": 4,
+    "index2": 9,
+    "item_id": 710
+  }
+]

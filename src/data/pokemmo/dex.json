@@ -1,0 +1,5762 @@
+[
+    {
+        "id": 0,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1024,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1,
+        "kanto": 1,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1025,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 2,
+        "kanto": 2,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1026,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 3,
+        "kanto": 3,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1027,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 4,
+        "kanto": 4,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1028,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 5,
+        "kanto": 5,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1029,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 6,
+        "kanto": 6,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1030,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 7,
+        "kanto": 7,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1031,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 8,
+        "kanto": 8,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1032,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 9,
+        "kanto": 9,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1033,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 10,
+        "kanto": 10,
+        "hoenn": 0,
+        "unova": 208,
+        "sinnoh": 0,
+        "johto": 24
+    },
+    {
+        "id": 1034,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 11,
+        "kanto": 11,
+        "hoenn": 0,
+        "unova": 209,
+        "sinnoh": 0,
+        "johto": 25
+    },
+    {
+        "id": 1035,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 12,
+        "kanto": 12,
+        "hoenn": 0,
+        "unova": 210,
+        "sinnoh": 0,
+        "johto": 26
+    },
+    {
+        "id": 1036,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 13,
+        "kanto": 13,
+        "hoenn": 0,
+        "unova": 211,
+        "sinnoh": 0,
+        "johto": 27
+    },
+    {
+        "id": 1037,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 14,
+        "kanto": 14,
+        "hoenn": 0,
+        "unova": 212,
+        "sinnoh": 0,
+        "johto": 28
+    },
+    {
+        "id": 1038,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 15,
+        "kanto": 15,
+        "hoenn": 0,
+        "unova": 213,
+        "sinnoh": 0,
+        "johto": 29
+    },
+    {
+        "id": 1039,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 16,
+        "kanto": 20,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 262,
+        "johto": 10
+    },
+    {
+        "id": 1040,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 17,
+        "kanto": 21,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 263,
+        "johto": 11
+    },
+    {
+        "id": 1041,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 18,
+        "kanto": 22,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 264,
+        "johto": 12
+    },
+    {
+        "id": 1042,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 19,
+        "kanto": 25,
+        "hoenn": 0,
+        "unova": 144,
+        "sinnoh": 234,
+        "johto": 17
+    },
+    {
+        "id": 1043,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 20,
+        "kanto": 26,
+        "hoenn": 0,
+        "unova": 145,
+        "sinnoh": 235,
+        "johto": 18
+    },
+    {
+        "id": 1044,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 21,
+        "kanto": 29,
+        "hoenn": 0,
+        "unova": 274,
+        "sinnoh": 236,
+        "johto": 13
+    },
+    {
+        "id": 1045,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 22,
+        "kanto": 30,
+        "hoenn": 0,
+        "unova": 275,
+        "sinnoh": 237,
+        "johto": 14
+    },
+    {
+        "id": 1046,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 23,
+        "kanto": 31,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 51
+    },
+    {
+        "id": 1047,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 24,
+        "kanto": 32,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 52
+    },
+    {
+        "id": 1048,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 25,
+        "kanto": 34,
+        "hoenn": 163,
+        "unova": 0,
+        "sinnoh": 104,
+        "johto": 22
+    },
+    {
+        "id": 1049,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 26,
+        "kanto": 35,
+        "hoenn": 164,
+        "unova": 0,
+        "sinnoh": 105,
+        "johto": 23
+    },
+    {
+        "id": 1050,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 27,
+        "kanto": 36,
+        "hoenn": 117,
+        "unova": 163,
+        "sinnoh": 0,
+        "johto": 49
+    },
+    {
+        "id": 1051,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 28,
+        "kanto": 37,
+        "hoenn": 118,
+        "unova": 164,
+        "sinnoh": 0,
+        "johto": 50
+    },
+    {
+        "id": 29,
+        "kanto": 38,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 96
+    },
+    {
+        "id": 30,
+        "kanto": 39,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 97
+    },
+    {
+        "id": 31,
+        "kanto": 40,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 98
+    },
+    {
+        "id": 32,
+        "kanto": 41,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 99
+    },
+    {
+        "id": 33,
+        "kanto": 42,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 100
+    },
+    {
+        "id": 34,
+        "kanto": 43,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 101
+    },
+    {
+        "id": 35,
+        "kanto": 45,
+        "hoenn": 0,
+        "unova": 253,
+        "sinnoh": 100,
+        "johto": 41
+    },
+    {
+        "id": 36,
+        "kanto": 46,
+        "hoenn": 0,
+        "unova": 254,
+        "sinnoh": 101,
+        "johto": 42
+    },
+    {
+        "id": 37,
+        "kanto": 47,
+        "hoenn": 160,
+        "unova": 281,
+        "sinnoh": 0,
+        "johto": 131
+    },
+    {
+        "id": 38,
+        "kanto": 48,
+        "hoenn": 161,
+        "unova": 282,
+        "sinnoh": 0,
+        "johto": 132
+    },
+    {
+        "id": 39,
+        "kanto": 50,
+        "hoenn": 143,
+        "unova": 269,
+        "sinnoh": 0,
+        "johto": 44
+    },
+    {
+        "id": 40,
+        "kanto": 51,
+        "hoenn": 144,
+        "unova": 270,
+        "sinnoh": 0,
+        "johto": 45
+    },
+    {
+        "id": 41,
+        "kanto": 52,
+        "hoenn": 65,
+        "unova": 223,
+        "sinnoh": 28,
+        "johto": 37
+    },
+    {
+        "id": 42,
+        "kanto": 53,
+        "hoenn": 66,
+        "unova": 224,
+        "sinnoh": 29,
+        "johto": 38
+    },
+    {
+        "id": 43,
+        "kanto": 55,
+        "hoenn": 91,
+        "unova": 0,
+        "sinnoh": 226,
+        "johto": 84
+    },
+    {
+        "id": 44,
+        "kanto": 56,
+        "hoenn": 92,
+        "unova": 0,
+        "sinnoh": 227,
+        "johto": 85
+    },
+    {
+        "id": 45,
+        "kanto": 57,
+        "hoenn": 93,
+        "unova": 0,
+        "sinnoh": 228,
+        "johto": 86
+    },
+    {
+        "id": 46,
+        "kanto": 59,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 71
+    },
+    {
+        "id": 47,
+        "kanto": 60,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 72
+    },
+    {
+        "id": 48,
+        "kanto": 61,
+        "hoenn": 0,
+        "unova": 146,
+        "sinnoh": 0,
+        "johto": 112
+    },
+    {
+        "id": 49,
+        "kanto": 62,
+        "hoenn": 0,
+        "unova": 147,
+        "sinnoh": 0,
+        "johto": 113
+    },
+    {
+        "id": 50,
+        "kanto": 65,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 258,
+        "johto": 139
+    },
+    {
+        "id": 51,
+        "kanto": 66,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 259,
+        "johto": 140
+    },
+    {
+        "id": 52,
+        "kanto": 67,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 143
+    },
+    {
+        "id": 53,
+        "kanto": 68,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 144
+    },
+    {
+        "id": 54,
+        "kanto": 69,
+        "hoenn": 165,
+        "unova": 195,
+        "sinnoh": 43,
+        "johto": 145
+    },
+    {
+        "id": 55,
+        "kanto": 70,
+        "hoenn": 166,
+        "unova": 196,
+        "sinnoh": 44,
+        "johto": 146
+    },
+    {
+        "id": 56,
+        "kanto": 76,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 141
+    },
+    {
+        "id": 57,
+        "kanto": 77,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 142
+    },
+    {
+        "id": 58,
+        "kanto": 78,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 133
+    },
+    {
+        "id": 59,
+        "kanto": 79,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 134
+    },
+    {
+        "id": 60,
+        "kanto": 80,
+        "hoenn": 0,
+        "unova": 169,
+        "sinnoh": 254,
+        "johto": 73
+    },
+    {
+        "id": 61,
+        "kanto": 81,
+        "hoenn": 0,
+        "unova": 170,
+        "sinnoh": 255,
+        "johto": 74
+    },
+    {
+        "id": 62,
+        "kanto": 82,
+        "hoenn": 0,
+        "unova": 171,
+        "sinnoh": 256,
+        "johto": 75
+    },
+    {
+        "id": 63,
+        "kanto": 84,
+        "hoenn": 40,
+        "unova": 0,
+        "sinnoh": 20,
+        "johto": 90
+    },
+    {
+        "id": 64,
+        "kanto": 85,
+        "hoenn": 41,
+        "unova": 0,
+        "sinnoh": 21,
+        "johto": 91
+    },
+    {
+        "id": 65,
+        "kanto": 86,
+        "hoenn": 42,
+        "unova": 0,
+        "sinnoh": 22,
+        "johto": 92
+    },
+    {
+        "id": 66,
+        "kanto": 87,
+        "hoenn": 75,
+        "unova": 0,
+        "sinnoh": 40,
+        "johto": 147
+    },
+    {
+        "id": 67,
+        "kanto": 88,
+        "hoenn": 76,
+        "unova": 0,
+        "sinnoh": 41,
+        "johto": 148
+    },
+    {
+        "id": 68,
+        "kanto": 89,
+        "hoenn": 77,
+        "unova": 0,
+        "sinnoh": 42,
+        "johto": 149
+    },
+    {
+        "id": 69,
+        "kanto": 92,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 230,
+        "johto": 65
+    },
+    {
+        "id": 70,
+        "kanto": 93,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 231,
+        "johto": 66
+    },
+    {
+        "id": 71,
+        "kanto": 94,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 232,
+        "johto": 67
+    },
+    {
+        "id": 72,
+        "kanto": 95,
+        "hoenn": 68,
+        "unova": 0,
+        "sinnoh": 136,
+        "johto": 172
+    },
+    {
+        "id": 73,
+        "kanto": 96,
+        "hoenn": 69,
+        "unova": 0,
+        "sinnoh": 137,
+        "johto": 173
+    },
+    {
+        "id": 74,
+        "kanto": 97,
+        "hoenn": 58,
+        "unova": 186,
+        "sinnoh": 31,
+        "johto": 34
+    },
+    {
+        "id": 75,
+        "kanto": 98,
+        "hoenn": 59,
+        "unova": 187,
+        "sinnoh": 32,
+        "johto": 35
+    },
+    {
+        "id": 76,
+        "kanto": 99,
+        "hoenn": 60,
+        "unova": 188,
+        "sinnoh": 33,
+        "johto": 36
+    },
+    {
+        "id": 77,
+        "kanto": 100,
+        "hoenn": 0,
+        "unova": 216,
+        "sinnoh": 90,
+        "johto": 218
+    },
+    {
+        "id": 78,
+        "kanto": 101,
+        "hoenn": 0,
+        "unova": 217,
+        "sinnoh": 91,
+        "johto": 219
+    },
+    {
+        "id": 79,
+        "kanto": 102,
+        "hoenn": 0,
+        "unova": 294,
+        "sinnoh": 0,
+        "johto": 81
+    },
+    {
+        "id": 80,
+        "kanto": 103,
+        "hoenn": 0,
+        "unova": 295,
+        "sinnoh": 0,
+        "johto": 82
+    },
+    {
+        "id": 81,
+        "kanto": 105,
+        "hoenn": 84,
+        "unova": 0,
+        "sinnoh": 172,
+        "johto": 122
+    },
+    {
+        "id": 82,
+        "kanto": 106,
+        "hoenn": 85,
+        "unova": 0,
+        "sinnoh": 173,
+        "johto": 123
+    },
+    {
+        "id": 83,
+        "kanto": 108,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 168
+    },
+    {
+        "id": 84,
+        "kanto": 109,
+        "hoenn": 95,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 216
+    },
+    {
+        "id": 85,
+        "kanto": 110,
+        "hoenn": 96,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 217
+    },
+    {
+        "id": 86,
+        "kanto": 115,
+        "hoenn": 0,
+        "unova": 250,
+        "sinnoh": 240,
+        "johto": 186
+    },
+    {
+        "id": 87,
+        "kanto": 116,
+        "hoenn": 0,
+        "unova": 251,
+        "sinnoh": 241,
+        "johto": 187
+    },
+    {
+        "id": 88,
+        "kanto": 117,
+        "hoenn": 111,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 120
+    },
+    {
+        "id": 89,
+        "kanto": 118,
+        "hoenn": 112,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 121
+    },
+    {
+        "id": 90,
+        "kanto": 119,
+        "hoenn": 0,
+        "unova": 240,
+        "sinnoh": 209,
+        "johto": 179
+    },
+    {
+        "id": 91,
+        "kanto": 120,
+        "hoenn": 0,
+        "unova": 241,
+        "sinnoh": 210,
+        "johto": 180
+    },
+    {
+        "id": 92,
+        "kanto": 121,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 69,
+        "johto": 59
+    },
+    {
+        "id": 93,
+        "kanto": 122,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 70,
+        "johto": 60
+    },
+    {
+        "id": 94,
+        "kanto": 123,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 71,
+        "johto": 61
+    },
+    {
+        "id": 95,
+        "kanto": 124,
+        "hoenn": 0,
+        "unova": 165,
+        "sinnoh": 34,
+        "johto": 63
+    },
+    {
+        "id": 96,
+        "kanto": 126,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 88
+    },
+    {
+        "id": 97,
+        "kanto": 127,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 89
+    },
+    {
+        "id": 98,
+        "kanto": 128,
+        "hoenn": 0,
+        "unova": 156,
+        "sinnoh": 0,
+        "johto": 174
+    },
+    {
+        "id": 99,
+        "kanto": 129,
+        "hoenn": 0,
+        "unova": 157,
+        "sinnoh": 0,
+        "johto": 175
+    },
+    {
+        "id": 100,
+        "kanto": 130,
+        "hoenn": 87,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 125
+    },
+    {
+        "id": 101,
+        "kanto": 131,
+        "hoenn": 88,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 126
+    },
+    {
+        "id": 102,
+        "kanto": 132,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 106
+    },
+    {
+        "id": 103,
+        "kanto": 133,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 107
+    },
+    {
+        "id": 104,
+        "kanto": 134,
+        "hoenn": 0,
+        "unova": 276,
+        "sinnoh": 0,
+        "johto": 220
+    },
+    {
+        "id": 105,
+        "kanto": 135,
+        "hoenn": 0,
+        "unova": 277,
+        "sinnoh": 0,
+        "johto": 221
+    },
+    {
+        "id": 106,
+        "kanto": 139,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 151
+    },
+    {
+        "id": 107,
+        "kanto": 140,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 152
+    },
+    {
+        "id": 108,
+        "kanto": 142,
+        "hoenn": 0,
+        "unova": 189,
+        "sinnoh": 155,
+        "johto": 188
+    },
+    {
+        "id": 109,
+        "kanto": 144,
+        "hoenn": 113,
+        "unova": 0,
+        "sinnoh": 249,
+        "johto": 118
+    },
+    {
+        "id": 110,
+        "kanto": 145,
+        "hoenn": 114,
+        "unova": 0,
+        "sinnoh": 250,
+        "johto": 119
+    },
+    {
+        "id": 111,
+        "kanto": 146,
+        "hoenn": 176,
+        "unova": 0,
+        "sinnoh": 180,
+        "johto": 223
+    },
+    {
+        "id": 112,
+        "kanto": 147,
+        "hoenn": 177,
+        "unova": 0,
+        "sinnoh": 181,
+        "johto": 224
+    },
+    {
+        "id": 113,
+        "kanto": 150,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 97,
+        "johto": 240
+    },
+    {
+        "id": 114,
+        "kanto": 152,
+        "hoenn": 0,
+        "unova": 226,
+        "sinnoh": 175,
+        "johto": 190
+    },
+    {
+        "id": 115,
+        "kanto": 154,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 222
+    },
+    {
+        "id": 116,
+        "kanto": 155,
+        "hoenn": 193,
+        "unova": 175,
+        "sinnoh": 245,
+        "johto": 200
+    },
+    {
+        "id": 117,
+        "kanto": 156,
+        "hoenn": 194,
+        "unova": 176,
+        "sinnoh": 246,
+        "johto": 201
+    },
+    {
+        "id": 118,
+        "kanto": 158,
+        "hoenn": 51,
+        "unova": 154,
+        "sinnoh": 78,
+        "johto": 79
+    },
+    {
+        "id": 119,
+        "kanto": 159,
+        "hoenn": 52,
+        "unova": 155,
+        "sinnoh": 79,
+        "johto": 80
+    },
+    {
+        "id": 120,
+        "kanto": 160,
+        "hoenn": 148,
+        "unova": 235,
+        "sinnoh": 215,
+        "johto": 177
+    },
+    {
+        "id": 121,
+        "kanto": 161,
+        "hoenn": 149,
+        "unova": 236,
+        "sinnoh": 216,
+        "johto": 178
+    },
+    {
+        "id": 122,
+        "kanto": 167,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 95,
+        "johto": 166
+    },
+    {
+        "id": 123,
+        "kanto": 168,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 189,
+        "johto": 114
+    },
+    {
+        "id": 124,
+        "kanto": 171,
+        "hoenn": 0,
+        "unova": 249,
+        "sinnoh": 221,
+        "johto": 161
+    },
+    {
+        "id": 125,
+        "kanto": 173,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 192,
+        "johto": 163
+    },
+    {
+        "id": 126,
+        "kanto": 176,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 195,
+        "johto": 158
+    },
+    {
+        "id": 127,
+        "kanto": 178,
+        "hoenn": 174,
+        "unova": 214,
+        "sinnoh": 265,
+        "johto": 116
+    },
+    {
+        "id": 128,
+        "kanto": 179,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 155
+    },
+    {
+        "id": 129,
+        "kanto": 180,
+        "hoenn": 53,
+        "unova": 0,
+        "sinnoh": 23,
+        "johto": 77
+    },
+    {
+        "id": 130,
+        "kanto": 181,
+        "hoenn": 54,
+        "unova": 0,
+        "sinnoh": 24,
+        "johto": 78
+    },
+    {
+        "id": 131,
+        "kanto": 182,
+        "hoenn": 0,
+        "unova": 201,
+        "sinnoh": 225,
+        "johto": 243
+    },
+    {
+        "id": 132,
+        "kanto": 183,
+        "hoenn": 204,
+        "unova": 255,
+        "sinnoh": 0,
+        "johto": 93
+    },
+    {
+        "id": 133,
+        "kanto": 184,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 157,
+        "johto": 192
+    },
+    {
+        "id": 134,
+        "kanto": 185,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 158,
+        "johto": 193
+    },
+    {
+        "id": 135,
+        "kanto": 186,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 159,
+        "johto": 194
+    },
+    {
+        "id": 136,
+        "kanto": 187,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 160,
+        "johto": 195
+    },
+    {
+        "id": 137,
+        "kanto": 192,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 186,
+        "johto": 236
+    },
+    {
+        "id": 138,
+        "kanto": 199,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 244
+    },
+    {
+        "id": 139,
+        "kanto": 200,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 245
+    },
+    {
+        "id": 140,
+        "kanto": 201,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 246
+    },
+    {
+        "id": 141,
+        "kanto": 202,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 247
+    },
+    {
+        "id": 142,
+        "kanto": 203,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 248
+    },
+    {
+        "id": 143,
+        "kanto": 205,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 113,
+        "johto": 250
+    },
+    {
+        "id": 144,
+        "kanto": 240,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 145,
+        "kanto": 241,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 146,
+        "kanto": 242,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 147,
+        "kanto": 206,
+        "hoenn": 0,
+        "unova": 183,
+        "sinnoh": 222,
+        "johto": 251
+    },
+    {
+        "id": 148,
+        "kanto": 207,
+        "hoenn": 0,
+        "unova": 184,
+        "sinnoh": 223,
+        "johto": 252
+    },
+    {
+        "id": 149,
+        "kanto": 208,
+        "hoenn": 0,
+        "unova": 185,
+        "sinnoh": 224,
+        "johto": 253
+    },
+    {
+        "id": 150,
+        "kanto": 243,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 151,
+        "kanto": 244,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 152,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 1
+    },
+    {
+        "id": 153,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 2
+    },
+    {
+        "id": 154,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 3
+    },
+    {
+        "id": 155,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 4
+    },
+    {
+        "id": 156,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 5
+    },
+    {
+        "id": 157,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 6
+    },
+    {
+        "id": 158,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 7
+    },
+    {
+        "id": 159,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 8
+    },
+    {
+        "id": 160,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 9
+    },
+    {
+        "id": 161,
+        "kanto": 27,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 19
+    },
+    {
+        "id": 162,
+        "kanto": 28,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 20
+    },
+    {
+        "id": 163,
+        "kanto": 23,
+        "hoenn": 210,
+        "unova": 283,
+        "sinnoh": 106,
+        "johto": 15
+    },
+    {
+        "id": 164,
+        "kanto": 24,
+        "hoenn": 211,
+        "unova": 284,
+        "sinnoh": 107,
+        "johto": 16
+    },
+    {
+        "id": 165,
+        "kanto": 16,
+        "hoenn": 212,
+        "unova": 148,
+        "sinnoh": 266,
+        "johto": 30
+    },
+    {
+        "id": 166,
+        "kanto": 17,
+        "hoenn": 213,
+        "unova": 149,
+        "sinnoh": 267,
+        "johto": 31
+    },
+    {
+        "id": 167,
+        "kanto": 18,
+        "hoenn": 196,
+        "unova": 150,
+        "sinnoh": 268,
+        "johto": 32
+    },
+    {
+        "id": 168,
+        "kanto": 19,
+        "hoenn": 197,
+        "unova": 151,
+        "sinnoh": 269,
+        "johto": 33
+    },
+    {
+        "id": 169,
+        "kanto": 54,
+        "hoenn": 67,
+        "unova": 225,
+        "sinnoh": 30,
+        "johto": 39
+    },
+    {
+        "id": 170,
+        "kanto": 164,
+        "hoenn": 190,
+        "unova": 179,
+        "sinnoh": 213,
+        "johto": 184
+    },
+    {
+        "id": 171,
+        "kanto": 165,
+        "hoenn": 191,
+        "unova": 180,
+        "sinnoh": 214,
+        "johto": 185
+    },
+    {
+        "id": 172,
+        "kanto": 33,
+        "hoenn": 162,
+        "unova": 0,
+        "sinnoh": 103,
+        "johto": 21
+    },
+    {
+        "id": 173,
+        "kanto": 44,
+        "hoenn": 0,
+        "unova": 252,
+        "sinnoh": 99,
+        "johto": 40
+    },
+    {
+        "id": 174,
+        "kanto": 49,
+        "hoenn": 142,
+        "unova": 268,
+        "sinnoh": 0,
+        "johto": 43
+    },
+    {
+        "id": 175,
+        "kanto": 232,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 167,
+        "johto": 46
+    },
+    {
+        "id": 176,
+        "kanto": 233,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 168,
+        "johto": 47
+    },
+    {
+        "id": 177,
+        "kanto": 225,
+        "hoenn": 169,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 169
+    },
+    {
+        "id": 178,
+        "kanto": 226,
+        "hoenn": 170,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 170
+    },
+    {
+        "id": 179,
+        "kanto": 0,
+        "hoenn": 214,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 54
+    },
+    {
+        "id": 180,
+        "kanto": 0,
+        "hoenn": 215,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 55
+    },
+    {
+        "id": 181,
+        "kanto": 0,
+        "hoenn": 216,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 56
+    },
+    {
+        "id": 182,
+        "kanto": 58,
+        "hoenn": 94,
+        "unova": 0,
+        "sinnoh": 229,
+        "johto": 87
+    },
+    {
+        "id": 183,
+        "kanto": 211,
+        "hoenn": 56,
+        "unova": 0,
+        "sinnoh": 125,
+        "johto": 137
+    },
+    {
+        "id": 184,
+        "kanto": 212,
+        "hoenn": 57,
+        "unova": 0,
+        "sinnoh": 126,
+        "johto": 138
+    },
+    {
+        "id": 185,
+        "kanto": 0,
+        "hoenn": 206,
+        "unova": 0,
+        "sinnoh": 93,
+        "johto": 109
+    },
+    {
+        "id": 186,
+        "kanto": 83,
+        "hoenn": 0,
+        "unova": 172,
+        "sinnoh": 257,
+        "johto": 76
+    },
+    {
+        "id": 187,
+        "kanto": 73,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 68
+    },
+    {
+        "id": 188,
+        "kanto": 74,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 69
+    },
+    {
+        "id": 189,
+        "kanto": 75,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 70
+    },
+    {
+        "id": 190,
+        "kanto": 0,
+        "hoenn": 217,
+        "unova": 0,
+        "sinnoh": 63,
+        "johto": 127
+    },
+    {
+        "id": 191,
+        "kanto": 63,
+        "hoenn": 219,
+        "unova": 218,
+        "sinnoh": 0,
+        "johto": 104
+    },
+    {
+        "id": 192,
+        "kanto": 64,
+        "hoenn": 220,
+        "unova": 219,
+        "sinnoh": 0,
+        "johto": 105
+    },
+    {
+        "id": 193,
+        "kanto": 227,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 177,
+        "johto": 102
+    },
+    {
+        "id": 194,
+        "kanto": 90,
+        "hoenn": 221,
+        "unova": 0,
+        "sinnoh": 117,
+        "johto": 57
+    },
+    {
+        "id": 195,
+        "kanto": 91,
+        "hoenn": 222,
+        "unova": 0,
+        "sinnoh": 118,
+        "johto": 58
+    },
+    {
+        "id": 196,
+        "kanto": 188,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 161,
+        "johto": 196
+    },
+    {
+        "id": 197,
+        "kanto": 189,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 162,
+        "johto": 197
+    },
+    {
+        "id": 198,
+        "kanto": 111,
+        "hoenn": 0,
+        "unova": 285,
+        "sinnoh": 74,
+        "johto": 226
+    },
+    {
+        "id": 199,
+        "kanto": 104,
+        "hoenn": 0,
+        "unova": 296,
+        "sinnoh": 0,
+        "johto": 83
+    },
+    {
+        "id": 200,
+        "kanto": 221,
+        "hoenn": 0,
+        "unova": 287,
+        "sinnoh": 72,
+        "johto": 234
+    },
+    {
+        "id": 201,
+        "kanto": 239,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 114,
+        "johto": 62
+    },
+    {
+        "id": 202,
+        "kanto": 224,
+        "hoenn": 168,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 111
+    },
+    {
+        "id": 203,
+        "kanto": 0,
+        "hoenn": 171,
+        "unova": 0,
+        "sinnoh": 121,
+        "johto": 154
+    },
+    {
+        "id": 204,
+        "kanto": 0,
+        "hoenn": 223,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 94
+    },
+    {
+        "id": 205,
+        "kanto": 0,
+        "hoenn": 224,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 95
+    },
+    {
+        "id": 206,
+        "kanto": 209,
+        "hoenn": 0,
+        "unova": 220,
+        "sinnoh": 0,
+        "johto": 53
+    },
+    {
+        "id": 207,
+        "kanto": 0,
+        "hoenn": 225,
+        "unova": 204,
+        "sinnoh": 147,
+        "johto": 203
+    },
+    {
+        "id": 208,
+        "kanto": 125,
+        "hoenn": 0,
+        "unova": 166,
+        "sinnoh": 35,
+        "johto": 64
+    },
+    {
+        "id": 209,
+        "kanto": 71,
+        "hoenn": 227,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 129
+    },
+    {
+        "id": 210,
+        "kanto": 72,
+        "hoenn": 228,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 130
+    },
+    {
+        "id": 211,
+        "kanto": 162,
+        "hoenn": 0,
+        "unova": 178,
+        "sinnoh": 219,
+        "johto": 171
+    },
+    {
+        "id": 212,
+        "kanto": 169,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 190,
+        "johto": 115
+    },
+    {
+        "id": 213,
+        "kanto": 0,
+        "hoenn": 237,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 176
+    },
+    {
+        "id": 214,
+        "kanto": 229,
+        "hoenn": 175,
+        "unova": 215,
+        "sinnoh": 62,
+        "johto": 117
+    },
+    {
+        "id": 215,
+        "kanto": 217,
+        "hoenn": 0,
+        "unova": 245,
+        "sinnoh": 144,
+        "johto": 232
+    },
+    {
+        "id": 216,
+        "kanto": 195,
+        "hoenn": 229,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 209
+    },
+    {
+        "id": 217,
+        "kanto": 196,
+        "hoenn": 230,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 210
+    },
+    {
+        "id": 218,
+        "kanto": 136,
+        "hoenn": 108,
+        "unova": 0,
+        "sinnoh": 274,
+        "johto": 230
+    },
+    {
+        "id": 219,
+        "kanto": 137,
+        "hoenn": 109,
+        "unova": 0,
+        "sinnoh": 275,
+        "johto": 231
+    },
+    {
+        "id": 220,
+        "kanto": 213,
+        "hoenn": 0,
+        "unova": 242,
+        "sinnoh": 197,
+        "johto": 206
+    },
+    {
+        "id": 221,
+        "kanto": 214,
+        "hoenn": 0,
+        "unova": 243,
+        "sinnoh": 198,
+        "johto": 207
+    },
+    {
+        "id": 222,
+        "kanto": 163,
+        "hoenn": 189,
+        "unova": 239,
+        "sinnoh": 0,
+        "johto": 181
+    },
+    {
+        "id": 223,
+        "kanto": 219,
+        "hoenn": 231,
+        "unova": 263,
+        "sinnoh": 132,
+        "johto": 182
+    },
+    {
+        "id": 224,
+        "kanto": 220,
+        "hoenn": 232,
+        "unova": 264,
+        "sinnoh": 133,
+        "johto": 183
+    },
+    {
+        "id": 225,
+        "kanto": 216,
+        "hoenn": 0,
+        "unova": 247,
+        "sinnoh": 0,
+        "johto": 205
+    },
+    {
+        "id": 226,
+        "kanto": 231,
+        "hoenn": 208,
+        "unova": 260,
+        "sinnoh": 141,
+        "johto": 214
+    },
+    {
+        "id": 227,
+        "kanto": 235,
+        "hoenn": 120,
+        "unova": 0,
+        "sinnoh": 251,
+        "johto": 215
+    },
+    {
+        "id": 228,
+        "kanto": 113,
+        "hoenn": 233,
+        "unova": 0,
+        "sinnoh": 170,
+        "johto": 228
+    },
+    {
+        "id": 229,
+        "kanto": 114,
+        "hoenn": 234,
+        "unova": 0,
+        "sinnoh": 171,
+        "johto": 229
+    },
+    {
+        "id": 230,
+        "kanto": 157,
+        "hoenn": 195,
+        "unova": 177,
+        "sinnoh": 247,
+        "johto": 202
+    },
+    {
+        "id": 231,
+        "kanto": 197,
+        "hoenn": 172,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 211
+    },
+    {
+        "id": 232,
+        "kanto": 198,
+        "hoenn": 173,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 212
+    },
+    {
+        "id": 233,
+        "kanto": 193,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 187,
+        "johto": 237
+    },
+    {
+        "id": 234,
+        "kanto": 0,
+        "hoenn": 235,
+        "unova": 289,
+        "sinnoh": 0,
+        "johto": 135
+    },
+    {
+        "id": 235,
+        "kanto": 0,
+        "hoenn": 209,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 167
+    },
+    {
+        "id": 236,
+        "kanto": 138,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 150
+    },
+    {
+        "id": 237,
+        "kanto": 141,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 153
+    },
+    {
+        "id": 238,
+        "kanto": 170,
+        "hoenn": 0,
+        "unova": 248,
+        "sinnoh": 220,
+        "johto": 160
+    },
+    {
+        "id": 239,
+        "kanto": 172,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 191,
+        "johto": 162
+    },
+    {
+        "id": 240,
+        "kanto": 175,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 194,
+        "johto": 157
+    },
+    {
+        "id": 241,
+        "kanto": 0,
+        "hoenn": 236,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 156
+    },
+    {
+        "id": 242,
+        "kanto": 151,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 98,
+        "johto": 241
+    },
+    {
+        "id": 243,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 257
+    },
+    {
+        "id": 244,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 258
+    },
+    {
+        "id": 245,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 259
+    },
+    {
+        "id": 246,
+        "kanto": 236,
+        "hoenn": 0,
+        "unova": 278,
+        "sinnoh": 0,
+        "johto": 254
+    },
+    {
+        "id": 247,
+        "kanto": 237,
+        "hoenn": 0,
+        "unova": 279,
+        "sinnoh": 0,
+        "johto": 255
+    },
+    {
+        "id": 248,
+        "kanto": 238,
+        "hoenn": 0,
+        "unova": 280,
+        "sinnoh": 0,
+        "johto": 256
+    },
+    {
+        "id": 249,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 260
+    },
+    {
+        "id": 250,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 261
+    },
+    {
+        "id": 251,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 262
+    },
+    {
+        "id": 252,
+        "kanto": 0,
+        "hoenn": 1,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 253,
+        "kanto": 0,
+        "hoenn": 2,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 254,
+        "kanto": 0,
+        "hoenn": 3,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 255,
+        "kanto": 0,
+        "hoenn": 4,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 256,
+        "kanto": 0,
+        "hoenn": 5,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 257,
+        "kanto": 0,
+        "hoenn": 6,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 258,
+        "kanto": 0,
+        "hoenn": 7,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 259,
+        "kanto": 0,
+        "hoenn": 8,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 260,
+        "kanto": 0,
+        "hoenn": 9,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 261,
+        "kanto": 0,
+        "hoenn": 10,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 262,
+        "kanto": 0,
+        "hoenn": 11,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 263,
+        "kanto": 0,
+        "hoenn": 12,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 264,
+        "kanto": 0,
+        "hoenn": 13,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 265,
+        "kanto": 0,
+        "hoenn": 14,
+        "unova": 0,
+        "sinnoh": 48,
+        "johto": 0
+    },
+    {
+        "id": 266,
+        "kanto": 0,
+        "hoenn": 15,
+        "unova": 0,
+        "sinnoh": 49,
+        "johto": 0
+    },
+    {
+        "id": 267,
+        "kanto": 0,
+        "hoenn": 16,
+        "unova": 0,
+        "sinnoh": 50,
+        "johto": 0
+    },
+    {
+        "id": 268,
+        "kanto": 0,
+        "hoenn": 17,
+        "unova": 0,
+        "sinnoh": 51,
+        "johto": 0
+    },
+    {
+        "id": 269,
+        "kanto": 0,
+        "hoenn": 18,
+        "unova": 0,
+        "sinnoh": 52,
+        "johto": 0
+    },
+    {
+        "id": 270,
+        "kanto": 0,
+        "hoenn": 19,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 271,
+        "kanto": 0,
+        "hoenn": 20,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 272,
+        "kanto": 0,
+        "hoenn": 21,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 273,
+        "kanto": 0,
+        "hoenn": 22,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 274,
+        "kanto": 0,
+        "hoenn": 23,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 275,
+        "kanto": 0,
+        "hoenn": 24,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 276,
+        "kanto": 0,
+        "hoenn": 25,
+        "unova": 228,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 277,
+        "kanto": 0,
+        "hoenn": 26,
+        "unova": 229,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 278,
+        "kanto": 0,
+        "hoenn": 27,
+        "unova": 237,
+        "sinnoh": 119,
+        "johto": 0
+    },
+    {
+        "id": 279,
+        "kanto": 0,
+        "hoenn": 28,
+        "unova": 238,
+        "sinnoh": 120,
+        "johto": 0
+    },
+    {
+        "id": 280,
+        "kanto": 0,
+        "hoenn": 29,
+        "unova": 0,
+        "sinnoh": 151,
+        "johto": 0
+    },
+    {
+        "id": 281,
+        "kanto": 0,
+        "hoenn": 30,
+        "unova": 0,
+        "sinnoh": 152,
+        "johto": 0
+    },
+    {
+        "id": 282,
+        "kanto": 0,
+        "hoenn": 31,
+        "unova": 0,
+        "sinnoh": 153,
+        "johto": 0
+    },
+    {
+        "id": 283,
+        "kanto": 0,
+        "hoenn": 33,
+        "unova": 0,
+        "sinnoh": 272,
+        "johto": 0
+    },
+    {
+        "id": 284,
+        "kanto": 0,
+        "hoenn": 34,
+        "unova": 0,
+        "sinnoh": 273,
+        "johto": 0
+    },
+    {
+        "id": 285,
+        "kanto": 0,
+        "hoenn": 35,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 286,
+        "kanto": 0,
+        "hoenn": 36,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 287,
+        "kanto": 0,
+        "hoenn": 37,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 288,
+        "kanto": 0,
+        "hoenn": 38,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 289,
+        "kanto": 0,
+        "hoenn": 39,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 290,
+        "kanto": 0,
+        "hoenn": 43,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 291,
+        "kanto": 0,
+        "hoenn": 44,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 292,
+        "kanto": 0,
+        "hoenn": 45,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 293,
+        "kanto": 0,
+        "hoenn": 46,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 294,
+        "kanto": 0,
+        "hoenn": 47,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 295,
+        "kanto": 0,
+        "hoenn": 48,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 296,
+        "kanto": 0,
+        "hoenn": 49,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 297,
+        "kanto": 0,
+        "hoenn": 50,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 298,
+        "kanto": 210,
+        "hoenn": 55,
+        "unova": 0,
+        "sinnoh": 124,
+        "johto": 136
+    },
+    {
+        "id": 299,
+        "kanto": 0,
+        "hoenn": 61,
+        "unova": 0,
+        "sinnoh": 149,
+        "johto": 0
+    },
+    {
+        "id": 300,
+        "kanto": 0,
+        "hoenn": 63,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 301,
+        "kanto": 0,
+        "hoenn": 64,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 302,
+        "kanto": 0,
+        "hoenn": 70,
+        "unova": 191,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 303,
+        "kanto": 0,
+        "hoenn": 71,
+        "unova": 192,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 304,
+        "kanto": 0,
+        "hoenn": 72,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 305,
+        "kanto": 0,
+        "hoenn": 73,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 306,
+        "kanto": 0,
+        "hoenn": 74,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 307,
+        "kanto": 0,
+        "hoenn": 78,
+        "unova": 0,
+        "sinnoh": 86,
+        "johto": 0
+    },
+    {
+        "id": 308,
+        "kanto": 0,
+        "hoenn": 79,
+        "unova": 0,
+        "sinnoh": 87,
+        "johto": 0
+    },
+    {
+        "id": 309,
+        "kanto": 0,
+        "hoenn": 80,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 310,
+        "kanto": 0,
+        "hoenn": 81,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 311,
+        "kanto": 0,
+        "hoenn": 82,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 312,
+        "kanto": 0,
+        "hoenn": 83,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 313,
+        "kanto": 0,
+        "hoenn": 89,
+        "unova": 0,
+        "sinnoh": 270,
+        "johto": 0
+    },
+    {
+        "id": 314,
+        "kanto": 0,
+        "hoenn": 90,
+        "unova": 0,
+        "sinnoh": 271,
+        "johto": 0
+    },
+    {
+        "id": 315,
+        "kanto": 0,
+        "hoenn": 98,
+        "unova": 0,
+        "sinnoh": 26,
+        "johto": 0
+    },
+    {
+        "id": 316,
+        "kanto": 0,
+        "hoenn": 100,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 317,
+        "kanto": 0,
+        "hoenn": 101,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 318,
+        "kanto": 0,
+        "hoenn": 102,
+        "unova": 202,
+        "sinnoh": 204,
+        "johto": 0
+    },
+    {
+        "id": 319,
+        "kanto": 0,
+        "hoenn": 103,
+        "unova": 203,
+        "sinnoh": 205,
+        "johto": 0
+    },
+    {
+        "id": 320,
+        "kanto": 0,
+        "hoenn": 104,
+        "unova": 261,
+        "sinnoh": 217,
+        "johto": 0
+    },
+    {
+        "id": 321,
+        "kanto": 0,
+        "hoenn": 105,
+        "unova": 262,
+        "sinnoh": 218,
+        "johto": 0
+    },
+    {
+        "id": 322,
+        "kanto": 0,
+        "hoenn": 106,
+        "unova": 0,
+        "sinnoh": 252,
+        "johto": 0
+    },
+    {
+        "id": 323,
+        "kanto": 0,
+        "hoenn": 107,
+        "unova": 0,
+        "sinnoh": 253,
+        "johto": 0
+    },
+    {
+        "id": 324,
+        "kanto": 0,
+        "hoenn": 110,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 325,
+        "kanto": 0,
+        "hoenn": 115,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 326,
+        "kanto": 0,
+        "hoenn": 116,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 327,
+        "kanto": 0,
+        "hoenn": 119,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 328,
+        "kanto": 0,
+        "hoenn": 121,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 329,
+        "kanto": 0,
+        "hoenn": 122,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 330,
+        "kanto": 0,
+        "hoenn": 123,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 331,
+        "kanto": 0,
+        "hoenn": 124,
+        "unova": 0,
+        "sinnoh": 260,
+        "johto": 0
+    },
+    {
+        "id": 332,
+        "kanto": 0,
+        "hoenn": 125,
+        "unova": 0,
+        "sinnoh": 261,
+        "johto": 0
+    },
+    {
+        "id": 333,
+        "kanto": 0,
+        "hoenn": 126,
+        "unova": 271,
+        "sinnoh": 165,
+        "johto": 0
+    },
+    {
+        "id": 334,
+        "kanto": 0,
+        "hoenn": 127,
+        "unova": 272,
+        "sinnoh": 166,
+        "johto": 0
+    },
+    {
+        "id": 335,
+        "kanto": 0,
+        "hoenn": 128,
+        "unova": 199,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 336,
+        "kanto": 0,
+        "hoenn": 129,
+        "unova": 200,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 337,
+        "kanto": 0,
+        "hoenn": 130,
+        "unova": 230,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 338,
+        "kanto": 0,
+        "hoenn": 131,
+        "unova": 231,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 339,
+        "kanto": 0,
+        "hoenn": 132,
+        "unova": 181,
+        "sinnoh": 80,
+        "johto": 0
+    },
+    {
+        "id": 340,
+        "kanto": 0,
+        "hoenn": 133,
+        "unova": 182,
+        "sinnoh": 81,
+        "johto": 0
+    },
+    {
+        "id": 341,
+        "kanto": 0,
+        "hoenn": 134,
+        "unova": 0,
+        "sinnoh": 211,
+        "johto": 0
+    },
+    {
+        "id": 342,
+        "kanto": 0,
+        "hoenn": 135,
+        "unova": 0,
+        "sinnoh": 212,
+        "johto": 0
+    },
+    {
+        "id": 343,
+        "kanto": 0,
+        "hoenn": 136,
+        "unova": 167,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 344,
+        "kanto": 0,
+        "hoenn": 137,
+        "unova": 168,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 345,
+        "kanto": 0,
+        "hoenn": 138,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 346,
+        "kanto": 0,
+        "hoenn": 139,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 347,
+        "kanto": 0,
+        "hoenn": 140,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 348,
+        "kanto": 0,
+        "hoenn": 141,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 349,
+        "kanto": 0,
+        "hoenn": 145,
+        "unova": 0,
+        "sinnoh": 138,
+        "johto": 0
+    },
+    {
+        "id": 350,
+        "kanto": 0,
+        "hoenn": 146,
+        "unova": 0,
+        "sinnoh": 139,
+        "johto": 0
+    },
+    {
+        "id": 351,
+        "kanto": 0,
+        "hoenn": 147,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 352,
+        "kanto": 0,
+        "hoenn": 150,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 353,
+        "kanto": 0,
+        "hoenn": 151,
+        "unova": 0,
+        "sinnoh": 238,
+        "johto": 0
+    },
+    {
+        "id": 354,
+        "kanto": 0,
+        "hoenn": 152,
+        "unova": 0,
+        "sinnoh": 239,
+        "johto": 0
+    },
+    {
+        "id": 355,
+        "kanto": 0,
+        "hoenn": 153,
+        "unova": 0,
+        "sinnoh": 183,
+        "johto": 0
+    },
+    {
+        "id": 356,
+        "kanto": 0,
+        "hoenn": 154,
+        "unova": 0,
+        "sinnoh": 184,
+        "johto": 0
+    },
+    {
+        "id": 357,
+        "kanto": 0,
+        "hoenn": 156,
+        "unova": 273,
+        "sinnoh": 179,
+        "johto": 0
+    },
+    {
+        "id": 358,
+        "kanto": 0,
+        "hoenn": 158,
+        "unova": 291,
+        "sinnoh": 83,
+        "johto": 0
+    },
+    {
+        "id": 359,
+        "kanto": 0,
+        "hoenn": 159,
+        "unova": 232,
+        "sinnoh": 203,
+        "johto": 0
+    },
+    {
+        "id": 360,
+        "kanto": 223,
+        "hoenn": 167,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 110
+    },
+    {
+        "id": 361,
+        "kanto": 0,
+        "hoenn": 179,
+        "unova": 0,
+        "sinnoh": 200,
+        "johto": 0
+    },
+    {
+        "id": 362,
+        "kanto": 0,
+        "hoenn": 180,
+        "unova": 0,
+        "sinnoh": 201,
+        "johto": 0
+    },
+    {
+        "id": 363,
+        "kanto": 0,
+        "hoenn": 182,
+        "unova": 265,
+        "sinnoh": 242,
+        "johto": 0
+    },
+    {
+        "id": 364,
+        "kanto": 0,
+        "hoenn": 183,
+        "unova": 266,
+        "sinnoh": 243,
+        "johto": 0
+    },
+    {
+        "id": 365,
+        "kanto": 0,
+        "hoenn": 184,
+        "unova": 267,
+        "sinnoh": 244,
+        "johto": 0
+    },
+    {
+        "id": 366,
+        "kanto": 0,
+        "hoenn": 185,
+        "unova": 158,
+        "sinnoh": 206,
+        "johto": 0
+    },
+    {
+        "id": 367,
+        "kanto": 0,
+        "hoenn": 186,
+        "unova": 159,
+        "sinnoh": 207,
+        "johto": 0
+    },
+    {
+        "id": 368,
+        "kanto": 0,
+        "hoenn": 187,
+        "unova": 160,
+        "sinnoh": 208,
+        "johto": 0
+    },
+    {
+        "id": 369,
+        "kanto": 0,
+        "hoenn": 188,
+        "unova": 162,
+        "sinnoh": 248,
+        "johto": 0
+    },
+    {
+        "id": 370,
+        "kanto": 0,
+        "hoenn": 192,
+        "unova": 161,
+        "sinnoh": 233,
+        "johto": 242
+    },
+    {
+        "id": 371,
+        "kanto": 0,
+        "hoenn": 198,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 372,
+        "kanto": 0,
+        "hoenn": 199,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 373,
+        "kanto": 0,
+        "hoenn": 200,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 374,
+        "kanto": 0,
+        "hoenn": 201,
+        "unova": 256,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 375,
+        "kanto": 0,
+        "hoenn": 202,
+        "unova": 257,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 376,
+        "kanto": 0,
+        "hoenn": 203,
+        "unova": 258,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 377,
+        "kanto": 0,
+        "hoenn": 238,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 378,
+        "kanto": 0,
+        "hoenn": 239,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 379,
+        "kanto": 0,
+        "hoenn": 240,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 380,
+        "kanto": 0,
+        "hoenn": 241,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 381,
+        "kanto": 0,
+        "hoenn": 242,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 382,
+        "kanto": 0,
+        "hoenn": 244,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 383,
+        "kanto": 0,
+        "hoenn": 245,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 384,
+        "kanto": 0,
+        "hoenn": 243,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 385,
+        "kanto": 0,
+        "hoenn": 246,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 386,
+        "kanto": 0,
+        "hoenn": 247,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 387,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 1,
+        "johto": 0
+    },
+    {
+        "id": 388,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 2,
+        "johto": 0
+    },
+    {
+        "id": 389,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 3,
+        "johto": 0
+    },
+    {
+        "id": 390,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 4,
+        "johto": 0
+    },
+    {
+        "id": 391,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 5,
+        "johto": 0
+    },
+    {
+        "id": 392,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 6,
+        "johto": 0
+    },
+    {
+        "id": 393,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 7,
+        "johto": 0
+    },
+    {
+        "id": 394,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 8,
+        "johto": 0
+    },
+    {
+        "id": 395,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 9,
+        "johto": 0
+    },
+    {
+        "id": 396,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 10,
+        "johto": 0
+    },
+    {
+        "id": 397,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 11,
+        "johto": 0
+    },
+    {
+        "id": 398,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 12,
+        "johto": 0
+    },
+    {
+        "id": 399,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 197,
+        "sinnoh": 13,
+        "johto": 0
+    },
+    {
+        "id": 400,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 198,
+        "sinnoh": 14,
+        "johto": 0
+    },
+    {
+        "id": 401,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 152,
+        "sinnoh": 15,
+        "johto": 0
+    },
+    {
+        "id": 402,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 153,
+        "sinnoh": 16,
+        "johto": 0
+    },
+    {
+        "id": 403,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 17,
+        "johto": 0
+    },
+    {
+        "id": 404,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 18,
+        "johto": 0
+    },
+    {
+        "id": 405,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 19,
+        "johto": 0
+    },
+    {
+        "id": 406,
+        "kanto": 0,
+        "hoenn": 97,
+        "unova": 0,
+        "sinnoh": 25,
+        "johto": 0
+    },
+    {
+        "id": 407,
+        "kanto": 0,
+        "hoenn": 99,
+        "unova": 0,
+        "sinnoh": 27,
+        "johto": 0
+    },
+    {
+        "id": 408,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 36,
+        "johto": 0
+    },
+    {
+        "id": 409,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 37,
+        "johto": 0
+    },
+    {
+        "id": 410,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 38,
+        "johto": 0
+    },
+    {
+        "id": 411,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 39,
+        "johto": 0
+    },
+    {
+        "id": 412,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 45,
+        "johto": 0
+    },
+    {
+        "id": 413,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 46,
+        "johto": 0
+    },
+    {
+        "id": 414,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 47,
+        "johto": 0
+    },
+    {
+        "id": 415,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 221,
+        "sinnoh": 53,
+        "johto": 0
+    },
+    {
+        "id": 416,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 222,
+        "sinnoh": 54,
+        "johto": 0
+    },
+    {
+        "id": 417,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 55,
+        "johto": 0
+    },
+    {
+        "id": 418,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 206,
+        "sinnoh": 56,
+        "johto": 0
+    },
+    {
+        "id": 419,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 207,
+        "sinnoh": 57,
+        "johto": 0
+    },
+    {
+        "id": 420,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 58,
+        "johto": 0
+    },
+    {
+        "id": 421,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 59,
+        "johto": 0
+    },
+    {
+        "id": 422,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 60,
+        "johto": 0
+    },
+    {
+        "id": 423,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 61,
+        "johto": 0
+    },
+    {
+        "id": 424,
+        "kanto": 0,
+        "hoenn": 218,
+        "unova": 0,
+        "sinnoh": 64,
+        "johto": 128
+    },
+    {
+        "id": 425,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 233,
+        "sinnoh": 65,
+        "johto": 0
+    },
+    {
+        "id": 426,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 234,
+        "sinnoh": 66,
+        "johto": 0
+    },
+    {
+        "id": 427,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 67,
+        "johto": 0
+    },
+    {
+        "id": 428,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 68,
+        "johto": 0
+    },
+    {
+        "id": 429,
+        "kanto": 222,
+        "hoenn": 0,
+        "unova": 288,
+        "sinnoh": 73,
+        "johto": 235
+    },
+    {
+        "id": 430,
+        "kanto": 112,
+        "hoenn": 0,
+        "unova": 286,
+        "sinnoh": 75,
+        "johto": 227
+    },
+    {
+        "id": 431,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 76,
+        "johto": 0
+    },
+    {
+        "id": 432,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 77,
+        "johto": 0
+    },
+    {
+        "id": 433,
+        "kanto": 0,
+        "hoenn": 157,
+        "unova": 290,
+        "sinnoh": 82,
+        "johto": 0
+    },
+    {
+        "id": 434,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 84,
+        "johto": 0
+    },
+    {
+        "id": 435,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 85,
+        "johto": 0
+    },
+    {
+        "id": 436,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 292,
+        "sinnoh": 88,
+        "johto": 0
+    },
+    {
+        "id": 437,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 293,
+        "sinnoh": 89,
+        "johto": 0
+    },
+    {
+        "id": 438,
+        "kanto": 0,
+        "hoenn": 205,
+        "unova": 0,
+        "sinnoh": 92,
+        "johto": 108
+    },
+    {
+        "id": 439,
+        "kanto": 166,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 94,
+        "johto": 165
+    },
+    {
+        "id": 440,
+        "kanto": 149,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 96,
+        "johto": 239
+    },
+    {
+        "id": 441,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 102,
+        "johto": 0
+    },
+    {
+        "id": 442,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 108,
+        "johto": 0
+    },
+    {
+        "id": 443,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 109,
+        "johto": 0
+    },
+    {
+        "id": 444,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 110,
+        "johto": 0
+    },
+    {
+        "id": 445,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 111,
+        "johto": 0
+    },
+    {
+        "id": 446,
+        "kanto": 204,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 112,
+        "johto": 249
+    },
+    {
+        "id": 447,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 193,
+        "sinnoh": 115,
+        "johto": 0
+    },
+    {
+        "id": 448,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 194,
+        "sinnoh": 116,
+        "johto": 0
+    },
+    {
+        "id": 449,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 122,
+        "johto": 0
+    },
+    {
+        "id": 450,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 123,
+        "johto": 0
+    },
+    {
+        "id": 451,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 127,
+        "johto": 0
+    },
+    {
+        "id": 452,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 128,
+        "johto": 0
+    },
+    {
+        "id": 453,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 129,
+        "johto": 0
+    },
+    {
+        "id": 454,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 130,
+        "johto": 0
+    },
+    {
+        "id": 455,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 131,
+        "johto": 0
+    },
+    {
+        "id": 456,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 173,
+        "sinnoh": 134,
+        "johto": 0
+    },
+    {
+        "id": 457,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 174,
+        "sinnoh": 135,
+        "johto": 0
+    },
+    {
+        "id": 458,
+        "kanto": 230,
+        "hoenn": 207,
+        "unova": 259,
+        "sinnoh": 140,
+        "johto": 213
+    },
+    {
+        "id": 459,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 142,
+        "johto": 0
+    },
+    {
+        "id": 460,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 143,
+        "johto": 0
+    },
+    {
+        "id": 461,
+        "kanto": 218,
+        "hoenn": 0,
+        "unova": 246,
+        "sinnoh": 145,
+        "johto": 233
+    },
+    {
+        "id": 462,
+        "kanto": 107,
+        "hoenn": 86,
+        "unova": 0,
+        "sinnoh": 174,
+        "johto": 124
+    },
+    {
+        "id": 463,
+        "kanto": 143,
+        "hoenn": 0,
+        "unova": 190,
+        "sinnoh": 156,
+        "johto": 189
+    },
+    {
+        "id": 464,
+        "kanto": 148,
+        "hoenn": 178,
+        "unova": 0,
+        "sinnoh": 182,
+        "johto": 225
+    },
+    {
+        "id": 465,
+        "kanto": 153,
+        "hoenn": 0,
+        "unova": 227,
+        "sinnoh": 176,
+        "johto": 191
+    },
+    {
+        "id": 466,
+        "kanto": 174,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 193,
+        "johto": 164
+    },
+    {
+        "id": 467,
+        "kanto": 177,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 196,
+        "johto": 159
+    },
+    {
+        "id": 468,
+        "kanto": 234,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 169,
+        "johto": 48
+    },
+    {
+        "id": 469,
+        "kanto": 228,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 178,
+        "johto": 103
+    },
+    {
+        "id": 470,
+        "kanto": 190,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 163,
+        "johto": 198
+    },
+    {
+        "id": 471,
+        "kanto": 191,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 164,
+        "johto": 199
+    },
+    {
+        "id": 472,
+        "kanto": 0,
+        "hoenn": 226,
+        "unova": 205,
+        "sinnoh": 148,
+        "johto": 204
+    },
+    {
+        "id": 473,
+        "kanto": 215,
+        "hoenn": 0,
+        "unova": 244,
+        "sinnoh": 199,
+        "johto": 208
+    },
+    {
+        "id": 474,
+        "kanto": 194,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 188,
+        "johto": 238
+    },
+    {
+        "id": 475,
+        "kanto": 0,
+        "hoenn": 32,
+        "unova": 0,
+        "sinnoh": 154,
+        "johto": 0
+    },
+    {
+        "id": 476,
+        "kanto": 0,
+        "hoenn": 62,
+        "unova": 0,
+        "sinnoh": 150,
+        "johto": 0
+    },
+    {
+        "id": 477,
+        "kanto": 0,
+        "hoenn": 155,
+        "unova": 0,
+        "sinnoh": 185,
+        "johto": 0
+    },
+    {
+        "id": 478,
+        "kanto": 0,
+        "hoenn": 181,
+        "unova": 0,
+        "sinnoh": 202,
+        "johto": 0
+    },
+    {
+        "id": 479,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 146,
+        "johto": 0
+    },
+    {
+        "id": 480,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 276,
+        "johto": 0
+    },
+    {
+        "id": 481,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 277,
+        "johto": 0
+    },
+    {
+        "id": 482,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 278,
+        "johto": 0
+    },
+    {
+        "id": 483,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 279,
+        "johto": 0
+    },
+    {
+        "id": 484,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 280,
+        "johto": 0
+    },
+    {
+        "id": 485,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 283,
+        "johto": 0
+    },
+    {
+        "id": 486,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 284,
+        "johto": 0
+    },
+    {
+        "id": 487,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 281,
+        "johto": 0
+    },
+    {
+        "id": 488,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 285,
+        "johto": 0
+    },
+    {
+        "id": 489,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 287,
+        "johto": 0
+    },
+    {
+        "id": 490,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 288,
+        "johto": 0
+    },
+    {
+        "id": 491,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 289,
+        "johto": 0
+    },
+    {
+        "id": 492,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 286,
+        "johto": 0
+    },
+    {
+        "id": 493,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 282,
+        "johto": 0
+    },
+    {
+        "id": 494,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 309,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 495,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 1,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 496,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 2,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 497,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 3,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 498,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 4,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 499,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 5,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 500,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 6,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 501,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 7,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 502,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 8,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 503,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 9,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 504,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 10,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 505,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 11,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 506,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 12,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 507,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 13,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 508,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 14,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 509,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 15,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 510,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 16,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 511,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 17,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 512,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 18,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 513,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 19,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 514,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 20,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 515,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 21,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 516,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 22,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 517,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 23,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 518,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 24,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 519,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 25,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 520,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 26,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 521,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 27,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 522,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 28,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 523,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 29,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 524,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 30,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 525,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 31,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 526,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 32,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 527,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 33,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 528,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 34,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 529,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 35,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 530,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 36,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 531,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 37,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 532,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 38,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 533,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 39,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 534,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 40,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 535,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 41,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 536,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 42,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 537,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 43,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 538,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 44,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 539,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 45,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 540,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 46,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 541,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 47,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 542,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 48,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 543,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 49,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 544,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 50,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 545,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 51,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 546,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 52,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 547,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 53,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 548,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 54,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 549,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 55,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 550,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 56,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 551,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 57,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 552,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 58,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 553,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 59,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 554,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 60,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 555,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 61,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 556,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 62,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 557,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 63,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 558,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 64,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 559,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 65,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 560,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 66,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 561,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 67,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 562,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 68,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 563,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 69,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 564,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 70,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 565,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 71,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 566,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 72,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 567,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 73,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 568,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 74,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 569,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 75,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 570,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 76,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 571,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 77,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 572,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 78,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 573,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 79,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 574,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 80,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 575,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 81,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 576,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 82,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 577,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 83,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 578,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 84,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 579,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 85,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 580,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 86,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 581,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 87,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 582,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 88,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 583,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 89,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 584,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 90,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 585,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 91,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 586,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 92,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 587,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 93,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 588,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 94,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 589,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 95,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 590,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 96,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 591,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 97,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 592,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 98,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 593,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 99,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 594,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 100,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 595,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 101,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 596,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 102,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 597,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 103,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 598,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 104,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 599,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 105,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 600,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 106,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 601,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 107,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 602,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 108,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 603,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 109,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 604,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 110,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 605,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 111,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 606,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 112,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 607,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 113,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 608,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 114,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 609,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 115,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 610,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 116,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 611,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 117,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 612,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 118,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 613,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 119,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 614,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 120,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 615,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 121,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 616,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 122,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 617,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 123,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 618,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 124,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 619,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 125,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 620,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 126,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 621,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 127,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 622,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 128,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 623,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 129,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 624,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 130,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 625,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 131,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 626,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 132,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 627,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 133,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 628,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 134,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 629,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 135,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 630,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 136,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 631,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 137,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 632,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 138,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 633,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 139,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 634,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 140,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 635,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 141,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 636,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 142,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 637,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 143,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 638,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 300,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 639,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 301,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 640,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 302,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 641,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 303,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 642,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 304,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 643,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 297,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 644,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 298,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 645,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 305,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 646,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 306,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 647,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 299,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 648,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 307,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 649,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 308,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 650,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 651,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 652,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 653,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 654,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 655,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 656,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 657,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 658,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 659,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 660,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 661,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 662,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 663,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 664,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 665,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 666,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 667,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1000,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1001,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1002,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1003,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1004,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1005,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1006,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1007,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1008,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1009,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1010,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1011,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1012,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1013,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1014,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1015,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1016,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1017,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1018,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1019,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1020,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1021,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1022,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    },
+    {
+        "id": 1023,
+        "kanto": 0,
+        "hoenn": 0,
+        "unova": 0,
+        "sinnoh": 0,
+        "johto": 0
+    }
+]

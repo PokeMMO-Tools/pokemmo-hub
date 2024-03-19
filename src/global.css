@@ -1,0 +1,255 @@
+.webapp {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark {
+    background-color: #343A40;
+    color: #F8F9FA;
+}
+
+body.dark .offcanvas-body,
+body.dark .offcanvas-header {
+    background-color: #21252A;
+}
+
+body.dark .text-muted {
+    color: rgb(198, 198, 198) !important;
+}
+
+body.dark .form-select {
+    background-color: #6C757D;
+    color: #F8F9FA;
+}
+
+form {
+    flex-wrap: wrap;
+}
+
+form>* {
+    flex-grow: 1;
+}
+
+.fake-background {
+    position: relative;
+}
+
+.fake-background::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background-color: #FFE083;
+}
+
+.overflow-scroll {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.overflow-scroll::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.random-pokemon-easter-egg {
+    position: fixed;
+    z-index: -1;
+    max-width: 150px;
+    opacity: .7;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 1rem;
+    transform: translateY(15%);
+}
+
+.top-right {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    transform: translateY(35%) rotate(180deg);
+}
+
+.github-picker {
+    gap: .2rem;
+}
+
+.follower-container {
+    position: absolute;
+    top: 17px;
+    right: -15px;
+}
+
+.follower-item {
+    height: 45px;
+    width: 45px;
+    background-size: 185px;
+}
+
+.breadcrumb {
+    margin-bottom: 0 !important;
+}
+
+.blinking-droplet {
+    animation: 2s infinite alternate blink;
+}
+
+@keyframes blink {
+    from {
+        color: black;
+    }
+
+    to {
+        color: #dc3545;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    table.responsiveTable td.pivoted {
+        padding-left: calc(40% + 10px) !important;
+        padding: .35rem;
+    }
+
+    table.responsiveTable tbody tr {
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    table.responsiveTable tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    table.responsiveTable td .tdBefore {
+        left: 0rem;
+    }
+}
+
+.list-group-item.active {
+    border-color: transparent !important;
+}
+
+.list-group-item-dark.active {
+    background-color: inherit !important;
+}
+
+body {
+    /* light mode */
+    --background-color: #ffffff;
+    --text-color: #292b2c;
+    --hilight-color: #0275d8;
+}
+
+body.dark {
+    --background-color: #343A40;
+    --text-color: #f8f9fa;
+    --hilight-color: #ffc107;
+}
+
+.highcharts-background {
+    fill: var(--background-color);
+}
+
+.highcharts-container {
+    border-radius: 0.375rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.highcharts-container text {
+    fill: var(--text-color) !important;
+}
+
+.highcharts-container .highcharts-button text {
+    fill: var(--bs-dark) !important;
+}
+
+.highcharts-subtitle,
+.highcharts-credits,
+.highcharts-axis-title {
+    fill-opacity: 0.7;
+}
+
+.highcharts-grid-line {
+    stroke: var(--text-color);
+    stroke-opacity: 0.2;
+}
+
+.highcharts-tooltip-box {
+    fill: var(--background-color) !important;
+}
+
+.highcharts-column-series rect.highcharts-point {
+    stroke: var(--background-color);
+}
+
+body:not(.dark) .list-group-item.active .text-muted {
+    color: var(--bs-gray-100) !important;
+}
+
+body:not(.dark) .list-group-item.active .item-name {
+    color: var(--bs-light) !important;
+}
+
+.MuiTablePagination-root p {
+    margin-bottom: 0 !important;
+}
+
+table.table {
+    margin-bottom: 0;
+}
+
+.navbar {
+    background-color: var(--background-color);
+}
+
+.cosmetic-image-cropper {
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+}
+
+.cosmetic-image-cropper img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: -12px;
+    top: -12px;
+}
+
+.webapp {
+    min-height: calc(100vh - 50px - 86px);
+}
+
+.noBorder {
+    border-style: none !important;
+}
+
+.tdBefore {
+    padding-right: .5rem;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+}
+
+input[type=checkbox] {
+    float: left;
+    margin: 5px 5px;
+
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.numberInput {
+    width: 100px;
+}
