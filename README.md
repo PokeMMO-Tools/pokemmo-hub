@@ -119,4 +119,4 @@ Our community and team members will be happy to help you out.
 - Thanks to Yibu for a massive dataset with a lot of informations on PokeMMO, fantastic to develop new tools and stuff.
 - Thanks to Bestfriends and Scales (Saclex) for tips on UI improvements.
 - Everyone who reported bugs and helped us improve the website
-- Everyone who helped in fixing bugs
+- Everyone who helped in fixing bugs test
