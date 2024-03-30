@@ -68,7 +68,7 @@ export const EggMovesResults = ({ sprites, selectedPokemon }) => {
                     </Stack>
                 </Stack>
                 {
-                    activeMove && paths[activeMove].length ? <PathResult choosenPkmnSprite={sprite} sprites={sprites} paths={paths[activeMove]} /> : FontFaceSetLoadEvent
+                    activeMove && paths[activeMove].length ? <PathResult choosenPkmnSprite={sprite} sprites={sprites} paths={paths[activeMove]} /> : false
                 }
             </Card>
             : false
