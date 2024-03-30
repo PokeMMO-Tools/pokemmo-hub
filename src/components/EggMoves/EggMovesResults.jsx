@@ -46,24 +46,29 @@ export const EggMovesResults = ({ sprites, selectedPokemon }) => {
                     <GatsbyImage style={{ maxWidth: '80px' }} image={sprite.node.childImageSharp.gatsbyImageData} alt={pokemonName} />
                     <Stack gap="2">
                         <Typography as="h4" className="mb-0">{pokemonName}</Typography>
-                        <Stack direction="horizontal" gap="2" className="flex-wrap">
-                            {
-                                Object.keys(paths).map(move_id => (
-                                    <Button
-                                        active={move_id === activeMove}
-                                        variant='warning'
-                                        onClick={() => setActiveMove(move_id)}
-                                        key={move_id}
-                                    >
-                                        {t(getMoveName(move_id))}
-                                    </Button>
-                                ))
-                            }
-                        </Stack>
+                        {
+                        Object.keys(paths).length ? 
+                            <Stack direction="horizontal" gap="2" className="flex-wrap">
+                                {
+                                    Object.keys(paths).map(move_id => (
+                                        <Button
+                                            active={move_id === activeMove}
+                                            variant='warning'
+                                            onClick={() => setActiveMove(move_id)}
+                                            key={move_id}
+                                        >
+                                            {t(getMoveName(move_id))}
+                                        </Button>
+                                    ))
+                                }
+                            </Stack>
+                        :
+                        <Typography as="text" className="mb-0">None</Typography>
+                        }
                     </Stack>
                 </Stack>
                 {
-                    activeMove && paths[activeMove].length ? <PathResult choosenPkmnSprite={sprite} sprites={sprites} paths={paths[activeMove]} /> : false
+                    activeMove && paths[activeMove].length ? <PathResult choosenPkmnSprite={sprite} sprites={sprites} paths={paths[activeMove]} /> : FontFaceSetLoadEvent
                 }
             </Card>
             : false
