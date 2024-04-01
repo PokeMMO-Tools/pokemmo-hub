@@ -78,7 +78,7 @@ $ yarn
 
 Before you can run the website locally you need to create a `.env.development` and populate it with you firebase credentials for your test project. You can either create your own firebase project for debugging or try the firebase emulators.
 
-`NOTE: Setting up the firebase is OPTIONAL. Populate fields with fake data if you dont wish to use login functionality.`
+`NOTE: Setting up the firebase is OPTIONAL. Populate fields with fake data if you do not wish to use login functionality.`
 ```
 GATSBY_FIREBASE_API_KEY=...
 GATSBY_FIREBASE_AUTH_DOMAIN=...
