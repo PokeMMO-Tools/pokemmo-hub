@@ -644,9 +644,9 @@
     "archetype.feature.4.text": "Tus perfiles de caza son preciados. El contador Archetype tiene un sistema de respaldo incorporado, lo que garantiza que nunca perderás tus configuraciones. Además, puedes cambiar manualmente los recuentos con la restauración automática si alguna vez los perfiles se corrompen.",
     "archetype.compatibility.1.title": "Windows",
     "archetype.compatibility.1.text": "El contador Archetype solo es compatible con Windows 10 y superior.",
-    "archetype.compatibility.2.title": "Multi-Monitor Support",
-    "archetype.compatibility.2.text": "Multiple Monitors? No problem.",
-    "archetype.compatibility.3.title": "Multi-Language",
+    "archetype.compatibility.2.title": "Compatible con múltiples monitores",
+    "archetype.compatibility.2.text": "Más de un monitor? No hay problema.",
+    "archetype.compatibility.3.title": "Multi-Idioma",
     "archetype.compatibility.3.text": "El contador de arquetipos ofrece apoyo en diferentes lenguajes, incluyendo Chino, Japonés y Coreano.",
     "archetype.showcase.alt": "Extensión Contador de Arquetipos"
 }
