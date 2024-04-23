@@ -142,7 +142,7 @@
     "lagging tail": "Ralentiqueue",
     "metal coat": "Peau Metal",
     "magnet": "Aimant",
-    "stick": "Stick",
+    "stick": "Bâton",
     "aspear berry": "Baie Willia",
     "never melt ice": "Glacéternel",
     "nugget": "Pépite",
@@ -644,9 +644,9 @@
     "archetype.feature.4.text": "Vos profils de chasse sont précieux. Le Compteur Archetype possède un système de sauvegarde intégré, vous assurant de ne jamais perdre vos configurations. De plus, vous pouvez changer manuellement les comptes avec la restauration automatique si vos profils sont un jour corrompus.",
     "archetype.compatibility.1.title": "Windows",
     "archetype.compatibility.1.text": "Le Compteur Archetype est uniquement compatible avec Windows 10 et supérieur.",
-    "archetype.compatibility.2.title": "Multi-Monitor Support",
-    "archetype.compatibility.2.text": "Multiple Monitors? No problem.",
-    "archetype.compatibility.3.title": "Multi-Language",
-    "archetype.compatibility.3.text": "Archetype Counter offers full multi-language support, including Chinese, Japanese and Korean.",
-    "archetype.showcase.alt": "Archetype Counter Showcase"
+    "archetype.compatibility.2.title": "Prise en Charge de Plusieurs Moniteurs",
+    "archetype.compatibility.2.text": "Vous possédez plusieurs écrans? Aucun problème.",
+    "archetype.compatibility.3.title": "Multi-Langue",
+    "archetype.compatibility.3.text": "Le Compteur Archetype offre une prise en charge complète de plusieurs langues, comprenant le chinois, le japonais et le coréen.",
+    "archetype.showcase.alt": "Présentation du Compteur Archetype"
 }
