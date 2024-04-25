@@ -32,6 +32,9 @@ export const Footer = () => {
                         Developers: squickGianno, Fiereu, ColesNightfill
                     </Typography>
                     <Typography>
+                        {t('thanks to xlirate for making significant contributions to the optimisation of our tools.')} <a href="https://github.com/xlirate" target="_blank">{t('github')}</a>
+                    </Typography>
+                    <Typography>
                         {t('thanks to bunga for our logo.')} <a href="https://www.instagram.com/brianmaiello_design/" target="_blank">{t('check out all his projects.')}</a>
                     </Typography>
                 </Modal>
