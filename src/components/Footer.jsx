@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { useTranslations } from '../context/TranslationsContext'
 import { Button, Modal, Typography } from './Atoms'
-import { DiscordButton, ForumButton, HelpTranslateButton } from './Atoms/Button'
+import { DiscordButton, ForumButton, HelpTranslateButton, GithubButton } from './Atoms/Button'
 import { LanguageSwitcher } from './LanguageSwitcher'
 
 
@@ -45,6 +45,7 @@ export const Footer = () => {
                         <ForumButton />
                     </div>
                     <div className="d-flex flex-wrap" style={{ gap: '.5rem' }}>
+                        <GithubButton />
                         <HelpTranslateButton />
                         <LanguageSwitcher />
                     </div>

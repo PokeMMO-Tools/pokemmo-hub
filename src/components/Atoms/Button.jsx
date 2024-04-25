@@ -41,7 +41,7 @@ export const DiscordButton = () => {
 
 export const GithubButton = ({link}) => {
     return (
-        <Button size="sm" style={{ backgroundColor: "#333333", color: "white", borderColor: "#333333" }} as="a" href={link} target="_blank"><TbBrandGithub />Github</Button>
+        <Button size="sm" style={{ backgroundColor: "#e2e2e2", color: "black", borderColor: "#333333" }} as="a" href={link} target="_blank"><TbBrandGithub />Opensource Github</Button>
     )
 }
 
