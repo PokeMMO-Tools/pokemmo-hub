@@ -48,6 +48,7 @@ export const Footer = () => {
                 <div className='d-flex flex-wrap align-items-center justify-content-between' style={{ gap: '.5rem' }}>
                     <div className="d-flex flex-wrap" style={{ gap: '.5rem' }}>
                         <Button size="sm" variant="success" onClick={toggleModal}>Who we are</Button>
+                        <GithubButton />
                         <DiscordButton />
                         <ForumButton />
                     </div>
