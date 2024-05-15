@@ -22,7 +22,7 @@ export const Footer = () => {
                     show={isOpen}
                     onHide={toggleModal}
                     title="PokeMMO Hub Team"
-                    footer={<><DiscordButton /> <ForumButton /></>}
+                    footer={<><GithubButton /> <DiscordButton /> <ForumButton /></>}
                 >
 
                     <Typography>
@@ -48,7 +48,6 @@ export const Footer = () => {
                 <div className='d-flex flex-wrap align-items-center justify-content-between' style={{ gap: '.5rem' }}>
                     <div className="d-flex flex-wrap" style={{ gap: '.5rem' }}>
                         <Button size="sm" variant="success" onClick={toggleModal}>Who we are</Button>
-                        <GithubButton />
                         <DiscordButton />
                         <ForumButton />
                     </div>
