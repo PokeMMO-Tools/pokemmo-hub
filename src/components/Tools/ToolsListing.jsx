@@ -35,7 +35,6 @@ const TOOLS = [
         label: 'Archetype Counter',
         url: '/tools/archetype-counter/',
         icon: ArchetypeIcon,
-        highlight: true
     }
 ]
 

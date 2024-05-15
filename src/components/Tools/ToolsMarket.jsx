@@ -26,6 +26,7 @@ const TOOLS = [
         label: 'Multi Graph',
         url: '/market/multigraph',
         icon: '/sprites/051.png',
+        highlight: true
     },
 ]
 
