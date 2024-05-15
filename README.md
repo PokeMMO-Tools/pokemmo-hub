@@ -119,6 +119,7 @@ Our community and team members will be happy to help you out.
 
 ## 💙 Credits <a id="credits"></a>
 - Thanks to Yibu for a massive dataset with a lot of information on PokeMMO, fantastic for developing new tools.
+- Thanks to boebi for developing the Multi Graph tool.
 - Thanks to xlirate for significant contributions in optimising our tools.
 - Thanks to Bestfriends and Scales (Saclex) for tips on UI improvements.
 - Everyone who reported bugs and helped us improve the website
