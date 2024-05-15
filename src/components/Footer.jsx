@@ -31,6 +31,13 @@ export const Footer = () => {
                     <Typography>
                         Developers: squickGianno, Fiereu, ColesNightfill
                     </Typography>
+                    &#8203;
+                    <Typography>
+                        Opensource credits:
+                    </Typography>
+                    <Typography>
+                        Thanks to boebie for developing the Multi Graph tool.
+                    </Typography>
                     <Typography>
                         {t('thanks to xlirate for making significant contributions to the optimisation of our tools.')} <a href="https://github.com/xlirate" target="_blank">{t('github')}</a>
                     </Typography>
