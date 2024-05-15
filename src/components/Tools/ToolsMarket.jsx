@@ -21,7 +21,12 @@ const TOOLS = [
         label: "Trade Ads",
         url: '/market/trade-ads',
         icon: TradeAdIcon,
-    }
+    },
+    {
+        label: 'Multi Graph',
+        url: '/market/multigraph',
+        icon: '/sprites/051.png',
+    },
 ]
 
 export const ToolsMarket = () => {
