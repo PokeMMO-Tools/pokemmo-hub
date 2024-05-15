@@ -10,5 +10,6 @@ import { Search } from "./Search";
 import { Table } from "./Table";
 import { Toast } from "./Toast";
 import { Typography } from "./Typography";
+import { MultiGraph } from "./MultiGraph";
 
-export { Table, Typography, Card, Button, Toast, Search, Badge, Modal, Breadcrumbs, ListGroup, ListItem, Pagination, Adsense };
+export { MultiGraph, Table, Typography, Card, Button, Toast, Search, Badge, Modal, Breadcrumbs, ListGroup, ListItem, Pagination, Adsense };
