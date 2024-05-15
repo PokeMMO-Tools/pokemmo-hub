@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HighchartsReact } from 'highcharts-react-official'
 import Highcharts from 'highcharts/highstock'
 import { useTranslations } from '../../context/TranslationsContext'
@@ -7,16 +7,18 @@ import { useTranslations } from '../../context/TranslationsContext'
 export const MultiGraph = ({ seriesData }) => {
     const { t } = useTranslations();
     
-    Highcharts.setOptions({
-        lang: {
-            months: [t('january'), t('february'), t('march'), t('april'), t('may'), t('june'), t('july'), t('august'), t('september'), t('october'), t('november'), t('december')],
-            shortMonths: [t('jan'), t('feb'), t('mar'), t('apr'), t('may'), t('jun'), t('jul'), t('aug'), t('sep'), t('oct'), t('nov'), t('dec')],
-            numericSymbols: undefined,
-        },
-        rangeSelector: {
-            selected: 2 //6 months
-        }
-    })
+    useEffect(() => {
+        Highcharts.setOptions({
+            lang: {
+                months: [t('january'), t('february'), t('march'), t('april'), t('may'), t('june'), t('july'), t('august'), t('september'), t('october'), t('november'), t('december')],
+                shortMonths: [t('jan'), t('feb'), t('mar'), t('apr'), t('may'), t('jun'), t('jul'), t('aug'), t('sep'), t('oct'), t('nov'), t('dec')],
+                numericSymbols: undefined,
+            },
+            rangeSelector: {
+                selected: 2 //6 months
+            }
+        })
+    }, [seriesData]);
 
     return (
         <HighchartsReact
@@ -90,7 +92,6 @@ export const MultiGraph = ({ seriesData }) => {
                 },
                 series: seriesData,
             }}
-
             constructorType={"stockChart"}
         />
     )

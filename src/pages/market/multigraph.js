@@ -12,7 +12,7 @@ import { prices as PricesApi } from '../../utils/prices'
 
 
 const MultiGraphPage = ({ pageContext }) => {
-    const { language, t } = useTranslations();
+    const { language } = useTranslations();
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket();
     const [items, setItems] = useState([]);
 	const [selectedItem, setSelectedItem] = useState('');
@@ -21,7 +21,7 @@ const MultiGraphPage = ({ pageContext }) => {
 		if (items.some(item => item.apiId === apiId))
 			return; // Item already in array
 
-		let itemInfo = allItems.find(({ i }) => i == apiId);
+		let itemInfo = allItems.find(({ i }) => i === apiId);
 		PricesApi.getItem(itemInfo.i).then(res => {
 			let item = {
 				id: itemInfo._id,
