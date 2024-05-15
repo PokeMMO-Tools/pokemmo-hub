@@ -36,7 +36,7 @@ export const MultiGraphItemList = ({ items, removeItem }) => {
                         items.map((item) => (
                             <Tr key={item.apiId}>
                                 <Td component='th' scope='row' className='d-flex align-items-start border-0'>
-                                    <ItemImage className='me-1' id={item.id} />
+                                    <ItemImage className='me-1' category={item.category} id={item.id} />
                                     &nbsp;
                                     <Typography as={Link} to={`/items/${item.slug}`} style={{ color: 'var(--bs-info)' }}>{item.name}</Typography>
                                 </Td>

@@ -28,6 +28,7 @@ const MultiGraphPage = ({ pageContext }) => {
 				apiId: itemInfo.i,
 				name: itemInfo.n[language],
 				slug: itemInfo.slug,
+				category: itemInfo.category,
 				data: res
 			}
 			setItems([...items, item]);
