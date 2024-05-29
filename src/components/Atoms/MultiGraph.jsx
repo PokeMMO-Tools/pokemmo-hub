@@ -49,7 +49,8 @@ export const MultiGraph = ({ seriesData }) => {
                     backgroundColor: "var(--background-color)",
                     split: true,
                     xDateFormat: '%Y-%m-%d',
-                    shared: true
+                    shared: true,
+                    pointFormat: '{series.name}: <b>{point.y:.0f}</b>',
                 },
                 rangeSelector: {
                     buttons: [{

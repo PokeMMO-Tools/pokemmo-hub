@@ -79,7 +79,8 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
                         backgroundColor: "var(--background-color)",
                         split: true,
                         xDateFormat: '%Y-%m-%d',
-                        shared: true
+                        shared: true,
+                        pointFormat: '{series.name}: <b>{point.y:.0f}</b>',
                     },
                     rangeSelector: {
                         buttons: [{
