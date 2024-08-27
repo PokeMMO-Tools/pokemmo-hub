@@ -27,16 +27,17 @@ const ArchetypeCounter = ({ pageContext }) => {
                 </div>
                 <Typography as="h2">Features</Typography>
                 <UList>
-                    <UListItem icon="🚀" title={t("archetype.feature.1.title")} text={t("archetype.feature.1.text")} />
-                    <UListItem icon="📝" title={t("archetype.feature.2.title")} text={t("archetype.feature.2.text")} />
-                    <UListItem icon="🎨" title={t("archetype.feature.3.title")} text={t("archetype.feature.3.text")} />
-                    <UListItem icon="🗳️" title={t("archetype.feature.4.title")} text={t("archetype.feature.4.text")} />
+                    <UListItem icon="🚨" title={t("2archetype.feature.1.title")} text={t("2archetype.feature.1.text")} text2={t("2archetype.feature.1.text2")} text3={t("2archetype.feature.1.text3")}/>
+                    <UListItem icon="🔧" title={t("2archetype.feature.2.title")} text={t("2archetype.feature.2.text")} text2={t("2archetype.feature.2.text2")} />
+                    <UListItem icon="📝" title={t("2archetype.feature.3.title")} text={t("2archetype.feature.3.text")} text2={t("2archetype.feature.3.text2")} />
+                    <UListItem icon="👁" title={t("2archetype.feature.4.title")} text={t("2archetype.feature.4.text")} text2={t("2archetype.feature.4.text2")}/>
+                    <UListItem icon="🎨" title={t("2archetype.feature.5.title")} text={t("2archetype.feature.5.text")} text2={t("2archetype.feature.5.text2")}/>
                 </UList>
                 <Typography as="h2">Compatibility</Typography>
                 <UList>
-                    <UListItem icon="" title={t("archetype.compatibility.1.title")} text={t("archetype.compatibility.1.text")} />
-                    <UListItem icon="" title={t("archetype.compatibility.2.title")} text={t("archetype.compatibility.2.text")} />
-                    <UListItem icon="" title={t("archetype.compatibility.3.title")} text={t("archetype.compatibility.3.text")} />
+                    <UListItem2 icon="" title={t("archetype.compatibility.1.title")} text={t("archetype.compatibility.1.text")} />
+                    <UListItem2 icon="" title={t("archetype.compatibility.2.title")} text={t("archetype.compatibility.2.text")} />
+                    <UListItem2 icon="" title={t("archetype.compatibility.3.title")} text={t("archetype.compatibility.3.text")} />
                 </UList>
                 <Typography as="h2">Showcase</Typography>
                 <div className="d-flex flex-md-row flex-column align-items-center justify-content-evenly">
@@ -52,10 +53,15 @@ const ArchetypeCounter = ({ pageContext }) => {
 }
 
 const UList = ({ children }) => <ul className='list-none'>{children}</ul>
-const UListItem = ({ icon, title, text }) => {
+const UListItem = ({ icon, title, text, text2, text3 }) => {
     const { t } = useTranslations();
-    return (<li className='list-disc my-4'>{icon} <strong>{t(title)}</strong>: <br />{t(text)}</li>)
-}
+
+    return (<li className='list-disc my-4'>{icon} <strong>{t(title)}</strong>: <br />{t(text)} <br />{t(text2)} <br />{t(text3)}</li>)}
+
+const UListItem2 = ({ icon, title, text, text2, text3 }) => {
+    const { t } = useTranslations();
+
+    return (<li className='list-disc my-4'>{icon} <strong>{t(title)}</strong>: <br />{t(text)}</li>)}
 
 const ShowcaseImage = ({ src, alt, as="" }) => <Image className={"rounded img-fluid my-2 " + as} src={src} alt={alt} />
 
