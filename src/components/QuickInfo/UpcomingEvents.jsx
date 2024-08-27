@@ -10,7 +10,8 @@ const getDateFromUrl = ({ link, isoDate }) => {
     const day = isNaN(parseInt(preDayString)) ? parseInt(dayString) : parseInt(preDayString);
     // remove trailing slash from month
     const month = monthString.replace('/', '');
-    const date = Date.parse(`${day} ${month} 2023`);
+    const currentYear = new Date().getFullYear()
+    const date = Date.parse(`${day} ${month} ${currentYear}`);
 
     if (!isNaN(date))
         return date;
