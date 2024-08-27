@@ -52,7 +52,7 @@ export const Footer = () => {
                         <ForumButton />
                     </div>
                     <div className="d-flex flex-wrap" style={{ gap: '.5rem' }}>
-                        <GithubButton />
+                        <GithubButton link="https://github.com/PokeMMO-Tools/pokemmo-hub" />
                         <HelpTranslateButton />
                         <LanguageSwitcher />
                     </div>

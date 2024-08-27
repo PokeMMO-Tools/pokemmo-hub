@@ -41,7 +41,7 @@ export const DiscordButton = () => {
 
 export const GithubButton = ({link}) => {
     return (
-        <Button size="sm" style={{ backgroundColor: "#e2e2e2", color: "black", borderColor: "#333333" }} as="a" href={"https://github.com/PokeMMO-Tools/pokemmo-hub"} target="_blank"><TbBrandGithub />Opensource Github</Button>
+        <Button size="sm" style={{ backgroundColor: "#e2e2e2", color: "black", borderColor: "#333333" }} as="a" href={link} target="_blank"><TbBrandGithub />Opensource Github</Button>
     )
 }
 
