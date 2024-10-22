@@ -5,7 +5,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import { usePokedex } from '../../context/PokedexContext';
 import { useTranslations } from '../../context/TranslationsContext';
 import { getLocation } from '../../utils/location';
-import { Adsense, Card } from '../Atoms';
+import { /*Adsense, */Card } from '../Atoms';
 import { PokemonItem } from './PokemonItem';
 
 import AD_LIST from '../../data/ads.json';
