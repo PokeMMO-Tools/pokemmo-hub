@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import { useTranslations } from '../../context/TranslationsContext';
 import ADS from '../../data/ads.json';
 import { prices as PricesApi } from '../../utils/prices';
-import { /*Adsense,*/ Button, Card, Table, Typography } from '../Atoms';
+import { Adsense, Button, Card, Table, Typography } from '../Atoms';
 import { Table as DesktopTable } from '../Atoms'
 import { isMobile, isTablet } from 'react-device-detect'
 import { Table as SrTable, Tbody as SrTbody, Td as SrTd, Th as SrTh, Thead as SrThead, Tr as SrTr } from 'react-super-responsive-table'

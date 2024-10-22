@@ -1,4 +1,4 @@
-//import { Adsense } from "./Adsense";
+import { Adsense } from "./Adsense";
 import { Badge } from "./Badge";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Button } from "./Button";
