@@ -5,12 +5,12 @@ import { isMobile, isTablet } from 'react-device-detect'
 import { Button, Table as DesktopTable, Typography } from '../../components/Atoms'
 import { Table as SrTable, Tbody as SrTbody, Th as SrTh, Thead as SrThead, Td as SrTd, Tr as SrTr } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
-import { TbTrash } from 'react-icons/tb'
+import { TbEye, TbEyeOff, TbTrash } from 'react-icons/tb'
 import { useTranslations } from '../../context/TranslationsContext'
 import { ItemImage } from '../../components/Items/ItemImage'
 import { ItemPrices } from '../../components/Items/ItemPrices'
 
-export const MultiGraphItemList = ({ items, removeItem }) => {
+export const MultiGraphItemList = ({ items, removeItem, toggleHideItem }) => {
     const { t } = useTranslations()
 
     const Table = isMobile && !isTablet ? SrTable : DesktopTable;
@@ -45,7 +45,14 @@ export const MultiGraphItemList = ({ items, removeItem }) => {
                                 </Td>
                                 <Td align='right' className='border-0'>
                                     <Stack direction='horizontal' gap={1} className='justify-content-end'>
-                                        <Button size='sm' variant='danger' onClick={() => removeItem(item.apiId)}><TbTrash /></Button>
+                                        <Button size='md' variant='info' onClick={() => toggleHideItem(item.apiId)}>
+                                            {
+                                                item.hidden
+                                                ? <TbEyeOff />
+                                                : <TbEye />
+                                            }
+                                        </Button>
+                                        <Button size='md' variant='danger' onClick={() => removeItem(item.apiId)}><TbTrash /></Button>
                                     </Stack>
                                 </Td>
                             </Tr>

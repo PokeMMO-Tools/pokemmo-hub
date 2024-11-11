@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Stack } from 'react-bootstrap'
+import { Button, Spinner, Stack } from 'react-bootstrap'
 import { Card, Search, Typography, MultiGraph } from '../../components/Atoms'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import { MultiGraphItemList } from '../../components/Market/MultiGraphItemList'
@@ -9,18 +9,21 @@ import { Seo } from '../../components/SEO'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useMarket } from '../../context/MarketContext'
 import { prices as PricesApi } from '../../utils/prices'
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 
 const MultiGraphPage = ({ pageContext }) => {
     const { language } = useTranslations();
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket();
-    const [items, setItems] = useState([]);
 	const [selectedItem, setSelectedItem] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
+    const [items, setItems] = useLocalStorage('multiGraphItems', []);
 
     const updateItemList = (apiId) => {
 		if (items.some(item => item.apiId === apiId))
 			return; // Item already in array
 
+		setIsLoading(true);
 		let itemInfo = allItems.find(({ i }) => i === apiId);
 		PricesApi.getItem(itemInfo.i).then(res => {
 			let item = {
@@ -29,8 +32,10 @@ const MultiGraphPage = ({ pageContext }) => {
 				name: itemInfo.n[language],
 				slug: itemInfo.slug,
 				category: itemInfo.category,
-				data: res
+				data: res,
+				hidden: false,
 			}
+			setIsLoading(false);
 			setItems([...items, item]);
 		});
     }
@@ -41,10 +46,11 @@ const MultiGraphPage = ({ pageContext }) => {
 
 	const getSeriesData = () => {
 		let seriesData = [];
-		items.map((item) => {
+		items.filter(item => item.hidden === false).map(item => {
 			seriesData.push({
 				name: item.name,
-				data: item.data
+				data: item.data,
+				showInNavigator: true,
 			});
 		});
 		return seriesData;
@@ -52,6 +58,19 @@ const MultiGraphPage = ({ pageContext }) => {
 
 	const removeItem = (apiId) => {
 		setItems(items.filter(i => i.apiId !== apiId));
+	}
+
+	const toggleHideItem = (apiId) => {
+		// It's annoying when you hide an item and it moves down in the item list
+		// So update the item and add it back to the state at the same index
+		let foundIndex = items.findIndex(i => i.apiId === apiId);
+		let foundItem = items[foundIndex]
+		foundItem.hidden = !foundItem.hidden;
+		setItems([...items.slice(0, foundIndex), foundItem, ...items.slice(foundIndex + 1)]);
+	}
+
+	const getSearchableItems = () => {
+		return allItems.filter(item => !items.some(removedItem => removedItem.apiId === item.i))
 	}
 
 	const PAGE_TITLE = 'Multi Item Graph';
@@ -68,7 +87,7 @@ const MultiGraphPage = ({ pageContext }) => {
 						<div style={{ flexGrow: '1' }}>
 							<Search
 								items={
-									allItems.map(({ i, n }) => {
+									getSearchableItems().map(({ i, n }) => {
 										return (
 											{
 												value: i,
@@ -84,8 +103,12 @@ const MultiGraphPage = ({ pageContext }) => {
 							Add Item
 						</Button>
 					</div>
-					
-					<MultiGraphItemList items={items} removeItem={removeItem} />
+					<MultiGraphItemList items={items} removeItem={removeItem} toggleHideItem={toggleHideItem} />
+					{
+						isLoading
+						? <Spinner animation="border" variant="warning" />
+						: <span></span>
+					}
 				</Card>
 				<Card>
 					<Typography as='h2'>Market Graph</Typography>
