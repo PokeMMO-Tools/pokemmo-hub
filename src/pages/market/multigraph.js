@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Spinner, Stack } from 'react-bootstrap'
 import { Card, Search, Typography, MultiGraph } from '../../components/Atoms'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
@@ -19,7 +19,13 @@ const MultiGraphPage = ({ pageContext }) => {
 	const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useLocalStorage('multiGraphItems', []);
 
-    const updateItemList = (apiId) => {
+	useEffect(() => {
+		if (items.length > 0) {
+			updatePriceData();
+		}
+     }, []);
+
+    const addItemToList = (apiId) => {
 		if (items.some(item => item.apiId === apiId))
 			return; // Item already in array
 
@@ -40,8 +46,16 @@ const MultiGraphPage = ({ pageContext }) => {
 		});
     }
 
+	const updatePriceData = () => {
+		items.map(item => {
+			PricesApi.getItem(item.apiId).then(res => {
+				editItem(item.apiId, { data: res });
+			});
+		});
+	}
+
 	const onAddItemClick = (e) => {
-		updateItemList(selectedItem);
+		addItemToList(selectedItem);
 	}
 
 	const getSeriesData = () => {
@@ -60,13 +74,13 @@ const MultiGraphPage = ({ pageContext }) => {
 		setItems(items.filter(i => i.apiId !== apiId));
 	}
 
-	const toggleHideItem = (apiId) => {
-		// It's annoying when you hide an item and it moves down in the item list
-		// So update the item and add it back to the state at the same index
+	const editItem = (apiId, updates) => {
 		let foundIndex = items.findIndex(i => i.apiId === apiId);
-		let foundItem = items[foundIndex]
-		foundItem.hidden = !foundItem.hidden;
-		setItems([...items.slice(0, foundIndex), foundItem, ...items.slice(foundIndex + 1)]);
+		let updatedItem = {
+			...items[foundIndex],
+			...updates
+		};
+		setItems([...items.slice(0, foundIndex), updatedItem, ...items.slice(foundIndex + 1)]);
 	}
 
 	const getSearchableItems = () => {
@@ -103,7 +117,7 @@ const MultiGraphPage = ({ pageContext }) => {
 							Add Item
 						</Button>
 					</div>
-					<MultiGraphItemList items={items} removeItem={removeItem} toggleHideItem={toggleHideItem} />
+					<MultiGraphItemList items={items} removeItem={removeItem} editItem={editItem} />
 					{
 						isLoading
 						? <Spinner animation="border" variant="warning" />
