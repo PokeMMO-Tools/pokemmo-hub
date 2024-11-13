@@ -10,7 +10,7 @@ import { useTranslations } from '../../context/TranslationsContext'
 import { ItemImage } from '../../components/Items/ItemImage'
 import { ItemPrices } from '../../components/Items/ItemPrices'
 
-export const MultiGraphItemList = ({ items, removeItem, toggleHideItem }) => {
+export const MultiGraphItemList = ({ items, removeItem, editItem }) => {
     const { t } = useTranslations()
 
     const Table = isMobile && !isTablet ? SrTable : DesktopTable;
@@ -45,7 +45,7 @@ export const MultiGraphItemList = ({ items, removeItem, toggleHideItem }) => {
                                 </Td>
                                 <Td align='right' className='border-0'>
                                     <Stack direction='horizontal' gap={1} className='justify-content-end'>
-                                        <Button size='md' variant='info' onClick={() => toggleHideItem(item.apiId)}>
+                                        <Button size='md' variant='info' onClick={() => editItem(item.apiId, { hidden: !item.hidden })}>
                                             {
                                                 item.hidden
                                                 ? <TbEyeOff />
