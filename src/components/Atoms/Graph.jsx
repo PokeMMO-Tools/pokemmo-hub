@@ -1,6 +1,7 @@
 import { HighchartsReact } from 'highcharts-react-official'
 import Highcharts from 'highcharts/highstock'
 import React from 'react'
+import { Spinner } from 'react-bootstrap'
 import { useQuery } from 'react-query'
 import { useTranslations } from '../../context/TranslationsContext'
 import { prices as PricesApi } from '../../utils/prices'
@@ -25,18 +26,20 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
         lang: {
             months: [t('january'), t('february'), t('march'), t('april'), t('may'), t('june'), t('july'), t('august'), t('september'), t('october'), t('november'), t('december')],
             shortMonths: [t('jan'), t('feb'), t('mar'), t('apr'), t('may'), t('jun'), t('jul'), t('aug'), t('sep'), t('oct'), t('nov'), t('dec')],
-            numericSymbols: undefined,
+            numericSymbols: undefined
         },
         rangeSelector: {
             selected: 2 //6 months
-        }
+        },
     }) //i am so sorry for this, it doesnt work in the config code
 
+
     return (
-        <div>
+        <div className='position-relative display-block'>
             {
                 !hideItemActions ? <MarketItemActions className='mb-1 d-flex' style={{ gap: '.4rem' }} id={id} /> : false
             }
+
             <HighchartsReact
                 highcharts={Highcharts}
                 options={{
@@ -137,11 +140,15 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
                         name: t("Item in market"),
                         data: quantities ? quantities : [],
                         yAxis: 1,
-                    }],
+                    }]
                 }}
 
                 constructorType={"stockChart"}
             />
+            {
+                typeof prices === 'undefined' ? <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" /> : false
+            }
+
         </div>
     )
 }
