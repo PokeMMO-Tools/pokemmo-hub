@@ -146,7 +146,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
                 constructorType={"stockChart"}
             />
             {
-                typeof prices === 'undefined' ? <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" /> : false
+                typeof prices === 'undefined' && typeof quantities === 'undefined' ? <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" /> : false
             }
 
         </div>
