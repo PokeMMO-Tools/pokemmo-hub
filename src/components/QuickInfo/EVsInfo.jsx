@@ -63,6 +63,7 @@ export const EVsInfo = () => {
                     </tr>
                 </tbody>
             </Table>
+            <br></br>
             <Typography as="h5"> </Typography>
             <Typography as="h5">EV Berries</Typography>
             <Typography className='text-muted'>They lower the EVs of a specific stats by 10.</Typography>

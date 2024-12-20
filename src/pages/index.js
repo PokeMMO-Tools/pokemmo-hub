@@ -20,7 +20,7 @@ const IndexPage = ({ pageContext }) => {
                 <ToolsMarket />
             </div>
 
-            <div className="col-8 mb-3 mt-2">
+            <div className="col-10 mb-3 mt-2">
                 <Typography as="h2" className="mb-3">{t(`Tools`)}</Typography>
                 <ToolsListing />
             </div>

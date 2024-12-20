@@ -7,14 +7,9 @@ import { Badge, Button } from '../Atoms'
 
 const TOOLS = [
     {
-        label: 'Breeding',
-        url: '/tools/breeding/',
-        icon: EggIcon
-    },
-    {
-        label: 'Pokedex',
-        url: '/tools/pokedex/',
-        icon: PokedexIcon
+        label: 'Cosmetics Helper',
+        url: '/tools/cosmetics/',
+        icon: CosmeticsIcon
     },
     {
         label: 'Egg Moves Calculator',
@@ -22,9 +17,14 @@ const TOOLS = [
         icon: EggMovesIcon
     },
     {
-        label: 'Cosmetics Helper',
-        url: '/tools/cosmetics/',
-        icon: CosmeticsIcon
+        label: 'Pokedex',
+        url: '/tools/pokedex/',
+        icon: PokedexIcon
+    },
+    {
+        label: 'Breeding Simulator',
+        url: '/tools/breeding/',
+        icon: EggIcon
     },
     {
         label: 'Berries Helper',
@@ -44,7 +44,7 @@ export const ToolsListing = () => {
         <div className="d-flex  flex-wrap" style={{ gap: '1rem' }}>
             {
                 TOOLS.map(({ label, url, icon, highlight }) => {
-                    if(icon == undefined) {
+                    if (icon == undefined) {
                         return (
                             <Button variant={highlight ? 'info' : 'primary'} key={label} as={Link} to={url} className="d-inline-flex align-items-center" style={{ gap: '.3rem' }}>
                                 {t(label)}
