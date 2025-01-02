@@ -15,7 +15,7 @@ export const Footer = () => {
 
     return (
         <>
-            <Container><Typography className="text-muted mb-0">By ColesNightfill, Fiereu, SquickGianno</Typography></Container>
+            <Container><Typography className="text-muted mb-0">By Cosmin, Fiereu, SquickGianno</Typography></Container>
             <Container className="mt-auto border-top py-2">
 
                 <Modal
