@@ -4795,5 +4795,140 @@
     "slot": 2,
     "year": 2024,
     "item_id": 1971
+  },
+  {
+    "attribute": 0,
+    "festival": 3,
+    "limitation": 12,
+    "month": 12,
+    "slot": 5,
+    "year": 2024,
+    "item_id": 2212
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 12,
+    "month": 12,
+    "slot": 6,
+    "year": 2024,
+    "item_id": 2213
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 12,
+    "month": 12,
+    "slot": 6,
+    "year": 2024,
+    "item_id": 2214
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "slot": 6,
+    "year": 2024,
+    "item_id": 2215
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 12,
+    "month": 12,
+    "slot": 7,
+    "year": 2024,
+    "item_id": 2216
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "slot": 7,
+    "year": 2024,
+    "item_id": 2217
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 1,
+    "month": 12,
+    "slot": 7,
+    "year": 2024,
+    "item_id": 2218
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 1,
+    "month": 12,
+    "slot": 7,
+    "year": 2024,
+    "item_id": 2219
+  },
+  {
+    "attribute": 20,
+    "festival": 3,
+    "limitation": 0,
+    "month": 12,
+    "slot": 8,
+    "year": 2024,
+    "item_id": 2220
+  },
+  {
+    "attribute": 20,
+    "festival": 3,
+    "limitation": 0,
+    "month": 12,
+    "slot": 8,
+    "year": 2024,
+    "item_id": 2221
+  },
+  {
+    "attribute": 0,
+    "festival": 3,
+    "limitation": 12,
+    "month": 12,
+    "slot": 2,
+    "year": 2024,
+    "item_id": 2222
+  },
+  {
+    "attribute": 0,
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "slot": 2,
+    "year": 2024,
+    "item_id": 2223
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "slot": 2,
+    "year": 2024,
+    "item_id": 2224
+  },
+  {
+    "attribute": 16,
+    "festival": 3,
+    "limitation": 4,
+    "month": 12,
+    "slot": 2,
+    "year": 2024,
+    "item_id": 2225
+  },
+  {
+    "attribute": 20,
+    "festival": 3,
+    "limitation": 8,
+    "month": 12,
+    "slot": 12,
+    "year": 2024,
+    "item_id": 2226
   }
 ]
