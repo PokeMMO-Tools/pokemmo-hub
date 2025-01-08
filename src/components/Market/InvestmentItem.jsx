@@ -22,6 +22,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     const { n, _id, slug, category } = allItems.find(({ i }) => i === investment.i)
     const sellTotal = currentPrice.min * investment.quantity    //prices.calculateSellGain(currentPrice.min) for listing fee deduction
     const boughtTotal = investment.boughtPrice * investment.quantity
+    const boughtWorth = investment.quantity * currentPrice.min
     const gainTotal = sellTotal - boughtTotal
     const gainPercent = gainTotal / boughtTotal * 100
 
@@ -53,6 +54,13 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
             }</Td>
             <Td align="right" className=' border-0'>{
                 prices.format(parseInt(boughtTotal))
+            }</Td>
+            <Td align="right" className=' border-0'>{
+                currentPrice.isLoading
+                    ? <Placeholder as="p" animation='glow' className="w-100 mb-0">
+                        <Placeholder xs={12}></Placeholder>
+                    </Placeholder>
+                    : <span className={`mb-0 ${gainTotal > 0 ? 'text-success' : 'text-danger'}`}>{prices.format(parseInt(boughtWorth))}</span>
             }</Td>
             <Td align="right" className=' border-0'>{
                 currentPrice.isLoading

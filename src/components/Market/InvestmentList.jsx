@@ -80,6 +80,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
                                 <Th align="right">{t('Quantity')}</Th>
                                 <Th align="right">{t('Per Unit')}</Th>
                                 <Th align="right">{t('Total Spent')}</Th>
+                                <Th align="right">{t('Total Value')}</Th>
                                 <Th align="right">{t('Gain')}</Th>
                                 <Th align="right">{t('Gain %')}</Th>
                                 <Th align="right"></Th>
