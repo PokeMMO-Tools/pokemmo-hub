@@ -4930,5 +4930,113 @@
     "slot": 12,
     "year": 2024,
     "item_id": 2226
+  },
+  {
+    "attribute": 24,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 3,
+    "year": 2025,
+    "item_id": 2235
+  },
+  {
+    "attribute": 16,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 6,
+    "year": 2025,
+    "item_id": 2236
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 6,
+    "year": 2025,
+    "item_id": 2237
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 1,
+    "month": 1,
+    "slot": 7,
+    "year": 2025,
+    "item_id": 2238
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 1,
+    "month": 1,
+    "slot": 7,
+    "year": 2025,
+    "item_id": 2239
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 7,
+    "year": 2025,
+    "item_id": 2240
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 7,
+    "year": 2025,
+    "item_id": 2241
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 2,
+    "year": 2025,
+    "item_id": 2242
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 1,
+    "slot": 2,
+    "year": 2025,
+    "item_id": 2243
+  },
+  {
+    "attribute": 24,
+    "festival": 4,
+    "limitation": 20,
+    "month": 1,
+    "slot": 2,
+    "year": 2025,
+    "item_id": 2244
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 1,
+    "month": 1,
+    "slot": 12,
+    "year": 2025,
+    "item_id": 2245
+  },
+  {
+    "attribute": 0,
+    "festival": 4,
+    "limitation": 4,
+    "month": 2,
+    "slot": 7,
+    "year": 2025,
+    "item_id": 2246
   }
 ]
