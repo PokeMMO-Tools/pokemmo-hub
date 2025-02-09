@@ -53,7 +53,8 @@ export const ENCOUNTER_TYPE = [
     "Dark Grass",
     "Fishing",
     "Shadow",
-    "Dust Cloud"
+    "Dust Cloud",
+    "Headbutt"
 ]
 
 export const TYPE = [
