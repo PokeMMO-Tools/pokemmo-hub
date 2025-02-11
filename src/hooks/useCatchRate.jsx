@@ -41,7 +41,7 @@ const STATUSES = [
     },
     {
         name: 'sleep',
-        rate: 2.5
+        rate: 2
     }
 ]
 
