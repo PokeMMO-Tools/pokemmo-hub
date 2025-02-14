@@ -35,17 +35,17 @@ export const Button = ({ children, className = '', style, variant = 'primary', a
 export const DiscordButton = () => {
     const { t } = useTranslations()
     return (
-        <Button size="sm" style={{ backgroundColor: "#5764EF", color: "white", borderColor: "#5764EF" }} as="a" href="https://bit.ly/discord-pokemmohub" target="_blank"><TbBrandDiscord />{t('Join us on Discord')}</Button>
+        <Button size="sm" style={{ backgroundColor: "#5764EF", color: "white", borderColor: "#5764EF" }} as="a" href="https://discord.gg/FFGBkMHnQ3" target="_blank"><TbBrandDiscord />{t('Join us on Discord')}</Button>
     )
 }
 
-export const GithubButton = ({link}) => {
+export const GithubButton = ({ link }) => {
     return (
         <Button size="sm" style={{ backgroundColor: "#e2e2e2", color: "black", borderColor: "#333333" }} as="a" href={link} target="_blank"><TbBrandGithub />Opensource Github</Button>
     )
 }
 
-export const PokeMMOButton = ({link}) => {
+export const PokeMMOButton = ({ link }) => {
     return (
         <Button size="sm" style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }} as="a" href={link} target="_blank">PokeMMO</Button>
     )

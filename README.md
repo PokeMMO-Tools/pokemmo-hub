@@ -114,7 +114,7 @@ If you come across any issues, bugs, or have suggestions for enhancements, follo
 
 Feel free to participate in discussions related to issues. You can add your input, provide additional information, or suggest possible solutions.
 
-For general support or questions, you can join our Discord server: [discord.gg/F54ggpgUMj](https://discord.gg/F54ggpgUMj). 
+For general support or questions, you can join our Discord server: [https://discord.gg/FFGBkMHnQ3](https://discord.gg/FFGBkMHnQ3). 
 Our community and team members will be happy to help you out.
 
 
