@@ -138,6 +138,7 @@ export function MarketProvider({ children }) {
                         show={isOpen}
                         title="Add investment"
                         onHide={toggleInvestmentsModal}
+                        backdrop="static"
                     >
                         <MarketAddInvestment
                             isOpen={isOpen}
