@@ -5,7 +5,7 @@ import { Button } from '../Atoms'
 
 const INVESTMENT_DEFAULT_DATA = {
     id: 0,
-    i: 0,
+    i: 2454,
     quantity: 0,
     boughtPrice: false
 }
@@ -14,6 +14,11 @@ export const MarketAddInvestment = ({ i, onSave, updateInvestment, onUpdate }) =
     /* const [investment, setInvestment] = useState({
         
     }) */
+
+    if (i == 0) {
+        i = 2454
+    }
+
     const [investment, setInvestment] = useState(
         updateInvestment
             ? updateInvestment
