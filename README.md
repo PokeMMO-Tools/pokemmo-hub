@@ -68,7 +68,7 @@ We are looking for passionate individuals who want to help us shape the future o
 
 #### Setup your workspace <a id="setup-your-workspace"></a>
 
-To setup this project you will need [NodeJS](https://nodejs.org/en), [Yarn](https://yarnpkg.com/), a git client and a text editor.
+To setup this project you will need [NodeJS](https://nodejs.org/en) (LTS), [Yarn](https://yarnpkg.com/), a git client and a text editor.
 
 Run the following commands to clone this project and download all dependencies.
 ```sh
