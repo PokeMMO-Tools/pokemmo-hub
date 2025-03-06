@@ -21,19 +21,20 @@ const IndexPage = ({ pageContext }) => {
                 </div>
             </div>
 
+            <div className="mb-3">
+                <Typography as="h2">{t(`Popular items on Market`)}</Typography>
+                <MarketListing />
+            </div>
+
             <div className="col mb-3 mt-4 d-flex flex-column align-items-start">
                 <Typography as="h2" className="mb-3">{t(`Tools`)}</Typography>
                 <div className="d-flex justify-content-center w-100">
                     <ToolsListing />
                 </div>
             </div>
-            <div className="col mb-5 mt-5 d-flex flex-column align-items-center">
+            <div className="col mb-2 mt-5 d-flex flex-column align-items-center">
                 <Typography as="h2" className="mb-3">{t(`Quick Info`)}</Typography>
                 <QuickInfoListing />
-            </div>
-            <div className="mb-3">
-                <Typography as="h2">{t(`Popular items on Market`)}</Typography>
-                <MarketListing />
             </div>
         </Page>
     )
