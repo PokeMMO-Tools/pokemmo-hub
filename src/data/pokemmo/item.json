@@ -20249,5 +20249,23 @@
     "key": "zodiac-tangzhuang",
     "name": "生肖唐装",
     "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A scorching hot stone which may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+      "zh": "可以修正某些宝可梦1点个体值的烧得通红的石头。一次性消耗品"
+    },
+    "dex": 5458,
+    "id": 2025,
+    "key": "magma-stone",
+    "es_name": "",
+    "fr_name": "",
+    "en_name": "Magma Stone",
+    "sale_pokeyen": 0
   }
 ]
