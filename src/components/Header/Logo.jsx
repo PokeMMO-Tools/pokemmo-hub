@@ -13,7 +13,7 @@ export const Logo = () => {
                 <Stack direction="horizontal" gap={2}>
                     <Typography as="h1" className='fs-3 fw-bold mb-0 lh-1' translate={false}>PokeMMO Hub</Typography>
                 </Stack>
-                <Typography as="h2" className='text-muted mb-0' style={{ fontSize: isMobile ? '.8rem' : '1rem' }}>Guides, item prices, investments, and tools for PokeMMO</Typography>
+                <Typography as="h2" className='text-muted mb-0' style={{ fontSize: isMobile ? '.8rem' : '1rem' }}>Market prices, tools, and helpful information for PokeMMO</Typography>
             </div>
         </Link>
     )

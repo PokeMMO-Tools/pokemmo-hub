@@ -40,7 +40,7 @@ const IndexPage = ({ pageContext }) => {
     )
 }
 
-const description = "A website for every tools, guides and informations about PokeMMO. Read the best way to make money and how to make competitive pokemon easy. "
+const description = "A website for market data, tools, and helpful information for PokeMMO. Made by PokeMMO players for PokeMMO players. "
 export const Head = () => <Seo title="Homepage" description={description}></Seo>
 
 export default IndexPage
