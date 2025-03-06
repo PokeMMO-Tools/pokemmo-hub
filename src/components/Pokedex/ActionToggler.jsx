@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button } from '../Atoms'
 
-export const ActionToggler = ({ onClick, active, title = "", size = "sm", icon = false, ...props }) => {
+
+export const ActionToggler = ({ onClick, active, title = "", size = "sm", icon = false, color, ...props }) => {
     return (
         <Button
             variant={active ? 'warning' : 'info'}
@@ -11,8 +12,8 @@ export const ActionToggler = ({ onClick, active, title = "", size = "sm", icon =
             onClick={() => onClick()}
             {...props}
         >
-            {title}
             {icon}
+            {title}
         </Button>
     )
 }
