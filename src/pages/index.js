@@ -14,19 +14,20 @@ const IndexPage = ({ pageContext }) => {
 
     return (
         <Page breadcrumbs={pageContext.breadcrumb} label="Home">
-
-            <div className="col mb-3 mt-2">
+            <div className="col mb-3 mt-4 d-flex flex-column align-items-start">
                 <Typography as="h2" className="mb-3">{t(`Market`)}</Typography>
-                <ToolsMarket />
+                <div className="d-flex justify-content-center w-100">
+                    <ToolsMarket />
+                </div>
             </div>
 
-            <div className="col-10 mb-3 mt-2">
+            <div className="col mb-3 mt-4 d-flex flex-column align-items-start">
                 <Typography as="h2" className="mb-3">{t(`Tools`)}</Typography>
-                <ToolsListing />
+                <div className="d-flex justify-content-center w-100">
+                    <ToolsListing />
+                </div>
             </div>
-
-
-            <div className="mb-3">
+            <div className="col mb-5 mt-5 d-flex flex-column align-items-center">
                 <Typography as="h2" className="mb-3">{t(`Quick Info`)}</Typography>
                 <QuickInfoListing />
             </div>

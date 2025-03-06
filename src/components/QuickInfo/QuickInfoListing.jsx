@@ -38,23 +38,38 @@ export const QuickInfoListing = () => {
 
     return (
         <div>
-            <div className="d-flex mb-3 flex-wrap" style={{ gap: '1rem' }}>
+            <div className="d-flex justify-content-center mb-3 flex-wrap" style={{ gap: '1rem' }}>
                 {
                     QUICK_INFO_LISTS.map(({ label, id, highlight }, index) => {
                         return (
-                            <Button active={quickInfo === id} key={index} onClick={() => setQuickInfo(prev => prev === id ? false : id)} className="d-inline-flex align-items-center" style={{ gap: '.3rem' }} variant={highlight ? "info" : "warning"}>
+                            <Button
+                                active={quickInfo === id}
+                                key={index}
+                                onClick={() => setQuickInfo(prev => prev === id ? false : id)}
+                                className="d-inline-flex align-items-center"
+                                style={{ gap: '.3rem' }}
+                                variant={highlight ? "info" : "warning"}
+                            >
                                 {t(label)}
-                                {highlight ? <Badge className="ms-1" style={{ fontSize: '.6rem', color: 'black' }} bg="warning" pill>{t('new')}</Badge> : false}
+                                {highlight ?
+                                    <Badge className="ms-1" style={{ fontSize: '.6rem', color: 'black' }} bg="warning" pill>{t('new')}</Badge>
+                                    : false
+                                }
                             </Button>
                         )
                     })
                 }
             </div>
-            {
-                quickInfo && QUICK_INFO_LISTS.length
-                    ? QUICK_INFO_LISTS.find(({ id }) => id === quickInfo).component
-                    : false
-            }
+
+            {/* This will center the displayed component */}
+            <div className="d-flex justify-content-center">
+                {
+                    quickInfo && QUICK_INFO_LISTS.length
+                        ? QUICK_INFO_LISTS.find(({ id }) => id === quickInfo).component
+                        : false
+                }
+            </div>
         </div>
     )
 }
+
