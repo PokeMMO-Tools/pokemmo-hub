@@ -108,9 +108,9 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
         // Gain % (column G)
         worksheet[XLSX.utils.encode_cell({ r: 1, c: 6 })] = {
-            f: `F2/D2`,
+            f: `F2-D2`,
             t: 'n',
-            z: '0.00%'
+            z: '$#,##0.00'
         };
 
         for (let i = 0; i < dataRows.length; i++) {
