@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react'
+import * as XLSX from 'xlsx'
+import { saveAs } from 'file-saver'
 import { Stack } from 'react-bootstrap'
 import { isMobile, isTablet } from 'react-device-detect'
 import { Table as SrTable, Tbody as SrTbody, Th as SrTh, Thead as SrThead, Tr as SrTr } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import { useMarket } from '../../context/MarketContext'
 import { useTranslations } from '../../context/TranslationsContext'
-import { Card, Table as DesktopTable, Typography } from '../Atoms'
+import { Card, Table as DesktopTable, Typography, Button } from '../Atoms'
 import { InvestmentItem } from './InvestmentItem'
 import { InvestmentTotal } from './InvestmentTotal'
 
 export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
-    const { t } = useTranslations()
+    const { t, language } = useTranslations()
     const [investmentsGain, setInvestmentsGain] = useState([]);
     const [totals, setTotals] = useState({});
-    let { investments } = useMarket()
+    let { investments, allItems } = useMarket()
 
     const addInvestmentGain = (investmentId, gain, spent) => {
         setInvestmentsGain(prev => {
@@ -47,11 +49,117 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
     }, [investmentsGain, investments])
 
+    // Filter investments based on the i prop
     if (i) {
         investments = investments.filter((item) => item.i === i)
         if (investments.length === 0 && !fallbackIfEmpty)
             return false;
     }
+
+    //excel export
+    const exportToExcel = () => {
+
+        const headerRow = ['Name', 'Quantity', 'Per Unit', 'Total Cost', 'Current Value', 'Gain', 'Gain %'];
+        const dataRows = investments.map(investment => {
+            const { n } = allItems.find(({ i }) => i === investment.i) || { n: {} };
+            const gainInfo = investmentsGain.find(item => item.investmentId === investment.id) || { gain: 0, spent: 0 };
+            const name = n[language] || investment.name || 'Unknown';
+            const quantity = investment.quantity || 0;
+            const perUnit = investment.perUnit || (quantity > 0 ? gainInfo.spent / quantity : 0);
+            const spent = gainInfo.spent || 0;
+            const totalValue = spent + (gainInfo.gain || 0);
+
+            return [name, quantity, perUnit, spent, totalValue, 0, 0];
+        });
+        const blankRow = ['', '', '', '', '', '', ''];
+        const totalsHeaderRow = ['PORTFOLIO SUMMARY', '', '', 'Total Spent', 'Total Value', 'Total Gain', 'Net Worth'];
+        const totalsRow = ['Total', '', '', 0, 0, 0, 0];
+        const allRows = [
+            totalsHeaderRow,
+            totalsRow,
+            blankRow,
+            headerRow,
+            ...dataRows
+        ];
+        const worksheet = XLSX.utils.aoa_to_sheet(allRows);
+        const firstDataRow = 5;
+        const lastDataRow = firstDataRow + dataRows.length - 1;
+
+        // Total Spent (column D)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 3 })] = {
+            f: `SUM(D${firstDataRow}:D${firstDataRow + 1000})`,
+            t: 'n',
+            z: '$#,##0.00'
+        };
+
+        // Total Value (column E)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 4 })] = {
+            f: `SUM(E${firstDataRow}:E${firstDataRow + 1000})`,
+            t: 'n',
+            z: '$#,##0.00'
+        };
+
+        // Gain (column F)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 5 })] = {
+            f: `E2-D2`,
+            t: 'n',
+            z: '$#,##0.00'
+        };
+
+        // Gain % (column G)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 6 })] = {
+            f: `F2/D2`,
+            t: 'n',
+            z: '0.00%'
+        };
+
+        for (let i = 0; i < dataRows.length; i++) {
+            const rowIndex = firstDataRow - 1 + i;
+
+            // Gain formula: E6-D6, E7-D7, etc.
+            worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 5 })] = {
+                f: `E${rowIndex + 1}-D${rowIndex + 1}`,
+                t: 'n',
+                z: '$#,##0.00'
+            };
+
+            // Gain % formula: F6/D6, F7/D7, etc.
+            worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 6 })] = {
+                f: `F${rowIndex + 1}/D${rowIndex + 1}`,
+                t: 'n',
+                z: '0.00%'
+            };
+        }
+
+
+
+        worksheet['!cols'] = [
+            { wch: 20 }, // Name
+            { wch: 10 }, // Quantity
+            { wch: 10 }, // Per Unit
+            { wch: 15 }, // Total Spent
+            { wch: 15 }, // Total Value
+            { wch: 15 }, // Gain
+            { wch: 10 }  // Gain %
+        ];
+
+        for (let i = firstDataRow - 1; i < firstDataRow + dataRows.length - 1; i++) {
+            // Format currency cells (Per Unit, Total Spent, Total Value)
+            for (const C of [2, 3, 4]) {
+                const cell_ref = XLSX.utils.encode_cell({ r: i, c: C });
+                if (worksheet[cell_ref]) {
+                    worksheet[cell_ref].z = '$#,##0.00';
+                }
+            }
+        }
+
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Investments');
+
+        const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+        const fileData = new Blob([excelBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        saveAs(fileData, 'investment-list.xlsx');
+    };
 
     const Table = isMobile && !isTablet ? SrTable : DesktopTable
     const Thead = isMobile && !isTablet ? SrThead : 'thead'
@@ -69,6 +177,13 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
                     :
                     <></>
                 }
+                {/* Excel download button */}
+                <Stack direction="horizontal" className="justify-content-between">
+                    <Typography className='mb-0'>Investment List</Typography>
+                    <Button size="sm" variant="primary" onClick={exportToExcel} style={{ backgroundColor: "#369102", color: "white", borderColor: "#369102" }}>
+                        Download as Excel
+                    </Button>
+                </Stack>
 
                 <Card>
                     {title ? title : false}
@@ -100,11 +215,10 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
                     </Table>
                 </Card>
             </Stack>
-
-            : <Card>
+            :
+            <Card>
                 <Stack direction="horizontal" className="flex-wrap justify-content-between">
                     <Typography className='mb-0'>No investments found. Start now by going to "All Items" and creating an investment.</Typography>
-
                 </Stack>
             </Card>
     )

@@ -28,6 +28,7 @@
     "bootstrap": "^5.2.0",
     "canvas-confetti": "^1.6.0",
     "esm": "^3.2.25",
+    "file-saver": "^2.0.5",
     "firebase": "^9.17.1",
     "gatsby": "^4.20.0",
     "gatsby-plugin-breadcrumb": "^12.3.1",
@@ -63,6 +64,8 @@
     "react-super-responsive-table": "^5.2.1",
     "react-time-picker": "^5.2.0",
     "rss-parser": "^3.12.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "xlsx": "^0.18.5",
+    "xlsx-style": "^0.8.13"
   }
 }
