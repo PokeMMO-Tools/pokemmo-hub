@@ -23,6 +23,7 @@ export const InvestmentTotal = ({ totals }) => {
             <Thead>
                 <Tr>
                     <Th align="center">{t('Total Spent')}</Th>
+                    <Th align="center">{t('Total Value')}</Th>
                     <Th align="center">{t('Total Gain')}</Th>
                     <Th align="center">{t('Total Gain %')}</Th>
                     <Th align="center">{t('Net Worth')}</Th>
@@ -33,6 +34,7 @@ export const InvestmentTotal = ({ totals }) => {
                     totals.gain
                         ? <Tr>
                             <Td align="center">{prices.format(totals.spent)}</Td>
+                            <Td align="center">{prices.format(totals.value)}</Td>
                             <Td align="center">
                                 <span className={`mb-0 ${totals.gain > 0 ? 'text-success' : 'text-danger'}`}>
                                     {prices.format(totals.gain)}
@@ -40,7 +42,8 @@ export const InvestmentTotal = ({ totals }) => {
                             </Td>
                             <Td align="center">
                                 <span className={`mb-0 ${totals.gainPercent > 0 ? 'text-success' : 'text-danger'}`}>
-                                    {totals.gainPercent + "%"}
+
+                                    {prices.format(parseFloat(totals.gainPercent)) + "%"}
                                 </span>
                             </Td>
                             <Td align="center">

@@ -11,7 +11,7 @@ const Investments = ({ pageContext }) => {
     const LINK_TO_ITEMS = <Button as={Link} to="/items" variant='info'>All Items</Button>
     return (
         <Page breadcrumbs={pageContext.breadcrumb} label={PAGE_TITLE}>
-            <PageTitle credits="Start your trading life on PokeMMO GTL" className='mb-1 mt-2' callToAction={LINK_TO_ITEMS}>{PAGE_TITLE}</PageTitle>
+            <PageTitle credits="Start your trading life on PokeMMO GTL" className='mb-1 mt-2' >{PAGE_TITLE}</PageTitle>
             <InvestmentList
                 showTotals={true}
             />

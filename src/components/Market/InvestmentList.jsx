@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
 import * as XLSX from 'xlsx'
 import { saveAs } from 'file-saver'
 import { Stack } from 'react-bootstrap'
@@ -30,15 +31,16 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
     }
 
     function calculateTotal() {
-        const { gain, spent } = investmentsGain.reduce((prev, curr) => (
+        const { gain, spent, value } = investmentsGain.reduce((prev, curr) => (
             {
                 gain: prev.gain + curr.gain,
-                spent: prev.spent + curr.spent
+                spent: prev.spent + curr.spent,
+                value: (prev.gain + curr.gain) + (prev.spent + curr.spent)
             }
-        ), { gain: 0, spent: 0 })
+        ), { gain: 0, spent: 0, value: 0 })
 
-        const gainPercent = parseFloat(gain / spent * 100).toFixed(2)
-        setTotals({ gain, gainPercent, spent })
+        const gainPercent = parseFloat(gain / spent * 100).toFixed(0)
+        setTotals({ gain, gainPercent, spent, value })
     }
 
     useEffect(() => {
@@ -72,8 +74,8 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             return [name, quantity, perUnit, spent, totalValue, 0, 0];
         });
         const blankRow = ['', '', '', '', '', '', ''];
-        const totalsHeaderRow = ['PORTFOLIO SUMMARY', '', '', 'Total Spent', 'Total Value', 'Total Gain', 'Net Worth'];
-        const totalsRow = ['Total', '', '', 0, 0, 0, 0];
+        const totalsHeaderRow = ['PORTFOLIO SUMMARY', '', 'Total Spent', 'Total Value', 'Total Gain', 'Total Gain %', 'Net Worth'];
+        const totalsRow = ['Total', '', 0, 0, 0, 0, 0];
         const allRows = [
             totalsHeaderRow,
             totalsRow,
@@ -86,31 +88,38 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
         const lastDataRow = firstDataRow + dataRows.length - 1;
 
         // Total Spent (column D)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 3 })] = {
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 2 })] = {
             f: `SUM(D${firstDataRow}:D${firstDataRow + 1000})`,
             t: 'n',
-            z: '$#,##0.00'
+            z: '$#,##0'
         };
 
         // Total Value (column E)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 4 })] = {
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 3 })] = {
             f: `SUM(E${firstDataRow}:E${firstDataRow + 1000})`,
             t: 'n',
-            z: '$#,##0.00'
+            z: '$#,##0'
         };
 
         // Gain (column F)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 5 })] = {
-            f: `E2-D2`,
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 4 })] = {
+            f: `D2-C2`,
             t: 'n',
-            z: '$#,##0.00'
+            z: '$#,##0'
         };
 
-        // Gain % (column G)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 6 })] = {
-            f: `F2-D2`,
+        // Gain % (column F)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 5 })] = {
+            f: `E2/C2`,
             t: 'n',
-            z: '$#,##0.00'
+            z: '0%'
+        };
+
+        // Net Worth (column G)
+        worksheet[XLSX.utils.encode_cell({ r: 1, c: 6 })] = {
+            f: `E2-C2`,
+            t: 'n',
+            z: '$#,##0'
         };
 
         for (let i = 0; i < dataRows.length; i++) {
@@ -120,14 +129,14 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 5 })] = {
                 f: `E${rowIndex + 1}-D${rowIndex + 1}`,
                 t: 'n',
-                z: '$#,##0.00'
+                z: '$#,##0'
             };
 
             // Gain % formula: F6/D6, F7/D7, etc.
             worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 6 })] = {
                 f: `F${rowIndex + 1}/D${rowIndex + 1}`,
                 t: 'n',
-                z: '0.00%'
+                z: '0%'
             };
         }
 
@@ -148,7 +157,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             for (const C of [2, 3, 4]) {
                 const cell_ref = XLSX.utils.encode_cell({ r: i, c: C });
                 if (worksheet[cell_ref]) {
-                    worksheet[cell_ref].z = '$#,##0.00';
+                    worksheet[cell_ref].z = '$#,##0'
                 }
             }
         }
@@ -171,9 +180,15 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
         investments.length
             ? <Stack gap={2}>
                 {showTotals ?
-                    <Card>
-                        <InvestmentTotal totals={totals} />
-                    </Card>
+                    <>
+                        <Stack direction="horizontal" className="justify-content-between">
+                            <Typography className='mb-0'>Portfolio Totals</Typography>
+                            <Button as={Link} to="/items" size="sm" variant='info' style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>All Items</Button>
+                        </Stack>
+                        <Card>
+                            <InvestmentTotal totals={totals} />
+                        </Card>
+                    </>
                     :
                     <></>
                 }
