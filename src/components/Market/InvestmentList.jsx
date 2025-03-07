@@ -39,7 +39,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             }
         ), { gain: 0, spent: 0, value: 0 })
 
-        const gainPercent = parseFloat(gain / spent * 100).toFixed(0)
+        const gainPercent = parseFloat(gain / spent * 100).toFixed(2)
         setTotals({ gain, gainPercent, spent, value })
     }
 
