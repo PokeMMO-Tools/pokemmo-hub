@@ -21,29 +21,37 @@ export const MarketListing = () => {
     const { wishlist, toggleWishlist } = useMarket()
     const [selectedItem, setSelectedItem] = useState(0);
 
-    // Fetch and cache listing items with the query
+
     const { isError: isListingError, isSuccess: isListingSuccess, isLoading: isListingLoading, data: listing, error: listingError } = useQuery(
         ["newestItems"],
         prices.getNewestItems,
         {
-            staleTime: 300000,  // Data is considered fresh for 5 minutes
-            cacheTime: 600000,  // Cache data for 10 minutes before removal
-            refetchOnWindowFocus: false,  // Prevent refetching on window focus
+            staleTime: 300000,
+            cacheTime: 600000,
+            refetchOnWindowFocus: false,
         }
     );
 
-    // Fetch and cache allItems (for later use in rendering the list)
     const { isError: isAllItemsError, isSuccess: isAllItemsSuccess, isLoading: isAllItemsLoading, data: allItems, error: allItemsError } = useQuery(
         ["allItems"],
-        prices.getAllItems, // Assuming prices.getAllItems fetches the data
+        prices.getAllItems,
         {
-            staleTime: 600000,  // Cache this for 10 minutes
-            cacheTime: 1200000, // Cache for 20 minutes before removing
-            refetchOnWindowFocus: false,  // Prevent refetching on window focus
+            staleTime: 600000,
+            cacheTime: 1200000,
+            refetchOnWindowFocus: false,
         }
     );
 
-    // Handle loading and error states for both queries
+    const { isError: isAllItemsDescError, isSuccess: isAllItemsDescSuccess, isLoading: isAllItemsDescLoading, data: allItemsDesc, error: allItemsDescError } = useQuery(
+        ["allItemsDesc"],
+        prices.getAllItemsDesc,
+        {
+            staleTime: 600000,
+            cacheTime: 21600000,  // expiration (6 hous)
+            refetchOnWindowFocus: false,
+        }
+    );
+
     if (isListingLoading || isAllItemsLoading) {
         return (
             <Card>
