@@ -51,7 +51,6 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
     }, [investmentsGain, investments])
 
-    // Filter investments based on the i prop
     if (i) {
         investments = investments.filter((item) => item.i === i)
         if (investments.length === 0 && !fallbackIfEmpty)
@@ -124,23 +123,18 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
         for (let i = 0; i < dataRows.length; i++) {
             const rowIndex = firstDataRow - 1 + i;
-
-            // Gain formula: E6-D6, E7-D7, etc.
             worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 5 })] = {
                 f: `E${rowIndex + 1}-D${rowIndex + 1}`,
                 t: 'n',
                 z: '$#,##0'
             };
 
-            // Gain % formula: F6/D6, F7/D7, etc.
             worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 6 })] = {
                 f: `F${rowIndex + 1}/D${rowIndex + 1}`,
                 t: 'n',
                 z: '0%'
             };
         }
-
-
 
         worksheet['!cols'] = [
             { wch: 20 }, // Name
@@ -151,7 +145,6 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             { wch: 15 }, // Gain
             { wch: 10 }  // Gain %
         ];
-
         for (let i = firstDataRow - 1; i < firstDataRow + dataRows.length - 1; i++) {
             // Format currency cells (Per Unit, Total Spent, Total Value)
             for (const C of [2, 3, 4]) {

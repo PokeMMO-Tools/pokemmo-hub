@@ -135,7 +135,7 @@ export const ItemsListing = () => {
                                 p: p,
                                 q: q,
                                 category: itemInfo ? itemInfo.category : 0,
-                                slug: itemInfo ? itemInfo.key : slugify(i.n['en']),
+                                slug: slugify(i.n['en']),
                             };
 
                             return (
