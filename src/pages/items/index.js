@@ -52,7 +52,7 @@ query AllPokemmoQuery {
                 es
             }
             category
-            t 
+            t
         }
     }
 }

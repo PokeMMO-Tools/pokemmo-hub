@@ -9,7 +9,7 @@ import { ItemPrices } from './ItemPrices'
 import { useTranslations } from '../../context/TranslationsContext';
 
 export const ItemRow = ({ item }) => {
-    const { n, i, _id, d, category, slug } = item
+    const { n, i, _id, d, category, slug, p, q } = item
     const { isDark } = useDarkMode()
     const { language } = useTranslations();
 
@@ -20,7 +20,7 @@ export const ItemRow = ({ item }) => {
                     <ItemImage id={_id} category={category}></ItemImage>
                     <Typography as="h2" className='fs-6 mb-0' style={{ color: 'inherit' }}>{n[language]}</Typography>
                 </Link>
-                <ItemPrices i={i} />
+                <ItemPrices i={i} p={p} q={q} />
             </Stack>
             <Typography as="small" className='text-muted'>
                 {d[language]}

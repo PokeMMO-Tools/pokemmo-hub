@@ -18,28 +18,46 @@ export const MarketListing = () => {
     const { language } = useTranslations()
     const { t } = useTranslations()
 
-    const { wishlist, allItems, toggleWishlist } = useMarket()
+    const { wishlist, toggleWishlist } = useMarket()
     const [selectedItem, setSelectedItem] = useState(0);
 
-    const { isError, isSuccess, isLoading, data: listing, error } = useQuery(
+    // Fetch and cache listing items with the query
+    const { isError: isListingError, isSuccess: isListingSuccess, isLoading: isListingLoading, data: listing, error: listingError } = useQuery(
         ["newestItems"],
         prices.getNewestItems,
-        { staleTime: 180000 }
-    )
+        {
+            staleTime: 300000,  // Data is considered fresh for 5 minutes
+            cacheTime: 600000,  // Cache data for 10 minutes before removal
+            refetchOnWindowFocus: false,  // Prevent refetching on window focus
+        }
+    );
 
-    if (isLoading)
+    // Fetch and cache allItems (for later use in rendering the list)
+    const { isError: isAllItemsError, isSuccess: isAllItemsSuccess, isLoading: isAllItemsLoading, data: allItems, error: allItemsError } = useQuery(
+        ["allItems"],
+        prices.getAllItems, // Assuming prices.getAllItems fetches the data
+        {
+            staleTime: 600000,  // Cache this for 10 minutes
+            cacheTime: 1200000, // Cache for 20 minutes before removing
+            refetchOnWindowFocus: false,  // Prevent refetching on window focus
+        }
+    );
+
+    // Handle loading and error states for both queries
+    if (isListingLoading || isAllItemsLoading) {
         return (
             <Card>
                 <Spinner animation="border" variant="warning" />
             </Card>
-        )
+        );
+    }
 
-    if (isError)
-        return <Card>{error}</Card>
+    if (isListingError || isAllItemsError) {
+        return <Card>{listingError || allItemsError}</Card>;
+    }
 
     const Tr = isMobile ? SrTr : 'tr'
     const Td = isMobile ? SrTd : 'td'
-
 
     return (
         <Card>
@@ -72,8 +90,6 @@ export const MarketListing = () => {
                                             <ListItem as="div" key={item.id} action eventKey={item.id} style={{ cursor: "pointer" }} onClick={() => setSelectedItem(index)}>
                                                 <Stack direction='horizontal'>
                                                     <div style={{ maxWidth: 250, minWidth: 250 }}>
-
-
                                                         {
                                                             language !== 'cn' && language !== 'tw'
                                                                 ?
@@ -119,13 +135,11 @@ export const MarketListing = () => {
                                                                     <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
                                                                 </Button>
                                                         }
-
-
                                                     </div>
                                                 </Stack>
                                             </ListItem>
                                         </Stack>
-                                    )
+                                    );
                                 })
                             }
                         </ListGroup>
@@ -134,5 +148,5 @@ export const MarketListing = () => {
                 </Row>
             </Tab.Container>
         </Card>
-    )
+    );
 }
