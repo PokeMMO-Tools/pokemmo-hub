@@ -1,8 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Stack, Form } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import { useQuery } from 'react-query';
-import { Button, Card, Pagination } from '../Atoms';
+import { Button, Card, Pagination, Typography } from '../Atoms';
 import { FilterSelect } from '../Pokedex/FilterSelect';
 import { ItemRow } from './ItemRow';
 import { useTranslations } from '../../context/TranslationsContext';
@@ -11,7 +11,6 @@ import { InterfaceItems } from '../../interface/items';
 import { getItemInfo, getPokemmoID, getCosmeticInfo } from '../../utils/items';
 import { slugify } from '../../utils/slugify'
 import { Spinner } from 'react-bootstrap'
-
 
 const DEFAULT_FILTERS = {
     name: '',
@@ -31,21 +30,35 @@ export const ItemsListing = () => {
     const [filters, setFilters] = useState(DEFAULT_FILTERS);
     const [sortOrder, setSortOrder] = useState('desc'); // Default to descending
 
+    // Check if cached data exists in localStorage
+    const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
+    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 3600000;  // Cache expiration (1 hour)
 
-    // Fetch all items data (price + quantity)
+    // Use the cached data if it exists and is valid, otherwise fetch from API
     const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
         ["allItemsDesc"],
         prices.getAllItemsDesc,
-        { staleTime: 180000 }
+        {
+            staleTime: 180000,
+            enabled: !isDataCached, // Don't trigger query if cached data is available
+            onSuccess: (data) => {
+                // Save to localStorage if fetched from API
+                localStorage.setItem('allItemsDescCache', JSON.stringify({
+                    data,
+                    timestamp: Date.now(),
+                }));
+            }
+        }
     );
+
+    // Items to use is either from cache or fetched data
+    const itemsToUse = isDataCached ? cachedData.data : allItemsData;
 
     // Function to filter items based on name and category
     const filterItems = ({ name, category }) => {
-        if (filters.name || filters.category) setCurrentPage(0);
+        if (!Array.isArray(itemsToUse)) return [];
 
-        if (!Array.isArray(allItemsData)) return [];
-
-        return allItemsData.filter((item) => {
+        return itemsToUse.filter((item) => {
             if (!item.i || !item.i.n) return false;
 
             const itemName = item.i.n[language] || item.i.n.en;
@@ -65,7 +78,6 @@ export const ItemsListing = () => {
         });
     };
 
-
     // Translate the category labels
     const translateArrayLabel = (array) => {
         for (let i = 0; i < array.length; i++) {
@@ -84,8 +96,12 @@ export const ItemsListing = () => {
             if (sortOrder === 'asc') return a.p - b.p;  // Ascending
             return b.p - a.p;  // Descending (default)
         });
-    }, [filters, allItemsData, sortOrder]); // Recalculate when sorting changes
+    }, [filters, itemsToUse, sortOrder]); // Recalculate when sorting changes
 
+    // Update `currentPage` only when filters change
+    useEffect(() => {
+        setCurrentPage(0); // Reset to page 0 when filters change
+    }, [filters]);
 
     const indexOfFirstItem = currentPage * postsPerPage;
     const indexOfLastItem = indexOfFirstItem + postsPerPage;
@@ -116,44 +132,50 @@ export const ItemsListing = () => {
                     <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
                 </div>
             </Stack>
+            <Typography>Warning: Items that are not currently listed on the GTL will not appear</Typography>
             {
-                isLoading ? (
-                    <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" />
-                ) : filteredItems.length > 0 ? (
-                    currentPosts.map((data, index) => {
-                        const { i, p, q } = data;
+                isDataCached ? (
+                    // If cached data is available, show it immediately
+                    filteredItems.length > 0 ? (
+                        currentPosts.map((data, index) => {
+                            const { i, p, q } = data;
 
-                        if (!i || !i.i || !i.n) return null;
+                            if (!i || !i.i || !i.n) return null;
 
-                        const itemId = getPokemmoID(i.i);
-                        if (itemId == false) return null;
-                        const itemInfo = getItemInfo(itemId);
+                            const itemId = getPokemmoID(i.i);
+                            if (itemId == false) return null;
+                            const itemInfo = getItemInfo(itemId);
 
-                        const item = {
-                            i: i.i,
-                            _id: itemId,
-                            n: i.n,
-                            d: i.d,
-                            p: p,
-                            q: q,
-                            category: itemInfo ? itemInfo.category : 0,
-                            slug: itemInfo ? itemInfo.key : slugify(i.n['en']),
-                        };
+                            const item = {
+                                i: i.i,
+                                _id: itemId,
+                                n: i.n,
+                                d: i.d,
+                                p: p,
+                                q: q,
+                                category: itemInfo ? itemInfo.category : 0,
+                                slug: itemInfo ? itemInfo.key : slugify(i.n['en']),
+                            };
 
-                        return (
-                            <div key={item.i}>
-                                {index > 0 && (index % 5 === 0 && index % 10 !== 0) ? <Card bodyClassName="p-2" className="mb-1"></Card> : null}
-                                <Card bodyClassName="p-2" className="mb-1">
-                                    <ItemRow item={item} />
-                                </Card>
-                            </div>
-                        );
-                    })
+                            return (
+                                <div key={item.i}>
+                                    {index > 0 && (index % 5 === 0 && index % 10 !== 0) ? <Card bodyClassName="p-2" className="mb-1"></Card> : null}
+                                    <Card bodyClassName="p-2" className="mb-1">
+                                        <ItemRow item={item} />
+                                    </Card>
+                                </div>
+                            );
+                        })
+                    ) : (
+                        <p>No items found</p>
+                    )
+                ) : isLoading ? (
+                    // Only show spinner if data is not cached and is still loading
+                    <Spinner className='position-relative' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" />
                 ) : (
                     <p>No items found</p>
                 )
             }
-
 
             <Pagination
                 count={filteredItems.length}

@@ -14,7 +14,7 @@ export const ItemDifferentials = ({ value, differential, icon, invertColor = fal
                 <Badge className="d-flex align-items-center text-light" style={{ gap: '.15rem', fontSize: '.875rem' }} bg="secondary">
                     <Icon size={16} fill={iconFill} color={iconColor} />
                     <Typography as='small' style={{ color: 'inherit' }}>
-                        {prices.format(value)}
+                        {!isNaN(value) ? prices.format(value) : "No Listings"}
                         {
                             differential !== 0
                                 ? <Typography as={differential > 0 ? "sup" : "sub"} className='ms-1' style={{
