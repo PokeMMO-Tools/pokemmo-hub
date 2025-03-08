@@ -36,12 +36,18 @@ export function MarketProvider({ children }) {
     }
 
     const addToWishlist = i => {
-        updateAccount({
-            market: {
-                ...market,
-                wishlist: [...market.wishlist, i]
-            }
-        })
+        if (!isNaN(i)) {
+            updateAccount({
+                market: {
+                    ...market,
+                    wishlist: [...market.wishlist, i]
+                }
+            })
+        }
+        else {
+            showNotification('Error. Item data is bugged, unable to add to wishlist.')
+            console.log("item is bugged, best not to add that")
+        }
     }
 
     const removeFromWishlist = i => {
