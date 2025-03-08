@@ -21,10 +21,10 @@ const TOOLS = [
         description: 'Track your investments here. View analytics, such as net worth and investment performance.'
     },
     {
-        label: "Trade Ads",
-        url: '/market/trade-ads',
+        label: "Wishlist",
+        url: '/market/wishlist',
         icon: TradeAdIcon,
-        description: 'Post your trade ad, or view other players\' trade deals. Contact them in-game to discuss the deals.'
+        description: 'Keep track of items you are interested in by adding them to your wishlist!'
     },
     {
         label: 'Multi Graph',

@@ -17,7 +17,6 @@ const DEFAULT_FILTERS = {
     category: false,
 };
 
-// Assuming category structure is already defined
 const category = Object.values(InterfaceItems.category).map((value, index) => ({
     key: index,
     label: value,
@@ -28,21 +27,18 @@ export const ItemsListing = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [postsPerPage, setPostsPerPage] = useState(100);
     const [filters, setFilters] = useState(DEFAULT_FILTERS);
-    const [sortOrder, setSortOrder] = useState('desc'); // Default to descending
+    const [sortOrder, setSortOrder] = useState('desc');
 
-    // Check if cached data exists in localStorage
     const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
-    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 3600000;  // Cache expiration (1 hour)
+    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hous)
 
-    // Use the cached data if it exists and is valid, otherwise fetch from API
     const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
         ["allItemsDesc"],
         prices.getAllItemsDesc,
         {
             staleTime: 180000,
-            enabled: !isDataCached, // Don't trigger query if cached data is available
+            enabled: !isDataCached,
             onSuccess: (data) => {
-                // Save to localStorage if fetched from API
                 localStorage.setItem('allItemsDescCache', JSON.stringify({
                     data,
                     timestamp: Date.now(),
@@ -51,34 +47,24 @@ export const ItemsListing = () => {
         }
     );
 
-    // Items to use is either from cache or fetched data
     const itemsToUse = isDataCached ? cachedData.data : allItemsData;
 
-    // Function to filter items based on name and category
     const filterItems = ({ name, category }) => {
         if (!Array.isArray(itemsToUse)) return [];
 
         return itemsToUse.filter((item) => {
             if (!item.i || !item.i.n) return false;
-
             const itemName = item.i.n[language] || item.i.n.en;
             if (name && !itemName.toLowerCase().includes(name.toLowerCase())) return false;
-
-            // Fetch item category from itemInfo
             const itemId = getPokemmoID(item.i.i);
-            if (!itemId) return false;  // Skip invalid items
-
+            if (!itemId) return false;
             const itemInfo = getItemInfo(itemId);
-            const itemCategory = itemInfo ? Number(itemInfo.category) : 0; // Ensure it's a number
-
-            // Ensure category filtering works
+            const itemCategory = itemInfo ? Number(itemInfo.category) : 0;
             if (category !== false && itemCategory !== Number(category)) return false;
-
             return true;
         });
     };
 
-    // Translate the category labels
     const translateArrayLabel = (array) => {
         for (let i = 0; i < array.length; i++) {
             array[i].label = t(array[i].label);
@@ -87,20 +73,16 @@ export const ItemsListing = () => {
 
     translateArrayLabel(category);
 
-    // Apply filters and paginate
     const filteredItems = useMemo(() => {
-        let filtered = filterItems(filters); // Apply name & category filter
-
-        // Apply price sorting
+        let filtered = filterItems(filters);
         return filtered.sort((a, b) => {
-            if (sortOrder === 'asc') return a.p - b.p;  // Ascending
-            return b.p - a.p;  // Descending (default)
+            if (sortOrder === 'asc') return a.p - b.p;  // ascending
+            return b.p - a.p;  // descending
         });
-    }, [filters, itemsToUse, sortOrder]); // Recalculate when sorting changes
+    }, [filters, itemsToUse, sortOrder]);
 
-    // Update `currentPage` only when filters change
     useEffect(() => {
-        setCurrentPage(0); // Reset to page 0 when filters change
+        setCurrentPage(0);
     }, [filters]);
 
     const indexOfFirstItem = currentPage * postsPerPage;
@@ -135,7 +117,6 @@ export const ItemsListing = () => {
             <Typography>Warning: Items that are not currently listed on the GTL will not appear</Typography>
             {
                 isDataCached ? (
-                    // If cached data is available, show it immediately
                     filteredItems.length > 0 ? (
                         currentPosts.map((data, index) => {
                             const { i, p, q } = data;
@@ -159,7 +140,7 @@ export const ItemsListing = () => {
 
                             return (
                                 <div key={item.i}>
-                                    {index > 0 && (index % 5 === 0 && index % 10 !== 0) ? <Card bodyClassName="p-2" className="mb-1"></Card> : null}
+                                    {/*index > 0 && (index % 5 === 0 && index % 10 !== 0) ? <Card bodyClassName="p-2" className="mb-1"></Card> : null*/}
                                     <Card bodyClassName="p-2" className="mb-1">
                                         <ItemRow item={item} />
                                     </Card>
