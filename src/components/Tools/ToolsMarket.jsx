@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { ItemsIcon, MarketIcon, TradeAdIcon, MultiIcon, AllItemsIcon } from '../../assets/icons'
+import { ItemsIcon, MarketIcon, TradeAdIcon, MultiIcon, AllItemsIcon, HeartIcon } from '../../assets/icons'
 import { useTranslations } from '../../context/TranslationsContext'
 import { Badge, Button } from '../Atoms'
 import { useDarkMode } from '../../context/DarkModeContext'
@@ -23,7 +23,7 @@ const TOOLS = [
     {
         label: "Wishlist",
         url: '/market/wishlist',
-        icon: TradeAdIcon,
+        icon: HeartIcon,
         description: 'Keep track of items you are interested in by adding them to your wishlist!'
     },
     {
