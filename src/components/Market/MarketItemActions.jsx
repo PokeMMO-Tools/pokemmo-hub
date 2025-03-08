@@ -14,7 +14,7 @@ export const MarketItemActions = ({ id, i, ...props }) => {
                         : "Add to wishlist"
                 }
             </Button>
-            <Button size="sm" onClick={() => toggleInvestmentsModal(id)}>Create investment</Button>
+            <Button size="sm" variant="warning" onClick={() => toggleInvestmentsModal(id)}>Create investment</Button>
         </div>
     )
 }

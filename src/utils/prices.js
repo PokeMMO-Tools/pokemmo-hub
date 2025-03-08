@@ -6,6 +6,7 @@ const BASE_URL = "https://pokemmoprices.com/api/v2/items";
 
 const cache = {
     getAllItems: [],
+    getAllItemsDesc: [],
     getNewestItems: [],
     getItem: {},
     getItemQuantity: {}
@@ -40,14 +41,14 @@ export const prices = {
     },
     getAllItemsDesc: async function () {
         try {
-            if (cache.getAllItems.length)
-                return cache.getAllItems
+            if (cache.getAllItemsDesc.length)
+                return cache.getAllItemsDesc
 
             const { data: axiosResponse } = await axios.get(`${BASE_URL}/table?names=true`)
             if (axiosResponse.httpcode !== 200) {
                 throw axiosResponse
             }
-            cache.getAllItems = axiosResponse.data
+            cache.getAllItemsDesc = axiosResponse.data
             return axiosResponse.data;
         } catch (error) {
             console.log(error);
