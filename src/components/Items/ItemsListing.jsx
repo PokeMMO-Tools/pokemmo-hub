@@ -17,7 +17,6 @@ const DEFAULT_FILTERS = {
     category: false,
 };
 
-
 export const ItemsListing = () => {
     const { language, t } = useTranslations();
     const [currentPage, setCurrentPage] = useState(0);
@@ -30,7 +29,7 @@ export const ItemsListing = () => {
     const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hours)
 
     const category = [
-        { key: "items", label: t("Items"), values: [1, 2, 3] },
+        { key: "items", label: t("Game Items"), values: [1, 2, 3] },
         { key: "cosmetics", label: t("Cosmetics"), values: [6] },
         { key: "event_bags", label: t("Event Bags"), values: [4] },
         { key: "particles", label: t("Particles"), values: [5] },
@@ -64,13 +63,12 @@ export const ItemsListing = () => {
             if (!itemId) return false;
             const itemInfo = getItemInfo(itemId);
             const itemCategory = itemInfo ? Number(itemInfo.category) : 0;
-
-            // If no category is selected, show all
             if (category === false) return true;
+            if (category && Array.isArray(category.values)) {
+                return category.values.some((v) => v === itemCategory);
+            }
 
-            // Find the category group that includes this item's category
-            const selectedCategory = category === "false" ? false : category;
-            return category && category.values.some((v) => v === itemCategory);
+            return false;
         });
     };
 
@@ -114,16 +112,19 @@ export const ItemsListing = () => {
                     />
                 </Form.Group>
                 <FilterSelect
-                    value={filters.category}
-                    onChange={({ target }) => setFilters(prev => ({
-                        ...prev,
-                        category: target.value === 'false' ? false : category.find(c => c.key === target.value)
-                    }))}
-                    data={category}
-                    placeholder={"Filter by item Type"}
-                    title={false}
+                    value={filters.category ? filters.category.key : "all"}
+                    onChange={({ target }) =>
+                        setFilters(prev => ({
+                            ...prev,
+                            category: target.value === "all" ? false : category.find(c => c.key === target.value),
+                        }))
+                    }
+                    data={[
+                        { key: "all", label: "All Items" }, // Default option
+                        ...category // Other category options
+                    ]}
+                    noPlaceholder={true}
                 />
-
                 <div className="ms-auto d-flex flex-wrap align-items-center gap-2 flex-nowrap">
                     <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
                 </div>
