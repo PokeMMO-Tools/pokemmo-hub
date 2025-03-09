@@ -24,24 +24,21 @@ const ItemPage = ({ pageContext, data }) => {
         <ItemHeading i={item.i} name={item.n[language]} category={item.category} _id={item._id} />
       </PageTitle>
       <div className="d-flex gap-2 mb-2 f2-6">
-        {
-          itemInfo ?
-            <>
+        {itemInfo && (
+          <>
+            {itemInfo.limitation !== 0 && (
               <Badge text="dark" bg="info" className="fs-6 fw-normal">
-                {`
-                ${InterfaceItems.limitations[itemInfo.limitation]}
-              `}
+                {InterfaceItems.limitations[itemInfo.limitation]}
               </Badge>
+            )}
+            {itemInfo.festival !== 0 && itemInfo.year !== 0 && (
               <Badge text="dark" bg="info" className="fs-6 fw-normal">
-                {`
-                ${InterfaceItems.festival[itemInfo.festival]}
-                ${itemInfo.year}
-              `}
+                {InterfaceItems.festival[itemInfo.festival]} {itemInfo.year}
               </Badge>
-            </>
-            :
-            <></>
-        }
+            )}
+          </>
+        )}
+
       </div>
       <ItemDrop itemId={item.i} />
       <Item data={item}></Item>

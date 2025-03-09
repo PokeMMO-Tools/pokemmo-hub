@@ -40,13 +40,17 @@ export const ItemRow = ({ item }) => {
                     <div className="d-flex gap-2">
                         {itemInfo ? (
                             <>
-                                <Badge text="dark" bg="info" className="fs-8 fw-normal">
-                                    {InterfaceItems.limitations[itemInfo.limitation]}
-                                </Badge>
-                                <Badge text="dark" bg="info" className="fs-8 fw-normal">
-                                    {InterfaceItems.festival[itemInfo.festival]}
-                                    {itemInfo.year === 0 ? '' : ` ${itemInfo.year}`}
-                                </Badge>
+                                {itemInfo.limitation !== 0 && (
+                                    <Badge text="dark" bg="info" className="fs-8 fw-normal">
+                                        {InterfaceItems.limitations[itemInfo.limitation]}
+                                    </Badge>
+                                )}
+                                {itemInfo.festival !== 0 && itemInfo.year !== 0 && (
+                                    <Badge text="dark" bg="info" className="fs-8 fw-normal">
+                                        {InterfaceItems.festival[itemInfo.festival]}
+                                        {` ${itemInfo.year}`}
+                                    </Badge>
+                                )}
                             </>
                         ) : (
                             <Badge text="dark" bg="info" className="fs-8 fw-normal">
