@@ -133,9 +133,17 @@ export const MarketListing = () => {
                                                         <Button variant='link' size="sm" onClick={() => toggleWishlist(item.i)}>
                                                             <TbHeart size={20} color={wishlist.includes(item.i) ? 'var(--bs-danger)' : 'var(--bs-gray)'} fill={wishlist.includes(item.i) ? 'var(--bs-danger)' : 'var(--bs-gray)'} />
                                                         </Button>
-                                                        <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.en_name)}`}>
-                                                            <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
-                                                        </Button>
+                                                        {
+                                                            item.i == 1192 ?
+                                                                <Button variant='link' size="sm" as={Link} to={`/items/1000rp-reward-point-voucher`}>
+                                                                    <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
+                                                                </Button>
+                                                                :
+                                                                <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.en_name)}`}>
+                                                                    <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
+                                                                </Button>
+                                                        }
+
                                                     </div>
                                                 </Stack>
                                             </ListItem>
