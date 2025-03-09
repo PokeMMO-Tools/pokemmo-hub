@@ -14,13 +14,14 @@ import { Td as SrTd, Tr as SrTr } from 'react-super-responsive-table'
 import { isMobile } from 'react-device-detect'
 import { getItemInfo } from '../utils/items';
 
-export const MarketListing = () => {
+
+export const MarketListing = ({ onLoadComplete }) => {
     const { language } = useTranslations()
     const { t } = useTranslations()
 
     const { wishlist, toggleWishlist } = useMarket()
     const [selectedItem, setSelectedItem] = useState(0);
-
+    const [itemsLoaded, setItemsLoaded] = useState(false); // Track when items are loaded
 
     const { isError: isListingError, isSuccess: isListingSuccess, isLoading: isListingLoading, data: listing, error: listingError } = useQuery(
         ["newestItems"],
@@ -29,6 +30,7 @@ export const MarketListing = () => {
             staleTime: 300000,
             cacheTime: 600000,
             refetchOnWindowFocus: false,
+            onSuccess: () => setItemsLoaded(true), // Set loaded flag when data is fetched
         }
     );
 
@@ -39,6 +41,9 @@ export const MarketListing = () => {
             staleTime: 600000,
             cacheTime: 1200000,
             refetchOnWindowFocus: false,
+            onSuccess: () => {
+                onLoadComplete(false);
+            },
         }
     );
 
@@ -47,7 +52,7 @@ export const MarketListing = () => {
         prices.getAllItemsDesc,
         {
             staleTime: 600000,
-            cacheTime: 21600000,  // expiration (6 hous)
+            cacheTime: 21600000,  // expiration (6 hours)
             refetchOnWindowFocus: false,
         }
     );
@@ -72,21 +77,13 @@ export const MarketListing = () => {
             <Tab.Container id="list-group-tabs-example" defaultActiveKey={listing[0].id}>
                 <Row>
                     <Col className='order-md-2 mb-2 mb-md-0'>
-                        {
-                            language !== 'cn' && language !== 'tw'
-                                ?
-                                <Graph
-                                    hideItemActions={true}
-                                    name={listing[selectedItem][language + '_name']}
-                                    id={listing[selectedItem].apiID}
-                                />
-                                :
-                                <Graph
-                                    hideItemActions={true}
-                                    name={listing[selectedItem].name} //cn 
-                                    id={listing[selectedItem].apiID}
-                                />
-                        }
+                        <div className={`resizable ${itemsLoaded ? 'fade-in' : ''}`}>
+                            {
+                                language !== 'cn' && language !== 'tw'
+                                    ? <Graph hideItemActions={true} name={listing[selectedItem][language + '_name']} id={listing[selectedItem].apiID} />
+                                    : <Graph hideItemActions={true} name={listing[selectedItem].name} id={listing[selectedItem].apiID} />
+                            }
+                        </div>
                     </Col>
                     <Col md="auto" className='order-md-1'>
                         <ListGroup className='overflow-scroll mb-1' style={{ maxHeight: 393 }}>
@@ -94,28 +91,31 @@ export const MarketListing = () => {
                                 listing.map((item, index) => {
                                     const itemAPI = allItems.find(({ i }) => i === parseInt(item.i))
                                     return (
-                                        <Stack direction='horizontal'>
-                                            <ListItem as="div" key={item.id} action eventKey={item.id} style={{ cursor: "pointer" }} onClick={() => setSelectedItem(index)}>
+                                        <Stack direction='horizontal' key={item.id}>
+                                            <ListItem
+                                                as="div"
+                                                action
+                                                eventKey={item.id}
+                                                style={{ cursor: "pointer" }}
+                                                onClick={() => setSelectedItem(index)}
+                                                className={`fade-in ${itemsLoaded ? 'fade-in' : ''}`} // Apply fade-in class to each item
+                                            >
                                                 <Stack direction='horizontal'>
                                                     <div style={{ maxWidth: 250, minWidth: 250 }}>
                                                         {
                                                             language !== 'cn' && language !== 'tw'
-                                                                ?
-                                                                ['en', 'fr', 'es'].includes(language)
-                                                                    ?
-                                                                    <Td component="th" scope="row" className="d-flex align-items-start border-0">
+                                                                ? ['en', 'fr', 'es'].includes(language)
+                                                                    ? <Td component="th" scope="row" className="d-flex align-items-start border-0">
                                                                         <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
                                                                         &nbsp;
                                                                         <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item[language + '_name']}</Typography>
                                                                     </Td>
-                                                                    :
-                                                                    <Td component="th" scope="row" className="d-flex align-items-start border-0">
+                                                                    : <Td component="th" scope="row" className="d-flex align-items-start border-0">
                                                                         <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
                                                                         &nbsp;
                                                                         <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item['en_name']}</Typography>
                                                                     </Td>
-                                                                :
-                                                                <Td component="th" scope="row" className="d-flex align-items-start border-0">
+                                                                : <Td component="th" scope="row" className="d-flex align-items-start border-0">
                                                                     <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
                                                                     &nbsp;
                                                                     <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item.name}</Typography>
@@ -123,10 +123,8 @@ export const MarketListing = () => {
                                                         }
                                                         {
                                                             item.p
-                                                                ?
-                                                                <Typography as="small" className='text-muted'>{t('price')}: {prices.format(item.p)}</Typography>
-                                                                :
-                                                                <></>
+                                                                ? <Typography as="small" className='text-muted'>{t('price')}: {prices.format(item.p)}</Typography>
+                                                                : null
                                                         }
                                                     </div>
                                                     <div className='d-flex ms-auto'>
@@ -134,16 +132,14 @@ export const MarketListing = () => {
                                                             <TbHeart size={20} color={wishlist.includes(item.i) ? 'var(--bs-danger)' : 'var(--bs-gray)'} fill={wishlist.includes(item.i) ? 'var(--bs-danger)' : 'var(--bs-gray)'} />
                                                         </Button>
                                                         {
-                                                            item.i == 1192 ?
-                                                                <Button variant='link' size="sm" as={Link} to={`/items/1000rp-reward-point-voucher`}>
+                                                            item.i === 1192
+                                                                ? <Button variant='link' size="sm" as={Link} to={`/items/1000rp-reward-point-voucher`}>
                                                                     <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
                                                                 </Button>
-                                                                :
-                                                                <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.en_name)}`}>
+                                                                : <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.en_name)}`}>
                                                                     <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
                                                                 </Button>
                                                         }
-
                                                     </div>
                                                 </Stack>
                                             </ListItem>

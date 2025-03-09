@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Image } from 'react-bootstrap'
 import { ItemsIcon, MarketIcon, TradeAdIcon, MultiIcon, AllItemsIcon, HeartIcon } from '../../assets/icons'
 import { useTranslations } from '../../context/TranslationsContext'
@@ -35,18 +35,27 @@ const TOOLS = [
     },
 ]
 
-
-
 export const ToolsMarket = () => {
     const { t } = useTranslations();
     const { isDark } = useDarkMode()
 
+    useEffect(() => {
+        const toolElements = document.querySelectorAll('.tool-card');
+        toolElements.forEach((tool, index) => {
+            tool.style.animationDelay = `${index * 0.1}s`;
+            tool.classList.add('fade-in');
+        });
+    }, []);
+
     return (
-        <div className={`container-lg ${isDark ? 'dark-mode' : ''} d-flex justify-content-center`}>
+        <div className={`container-lg ${isDark ? "dark-mode" : ""} d-flex justify-content-center`}>
             <div className="row g-2 justify-content-center">
-                {TOOLS.map(({ label, url, icon, description }) => (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" key={label}>
-                        <Link to={url} className={`tool-card ${isDark ? 'dark-mode' : ''}`}>
+                {TOOLS.map(({ label, url, icon, description }, index) => (
+                    <div
+                        className={`col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center`}
+                        key={label}
+                    >
+                        <Link to={url} className={`tool-card ${isDark ? "dark-mode" : ""}`}>
                             <div className="tool-card-header">
                                 <Image src={icon} className="tool-icon" />
                                 <h5 className="tool-title">{t(label)}</h5>
@@ -61,4 +70,3 @@ export const ToolsMarket = () => {
         </div>
     );
 }
-
