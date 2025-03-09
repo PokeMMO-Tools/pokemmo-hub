@@ -49,6 +49,7 @@ export const InterfaceItems = {
         4: "Event",
         8: "Season",
         16: "Ultra Rare Event",
+        20: "Limited"
     },
     sceneCosmeticParam: {
         0: "Battle",
