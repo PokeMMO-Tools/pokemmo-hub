@@ -1,7 +1,8 @@
 import { HighchartsReact } from 'highcharts-react-official'
 import Highcharts from 'highcharts/highstock'
 import React from 'react'
-import { Spinner } from 'react-bootstrap'
+import { Spinner, Stack } from 'react-bootstrap'
+import { Typography } from '../../components/Atoms';
 import { useQuery } from 'react-query'
 import { useTranslations } from '../../context/TranslationsContext'
 import { prices as PricesApi } from '../../utils/prices'
@@ -37,16 +38,19 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
     return (
         <div className='position-relative display-block'>
             {
-                !hideItemActions ? <MarketItemActions className='mb-1 d-flex' style={{ gap: '.4rem' }} id={id} /> : false
+                !hideItemActions ? <Stack direction="horizontal" className={'justify-content-between'}>
+                    <Typography as="h4">{name}</Typography>
+                    <MarketItemActions className='mb-1 d-flex' style={{ gap: '.4rem' }} id={id} />
+                </Stack> : false
             }
 
             <HighchartsReact
                 highcharts={Highcharts}
                 options={{
-                    title: {
-                        text: name,
-                        align: "left"
-                    },
+                    /*  title: {
+                          text: name,
+                          align: "left"
+                      }, */
                     styledMode: true,
                     credits: false,
                     scrollbar: {

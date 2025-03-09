@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { Card, Typography } from '../../components/Atoms';
+import { Card } from '../../components/Atoms';
 import { Graph } from '../../components/Atoms/Graph';
 import { Item } from '../../components/Items/Item';
 import { ItemDrop } from '../../components/Items/ItemDrop';
@@ -24,7 +24,6 @@ const ItemPage = ({ pageContext, data }) => {
       <Item data={item}></Item>
       <ItemInvestments i={item.i} />
       <Card>
-        <Typography as="h4">Market chart</Typography>
         <Graph name={item.n[language]} id={item.i} />
       </Card>
 
