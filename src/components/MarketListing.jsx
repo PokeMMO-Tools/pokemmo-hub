@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, ListGroup, Row, Spinner, Stack, Tab, Table } from 'react-bootstrap';
 import { TbExternalLink, TbHeart } from "react-icons/tb";
 import { useQuery } from 'react-query';
@@ -22,6 +22,11 @@ export const MarketListing = ({ onLoadComplete }) => {
     const { wishlist, toggleWishlist } = useMarket()
     const [selectedItem, setSelectedItem] = useState(0);
     const [itemsLoaded, setItemsLoaded] = useState(false); // Track when items are loaded
+
+    useEffect(() => {
+        // Reset loading state when the component is mounted again
+        onLoadComplete(false)
+    }, []);
 
     const { isError: isListingError, isSuccess: isListingSuccess, isLoading: isListingLoading, data: listing, error: listingError } = useQuery(
         ["newestItems"],
