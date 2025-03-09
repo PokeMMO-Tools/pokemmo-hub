@@ -9,8 +9,8 @@ import { useTranslations } from '../../context/TranslationsContext';
 import { prices } from '../../utils/prices';
 import { InterfaceItems } from '../../interface/items';
 import { getItemInfo, getPokemmoID, getCosmeticInfo } from '../../utils/items';
-import { slugify } from '../../utils/slugify'
-import { Spinner } from 'react-bootstrap'
+import { slugify } from '../../utils/slugify';
+import { Spinner } from 'react-bootstrap';
 
 const DEFAULT_FILTERS = {
     name: '',
@@ -25,12 +25,13 @@ const category = Object.values(InterfaceItems.category).map((value, index) => ({
 export const ItemsListing = () => {
     const { language, t } = useTranslations();
     const [currentPage, setCurrentPage] = useState(0);
-    const [postsPerPage, setPostsPerPage] = useState(100);
+    const [postsPerPage, setPostsPerPage] = useState(50);
     const [filters, setFilters] = useState(DEFAULT_FILTERS);
     const [sortOrder, setSortOrder] = useState('desc');
+    const [sortBy, setSortBy] = useState('quantity'); // 'price' or 'quantity'
 
     const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
-    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hous)
+    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hours)
 
     const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
         ["allItemsDesc"],
@@ -76,10 +77,14 @@ export const ItemsListing = () => {
     const filteredItems = useMemo(() => {
         let filtered = filterItems(filters);
         return filtered.sort((a, b) => {
-            if (sortOrder === 'asc') return a.p - b.p;  // ascending
-            return b.p - a.p;  // descending
+            if (sortBy === 'price') {
+                return sortOrder === 'asc' ? a.p - b.p : b.p - a.p;
+            } else if (sortBy === 'quantity') {
+                return sortOrder === 'asc' ? a.q - b.q : b.q - a.q;
+            }
+            return 0;
         });
-    }, [filters, itemsToUse, sortOrder]);
+    }, [filters, itemsToUse, sortOrder, sortBy]);
 
     useEffect(() => {
         setCurrentPage(0);
@@ -88,6 +93,8 @@ export const ItemsListing = () => {
     const indexOfFirstItem = currentPage * postsPerPage;
     const indexOfLastItem = indexOfFirstItem + postsPerPage;
     const currentPosts = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
+
+    console.log(filteredItems); // Debug filteredItems to see if it's an empty array
 
     return (
         <div>
@@ -108,9 +115,10 @@ export const ItemsListing = () => {
                     title={false}
                 />
                 <div className="ms-auto d-flex gap-2">
-                    <Button variant="secondary" onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}>
-                        Sort by Price {sortOrder === 'asc' ? '▲' : '▼'}
-                    </Button>
+                    <Button variant="secondary" onClick={() => { setSortBy('price'); setSortOrder(prev => (sortBy === 'price' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
+                        active={sortBy === 'price'}>Sort by Price {sortBy === 'price' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
+                    <Button variant="secondary" onClick={() => { setSortBy('quantity'); setSortOrder(prev => (sortBy === 'quantity' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
+                        active={sortBy === 'quantity'}>Sort by Quantity {sortBy === 'quantity' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
                     <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
                 </div>
             </Stack>
@@ -120,9 +128,7 @@ export const ItemsListing = () => {
                     filteredItems.length > 0 ? (
                         currentPosts.map((data, index) => {
                             const { i, p, q } = data;
-
                             if (!i || !i.i || !i.n) return null;
-
                             const itemId = getPokemmoID(i.i);
                             if (itemId == false) return null;
                             const itemInfo = getItemInfo(itemId);
@@ -139,8 +145,7 @@ export const ItemsListing = () => {
                             };
 
                             return (
-                                <div key={item.i}>
-                                    {/*index > 0 && (index % 5 === 0 && index % 10 !== 0) ? <Card bodyClassName="p-2" className="mb-1"></Card> : null*/}
+                                <div key={item.i} className={`item-wrapper fade-in-${filters.name}-${filters.category}`}>
                                     <Card bodyClassName="p-2" className="mb-1">
                                         <ItemRow item={item} />
                                     </Card>
@@ -151,8 +156,12 @@ export const ItemsListing = () => {
                         <p>No items found</p>
                     )
                 ) : isLoading ? (
-                    // Only show spinner if data is not cached and is still loading
-                    <Spinner className='position-relative' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" />
+                    <Spinner
+                        className="position-relative"
+                        style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }}
+                        animation="border"
+                        variant="warning"
+                    />
                 ) : (
                     <p>No items found</p>
                 )
