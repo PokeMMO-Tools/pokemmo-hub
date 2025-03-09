@@ -10,6 +10,8 @@ import { prices } from '../../utils/prices'
 import { Button, Typography } from '../Atoms'
 import { ItemImage } from '../Items/ItemImage'
 import { ItemPrices } from '../Items/ItemPrices'
+import { useQuery } from 'react-query'
+import { SparklineGraph } from '../Atoms/SparklineGraph';
 
 export const WishlistItem = ({ wishlist, onPriceUpdate }) => {
 
@@ -19,6 +21,13 @@ export const WishlistItem = ({ wishlist, onPriceUpdate }) => {
         change: 0,
         isLoading: true
     })
+
+    const { data: pricesWishlist } = useQuery(
+        ["prices", wishlist],
+        () => prices.getItemConstraint(wishlist, 180),
+        { staleTime: 180000 }
+    )
+
     const { removeFromWishlist, allItems } = useMarket()
     const { n, _id, slug, category } = wishlist ? allItems.find(({ i }) => i === wishlist) : false
 
@@ -35,6 +44,11 @@ export const WishlistItem = ({ wishlist, onPriceUpdate }) => {
                 </Td>
                 <Td align="right" className=' border-0'>
                     <ItemPrices onPriceUpdate={setCurrentPrice} i={wishlist} />
+                </Td>
+                <Td align="right" className='border-0 w-5'>
+                    <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'left', width: '100%' }} className="w-100 mb-0">
+                        <SparklineGraph data={pricesWishlist ? pricesWishlist : []} width={200} height={30} link={slug} />
+                    </div>
                 </Td>
                 <Td align="right" className=' border-0'>
                     <Stack direction='horizontal' gap={1} className='justify-content-end'>

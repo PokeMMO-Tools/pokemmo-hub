@@ -30,6 +30,7 @@ export const Wishlist = ({ }) => {
                             <Tr>
                                 <Th>Name</Th>
                                 <Th>{t('Price and Supply')}</Th>
+                                <Th>{t('Trend')}</Th>
                             </Tr>
                         </Thead>
                         <Tbody>
