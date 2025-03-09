@@ -40,7 +40,7 @@ export const ItemRow = ({ item }) => {
                     <MarketItemActions id={i} className="d-flex" style={{ gap: ".4rem" }} />
                 </Stack>
                 <div style={{ display: 'flex', alignItems: 'stretch', width: "40%" }}>
-                    <SparklineGraph data={prices ? prices : []} width={"100%"} height={"100%"} link={slug} />
+                    <SparklineGraph data={prices ? prices : []} width={"100%"} height={"100%"} link={slug} fadein={true} />
                 </div>
             </div>
         </Stack>

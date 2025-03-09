@@ -87,7 +87,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
             }</Td>
             <Td align="right" className='border-0 w-5'>
                 <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'left', width: '100%' }} className="w-100 mb-0">
-                    <SparklineGraph data={pricesInvestment ? pricesInvestment : []} width={115} height={30} link={slug} />
+                    <SparklineGraph data={pricesInvestment ? pricesInvestment : []} width={115} height={30} link={slug} fadein={true} />
                 </div>
             </Td>
 
