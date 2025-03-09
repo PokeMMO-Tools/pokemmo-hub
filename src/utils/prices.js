@@ -94,6 +94,27 @@ export const prices = {
             console.log(error);
         }
     },
+    getItemConstraint: async function (itemId, constraint, source = false) {
+        try {
+            if (cache.getItem[itemId])
+                return cache.getItem[itemId];
+
+            const { data: axiosResponse } = await axios.get(`${BASE_URL}/graph/min/${itemId}/${constraint}`, {
+                cancelToken: source.token
+            })
+            if (axiosResponse.httpcode !== 200) {
+                throw axiosResponse
+            }
+            const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }))
+
+            return items;
+        } catch (error) {
+            if (error.code === "ERR_CANCELED")
+                return error;
+
+            console.log(error);
+        }
+    },
     getItemQuantity: async function (itemId, source = false) {
         try {
             if (cache.getItemQuantity[itemId])

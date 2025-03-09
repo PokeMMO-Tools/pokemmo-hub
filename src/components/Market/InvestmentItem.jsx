@@ -10,6 +10,8 @@ import { prices } from '../../utils/prices'
 import { Button, Typography } from '../Atoms'
 import { ItemImage } from '../Items/ItemImage'
 import { ItemPrices } from '../Items/ItemPrices'
+import { useQuery } from 'react-query'
+import { SparklineGraph } from '../Atoms/SparklineGraph';
 
 export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     const { language } = useTranslations()
@@ -18,6 +20,13 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
         change: 0,
         isLoading: true
     })
+
+    const { data: pricesInvestment } = useQuery(
+        ["prices", investment.i],
+        () => prices.getItemConstraint(investment.i, 180),
+        { staleTime: 180000 }
+    )
+
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket()
     const { n, _id, slug, category } = allItems.find(({ i }) => i === investment.i)
     const sellTotal = currentPrice.min * investment.quantity    //prices.calculateSellGain(currentPrice.min) for listing fee deduction
@@ -44,7 +53,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
                 <Typography as={Link} to={`/items/${slug}`} style={{ color: 'var(--bs-info)' }}>{n[language]}</Typography>
             </Td>
             <Td align="right" className=' border-0'>
-                <ItemPrices onPriceUpdate={setCurrentPrice} i={investment.i} />
+                <ItemPrices onPriceUpdate={setCurrentPrice} i={investment.i} noDiff={true} />
             </Td>
             <Td align="right" className=' border-0'>{
                 investment.quantity
@@ -76,6 +85,12 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
                     </Placeholder>
                     : <span className={`mb-0 ${gainPercent > 0 ? 'text-success' : 'text-danger'}`}>{prices.format(parseFloat(gainPercent.toFixed(1))) + "%"}</span>
             }</Td>
+            <Td align="right" className='border-0 w-5'>
+                <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'left', width: '100%' }} className="w-100 mb-0">
+                    <SparklineGraph data={pricesInvestment ? pricesInvestment : []} width={115} height={30} />
+                </div>
+            </Td>
+
             <Td align="right" className=' border-0'>
                 <Stack direction='horizontal' gap={1} className='justify-content-end'>
                     <Button size="sm" variant='warning' onClick={() => toggleInvestmentsModal(false, investment)}><TbPencil /></Button>
