@@ -17,10 +17,6 @@ const DEFAULT_FILTERS = {
     category: false,
 };
 
-const category = Object.values(InterfaceItems.category).map((value, index) => ({
-    key: index,
-    label: value,
-}));
 
 export const ItemsListing = () => {
     const { language, t } = useTranslations();
@@ -32,6 +28,13 @@ export const ItemsListing = () => {
 
     const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
     const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hours)
+
+    const category = [
+        { key: "items", label: t("Items"), values: [1, 2, 3] },
+        { key: "cosmetics", label: t("Cosmetics"), values: [6] },
+        { key: "event_bags", label: t("Event Bags"), values: [4] },
+        { key: "particles", label: t("Particles"), values: [5] },
+    ];
 
     const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
         ["allItemsDesc"],
@@ -61,8 +64,13 @@ export const ItemsListing = () => {
             if (!itemId) return false;
             const itemInfo = getItemInfo(itemId);
             const itemCategory = itemInfo ? Number(itemInfo.category) : 0;
-            if (category !== false && itemCategory !== Number(category)) return false;
-            return true;
+
+            // If no category is selected, show all
+            if (category === false) return true;
+
+            // Find the category group that includes this item's category
+            const selectedCategory = category === "false" ? false : category;
+            return category && category.values.some((v) => v === itemCategory);
         });
     };
 
@@ -107,20 +115,29 @@ export const ItemsListing = () => {
                 </Form.Group>
                 <FilterSelect
                     value={filters.category}
-                    onChange={({ target }) => setFilters(prev => ({ ...prev, category: target.value === 'false' ? false : target.value }))}
+                    onChange={({ target }) => setFilters(prev => ({
+                        ...prev,
+                        category: target.value === 'false' ? false : category.find(c => c.key === target.value)
+                    }))}
                     data={category}
-                    placeholder={"Filter by category"}
+                    placeholder={"Filter by item Type"}
                     title={false}
                 />
-                <div className="ms-auto d-flex gap-2">
+
+                <div className="ms-auto d-flex flex-wrap align-items-center gap-2 flex-nowrap">
+                    <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
+                </div>
+            </Stack>
+            <Stack direction="horizontal" className='mb-3 d-flex flex-wrap align-items-center'>
+                <Typography>Warning: Items that are not currently listed on the GTL will not appear</Typography>
+                <div className="ms-auto d-flex flex-wrap align-items-center gap-2 flex-nowrap">
                     <Button variant="secondary" onClick={() => { setSortBy('price'); setSortOrder(prev => (sortBy === 'price' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
                         active={sortBy === 'price'}>Sort by Price {sortBy === 'price' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
                     <Button variant="secondary" onClick={() => { setSortBy('quantity'); setSortOrder(prev => (sortBy === 'quantity' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
                         active={sortBy === 'quantity'}>Sort by Quantity {sortBy === 'quantity' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
-                    <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
                 </div>
             </Stack>
-            <Typography>Warning: Items that are not currently listed on the GTL will not appear</Typography>
+
             {
                 isDataCached ? (
                     filteredItems.length > 0 ? (

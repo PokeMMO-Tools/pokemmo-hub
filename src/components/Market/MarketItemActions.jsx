@@ -8,10 +8,10 @@ export const MarketItemActions = ({ id, i, ...props }) => {
     const isInWishlist = useMemo(() => wishlist.includes(id), [wishlist])
     return (
         <div {...props}>
+            <Button size="sm" variant="warning" onClick={() => toggleInvestmentsModal(id)}>Create investment</Button>
             <Button variant='link' size="sm" onClick={() => toggleWishlist(id)}>
                 <TbHeart size={20} color={wishlist.includes(id) ? 'var(--bs-danger)' : 'var(--bs-gray)'} fill={wishlist.includes(id) ? 'var(--bs-danger)' : 'var(--bs-gray)'} />
             </Button>
-            <Button size="sm" variant="warning" onClick={() => toggleInvestmentsModal(id)}>Create investment</Button>
         </div>
     )
 }

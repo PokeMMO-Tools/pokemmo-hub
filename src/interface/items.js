@@ -1,5 +1,6 @@
 export const InterfaceItems = {
     festival: {
+        0: 'No Event',
         1: 'Halloween',
         2: 'Thanksgiving',
         3: "Xmas",
@@ -42,11 +43,12 @@ export const InterfaceItems = {
         16: "ExtraAnimation",
     },
     limitations: {
-        1: "Time",
+        0: "Gift Shop",
+        1: "Limited",
         2: "PvP",
         4: "Event",
         8: "Season",
-        16: "UltraRareEvent",
+        16: "Ultra Rare Event",
     },
     sceneCosmeticParam: {
         0: "Battle",
