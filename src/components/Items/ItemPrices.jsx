@@ -13,7 +13,7 @@ const BadgePlaceholder = () => (
     </Placeholder>
 )
 
-export const ItemPrices = ({ i, p, q, onPriceUpdate = false }) => {
+export const ItemPrices = ({ i, p, q, noDiff, onPriceUpdate = false }) => {
     const [minPrice, setMinPrice] = useState(0)
     const [priceChanges, setPriceChanges] = useState(0)
     const [priceLoading, setPriceLoading] = useState(true)
@@ -70,29 +70,35 @@ export const ItemPrices = ({ i, p, q, onPriceUpdate = false }) => {
 
     return (
         <>
-            {(!p || !q)
-                ?
-                (
+            {noDiff ? (
+                <Stack direction="horizontal" gap={1} className='flex-wrap'>
+                    {priceLoading
+                        ? <BadgePlaceholder />
+                        : <ItemDifferentials icon={TbMoneybag} value={minPrice} differential={0} description={"Current price."} />}
+                    {quantityLoading
+                        ? <BadgePlaceholder />
+                        : <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={quantity} differential={0} description={"Current item supply in the market"} />}
+                </Stack>
+            )
+                :
+                (!p || !q) ? (
                     <Stack direction="horizontal" gap={2} className='flex-wrap'>
-                        {
-                            priceLoading
-                                ? <BadgePlaceholder />
-                                : <ItemDifferentials icon={TbMoneybag} value={minPrice} differential={priceDifferentials} description={"Current price. "} />
-                        }
-                        {
-                            quantityLoading
-                                ? <BadgePlaceholder />
-                                : <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={quantity} differential={quantityDifferentials} description={"Current item supply in the market"} />
-                        }
+                        {priceLoading
+                            ? <BadgePlaceholder />
+                            : <ItemDifferentials icon={TbMoneybag} value={minPrice} differential={priceDifferentials} description={"Current price."} />}
+                        {quantityLoading
+                            ? <BadgePlaceholder />
+                            : <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={quantity} differential={quantityDifferentials} description={"Current item supply in the market"} />}
                     </Stack>
                 )
-                :
-                (
-                    <Stack direction="horizontal" gap={2} className='flex-wrap'>
-                        <ItemDifferentials icon={TbMoneybag} value={p} differential={priceDifferentials} description={"Current price. "} />
-                        <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={q} differential={quantityDifferentials} description={"Current item supply in the market"} />
-                    </Stack>
-                )}
+                    :
+                    (
+                        <Stack direction="horizontal" gap={2} className='flex-wrap'>
+                            <ItemDifferentials icon={TbMoneybag} value={p} differential={priceDifferentials} description={"Current price."} />
+                            <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={q} differential={quantityDifferentials} description={"Current item supply in the market"} />
+                        </Stack>
+                    )}
         </>
-    )
+    );
+
 }
