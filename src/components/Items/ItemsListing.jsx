@@ -94,8 +94,6 @@ export const ItemsListing = () => {
     const indexOfLastItem = indexOfFirstItem + postsPerPage;
     const currentPosts = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
 
-    console.log(filteredItems); // Debug filteredItems to see if it's an empty array
-
     return (
         <div>
             <Stack direction="horizontal" className='mb-3 d-flex flex-wrap align-items-center' style={{ gap: '1rem' }}>
