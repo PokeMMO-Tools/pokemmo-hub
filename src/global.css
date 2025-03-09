@@ -253,3 +253,57 @@ input[type=checkbox] {
 .numberInput {
     width: 100px;
 }
+
+
+.fade-in-background {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeInUp 1s forwards ease-out;
+    transition: all 0.5s ease-in-out;
+
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resizable-background {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.resizable-background.loaded {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards ease-out;
+}
+
+.fade-in-0,
+.fade-in-1,
+.fade-in-2 {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s forwards;
+}
+
+.item-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    /* Combine animations for a smoother effect */
+}
+
+.fade-in,
+.item-wrapper {
+    animation-fill-mode: forwards;
+}
