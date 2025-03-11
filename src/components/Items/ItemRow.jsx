@@ -6,7 +6,7 @@ import { Typography, Badge } from '../Atoms'
 import { MarketItemActions } from '../Market/MarketItemActions'
 import { ItemImage } from './ItemImage'
 import { ItemPrices } from './ItemPrices'
-import { useTranslations } from '../../context/TranslationsContext';
+import { useTranslations, t } from '../../context/TranslationsContext';
 import { prices as PricesApi } from '../../utils/prices'
 import { useQuery } from 'react-query'
 import { SparklineGraph } from '../Atoms/SparklineGraph';
@@ -17,7 +17,19 @@ import cosmeticInfo from '../../data/pokemmo/item-cosmetic';
 export const ItemRow = ({ item }) => {
     const { n, i, _id, d, category, slug, p, q } = item
     const { isDark } = useDarkMode()
-    const { language } = useTranslations();
+    const { language, t } = useTranslations();
+
+    const categoryTable = [
+        { key: "items", label: t("Item"), values: [1, 2, 3] },
+        { key: "cosmetics", label: t("Cosmetic"), values: [6] },
+        { key: "event_bags", label: t("Event Bag"), values: [4] },
+        { key: "particles", label: t("Particle"), values: [5] },
+    ];
+
+    const getCategoryLabel = (category) => {
+        const foundCategory = categoryTable.find(cat => cat.values.includes(category));
+        return foundCategory ? foundCategory.label : "Item";
+    };
 
     const itemInfo = cosmeticInfo.find(cosmetic => cosmetic.item_id === _id)
 
@@ -39,7 +51,10 @@ export const ItemRow = ({ item }) => {
                     </Link>
                     <div className="d-flex gap-2">
                         {itemInfo ? (
-                            <>
+                            <div className="d-flex gap-2 flex-wrap">
+                                <Badge text="dark" bg="info" className="fs-8 fw-normal">
+                                    {getCategoryLabel(category)}
+                                </Badge>
                                 {itemInfo.limitation !== 0 && (
                                     <Badge text="dark" bg="info" className="fs-8 fw-normal">
                                         {InterfaceItems.limitations[itemInfo.limitation]}
@@ -51,10 +66,10 @@ export const ItemRow = ({ item }) => {
                                         {` ${itemInfo.year}`}
                                     </Badge>
                                 )}
-                            </>
+                            </div>
                         ) : (
                             <Badge text="dark" bg="info" className="fs-8 fw-normal">
-                                Item
+                                {getCategoryLabel(category)}
                             </Badge>
                         )}
                     </div>
