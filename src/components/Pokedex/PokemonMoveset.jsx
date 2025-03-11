@@ -44,7 +44,9 @@ export const PokemonMoveset = ({ dexID, moves }) => {
                                                 state={{ id: dexID }}>
                                                 {capitalize(move.type.replaceAll('_', ' '))}
                                             </Link>
-                                            : `${capitalize(move.type.replaceAll('_', ' '))} ${move.level ?? ''}`
+                                            : move.type === "move_learner_tools"
+                                                ? `TM / HM ${move.level ?? ''}`
+                                                : `${capitalize(move.type.replaceAll('_', ' '))} ${move.level ?? ''}`
                                     }
                                 </td>
                             </tr>
