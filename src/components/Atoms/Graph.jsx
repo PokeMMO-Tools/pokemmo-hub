@@ -34,6 +34,10 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
         },
     }) //i am so sorry for this, it doesnt work in the config code
 
+    console.log("Prices Data:", prices);
+    console.log("Quantities Data:", quantities);
+
+
 
     return (
         <div className='position-relative display-block'>
@@ -45,6 +49,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
             }
 
             <HighchartsReact
+                key={prices.length}
                 highcharts={Highcharts}
                 options={{
                     /*  title: {
