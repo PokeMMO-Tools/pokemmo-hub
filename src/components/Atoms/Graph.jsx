@@ -49,7 +49,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
             }
 
             <HighchartsReact
-                key={prices.length}
+                key={prices ? prices.length : 1}
                 highcharts={Highcharts}
                 options={{
                     /*  title: {
