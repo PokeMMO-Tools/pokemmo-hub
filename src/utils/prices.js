@@ -74,8 +74,8 @@ export const prices = {
     },
     getItem: async function (itemId, source = false) {
         try {
-            if (cache.getItem[itemId])
-                return cache.getItem[itemId];
+            // if (cache.getItem[itemId])
+            //     return cache.getItem[itemId];
 
             const { data: axiosResponse } = await axios.get(`${BASE_URL}/graph/min/${itemId}`, {
                 cancelToken: source.token
@@ -96,8 +96,6 @@ export const prices = {
     },
     getItemConstraint: async function (itemId, constraint, source = false) {
         try {
-            if (cache.getItemConstraint[itemId])
-                return cache.getItemConstraint[itemId];
 
             const { data: axiosResponse } = await axios.get(`${BASE_URL}/graph/min/${itemId}/${constraint}`, {
                 cancelToken: source.token
@@ -107,7 +105,6 @@ export const prices = {
             }
             const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }))
 
-            cache.getItemConstraint[itemId] = { ...cache.getItemConstraint, [itemId]: items }
             return items;
         } catch (error) {
             if (error.code === "ERR_CANCELED")
