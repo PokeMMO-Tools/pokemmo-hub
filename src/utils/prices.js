@@ -9,7 +9,8 @@ const cache = {
     getAllItemsDesc: [],
     getNewestItems: [],
     getItem: {},
-    getItemQuantity: {}
+    getItemQuantity: {},
+    getItemConstraint: {}
 };
 
 export const prices = {
@@ -74,18 +75,18 @@ export const prices = {
     },
     getItem: async function (itemId, source = false) {
         try {
-            // if (cache.getItem[itemId])
-            //     return cache.getItem[itemId];
-
             const { data: axiosResponse } = await axios.get(`${BASE_URL}/graph/min/${itemId}`, {
                 cancelToken: source.token
-            })
-            if (axiosResponse.httpcode !== 200) {
-                throw axiosResponse
-            }
-            const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }))
+            });
 
-            cache.getItem = { ...cache.getItem, [itemId]: items };
+            if (axiosResponse.httpcode !== 200) {
+                throw axiosResponse;
+            }
+
+            const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }));
+
+            cache.getItem = { ...cache.getItem, [itemId]: items }; // Store full dataset separately
+
             return items;
         } catch (error) {
             if (error.code === "ERR_CANCELED")
@@ -96,14 +97,21 @@ export const prices = {
     },
     getItemConstraint: async function (itemId, constraint, source = false) {
         try {
+            if (cache.getItemConstraint[itemId]?.[constraint])
+                return cache.getItemConstraint[itemId][constraint];
 
             const { data: axiosResponse } = await axios.get(`${BASE_URL}/graph/min/${itemId}/${constraint}`, {
                 cancelToken: source.token
-            })
+            });
+
             if (axiosResponse.httpcode !== 200) {
-                throw axiosResponse
+                throw axiosResponse;
             }
-            const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }))
+
+            const items = axiosResponse.data.map(item => ({ ...item, x: item.x * 1000 }));
+
+            if (!cache.getItemConstraint[itemId]) cache.getItemConstraint[itemId] = {};
+            cache.getItemConstraint[itemId][constraint] = items; // Store separately from getItem
 
             return items;
         } catch (error) {

@@ -10,18 +10,17 @@ import { MarketItemActions } from '../Market/MarketItemActions'
 export const Graph = ({ name, id, hideItemActions = false }) => {
     const { t } = useTranslations();
 
-    const { data: prices } = useQuery(
-        ["prices", id],
-        () => PricesApi.getItem(id),
-        { staleTime: 180000 }
-    )
-
     const { data: quantities } = useQuery(
         ["quantity", id],
         () => PricesApi.getItemQuantity(id),
         { staleTime: 180000 }
     )
 
+    const { data: pricesAll } = useQuery(
+        ["pricesAll", id],
+        () => PricesApi.getItem(id),
+        { staleTime: 180000 }
+    )
 
     Highcharts.setOptions({
         lang: {
@@ -44,7 +43,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
             }
 
             <HighchartsReact
-                key={prices ? prices.length : 1}
+                key={pricesAll ? pricesAll.length : 1}
                 highcharts={Highcharts}
                 options={{
                     /*  title: {
@@ -138,7 +137,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
                                 [1, '#dc3545']
                             ]
                         },
-                        data: prices ? prices : []
+                        data: pricesAll ? pricesAll : []
                     },
                     {
                         name: t("Item in market"),
@@ -150,7 +149,7 @@ export const Graph = ({ name, id, hideItemActions = false }) => {
                 constructorType={"stockChart"}
             />
             {
-                typeof prices === 'undefined' && typeof quantities === 'undefined' ? <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" /> : false
+                typeof pricesAll === 'undefined' && typeof quantities === 'undefined' ? <Spinner className='position-absolute' style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }} animation="border" variant="warning" /> : false
             }
 
         </div>
