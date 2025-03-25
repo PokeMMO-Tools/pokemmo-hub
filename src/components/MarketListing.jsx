@@ -113,7 +113,7 @@ export const MarketListing = ({ onLoadComplete }) => {
                                                                     ? <Td component="th" scope="row" className="d-flex align-items-start border-0">
                                                                         <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
                                                                         &nbsp;
-                                                                        <Typography as={Link} to={item.i === 1192 ? `/items/1000rp-reward-point-voucher` : `/items/${slugify(item.en_name)}`} style={{ color: 'var(--bs-info)' }} className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item[language + '_name']}</Typography>
+                                                                        <Typography as={Link} to={item.i === 1192 ? `/items/1000rp-reward-point-voucher` : `/items/${slugify(item.en_name)}`} style={{ color: 'var(--bs-info)', display: 'inline-block', width: 'auto' }} className='mb-0 ln-1 fs-6 fw-bold item-name'>{item[language + '_name']}</Typography>
                                                                     </Td>
                                                                     : <Td component="th" scope="row" className="d-flex align-items-start border-0">
                                                                         <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
