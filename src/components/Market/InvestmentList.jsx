@@ -109,7 +109,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
         // Gain % (column F)
         worksheet[XLSX.utils.encode_cell({ r: 1, c: 5 })] = {
-            f: `E2/C2`,
+            f: `IFERROR(E2/C2, 0)`,
             t: 'n',
             z: '0%'
         };
@@ -130,7 +130,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             };
 
             worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 6 })] = {
-                f: `F${rowIndex + 1}/D${rowIndex + 1}`,
+                f: `IFERROR(F${rowIndex + 1}/D${rowIndex + 1}, 0)`,
                 t: 'n',
                 z: '0%'
             };
