@@ -1,10 +1,10 @@
-import { graphql, StaticQuery } from 'gatsby';
-import React, { createContext, useContext, useState } from 'react';
-import { Modal } from '../components/Atoms';
-import { MarketAddInvestment } from '../components/Market/MarketAddInvestment';
-import { throwConfetti } from '../utils/confetti';
-import { useAccount } from './AccountContext';
-import { useNotification } from './NotificationContext';
+import { graphql, StaticQuery } from 'gatsby'
+import React, { createContext, useContext, useState } from 'react'
+import { Modal } from '../components/Atoms'
+import { MarketAddInvestment } from '../components/Market/MarketAddInvestment'
+import { throwConfetti } from '../utils/confetti'
+import { useAccount } from './AccountContext'
+import { useNotification } from './NotificationContext'
 
 const MarketContext = createContext({
     investments: [],
@@ -25,17 +25,16 @@ export function MarketProvider({ children }) {
     const [isOpen, setIsOpen] = useState(false)
     const [newInvestmentId, setNewInvestmentId] = useState(0)
     const [editInvestment, setEditInvestment] = useState(false)
-    const { showNotification } = useNotification();
-
+    const { showNotification } = useNotification()
     const { account, updateAccount } = useAccount()
-    const { market } = account;
+    const { market } = account
 
     const resetInvestment = () => {
         setEditInvestment(false)
         setNewInvestmentId(0)
     }
 
-    const addToWishlist = i => {
+    const addToWishlist = (i) => {
         if (!isNaN(i)) {
             updateAccount({
                 market: {
@@ -43,14 +42,13 @@ export function MarketProvider({ children }) {
                     wishlist: [...market.wishlist, i]
                 }
             })
-        }
-        else {
+        } else {
             showNotification('Error. Item data is bugged, unable to add to wishlist.')
-            console.log("item is bugged, best not to add that")
+            console.warn("Item is bugged, best not to add that")
         }
     }
 
-    const removeFromWishlist = i => {
+    const removeFromWishlist = (i) => {
         updateAccount({
             market: {
                 ...market,
@@ -59,52 +57,59 @@ export function MarketProvider({ children }) {
         })
     }
 
-    const toggleWishlist = i => {
-        if (market.wishlist.includes(i))
-            return removeFromWishlist(i)
-
+    const toggleWishlist = (i) => {
+        if (market.wishlist.includes(i)) return removeFromWishlist(i)
         return addToWishlist(i)
     }
 
     const toggleInvestmentsModal = (i = 0, investment = false) => {
-        setIsOpen(prev => !prev)
-        if (i)
-            setNewInvestmentId(i)
-
-        if (investment)
-            setEditInvestment(investment)
-    };
-
-    const addToInvestments = investment => {
-        updateAccount({
-            market: {
-                ...market,
-                investments: [...market.investments, investment]
-            }
-        })
-        throwConfetti(2)
-        showNotification('Investment created! View it at the investments page.')
-        resetInvestment()
+        setIsOpen((prev) => !prev)
+        if (i) setNewInvestmentId(i)
+        if (investment) setEditInvestment(investment)
     }
 
-    const handleEditInvestment = investment => {
-
-        updateAccount({
-            market: {
-                ...market,
-                investments: market.investments.map(item => item.id === investment.id ? investment : item)
-            }
-        })
-        resetInvestment()
+    const addToInvestments = (investment) => {
+        try {
+            const updatedInvestments = [...(market?.investments || []), investment]
+            updateAccount({ market: { ...market, investments: updatedInvestments } })
+            throwConfetti(2)
+            showNotification('Investment created! View it at the investments page.')
+            resetInvestment()
+        } catch (error) {
+            console.error("Failed to add investment:", error)
+            showNotification("Error adding investment. Try again.", "danger")
+        }
     }
 
-    const removeFromInvestments = id => {
-        updateAccount({
-            market: {
-                ...market,
-                investments: market.investments.filter(investment => investment.id !== id)
-            }
-        })
+    const handleEditInvestment = (investment) => {
+        try {
+            const updatedInvestments = market.investments.map((item) =>
+                item.id === investment.id ? investment : item
+            )
+            updateAccount({ market: { ...market, investments: updatedInvestments } })
+            resetInvestment()
+        } catch (error) {
+            console.error("Failed to edit investment:", error)
+            showNotification("Error updating investment. Try again.", "danger")
+        }
+    }
+
+    const removeFromInvestments = (id) => {
+        if (!market?.investments?.some((investment) => investment.id === id)) return
+
+        const updatedInvestments = market.investments.filter((investment) => investment.id !== id)
+
+        if (updatedInvestments.length === 0) {
+            console.warn("Prevented full investment deletion.")
+            return
+        }
+
+        try {
+            updateAccount({ market: { ...market, investments: updatedInvestments } })
+        } catch (error) {
+            console.error("Failed to remove investment:", error)
+            showNotification("Error removing investment. Try again.", "danger")
+        }
     }
 
     return (
@@ -127,21 +132,23 @@ export function MarketProvider({ children }) {
                             _id
                             category
                         }
-                        }
+                    }
                 }
             `}
             render={({ allPokemmo }) => (
-                <MarketContext.Provider value={{
-                    allItems: allPokemmo.nodes,
-                    wishlist: market.wishlist,
-                    toggleWishlist,
-                    removeFromWishlist,
-                    investments: market.investments,
-                    toggleInvestmentsModal,
-                    addToInvestments,
-                    removeFromInvestments,
-                    handleEditInvestment
-                }}>
+                <MarketContext.Provider
+                    value={{
+                        allItems: allPokemmo.nodes,
+                        wishlist: market.wishlist,
+                        toggleWishlist,
+                        removeFromWishlist,
+                        investments: market.investments,
+                        toggleInvestmentsModal,
+                        addToInvestments,
+                        removeFromInvestments,
+                        handleEditInvestment,
+                    }}
+                >
                     <Modal
                         show={isOpen}
                         title="Add investment"
@@ -153,18 +160,18 @@ export function MarketProvider({ children }) {
                             i={newInvestmentId}
                             onSave={(investment) => {
                                 addToInvestments(investment)
-                                toggleInvestmentsModal();
+                                toggleInvestmentsModal()
                             }}
                             onUpdate={(investment) => {
                                 handleEditInvestment(investment)
-                                toggleInvestmentsModal();
+                                toggleInvestmentsModal()
                             }}
                             updateInvestment={editInvestment}
                         />
                     </Modal>
                     {children}
                 </MarketContext.Provider>
-            )}>
-        </StaticQuery>
+            )}
+        />
     )
 }
