@@ -29,7 +29,7 @@ export const ItemsListing = () => {
     const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hours)
 
     const category = [
-        { key: "items", label: t("Game Items"), values: [1, 2, 3] },
+        { key: "items", label: t("Game Items"), values: [0, 1, 2, 3] },
         { key: "cosmetics", label: t("Cosmetics"), values: [6] },
         { key: "event_bags", label: t("Event Bags"), values: [4] },
         { key: "particles", label: t("Particles"), values: [5] },
