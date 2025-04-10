@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon } from '../../assets/icons'
+import { SearchIcon, ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon } from '../../assets/icons'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useDarkMode } from '../../context/DarkModeContext'
 import './module.css'
@@ -25,6 +25,12 @@ const TOOLS = [
         url: '/tools/pokedex/',
         icon: PokedexIcon,
         description: 'View every pokemon\'s locations, catch rates, move lists, and stats.'
+    },
+    {
+        label: 'Pokemon Search',
+        url: '/tools/pokemon-search/',
+        icon: SearchIcon,
+        description: 'Search pokemon by ability and move combinations. For team-building or theory-crafting.'
     },
     {
         label: 'Breeding Simulator',

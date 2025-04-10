@@ -2,7 +2,7 @@ import dex from '../data/pokemmo/dex.json'
 import pokemon from '../data/pokemmo/monster.json'
 import moves from '../data/pokemmo/moves.json'
 
-const EGG_GROUPS = {
+export const EGG_GROUPS = {
     "monster": { label: "monster", color: "#775544" },
     "water a": { label: "water a", color: "#66ccff" },
     "bug": { label: "bug", color: "#aabb22" },
@@ -21,7 +21,7 @@ const EGG_GROUPS = {
     "genderless": { label: "genderless", color: "#8a8a8a" }
 }
 
-const TYPES = {
+export const TYPES = {
     "NORMAL": { label: "Normal", color: "#a4acaf" },
     "FIGHTING": { label: "Fighting", color: "#d56723" },
     "FLYING": { label: "Flying", color: "#3dc7ef" },
