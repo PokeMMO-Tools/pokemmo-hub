@@ -78,7 +78,7 @@ const PokemonSearch = ({ sprites }) => {
 
     const filteredPokemon = useMemo(() => {
         return pokemon
-            .filter(mon => mon.id <= 650)
+            .filter(mon => mon.id <= 637)
             .filter(mon => {
                 const monAbilityNames = mon.abilities?.map(a => a.name) ?? [];
                 const monMoveNames = mon.moves?.map(m => m.name) ?? [];
