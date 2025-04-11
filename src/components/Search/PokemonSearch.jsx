@@ -16,6 +16,30 @@ const PokemonSearch = ({ sprites }) => {
     const [selectedMoves, setSelectedMoves] = useState([null, null, null, null]);
     const [selectedTypes, setSelectedTypes] = useState([null, null]);
     const [selectedEggGroups, setSelectedEggGroups] = useState(null);
+    const [selectedTier, setSelectedTier] = useState(null);
+
+
+    const tierOptions = [
+        { value: "Over Used", label: "Over Used (OU)" },
+        { value: "Under Used", label: "Under Used (UU)" },
+        { value: "NU+Untiered", label: "Never Used (NU) + Untiered" },
+    ];
+
+
+    const handleTierChange = (selectedTierOption) => {
+        setSelectedTier(selectedTierOption ? selectedTierOption.value : null);
+    };
+
+    const getAllowedTiers = (tier) => {
+        if (tier === "Over Used") return ["Over Used", "Under Used", "Never Used", "Untiered"];
+        if (tier === "Under Used") return ["Under Used", "Never Used", "Untiered"];
+        if (tier === "NU+Untiered") return ["Never Used", "Untiered"];
+        return null; // No filtering
+    };
+
+
+
+
 
     // Sorting the dropdown data alphabetically
     const abilityOptions = useMemo(() => {
@@ -73,8 +97,11 @@ const PokemonSearch = ({ sprites }) => {
         setSelectedMoves([null, null, null, null]);
         setSelectedTypes([null, null]);
         setSelectedEggGroups(null);
+        setSelectedTier(null);
     };
 
+
+    const allowedTiers = getAllowedTiers(selectedTier);
 
     const filteredPokemon = useMemo(() => {
         return pokemon
@@ -84,15 +111,18 @@ const PokemonSearch = ({ sprites }) => {
                 const monMoveNames = mon.moves?.map(m => m.name) ?? [];
                 const monTypes = mon.types ?? [];
                 const monEggGroups = mon.egg_groups ?? [];
+                const monTiers = mon.tiers ?? [];
 
                 const hasAbility = selectedAbility ? monAbilityNames.includes(selectedAbility) : true;
                 const hasMoves = selectedMoves.every(move => move ? monMoveNames.includes(move) : true);
                 const hasTypes = selectedTypes.every(type => type ? monTypes.includes(type) : true);
                 const hasEggGroup = selectedEggGroups ? monEggGroups.includes(selectedEggGroups) : true;
+                const matchesTier = allowedTiers ? monTiers.some(t => allowedTiers.includes(t)) : true;
 
-                return hasAbility && hasMoves && hasTypes && hasEggGroup;
+                return hasAbility && hasMoves && hasTypes && hasEggGroup && matchesTier;
             });
-    }, [selectedAbility, selectedMoves, selectedTypes, selectedEggGroups]);
+    }, [selectedAbility, selectedMoves, selectedTypes, selectedEggGroups, selectedTier]);
+
 
     const getPokemonSprite = (pokemonId) => {
         const sprite = pokemonId ? sprites.find(({ node }) => parseInt(node.name) === pokemonId) : false;
@@ -140,37 +170,55 @@ const PokemonSearch = ({ sprites }) => {
                 </Stack>
 
                 <section>
-                    <Typography variant="h5"><h5>Type & Egg Group</h5></Typography>
-                    <Stack gap={3}>
-                        <Row>
-                            <Col sm={6}>
-                                <Search
-                                    items={typesOptions}
-                                    onChange={(selected) => handleTypeChange(0, selected)}
-                                    placeholder="Select Type 1"
-                                    hasEmpty={true}
-                                />
-                            </Col>
-                            <Col sm={6}>
-                                <Search
-                                    items={typesOptions}
-                                    onChange={(selected) => handleTypeChange(1, selected)}
-                                    placeholder="Select Type 2"
-                                    hasEmpty={true}
-                                />
-                            </Col>
-                        </Row>
-
-                        <Search
-                            items={eggGroupOptions}
-                            onChange={handleEggGroupChange}
-                            placeholder="Select Egg Group"
-                            hasEmpty={true}
-                        />
-                    </Stack>
+                    <Row className="g-3 align-items-start">
+                        <Col sm={6}>
+                            <Stack gap={4}>
+                                <div>
+                                    <Typography variant="h6"><h5>Type 1</h5></Typography>
+                                    <Search
+                                        items={typesOptions}
+                                        onChange={(selected) => handleTypeChange(1, selected)}
+                                        placeholder="Select Type 2"
+                                        hasEmpty={true}
+                                    />
+                                </div>
+                                <div>
+                                    <Typography variant="h6"><h5>Type 2</h5></Typography>
+                                    <Search
+                                        items={typesOptions}
+                                        onChange={(selected) => handleTypeChange(1, selected)}
+                                        placeholder="Select Type 2"
+                                        hasEmpty={true}
+                                    />
+                                </div>
+                            </Stack>
+                        </Col>
+                        <Col sm={6}>
+                            <Stack gap={4}>
+                                <div>
+                                    <Typography variant="h6"><h5>Egg Group</h5></Typography>
+                                    <Search
+                                        items={eggGroupOptions}
+                                        onChange={handleEggGroupChange}
+                                        placeholder="Select Egg Group"
+                                        hasEmpty={true}
+                                    />
+                                </div>
+                                <div>
+                                    <Typography variant="h6"><h5>PvP Tier</h5></Typography>
+                                    <Search
+                                        items={tierOptions}
+                                        onChange={handleTierChange}
+                                        placeholder="Select Tier"
+                                        hasEmpty={true}
+                                    />
+                                </div>
+                            </Stack>
+                        </Col>
+                    </Row>
                 </section>
-                <Button variant="warning" onClick={handleResetFilters} className="btn-sm me-auto">Reset Filters</Button>
 
+                <Button variant="warning" onClick={handleResetFilters} className="btn-sm me-auto">Reset Filters</Button>
 
                 <Typography variant="h5">
                     {filteredPokemon.length > 0 ? headerText : 'No Pokémon match your search criteria'}
