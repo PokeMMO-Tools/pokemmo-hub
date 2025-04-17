@@ -15,7 +15,7 @@ const CatchCalculator = ({ sprites }) => {
     const [selectedStatus, setSelectedStatus] = useState(null);
     const [catchRate, setCatchRate] = useState(null);
     const [catchRateProbabilities, setCatchRateProbabilities] = useState(null);
-    const [debugOpen, setDebugOpen] = useState(false); // State to toggle debug section visibility
+    const [debugOpen, setDebugOpen] = useState(false);
 
     const pokemonOptions = monster.map(pokemon => ({
         value: pokemon.id,
@@ -71,7 +71,6 @@ const CatchCalculator = ({ sprites }) => {
     return (
         <Card>
             <Stack gap={4}>
-                {/* Pokémon selection */}
                 <div>
                     <Typography><h5>Pokémon</h5></Typography>
                     <Search
@@ -85,11 +84,10 @@ const CatchCalculator = ({ sprites }) => {
                                 <span>{option.label}</span>
                             </div>
                         )}
-                        styles={{ width: '100%' }} // Ensure full width on all screen sizes
+                        styles={{ width: '100%' }}
                     />
                 </div>
 
-                {/* HP slider */}
                 <div>
                     <Typography><h5>HP</h5></Typography>
                     <Typography>HP: {currentHpPercent}%</Typography>
@@ -103,7 +101,6 @@ const CatchCalculator = ({ sprites }) => {
                     />
                 </div>
 
-                {/* Ball and Status side by side */}
                 <div style={{ display: 'flex', gap: '1rem', flexDirection: 'row', flexWrap: 'wrap' }}>
                     <div style={{ flex: 1, minWidth: '250px' }}>
                         <Typography><h5>Poké Ball</h5></Typography>
@@ -117,7 +114,7 @@ const CatchCalculator = ({ sprites }) => {
                             onChange={(opt) => setSelectedBall(opt)}
                             placeholder="Choose a Poké Ball"
                             hasEmpty
-                            styles={{ width: '100%' }} // Ensure full width on mobile
+                            styles={{ width: '100%' }}
                         />
                     </div>
                     <div style={{ flex: 1, minWidth: '250px' }}>
@@ -132,19 +129,17 @@ const CatchCalculator = ({ sprites }) => {
                             onChange={(opt) => setSelectedStatus(opt)}
                             placeholder="Choose a Status"
                             hasEmpty
-                            styles={{ width: '100%' }} // Ensure full width on mobile
+                            styles={{ width: '100%' }}
                         />
                     </div>
                 </div>
 
-                {/* Results */}
                 {catchRateProbabilities !== null && (
                     <Stack gap={0}>
                         <Typography><h5>Result</h5><strong>{JSON.stringify(catchRateProbabilities)}%</strong></Typography>
                     </Stack>
                 )}
 
-                {/* Collapsible Debug Section */}
                 <div>
                     <Button size="sm" onClick={() => setDebugOpen(prev => !prev)}>
                         {debugOpen ? 'Hide' : 'Show'} Additional Calc Info
