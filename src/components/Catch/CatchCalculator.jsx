@@ -16,7 +16,7 @@ const CatchCalculator = ({ sprites }) => {
     const [catchRate, setCatchRate] = useState(null);
     const [catchRateProbabilities, setCatchRateProbabilities] = useState(null);
     const [debugOpen, setDebugOpen] = useState(false);
-    const [pkmnRate, setPkmnRate] = useState(null); // New state for Pokémon rate
+    const [pkmnRate, setPkmnRate] = useState(null);
 
     const pokemonOptions = monster.map(pokemon => ({
         value: pokemon.id,
@@ -44,10 +44,10 @@ const CatchCalculator = ({ sprites }) => {
             const catchRateData = catchRates.find(c => c.id === selectedPokemon.value);
 
             if (catchRateData) {
-                setPkmnRate(catchRateData.rate); // Set pkmnRate immediately when Pokémon is selected
+                setPkmnRate(catchRateData.rate);
             }
         }
-    }, [selectedPokemon]); // Effect runs when selectedPokemon changes
+    }, [selectedPokemon]);
 
     useEffect(() => {
         if (selectedPokemon && selectedBall && selectedStatus && pkmnRate !== null) {
@@ -75,7 +75,7 @@ const CatchCalculator = ({ sprites }) => {
             setCatchRate(null);
             setCatchRateProbabilities(null);
         }
-    }, [selectedPokemon, selectedBall, selectedStatus, currentHpPercent, pkmnRate]); // Depend on pkmnRate
+    }, [selectedPokemon, selectedBall, selectedStatus, currentHpPercent, pkmnRate]);
 
     return (
         <Card>
