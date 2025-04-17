@@ -158,7 +158,7 @@ const PokemonSearch = ({ sprites }) => {
             <Stack gap={3}>
                 <Stack gap={4}>
                     <section>
-                        <Typography variant="h5"><h5>Ability Filter</h5></Typography>
+                        <Typography variant="h5"><h5>Ability</h5></Typography>
                         <Search
                             items={abilityOptions}
                             onChange={handleAbilityChange}
@@ -182,7 +182,7 @@ const PokemonSearch = ({ sprites }) => {
 
 
                     <section>
-                        <Typography variant="h5"><h5>Move Filters</h5></Typography>
+                        <Typography variant="h5"><h5>Moves</h5></Typography>
                         <Row xs={2} md={2} lg={2} xl={2} className="g-3">
                             {Array.from({ length: 4 }).map((_, index) => (
                                 <Col key={index}>
@@ -212,11 +212,11 @@ const PokemonSearch = ({ sprites }) => {
                                     />
                                 </div>
                                 <div>
-                                    <Typography variant="h6"><h5>Type 2</h5></Typography>
+                                    <Typography variant="h6"><h5>Egg Group</h5></Typography>
                                     <Search
-                                        items={typesOptions}
-                                        onChange={(selected) => handleTypeChange(1, selected)}
-                                        placeholder="Select Type 2"
+                                        items={eggGroupOptions}
+                                        onChange={handleEggGroupChange}
+                                        placeholder="Select Egg Group"
                                         hasEmpty={true}
                                     />
                                 </div>
@@ -225,11 +225,11 @@ const PokemonSearch = ({ sprites }) => {
                         <Col sm={6}>
                             <Stack gap={4}>
                                 <div>
-                                    <Typography variant="h6"><h5>Egg Group</h5></Typography>
+                                    <Typography variant="h6"><h5>Type 2</h5></Typography>
                                     <Search
-                                        items={eggGroupOptions}
-                                        onChange={handleEggGroupChange}
-                                        placeholder="Select Egg Group"
+                                        items={typesOptions}
+                                        onChange={(selected) => handleTypeChange(1, selected)}
+                                        placeholder="Select Type 2"
                                         hasEmpty={true}
                                     />
                                 </div>
@@ -247,7 +247,7 @@ const PokemonSearch = ({ sprites }) => {
                     </Row>
                 </section>
 
-                <Button variant="warning" onClick={handleResetFilters} className="btn-sm me-auto">Reset Filters</Button>
+                <Button variant="outline-danger" onClick={handleResetFilters} className="btn-sm me-auto">Clear</Button>
 
                 <Typography variant="h5">
                     {filteredPokemon.length > 0 ? headerText : 'No Pokémon match your search criteria'}
