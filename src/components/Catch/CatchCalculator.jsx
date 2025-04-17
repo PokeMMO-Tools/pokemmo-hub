@@ -16,6 +16,7 @@ const CatchCalculator = ({ sprites }) => {
     const [catchRate, setCatchRate] = useState(null);
     const [catchRateProbabilities, setCatchRateProbabilities] = useState(null);
     const [debugOpen, setDebugOpen] = useState(false);
+    const [pkmnRate, setPkmnRate] = useState(null); // New state for Pokémon rate
 
     const pokemonOptions = monster.map(pokemon => ({
         value: pokemon.id,
@@ -38,18 +39,26 @@ const CatchCalculator = ({ sprites }) => {
     };
 
     useEffect(() => {
-        if (selectedPokemon && selectedBall && selectedStatus) {
+        if (selectedPokemon) {
             const pokemonData = monster.find(p => p.id === selectedPokemon.value);
             const catchRateData = catchRates.find(c => c.id === selectedPokemon.value);
 
-            const pkmn_rate = catchRateData?.rate;
+            if (catchRateData) {
+                setPkmnRate(catchRateData.rate); // Set pkmnRate immediately when Pokémon is selected
+            }
+        }
+    }, [selectedPokemon]); // Effect runs when selectedPokemon changes
+
+    useEffect(() => {
+        if (selectedPokemon && selectedBall && selectedStatus && pkmnRate !== null) {
+            const pokemonData = monster.find(p => p.id === selectedPokemon.value);
             const max_hp = pokemonData?.stats?.hp;
 
-            if (pkmn_rate && max_hp) {
+            if (pkmnRate && max_hp) {
                 const current_hp = Math.floor((currentHpPercent / 100) * max_hp);
 
                 const result = calculateCatchRate(
-                    pkmn_rate,
+                    pkmnRate,
                     max_hp,
                     current_hp,
                     { rate: selectedBall.rate, name: selectedBall.name },
@@ -66,7 +75,7 @@ const CatchCalculator = ({ sprites }) => {
             setCatchRate(null);
             setCatchRateProbabilities(null);
         }
-    }, [selectedPokemon, selectedBall, selectedStatus, currentHpPercent]);
+    }, [selectedPokemon, selectedBall, selectedStatus, currentHpPercent, pkmnRate]); // Depend on pkmnRate
 
     return (
         <Card>
@@ -155,7 +164,7 @@ const CatchCalculator = ({ sprites }) => {
                                     <Typography><strong>Max HP:</strong> {monster.find(p => p.id === selectedPokemon?.value)?.stats?.hp ?? 'undefined'}</Typography>
                                 </div>
                                 <div style={{ flex: 1 }}>
-                                    <Typography><strong>Pokemon Catch Rate:</strong> {catchRate ?? 'undefined'}</Typography>
+                                    <Typography><strong>Pokemon Catch Rate:</strong> {pkmnRate ?? 'undefined'}</Typography>
                                     <Typography><strong>Ball Rate:</strong> {selectedBall?.rate ?? 'undefined'}</Typography>
                                     <Typography><strong>Status Rate:</strong> {selectedStatus?.rate ?? 'undefined'}</Typography>
                                     <Typography><strong>HP Percentage:</strong> {currentHpPercent}%</Typography>
