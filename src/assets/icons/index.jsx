@@ -32,8 +32,9 @@ import ArchetypeIcon from './archetype.png'
 import BreedingIcon from './breeding.png'
 import AllItemsIcon from './allitems.png'
 import SearchIcon from './search.png'
+import CatchCalcIcon from './pokeballsleep.png'
 
 
 export {
-    SearchIcon, HeartIcon, AllItemsIcon, BreedingIcon, EggIcon, Solrock, Lunatone, ShinyIcon, PokeBall, PokeBallSleep, MegaBall, MegaBallSleep, UltraBall, UltraBallSleep, BisBall, BisBallSleep, PokedexIcon, VeloxBall, VeloxBallSleep, RealEggIcon, EggMovesIcon, CosmeticsIcon, Meowth, Pikachu, Snorlax, Bulbasaur, Charmander, Dratini, Eevee, BerryIcon, MarketIcon, MultiIcon, ItemsIcon, TradeAdIcon, ArchetypeIcon
+    CatchCalcIcon, SearchIcon, HeartIcon, AllItemsIcon, BreedingIcon, EggIcon, Solrock, Lunatone, ShinyIcon, PokeBall, PokeBallSleep, MegaBall, MegaBallSleep, UltraBall, UltraBallSleep, BisBall, BisBallSleep, PokedexIcon, VeloxBall, VeloxBallSleep, RealEggIcon, EggMovesIcon, CosmeticsIcon, Meowth, Pikachu, Snorlax, Bulbasaur, Charmander, Dratini, Eevee, BerryIcon, MarketIcon, MultiIcon, ItemsIcon, TradeAdIcon, ArchetypeIcon
 }

@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { SearchIcon, ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon } from '../../assets/icons'
+import { CatchCalcIcon, SearchIcon, ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon } from '../../assets/icons'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useDarkMode } from '../../context/DarkModeContext'
 import './module.css'
@@ -31,6 +31,12 @@ const TOOLS = [
         url: '/tools/pokemon-search/',
         icon: SearchIcon,
         description: 'Search pokemon by ability and move combinations. For team-building or theory-crafting.'
+    },
+    {
+        label: 'Catch Calculator',
+        url: '/tools/catch-calculator/',
+        icon: CatchCalcIcon,
+        description: 'Calculate the catch chance of pokemon, depending on the pokeball, status condition, and health.'
     },
     {
         label: 'Breeding Simulator',
