@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Stack, Form } from 'react-bootstrap';
+import { Stack, Form, Spinner } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import { useQuery } from 'react-query';
 import { Button, Card, Pagination, Typography } from '../Atoms';
@@ -10,7 +10,6 @@ import { prices } from '../../utils/prices';
 import { InterfaceItems } from '../../interface/items';
 import { getItemInfo, getPokemmoID, getCosmeticInfo } from '../../utils/items';
 import { slugify } from '../../utils/slugify';
-import { Spinner } from 'react-bootstrap';
 
 const DEFAULT_FILTERS = {
     name: '',
@@ -23,17 +22,10 @@ export const ItemsListing = () => {
     const [postsPerPage, setPostsPerPage] = useState(50);
     const [filters, setFilters] = useState(DEFAULT_FILTERS);
     const [sortOrder, setSortOrder] = useState('desc');
-    const [sortBy, setSortBy] = useState('quantity'); // 'price' or 'quantity'
+    const [sortBy, setSortBy] = useState('quantity'); // default 'price' or 'quantity'
 
     const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
-    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;  // expiration (6 hours)
-
-    const category = [
-        { key: "items", label: t("Game Items"), values: [0, 1, 2, 3] },
-        { key: "cosmetics", label: t("Cosmetics"), values: [6] },
-        { key: "event_bags", label: t("Event Bags"), values: [4] },
-        { key: "particles", label: t("Particles"), values: [5] },
-    ];
+    const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;
 
     const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
         ["allItemsDesc"],
@@ -50,15 +42,32 @@ export const ItemsListing = () => {
         }
     );
 
-    const itemsToUse = isDataCached ? cachedData.data : allItemsData;
+    const itemsToUse = useMemo(() => {
+        if (isDataCached) return cachedData?.data ?? null;
+        return allItemsData ?? null;
+    }, [isDataCached, cachedData, allItemsData]);
+
+    const category = [
+        { key: "items", label: t("Game Items"), values: [0, 1, 2, 3] },
+        { key: "cosmetics", label: t("Cosmetics"), values: [6] },
+        { key: "event_bags", label: t("Event Bags"), values: [4] },
+        { key: "particles", label: t("Particles"), values: [5] },
+    ];
 
     const filterItems = ({ name, category }) => {
         if (!Array.isArray(itemsToUse)) return [];
 
         return itemsToUse.filter((item) => {
             if (!item.i || !item.i.n) return false;
-            const itemName = item.i.n[language] || item.i.n.en;
-            if (name && !itemName.toLowerCase().includes(name.toLowerCase())) return false;
+            const normalize = (str) => str.normalize("NFKD").toLowerCase();
+            const searchTerm = normalize(name.trim());
+            if (searchTerm) {
+                const matched = Object.values(item.i.n || {}).some((n) =>
+                    normalize(n).includes(searchTerm)
+                );
+                if (!matched) return false;
+            }
+
             const itemId = getPokemmoID(item.i.i);
             if (!itemId) return false;
             const itemInfo = getItemInfo(itemId);
@@ -81,6 +90,7 @@ export const ItemsListing = () => {
     translateArrayLabel(category);
 
     const filteredItems = useMemo(() => {
+        if (!itemsToUse) return [];
         let filtered = filterItems(filters);
         return filtered.sort((a, b) => {
             if (sortBy === 'price') {
@@ -120,8 +130,8 @@ export const ItemsListing = () => {
                         }))
                     }
                     data={[
-                        { key: "all", label: "All Items" }, // Default option
-                        ...category // Other category options
+                        { key: "all", label: "All Items" },
+                        ...category
                     ]}
                     noPlaceholder={true}
                 />
@@ -140,13 +150,20 @@ export const ItemsListing = () => {
             </Stack>
 
             {
-                isDataCached ? (
+                (!itemsToUse || isLoading) ? (
+                    <Spinner
+                        className="position-relative"
+                        style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }}
+                        animation="border"
+                        variant="warning"
+                    />
+                ) : (
                     filteredItems.length > 0 ? (
                         currentPosts.map((data, index) => {
                             const { i, p, q } = data;
                             if (!i || !i.i || !i.n) return null;
                             const itemId = getPokemmoID(i.i);
-                            if (itemId == false) return null;
+                            if (itemId === false) return null;
                             const itemInfo = getItemInfo(itemId);
 
                             const item = {
@@ -171,15 +188,6 @@ export const ItemsListing = () => {
                     ) : (
                         <p>No items found</p>
                     )
-                ) : isLoading ? (
-                    <Spinner
-                        className="position-relative"
-                        style={{ width: "4rem", height: "4rem", top: "45%", left: "45%" }}
-                        animation="border"
-                        variant="warning"
-                    />
-                ) : (
-                    <p>No items found</p>
                 )
             }
 
