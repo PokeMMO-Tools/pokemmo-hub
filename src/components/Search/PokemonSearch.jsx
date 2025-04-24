@@ -90,6 +90,7 @@ const PokemonSearch = ({ sprites }) => {
         setSelectedTypes(updatedTypes);
     };
 
+
     const handleEggGroupChange = (selectedEggGroup) => {
         setSelectedEggGroups(selectedEggGroup ? selectedEggGroup.value : null);
     };
@@ -131,7 +132,7 @@ const PokemonSearch = ({ sprites }) => {
 
                 const hasAbility = selectedAbility ? monAbilityNames.includes(selectedAbility) : true;
                 const hasMoves = selectedMoves.every(move => move ? monMoveNames.includes(move) : true);
-                const hasTypes = selectedTypes.every(type => type ? monTypes.includes(type) : true);
+                const hasTypes = selectedTypes.filter(Boolean).every(type => monTypes.includes(type));
                 const hasEggGroup = selectedEggGroups ? monEggGroups.includes(selectedEggGroups) : true;
                 const matchesTier = allowedTiers ? monTiers.some(t => allowedTiers.includes(t)) : true;
 
@@ -206,8 +207,8 @@ const PokemonSearch = ({ sprites }) => {
                                     <Typography variant="h6"><h5>Type 1</h5></Typography>
                                     <Search
                                         items={typesOptions}
-                                        onChange={(selected) => handleTypeChange(1, selected)}
-                                        placeholder="Select Type 2"
+                                        onChange={(selected) => handleTypeChange(0, selected)}
+                                        placeholder="Select Type 1"
                                         hasEmpty={true}
                                     />
                                 </div>
