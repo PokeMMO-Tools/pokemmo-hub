@@ -134,11 +134,19 @@ const PokemonSearch = ({ sprites }) => {
                 const hasMoves = selectedMoves.every(move => move ? monMoveNames.includes(move) : true);
                 const hasTypes = selectedTypes.filter(Boolean).every(type => monTypes.includes(type));
                 const hasEggGroup = selectedEggGroups ? monEggGroups.includes(selectedEggGroups) : true;
-                const matchesTier = allowedTiers ? monTiers.some(t => allowedTiers.includes(t)) : true;
+                const matchesTier = allowedTiers
+                    ? monTiers.some(t => allowedTiers.includes(t)) && !monTiers.includes("Ubers")
+                    : !monTiers.includes("Ubers");
+
 
                 return hasAbility && hasMoves && hasTypes && hasEggGroup && matchesTier;
+            })
+            .sort((a, b) => {
+                const sumStats = stats => Object.values(stats ?? {}).reduce((sum, val) => sum + val, 0);
+                return sumStats(b.stats) - sumStats(a.stats);
             });
     }, [selectedAbility, selectedMoves, selectedTypes, selectedEggGroups, selectedTier, allowOverrideLastAbility]);
+
 
     const getPokemonSprite = (pokemonId) => {
         const sprite = pokemonId ? sprites.find(({ node }) => parseInt(node.name) === pokemonId) : false;
