@@ -228,6 +228,7 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
             <Card>
                 <Stack direction="horizontal" className="flex-wrap justify-content-between">
                     <Typography className='mb-0'>No investments found. Start now by going to "All Items" and creating an investment.</Typography>
+                    <Button as={Link} to="/items" size="sm" variant='info' style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>All Items</Button>
                 </Stack>
             </Card>
     )
