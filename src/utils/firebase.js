@@ -30,7 +30,7 @@ let addTradeAd = (user_id, data) => false;
 if (typeof window !== "undefined") {
     app = app || initializeApp(firebaseConfig);
     auth = getAuth(app);
-    db = getFirestore(app);
+    db = getFirestore(app, process.env.GATSBY_FIREBASE_FIRESTORE_DATABASE_ID);
     getUser = user_id => FirestoreAPI.getUser(db, user_id);
     createUser = user_id => FirestoreAPI.createUser(db, user_id)
     updateUser = (user_id, data) => FirestoreAPI.updateUser(db, user_id, data)
