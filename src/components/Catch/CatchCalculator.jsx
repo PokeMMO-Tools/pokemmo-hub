@@ -174,8 +174,16 @@ const CatchCalculator = ({ sprites }) => {
                                 <strong>Calculation Formula:</strong>
                                 <pre style={{ textAlign: 'left', whiteSpace: 'pre-wrap', wordBreak: 'break-word', margin: 0 }}>
                                     {`
-catchRate = ((3 * pkmn_rate * current_hp) / (max_hp * 255)) * ball_rate * status_rate
-Final Catch Rate = ${catchRate ?? 'undefined'}`}
+x = (((max_hp * 3 - current_hp * 2) * base_rate * ball_rate) / (max_hp * 3)) * status_rate
+
+if (x > 255):
+    Final Catch Rate = 100%
+else:
+    y = 65536 / sqrt(sqrt(255 / x))
+    Final Catch Rate = ((y / 65536) ^ 4) * 100%
+
+Result: ${catchRateProbabilities ?? 'undefined'}
+`}
                                 </pre>
                             </Typography>
                         </div>
