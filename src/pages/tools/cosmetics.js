@@ -59,7 +59,7 @@ const Cosmetics = ({ pageContext }) => {
 
     return (
         <Page breadcrumbs={pageContext.breadcrumb} label={PAGE_TITLE}>
-            <PageTitle credits="Updated to Halloween 2023">{PAGE_TITLE}</PageTitle>
+            <PageTitle credits="Last updated during 2025 Lunar Event">{PAGE_TITLE}</PageTitle>
             <div className='d-flex flex-column align-items-start' style={{ gap: '3rem' }}>
                 <div className='d-flex flex-column align-items-start order-2 order-sm-1'>
                     <CosmeticsFilter selectedClothes={clothes} onCosmeticSelect={changeClothes} cosmeticsArrays={cosmeticsArrays} />
