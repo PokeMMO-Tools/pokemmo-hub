@@ -81,13 +81,14 @@ Before you can run the website locally you need to create a `.env.development` a
 
 `NOTE: Setting up the firebase is OPTIONAL. Populate fields with fake data if you do not wish to use login functionality.`
 ```
-GATSBY_FIREBASE_API_KEY=...
-GATSBY_FIREBASE_AUTH_DOMAIN=...
-GATSBY_FIREBASE_PROJECT_ID=...
-GATSBY_FIREBASE_STORAGE_BUCKET=...
-GATSBY_FIREBASE_MESSAGING_SENDER_ID=...
-GATSBY_FIREBASE_APP_ID=...
-GATSBY_FIREBASE_MEASUREMENT_ID=...
+GATSBY_FIREBASE_API_KEY="..."
+GATSBY_FIREBASE_AUTH_DOMAIN="..."
+GATSBY_FIREBASE_PROJECT_ID="..."
+GATSBY_FIREBASE_STORAGE_BUCKET="..."
+GATSBY_FIREBASE_MESSAGING_SENDER_ID="..."
+GATSBY_FIREBASE_APP_ID="..."
+GATSBY_FIREBASE_MEASUREMENT_ID="..."
+GATSBY_FIREBASE_FIRESTORE_DATABASE_ID="..."
 ```
 
 Now you can start the website:
@@ -121,7 +122,6 @@ Our community and team members will be happy to help you out.
 ## 💙 Credits <a id="credits"></a>
 - Thanks to Yibu for a massive dataset with a lot of information on PokeMMO, fantastic for developing new tools.
 - Thanks to boebi for developing the Multi Graph tool.
-- Thanks to xlirate for significant contributions in optimising our tools.
 - Thanks to Bestfriends and Scales (Saclex) for tips on UI improvements.
 - Everyone who reported bugs and helped us improve the website
 - Everyone who helped in fixing bugs
