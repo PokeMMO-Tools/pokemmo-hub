@@ -43,6 +43,8 @@ export const PokemonItem = (pokemon) => {
     const locationList = pokemon.locations
     const toggleTab = tabId => setItemActiveTab(prev => prev !== tabId ? tabId : '')
 
+    const size = { width: 80, height: 80 }
+
     useEffect(() => {
         setItemActiveTab(activeTab)
     }, [activeTab])
@@ -51,7 +53,7 @@ export const PokemonItem = (pokemon) => {
         <Card className="mb-3 rounded" bodyClassName={'p-2'}>
             <Stack direction="horizontal" gap={3}>
                 <GatsbyImage
-                    style={{ maxWidth: '80px' }}
+                    style={{ maxWidth: '80px', width: size.width, height: size.height }}
                     image={sprite.node.childImageSharp.gatsbyImageData}
                     alt={name}
                 />
