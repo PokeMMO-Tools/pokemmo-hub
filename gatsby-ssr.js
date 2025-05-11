@@ -6,12 +6,12 @@ import "./src/globalv2.css";
 
 
 const HeadComponent = [
-    <script async
+    <script
+        async
         key="adsense"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4852896129606217"
-        crossorigin="anonymous">
-    </script>,
-
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8441432984375470"
+        crossOrigin="anonymous"
+    />,
     <script async src="https://fundingchoicesmessages.google.com/i/pub-8441432984375470?ers=1" nonce="dBWwHnd_1Xub1Hk7aU2V_A"></script>,
     <script nonce="dBWwHnd_1Xub1Hk7aU2V_A" src="/signalGooglefcPresent.js"></script>,
     <script src="/protectionMessageError.js"></script>
