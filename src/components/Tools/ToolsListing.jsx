@@ -69,10 +69,13 @@ export const ToolsListing = () => {
     const { isDark } = useDarkMode()
 
     return (
-        <div className={`container ${isDark ? 'dark-mode' : ''}`}> {/* Apply dark mode class if true */}
+        <div className={`container ${isDark ? 'dark-mode' : ''}`}>
             <div className="row g-2">
                 {TOOLS.map(({ label, url, icon, description, highlight }) => (
-                    <div className="col-12 col-sm-6 col-md-4" key={label}>
+                    <div
+                        className="col-12 col-sm-6 col-md-4 col-lg-3"
+                        key={label}
+                    >
                         <Link to={url} className={`tool-card ${isDark ? 'dark-mode' : ''}`}>
                             <div className="tool-card-header d-flex align-items-center">
                                 <Image src={icon} className="tool-icon" />
