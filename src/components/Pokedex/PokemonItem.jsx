@@ -6,7 +6,7 @@ import { usePokedex } from '../../context/PokedexContext';
 import { useTranslations } from '../../context/TranslationsContext';
 import { useCatchRate } from '../../hooks/useCatchRate';
 import { getPokeDexIDs } from '../../utils/pokemon';
-import { Card, Typography } from '../Atoms';
+import { Card, Typography, Badge } from '../Atoms';
 import { CatchResults } from './CatchResults';
 import { EggGroupList } from './EggGroupList';
 import { PokemonActionBar } from './PokemonActionBar';
@@ -36,6 +36,7 @@ export const PokemonItem = (pokemon) => {
     const { types } = pokemon;
     const { held_items: heldItems } = pokemon;
     const { hp, attack, defense, sp_attack, sp_defense, speed } = pokemon.stats;
+    const { ev_hp, ev_attack, ev_defense, ev_sp_attack, ev_sp_defense, ev_speed } = pokemon.yields;
     const { TABS, activeTab } = usePokedex()
     const [itemActiveTab, setItemActiveTab] = useState(false)
     const catchResults = useCatchRate(id, hp);
@@ -44,6 +45,18 @@ export const PokemonItem = (pokemon) => {
     const toggleTab = tabId => setItemActiveTab(prev => prev !== tabId ? tabId : '')
 
     const size = { width: 80, height: 80 }
+
+    const evLabels = [
+        { label: 'HP', value: ev_hp },
+        { label: 'ATK', value: ev_attack },
+        { label: 'DEF', value: ev_defense },
+        { label: 'SP. ATK', value: ev_sp_attack },
+        { label: 'SP. DEF', value: ev_sp_defense },
+        { label: 'SPEED', value: ev_speed },
+    ];
+
+    const nonZeroEvs = evLabels.filter(ev => ev.value > 0);
+    const evDisplay = nonZeroEvs.map(ev => `${ev.value} ${ev.label}`).join(', ');
 
     useEffect(() => {
         setItemActiveTab(activeTab)
@@ -65,6 +78,7 @@ export const PokemonItem = (pokemon) => {
                                 {
                                     isMobile ? false : <PokemonDexBar nationalDex={id} kanto_dex={kanto_dex} johto_dex={johto_dex} hoenn_dex={hoenn_dex} sinnoh_dex={sinnoh_dex} unova_dex={unova_dex} />
                                 }
+                                {evDisplay && <Badge>EV: {evDisplay}</Badge>}
                             </div>
                             <PokemonActionBar
                                 onClick={tabId => toggleTab(tabId)}
@@ -82,7 +96,7 @@ export const PokemonItem = (pokemon) => {
                         </Stack>
                     </Stack>
                 </Stack>
-            </Stack>
+            </Stack >
             <>
                 <PokemonSection show={itemActiveTab === TABS.LOCATION ? true : false} title={t("Locations")}>
                     <PokemonLocations dexID={id} locationList={locationList} />
@@ -101,6 +115,6 @@ export const PokemonItem = (pokemon) => {
                     <PokemonBaseStats hp={hp} atk={attack} def={defense} spatk={sp_attack} spdef={sp_defense} spe={speed} />
                 </PokemonSection>
             </>
-        </Card>
+        </Card >
     )
 }
