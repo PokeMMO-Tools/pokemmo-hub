@@ -31,7 +31,7 @@ export const ItemsListing = () => {
         prices.getAllItemsDesc,
         {
             staleTime: 180000,
-            enabled: !isDataCached,
+            enabled: true,
             onSuccess: (data) => {
                 localStorage.setItem('allItemsDescCache', JSON.stringify({
                     data,
