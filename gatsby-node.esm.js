@@ -2,6 +2,7 @@
 
 const fetch = require('node-fetch');
 const { getItemInfo, getPokemmoID } = require('./src/utils/items');
+import itemsData from './src/data/pokemmo/item_lookup.json'
 
 
 const NODE_TYPE = "Pokemmo"
@@ -15,24 +16,50 @@ const slugify = string => string.toString()
     .replace(/[^\w-]+/g, '')
     .replace(/--+/g, '-')
 
+const getItemName = (id) => {
+    const item = itemsData[id.toString()];
+    if (!item) return null;
+
+    return item.name;
+}
+
+const getItemDescription = (id) => {
+    const item = itemsData[id.toString()];
+    if (!item) return null;
+
+    const cleanedDescription = {};
+    for (const [lang, text] of Object.entries(item.description)) {
+        cleanedDescription[lang] = text.replace(/\\n/g, ' ');
+    }
+
+    return cleanedDescription;
+}
+
 exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }) => {
     const { createNode } = actions;
 
     const response = await fetch(
-        `https://pokemmoprices.com/api/v2/items/all`
+        `https://apis.fiereu.de/pokemmoprices/v1/items` // https://pokemmoprices.com/api/v2/items/all
     );
-    const { data } = await response.json();
+    const data = await response.json();
 
     data.forEach((item) => {
-        const item_pokemmo_id = getPokemmoID(item.i)
+        let item_pokemmo_id = getPokemmoID(item.item_id)
         if (!item_pokemmo_id) {
-            return;
+            return false
         }
-        const slug = slugify(item.n.en)
+        const itemName = getItemName(item.item_id)
+
+        if (!itemName) {
+            return false
+        }
+        const slug = slugify(itemName['en'])
 
 
         item = {
             ...item,
+            n: getItemName(item.item_id),
+            d: getItemDescription(item.item_id),
             ...getItemInfo(item_pokemmo_id),
             slug: slug,
             _id: item_pokemmo_id
@@ -40,11 +67,11 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }) => 
 
         createNode({
             ...item,
-            id: createNodeId(`${NODE_TYPE}-${item.i}`),
+            id: createNodeId(`${NODE_TYPE}-${item.item_id}`),
             parent: null,
             children: [],
             context: {
-                i: item.i,
+                i: item.item_id,
                 slug: slug
             },
             internal: {

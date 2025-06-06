@@ -7,6 +7,7 @@ import { Td as SrTd, Tr as SrTr } from 'react-super-responsive-table'
 import { useMarket } from '../../context/MarketContext'
 import { useTranslations } from '../../context/TranslationsContext'
 import { prices } from '../../utils/prices'
+import { getItemName } from '../../utils/items';
 import { Button, Typography } from '../Atoms'
 import { ItemImage } from '../Items/ItemImage'
 import { ItemPrices } from '../Items/ItemPrices'
@@ -28,7 +29,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     )
 
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket()
-    const { n, _id, slug, category } = allItems.find(({ i }) => i === investment.i)
+    const { n, _id, slug, category } = allItems.find(({ item_id }) => item_id === investment.i)
     const sellTotal = currentPrice.min * investment.quantity    //prices.calculateSellGain(currentPrice.min) for listing fee deduction
     const boughtTotal = investment.boughtPrice * investment.quantity
     const boughtWorth = investment.quantity * currentPrice.min
@@ -50,7 +51,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
             <Td component="th" scope="row" className="d-flex align-items-start border-0">
                 <ItemImage className="me-1" category={category} id={_id} />
                 &nbsp;
-                <Typography as={Link} to={`/items/${slug}`} style={{ color: 'var(--bs-info)' }}>{n[language]}</Typography>
+                <Typography as={Link} to={`/items/${slug}`} style={{ color: 'var(--bs-info)' }}>{getItemName(investment.i)[language]}</Typography>
             </Td>
             <Td align="right" className=' border-0'>
                 <ItemPrices onPriceUpdate={setCurrentPrice} i={investment.i} noDiff={true} />

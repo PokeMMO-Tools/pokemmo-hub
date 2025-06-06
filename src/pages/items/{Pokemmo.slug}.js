@@ -12,16 +12,19 @@ import { Seo } from '../../components/SEO';
 import { useTranslations } from '../../context/TranslationsContext';
 import cosmeticInfo from '../../data/pokemmo/item-cosmetic';
 import { InterfaceItems } from '../../interface/items';
+import { getItemName, getItemDescription } from '../../utils/items';
 
 const ItemPage = ({ pageContext, data }) => {
   const item = data.pokemmo;
   const { language } = useTranslations();
   const itemInfo = cosmeticInfo.find(cosmetic => cosmetic.item_id === item._id)
 
+  console.log(item)
+
   return (
     <Page breadcrumbs={pageContext.breadcrumb} label={item.n[language]}>
-      <PageTitle credits={item.d[language]}>
-        <ItemHeading i={item.i} name={item.n[language]} category={item.category} _id={item._id} />
+      <PageTitle credits={getItemDescription(item.item_id)[language]}>
+        <ItemHeading i={item.item_id} name={item.n[language]} category={item.category} _id={item._id} />
       </PageTitle>
       <div className="d-flex gap-2 mb-2 f2-6">
         {itemInfo && (
@@ -40,11 +43,11 @@ const ItemPage = ({ pageContext, data }) => {
         )}
 
       </div>
-      <ItemDrop itemId={item.i} />
+      <ItemDrop itemId={item.item_id} />
       <Item data={item}></Item>
-      <ItemInvestments i={item.i} />
+      <ItemInvestments i={item.item_id} />
       <Card>
-        <Graph name={item.n[language]} id={item.i} />
+        <Graph name={item.n[language]} id={item.item_id} />
       </Card>
 
     </Page>
@@ -59,7 +62,7 @@ export const Head = ({ data }) => {
 export const query = graphql`
   query MyQuery($slug: String!) {
   pokemmo(slug: {eq: $slug}) {
-    i
+    item_id
     _id
     slug
     n {
