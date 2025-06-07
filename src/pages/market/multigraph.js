@@ -9,34 +9,33 @@ import { Seo } from '../../components/SEO'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useMarket } from '../../context/MarketContext'
 import { prices as PricesApi } from '../../utils/prices'
-import { getItemName } from '../../utils/items'
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 
 const MultiGraphPage = ({ pageContext }) => {
-	const { language } = useTranslations();
-	const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket();
+    const { language } = useTranslations();
+    const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket();
 	const [selectedItem, setSelectedItem] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
-	const [items, setItems] = useLocalStorage('multiGraphItems', []);
+    const [items, setItems] = useLocalStorage('multiGraphItems', []);
 
 	useEffect(() => {
 		if (items.length > 0) {
 			updatePriceData();
 		}
-	}, []);
+     }, []);
 
-	const addItemToList = (apiId) => {
+    const addItemToList = (apiId) => {
 		if (items.some(item => item.apiId === apiId))
 			return; // Item already in array
 
 		setIsLoading(true);
-		let itemInfo = allItems.find(({ item_id }) => item_id === apiId);
-		PricesApi.getItem(itemInfo.item_id).then(res => {
+		let itemInfo = allItems.find(({ i }) => i === apiId);
+		PricesApi.getItem(itemInfo.i).then(res => {
 			let item = {
 				id: itemInfo._id,
-				apiId: itemInfo.item_id,
-				name: getItemName(itemInfo.item_id)[language],
+				apiId: itemInfo.i,
+				name: itemInfo.n[language],
 				slug: itemInfo.slug,
 				category: itemInfo.category,
 				data: res,
@@ -45,7 +44,7 @@ const MultiGraphPage = ({ pageContext }) => {
 			setIsLoading(false);
 			setItems([...items, item]);
 		});
-	}
+    }
 
 	const updatePriceData = () => {
 		items.map(item => {
@@ -85,7 +84,7 @@ const MultiGraphPage = ({ pageContext }) => {
 	}
 
 	const getSearchableItems = () => {
-		return allItems.filter(item => !items.some(removedItem => removedItem.apiId === item.item_id))
+		return allItems.filter(item => !items.some(removedItem => removedItem.apiId === item.i))
 	}
 
 	const PAGE_TITLE = 'Multi Item Graph';
@@ -93,7 +92,7 @@ const MultiGraphPage = ({ pageContext }) => {
 	return (
 		<Page breadcrumbs={pageContext.breadcrumb} label={PAGE_TITLE}>
 			<PageTitle>
-				<Typography as='h1' className='mb-0'>{PAGE_TITLE}</Typography>
+				<Typography as='h1' className='mb-0'>{ PAGE_TITLE }</Typography>
 			</PageTitle>
 			<Stack gap={2}>
 				<Card>
@@ -102,10 +101,10 @@ const MultiGraphPage = ({ pageContext }) => {
 						<div style={{ flexGrow: '1' }}>
 							<Search
 								items={
-									getSearchableItems().map(({ item_id, n }) => {
+									getSearchableItems().map(({ i, n }) => {
 										return (
 											{
-												value: item_id,
+												value: i,
 												label: n[language]
 											}
 										)
@@ -121,8 +120,8 @@ const MultiGraphPage = ({ pageContext }) => {
 					<MultiGraphItemList items={items} removeItem={removeItem} editItem={editItem} />
 					{
 						isLoading
-							? <Spinner animation="border" variant="warning" />
-							: <span></span>
+						? <Spinner animation="border" variant="warning" />
+						: <span></span>
 					}
 				</Card>
 				<Card>
@@ -135,7 +134,7 @@ const MultiGraphPage = ({ pageContext }) => {
 };
 
 export const Head = () => {
-	return <Seo title='Multi Graph' description='Compare multiple items on the GTL at the same time.'></Seo>
+  return <Seo title='Multi Graph' description='Compare multiple items on the GTL at the same time.'></Seo>
 }
 
 export default MultiGraphPage;

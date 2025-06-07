@@ -118,7 +118,7 @@ export function MarketProvider({ children }) {
                 query InvestmentItemQuery {
                     allPokemmo {
                         nodes {
-                            item_id
+                            i
                             n {
                                 en
                                 cn

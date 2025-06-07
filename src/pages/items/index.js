@@ -30,7 +30,7 @@ export const query = graphql`
 query AllPokemmoQuery {
     allPokemmo {
         nodes {
-            item_id
+            i
             _id
             slug
             n {
@@ -52,6 +52,7 @@ query AllPokemmoQuery {
                 es
             }
             category
+            t
         }
     }
 }

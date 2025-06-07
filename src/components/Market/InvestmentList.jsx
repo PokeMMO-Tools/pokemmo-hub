@@ -11,7 +11,6 @@ import { useTranslations } from '../../context/TranslationsContext'
 import { Card, Table as DesktopTable, Typography, Button } from '../Atoms'
 import { InvestmentItem } from './InvestmentItem'
 import { InvestmentTotal } from './InvestmentTotal'
-import { getItemName } from '../../utils/items';
 
 export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
     const { t, language } = useTranslations()
@@ -63,9 +62,9 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
 
         const headerRow = ['Name', 'Quantity', 'Per Unit', 'Total Cost', 'Current Value', 'Gain', 'Gain %'];
         const dataRows = investments.map(investment => {
-            const { n } = allItems.find(({ item_id }) => item_id === investment.i) || { n: {} };
+            const { n } = allItems.find(({ i }) => i === investment.i) || { n: {} };
             const gainInfo = investmentsGain.find(item => item.investmentId === investment.id) || { gain: 0, spent: 0 };
-            const name = getItemName(investment.i)[language] || investment.name || 'Unknown';
+            const name = n[language] || investment.name || 'Unknown';
             const quantity = investment.quantity || 0;
             const perUnit = investment.perUnit || (quantity > 0 ? gainInfo.spent / quantity : 0);
             const spent = gainInfo.spent || 0;

@@ -8,7 +8,6 @@ import { ItemImage } from './ItemImage'
 import { ItemPrices } from './ItemPrices'
 import { useTranslations, t } from '../../context/TranslationsContext';
 import { prices as PricesApi } from '../../utils/prices'
-import { getItemName, getItemDescription } from '../../utils/items';
 import { useQuery } from 'react-query'
 import { SparklineGraph } from '../Atoms/SparklineGraph';
 import { InterfaceItems } from '../../interface/items';
@@ -47,7 +46,7 @@ export const ItemRow = ({ item }) => {
                     <Link to={slug} className={`d-flex ${isDark ? 'text-info' : ''}`} style={{ gap: '.35rem' }}>
                         <ItemImage id={_id} category={category} />
                         <Typography as="h2" className="fs-6 mb-0" style={{ color: 'inherit' }}>
-                            {getItemName(i)[language]}
+                            {n[language]}
                         </Typography>
                     </Link>
                     <div className="d-flex gap-2">
@@ -80,7 +79,7 @@ export const ItemRow = ({ item }) => {
 
             <div className="d-flex justify-content-between">
                 <Stack gap={1} style={{ flex: 1 }}>
-                    <Typography as="small" className="text-muted">{getItemDescription(i)[language]}</Typography>
+                    <Typography as="small" className="text-muted">{d[language]}</Typography>
                     <MarketItemActions id={i} className="d-flex" style={{ gap: ".4rem" }} />
                 </Stack>
                 <div style={{ display: 'flex', alignItems: 'stretch', width: "40%" }}>
