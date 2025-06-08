@@ -181,7 +181,7 @@ export const ItemsListing = () => {
                                 p: item.p,
                                 q: item.q,
                                 category: itemInfo ? itemInfo.category : 0,
-                                slug: slugify(name),
+                                slug: slugify(item.n['en']),
                             };
 
                             return (
