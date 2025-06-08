@@ -5,7 +5,7 @@ import { Button, Card, Typography, Search } from '../Atoms';
 import { ItemImage } from '../Items/ItemImage'
 import { useMarket } from '../../context/MarketContext'
 import { useTranslations } from '../../context/TranslationsContext'
-import { getItemInfo, getPokemmoID } from '../../utils/items';
+import { getItemInfo, getPokemmoID, getItemName } from '../../utils/items';
 import { getApiID } from '../../utils/items';
 import { prices } from '../../utils/prices';
 import { app, getUser, updateUser, auth, addTradeAd, getTradeAds, db } from '../../utils/firebase';
@@ -385,9 +385,9 @@ export const CreateTradeAd = ({ data, style }) => {
                                         itemList
                                             .map(({ item }) => {
                                                 return {
-                                                    value: item.i.n[language],
+                                                    value: getItemName(item.i)[language],
                                                     value2: item.i.i,
-                                                    label: <Stack direction="horizontal"><ItemImage className="me-1" category={getCosmeticID(item.i.i).category} id={getCosmeticID(item.i.i)._id} />&nbsp;{language !== 'cn' && language !== 'tw' ? item.i.n[language] : getItemInfo(item1._id).name}</Stack>,
+                                                    label: <Stack direction="horizontal"><ItemImage className="me-1" category={getCosmeticID(item.i.i).category} id={getCosmeticID(item.i.i)._id} />&nbsp;{language !== 'cn' && language !== 'tw' ? getItemName(item.i)[language] : getItemInfo(item1._id).name}</Stack>,
                                                 }
                                             })
                                         :
@@ -411,9 +411,9 @@ export const CreateTradeAd = ({ data, style }) => {
                                         itemList
                                             .map(({ item }) => {
                                                 return {
-                                                    value: item.i.n[language],
+                                                    value: getItemName(item.i)[language],
                                                     value2: item.i.i,
-                                                    label: <Stack direction="horizontal"><ItemImage className="me-1" category={getCosmeticID(item.i.i).category} id={getCosmeticID(item.i.i)._id} />&nbsp;{language !== 'cn' && language !== 'tw' ? item.i.n[language] : getItemInfo(item1._id).name}</Stack>,
+                                                    label: <Stack direction="horizontal"><ItemImage className="me-1" category={getCosmeticID(item.i.i).category} id={getCosmeticID(item.i.i)._id} />&nbsp;{language !== 'cn' && language !== 'tw' ? getItemName(item.i)[language] : getItemInfo(item1._id).name}</Stack>,
                                                 }
                                             })
                                         :

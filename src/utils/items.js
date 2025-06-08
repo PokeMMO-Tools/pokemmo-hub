@@ -5,6 +5,8 @@ import berries from '../data/pokemmo/item-berry.json'
 import cosmetics from '../data/pokemmo/item-cosmetic.json'
 import items from '../data/pokemmo/item.json'
 
+import itemsData from '../data/pokemmo/item_lookup.json'
+
 /* export const DEFAULT_CLOTHES = {
     //forehead
     1: 0,
@@ -94,4 +96,24 @@ export const getApiID = id => {
     if (!item) return false;
 
     return item.apiID;
+}
+
+//NEW API
+export const getItemName = (id) => {
+    const item = itemsData[id.toString()];
+    if (!item) return null;
+
+    return item.name;
+}
+
+export const getItemDescription = (id) => {
+    const item = itemsData[id.toString()];
+    if (!item) return null;
+
+    const cleanedDescription = {};
+    for (const [lang, text] of Object.entries(item.description)) {
+        cleanedDescription[lang] = text.replace(/\\n/g, ' ');
+    }
+
+    return cleanedDescription;
 }

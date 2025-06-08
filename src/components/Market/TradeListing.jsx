@@ -5,7 +5,7 @@ import { Button, Card, Typography, Search } from '../Atoms';
 import { ItemImage } from '../Items/ItemImage'
 import { useMarket } from '../../context/MarketContext'
 import { useTranslations } from '../../context/TranslationsContext'
-import { getItemInfo } from '../../utils/items';
+import { getItemInfo, getItemName } from '../../utils/items';
 import { getApiID } from '../../utils/items';
 import { prices } from '../../utils/prices';
 import cosmetics from '../../data/pokemmo/item-cosmetic.json'
@@ -305,7 +305,7 @@ export const TradeListing = ({ data, style }) => {
                                         <Stack direction='horizontal' className="col" key={item._id}>
                                             {giveQuantity[i]}x {'\u00A0'}
                                             <ItemImage className="me-1" category={item.category} id={item._id} tradeListing={true} />
-                                            <Typography as={Link} to={`../../items/${item.slug}`} style={{ color: 'var(--bs-info)' }}>{language !== 'cn' && language !== 'tw' ? item.n[language] : getItemInfo(item._id).name}</Typography>
+                                            <Typography as={Link} to={`../../items/${item.slug}`} style={{ color: 'var(--bs-info)' }}>{language !== 'cn' && language !== 'tw' ? getItemName(item.i)[language] : getItemInfo(item._id).name}</Typography>
                                         </Stack>
                                     )
                                 })
@@ -336,7 +336,7 @@ export const TradeListing = ({ data, style }) => {
                                         <Stack direction='horizontal' className="col" key={item._id}>
                                             {receiveQuantity[i]}x {'\u00A0'}
                                             <ItemImage className="me-1" category={item.category} id={item._id} tradeListing={true} />
-                                            <Typography as={Link} to={`../../items/${item.slug}`} style={{ color: 'var(--bs-info)' }}>{language !== 'cn' && language !== 'tw' ? item.n[language] : getItemInfo(item._id).name}</Typography>
+                                            <Typography as={Link} to={`../../items/${item.slug}`} style={{ color: 'var(--bs-info)' }}>{language !== 'cn' && language !== 'tw' ? getItemName(item.i)[language] : getItemInfo(item._id).name}</Typography>
                                         </Stack>
                                     )
                                 })

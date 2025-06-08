@@ -3,7 +3,7 @@ import { Stack } from 'react-bootstrap';
 import { useMarket } from '../../context/MarketContext';
 import { useTranslations } from '../../context/TranslationsContext';
 import { InterfaceItems } from '../../interface/items';
-import { getApiID } from '../../utils/items';
+import { getApiID, getItemName } from '../../utils/items';
 import { Search, Typography } from '../Atoms';
 import { ItemImage } from '../Items/ItemImage';
 import { SwatchColorPicker } from './SwatchColorPicker';
@@ -60,7 +60,7 @@ export const CosmeticList = memo(({ selectedClothes, onCosmeticSelect, slotId, c
 
                         cosmeticsArrays[slotId]
                             .map(({ item_id, en_name, ch_name }) => {
-                                const itemAPI = allItems.find(({ i }) => i === parseInt(getApiID(item_id)))
+                                const itemAPI = allItems.find(({ item_id }) => item_id === parseInt(getApiID(item_id)))
                                 return (
                                     itemAPI == undefined ?
                                         {
@@ -69,8 +69,8 @@ export const CosmeticList = memo(({ selectedClothes, onCosmeticSelect, slotId, c
                                         }
                                         :
                                         {
-                                            value: [item_id, language !== 'cn' && language !== 'tw' ? itemAPI.n[language] : ch_name], //only way i found to get search working. objects in label dont work
-                                            label: <Stack direction='horizontal'><ItemImage className="me-1" category={6} id={item_id} />{language !== 'cn' && language !== 'tw' ? itemAPI.n[language] : ch_name}</Stack>
+                                            value: [item_id, language !== 'cn' && language !== 'tw' ? getItemName(itemAPI.item_id)[language] : ch_name], //only way i found to get search working. objects in label dont work
+                                            label: <Stack direction='horizontal'><ItemImage className="me-1" category={6} id={item_id} />{language !== 'cn' && language !== 'tw' ? getItemName(itemAPI.item_id)[language] : ch_name}</Stack>
                                         }
                                 )
                             })

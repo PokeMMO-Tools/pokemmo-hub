@@ -12,7 +12,7 @@ import { slugify } from '../utils/slugify'
 import { ItemImage } from './Items/ItemImage'
 import { Td as SrTd, Tr as SrTr } from 'react-super-responsive-table'
 import { isMobile } from 'react-device-detect'
-import { getItemInfo } from '../utils/items';
+import { getItemInfo, getItemName } from '../utils/items';
 
 
 export const MarketListing = ({ onLoadComplete }) => {
@@ -85,7 +85,7 @@ export const MarketListing = ({ onLoadComplete }) => {
                         <div className={`resizable ${itemsLoaded ? 'fade-in' : ''}`}>
                             {
                                 language !== 'cn' && language !== 'tw'
-                                    ? <Graph hideItemActions={true} name={listing[selectedItem][language + '_name']} id={listing[selectedItem].apiID} />
+                                    ? <Graph hideItemActions={true} name={listing[selectedItem].n[language]} id={listing[selectedItem].i} />
                                     : <Graph hideItemActions={true} name={listing[selectedItem].name} id={listing[selectedItem].apiID} />
                             }
                         </div>
@@ -94,7 +94,7 @@ export const MarketListing = ({ onLoadComplete }) => {
                         <ListGroup className='overflow-scroll mb-1' style={{ maxHeight: 393 }}>
                             {
                                 listing.map((item, index) => {
-                                    const itemAPI = allItems.find(({ i }) => i === parseInt(item.i))
+                                    //  const itemAPI = allItems.find(({ i }) => i === parseInt(item.i))
                                     return (
                                         <Stack direction='horizontal' key={item.id}>
                                             <ListItem
@@ -111,17 +111,17 @@ export const MarketListing = ({ onLoadComplete }) => {
                                                             language !== 'cn' && language !== 'tw'
                                                                 ? ['en', 'fr', 'es'].includes(language)
                                                                     ? <Td component="th" scope="row" className="d-flex align-items-start border-0">
-                                                                        <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
+                                                                        <ItemImage className="me-1 col" category={item.category} id={item.id} />
                                                                         &nbsp;
-                                                                        <Typography as={Link} to={item.i === 1192 ? `/items/1000rp-reward-point-voucher` : `/items/${slugify(item.en_name)}`} style={{ color: 'var(--bs-info)', display: 'inline-block', width: 'auto' }} className='mb-0 ln-1 fs-6 fw-bold item-name'>{item[language + '_name']}</Typography>
+                                                                        <Typography as={Link} to={item.i === 1192 ? `/items/1000rp-reward-point-voucher` : `/items/${slugify(item.n.en)}`} style={{ color: 'var(--bs-info)', display: 'inline-block', width: 'auto' }} className='mb-0 ln-1 fs-6 fw-bold item-name'>{item.n[language]}</Typography>
                                                                     </Td>
                                                                     : <Td component="th" scope="row" className="d-flex align-items-start border-0">
-                                                                        <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
+                                                                        <ItemImage className="me-1 col" category={item.category} id={item.id} />
                                                                         &nbsp;
-                                                                        <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item['en_name']}</Typography>
+                                                                        <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item.n.en}</Typography>
                                                                     </Td>
                                                                 : <Td component="th" scope="row" className="d-flex align-items-start border-0">
-                                                                    <ItemImage className="me-1 col" category={getItemInfo(item.id).category} id={item.id} />
+                                                                    <ItemImage className="me-1 col" category={item.category} id={item.id} />
                                                                     &nbsp;
                                                                     <Typography as="p" className='col mb-0 ln-1 fs-6 fw-bold item-name'>{item.name}</Typography>
                                                                 </Td>
@@ -141,7 +141,7 @@ export const MarketListing = ({ onLoadComplete }) => {
                                                                 ? <Button variant='link' size="sm" as={Link} to={`/items/1000rp-reward-point-voucher`}>
                                                                     <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
                                                                 </Button>
-                                                                : <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.en_name)}`}>
+                                                                : <Button variant='link' size="sm" as={Link} to={`/items/${slugify(item.n.en)}`}>
                                                                     <Typography as="span"><TbExternalLink color="var(--bs-text)" size={20} /></Typography>
                                                                 </Button>
                                                         }

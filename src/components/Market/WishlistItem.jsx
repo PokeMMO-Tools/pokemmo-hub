@@ -7,6 +7,7 @@ import { Td as SrTd, Tr as SrTr } from 'react-super-responsive-table'
 import { useMarket } from '../../context/MarketContext'
 import { useTranslations } from '../../context/TranslationsContext'
 import { prices } from '../../utils/prices'
+import { getItemName } from '../../utils/items'
 import { Button, Typography } from '../Atoms'
 import { ItemImage } from '../Items/ItemImage'
 import { ItemPrices } from '../Items/ItemPrices'
@@ -29,7 +30,7 @@ export const WishlistItem = ({ wishlist, onPriceUpdate }) => {
     )
 
     const { removeFromWishlist, allItems } = useMarket()
-    const { n, _id, slug, category } = wishlist ? allItems.find(({ i }) => i === wishlist) : false
+    const { n, _id, slug, category } = wishlist ? allItems.find(({ item_id }) => item_id === wishlist) : false
 
     const Tr = isMobile ? SrTr : 'tr'
     const Td = isMobile ? SrTd : 'td'

@@ -7,8 +7,7 @@ import { FilterSelect } from '../Pokedex/FilterSelect';
 import { ItemRow } from './ItemRow';
 import { useTranslations } from '../../context/TranslationsContext';
 import { prices } from '../../utils/prices';
-import { InterfaceItems } from '../../interface/items';
-import { getItemInfo, getPokemmoID, getCosmeticInfo } from '../../utils/items';
+import { getItemInfo, getPokemmoID, getItemName } from '../../utils/items';
 import { slugify } from '../../utils/slugify';
 
 const DEFAULT_FILTERS = {
@@ -22,12 +21,12 @@ export const ItemsListing = () => {
     const [postsPerPage, setPostsPerPage] = useState(50);
     const [filters, setFilters] = useState(DEFAULT_FILTERS);
     const [sortOrder, setSortOrder] = useState('desc');
-    const [sortBy, setSortBy] = useState('quantity'); // default 'price' or 'quantity'
+    const [sortBy, setSortBy] = useState('quantity');
 
     const cachedData = JSON.parse(localStorage.getItem('allItemsDescCache') || 'null');
     const isDataCached = cachedData && cachedData.timestamp && Date.now() - cachedData.timestamp < 21600000;
 
-    const { isError, isSuccess, isLoading, data: allItemsData, error } = useQuery(
+    const { isLoading, data: allItemsData } = useQuery(
         ["allItemsDesc"],
         prices.getAllItemsDesc,
         {
@@ -43,8 +42,8 @@ export const ItemsListing = () => {
     );
 
     const itemsToUse = useMemo(() => {
-        if (isDataCached) return cachedData?.data ?? null;
-        return allItemsData ?? null;
+        if (isDataCached) return cachedData?.data ?? [];
+        return allItemsData ?? [];
     }, [isDataCached, cachedData, allItemsData]);
 
     const category = [
@@ -58,17 +57,17 @@ export const ItemsListing = () => {
         if (!Array.isArray(itemsToUse)) return [];
 
         return itemsToUse.filter((item) => {
-            if (!item.i || !item.i.n) return false;
+            if (!item.item_id || !item.n) return false;
             const normalize = (str) => str.normalize("NFKD").toLowerCase();
             const searchTerm = normalize(name.trim());
             if (searchTerm) {
-                const matched = Object.values(item.i.n || {}).some((n) =>
+                const matched = Object.values(item.n || {}).some((n) =>
                     normalize(n).includes(searchTerm)
                 );
                 if (!matched) return false;
             }
 
-            const itemId = getPokemmoID(item.i.i);
+            const itemId = getPokemmoID(item.item_id);
             if (!itemId) return false;
             const itemInfo = getItemInfo(itemId);
             const itemCategory = itemInfo ? Number(itemInfo.category) : 0;
@@ -139,13 +138,22 @@ export const ItemsListing = () => {
                     <Button as={Link} variant="warning" to="/market/investments">Investments</Button>
                 </div>
             </Stack>
+
             <Stack direction="horizontal" className='mb-3 d-flex flex-wrap align-items-center'>
                 <Typography>Warning: Items that are not currently listed on the GTL will not appear</Typography>
                 <div className="ms-auto d-flex flex-wrap align-items-center gap-2 flex-nowrap">
-                    <Button variant="secondary" onClick={() => { setSortBy('price'); setSortOrder(prev => (sortBy === 'price' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
-                        active={sortBy === 'price'}>Sort by Price {sortBy === 'price' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
-                    <Button variant="secondary" onClick={() => { setSortBy('quantity'); setSortOrder(prev => (sortBy === 'quantity' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')); }}
-                        active={sortBy === 'quantity'}>Sort by Quantity {sortBy === 'quantity' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}</Button>
+                    <Button variant="secondary" onClick={() => {
+                        setSortBy('price');
+                        setSortOrder(prev => (sortBy === 'price' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc'));
+                    }} active={sortBy === 'price'}>
+                        Sort by Price {sortBy === 'price' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}
+                    </Button>
+                    <Button variant="secondary" onClick={() => {
+                        setSortBy('quantity');
+                        setSortOrder(prev => (sortBy === 'quantity' ? (prev === 'asc' ? 'desc' : 'asc') : 'desc'));
+                    }} active={sortBy === 'quantity'}>
+                        Sort by Quantity {sortBy === 'quantity' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}
+                    </Button>
                 </div>
             </Stack>
 
@@ -159,28 +167,27 @@ export const ItemsListing = () => {
                     />
                 ) : (
                     filteredItems.length > 0 ? (
-                        currentPosts.map((data, index) => {
-                            const { i, p, q } = data;
-                            if (!i || !i.i || !i.n) return null;
-                            const itemId = getPokemmoID(i.i);
-                            if (itemId === false) return null;
+                        currentPosts.map((item) => {
+                            const itemId = getPokemmoID(item.item_id);
+                            if (!itemId) return null;
                             const itemInfo = getItemInfo(itemId);
+                            const name = item.n?.[language] || item.n?.en || "Unknown Item";
 
-                            const item = {
-                                i: i.i,
+                            const preparedItem = {
+                                i: item.item_id,
                                 _id: itemId,
-                                n: i.n,
-                                d: i.d,
-                                p: p,
-                                q: q,
+                                n: name,
+                                d: item.d?.[language] || item.d?.en || null,
+                                p: item.p,
+                                q: item.q,
                                 category: itemInfo ? itemInfo.category : 0,
-                                slug: slugify(i.n['en']),
+                                slug: slugify(name),
                             };
 
                             return (
-                                <div key={item.i} className={`item-wrapper fade-in-${filters.name}-${filters.category}`}>
+                                <div key={item.item_id} className={`item-wrapper fade-in-${filters.name}-${filters.category?.key || 'all'}`}>
                                     <Card bodyClassName="p-2" className="mb-1">
-                                        <ItemRow item={item} />
+                                        <ItemRow item={preparedItem} />
                                     </Card>
                                 </div>
                             );
