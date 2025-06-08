@@ -26,7 +26,6 @@ export const prices = {
         return price * 0.95;
     },
 
-    // Transform new API format to old format for backward compatibility
     transformNewApiItem: function (newApiItem) {
         const itemName = getItemName(newApiItem.item_id);
         const itemDescription = getItemDescription(newApiItem.item_id);
@@ -43,9 +42,8 @@ export const prices = {
             last_updated: newApiItem.last_updated,
             n: itemName,
             d: itemDescription,
-            // Add other properties that might be expected
-            min_price: newApiItem.price, // Assuming current price is min price
-            max_price: newApiItem.price  // You might need to adjust this
+            min_price: newApiItem.price,
+            max_price: newApiItem.price
         };
     },
 
@@ -53,7 +51,6 @@ export const prices = {
         try {
             const { data } = await axios.get(`${BASE_URL}/items`);
 
-            // New API returns array directly, transform each item
             const transformedData = data.map(item => prices.transformNewApiItem(item));
 
             cache.getAllItems = transformedData;
@@ -69,7 +66,6 @@ export const prices = {
             if (cache.getAllItemsDesc.length)
                 return cache.getAllItemsDesc;
 
-            // Same as getAllItems since we're adding descriptions in transform
             const { data } = await axios.get(`${BASE_URL}/items`);
             const transformedData = data.map(item => prices.transformNewApiItem(item));
 
@@ -106,16 +102,11 @@ export const prices = {
 
     getItem: async function (itemId, source = false) {
         try {
-            // Note: The new API might not have historical graph data
-            // You may need to adjust this endpoint or handle it differently
             const { data } = await axios.get(`${BASE_URL}/graph/items/${itemId}/min`, {
                 cancelToken: source?.token
             });
 
-            // If the new API doesn't support historical data, 
-            // you might need to return current data in a format that mimics historical data
             if (!data || !Array.isArray(data)) {
-                // Fallback: get current item data and format as single point
                 const currentData = await axios.get(`${BASE_URL}/graph/items/${itemId}/min`);
                 const transformedItem = this.transformNewApiItem(currentData.data);
 
@@ -138,7 +129,6 @@ export const prices = {
 
             console.log('Historical data not available, using current data:', error);
 
-            // Fallback to current data if historical endpoint doesn't exist
             try {
                 const { data } = await axios.get(`${BASE_URL}/items`);
                 const item = data.find(i => i.item_id === itemId);
@@ -159,33 +149,38 @@ export const prices = {
         }
     },
 
-    getItemConstraint: async function (itemId, constraint, source = false) {
+    getItemConstraint: async function (itemId, constraintDays, source = false) {
         try {
-            if (cache.getItemConstraint[itemId]?.[constraint])
-                return cache.getItemConstraint[itemId][constraint];
+            if (cache.getItemConstraint[itemId]?.[constraintDays])
+                return cache.getItemConstraint[itemId][constraintDays];
 
-            // This endpoint might not exist in new API
-            // You may need to adapt this based on what constraints are available
-            const { data } = await axios.get(`https://pokemmoprices.com/api/v2/items/graph/min/${itemId}/${constraint}`, {
+            const { data } = await axios.get(`https://apis.fiereu.de/pokemmoprices/v1/graph/items/${itemId}/min`, {
                 cancelToken: source?.token
             });
 
             if (!data || !Array.isArray(data)) {
-                // Fallback to basic item data
                 return await this.getItem(itemId, source);
             }
 
-            const items = data.map(item => ({ ...item, x: item.x * 1000 }));
+            const now = Date.now();
+            const cutoffTime = now - (constraintDays * 24 * 60 * 60 * 1000); // Convert days to milliseconds
+
+            const filteredItems = data.filter(item => {
+                const itemTime = item.x * 1000;
+                return itemTime >= cutoffTime;
+            });
+
+            const items = filteredItems.map(item => ({ ...item, x: item.x * 1000 }));
 
             if (!cache.getItemConstraint[itemId]) cache.getItemConstraint[itemId] = {};
-            cache.getItemConstraint[itemId][constraint] = items;
+            cache.getItemConstraint[itemId][constraintDays] = items;
 
             return items;
         } catch (error) {
             if (error.code === "ERR_CANCELED")
                 return error;
 
-            console.log('Constraint endpoint not available, falling back to basic item data');
+            console.log('New API endpoint not available, falling back to basic item data');
             return await this.getItem(itemId, source);
         }
     },
@@ -195,13 +190,11 @@ export const prices = {
             if (cache.getItemQuantity[itemId])
                 return cache.getItemQuantity[itemId];
 
-            // This endpoint might not exist in new API
             const { data } = await axios.get(`${BASE_URL}/graph/items/${itemId}/quantity`, {
                 cancelToken: source?.token
             });
 
             if (!data || !Array.isArray(data)) {
-                // Fallback: use current quantity data
                 const allItems = await this.getAllItems();
                 const item = allItems.find(i => i.i === itemId);
 
@@ -226,7 +219,6 @@ export const prices = {
 
             console.log('Quantity history not available, using current data');
 
-            // Fallback to current quantity from all items
             try {
                 const allItems = await this.getAllItems();
                 const item = allItems.find(i => i.i === itemId);
