@@ -58,7 +58,7 @@ export const getCosmeticSetupImage = (cosmetics) => {
             const scene = InterfaceItems.sceneCosmeticParam[key];
             scenes.push({
                 name: scene,
-                url: `https://pokemmoprices.com/dress-room/v2/${key}/2/1/${selectedClothes[6]}/${selectedClothes[12]}/${selectedClothes[4]}/${selectedClothes[5]}/${selectedClothes[8]}/${selectedClothes[3]}/${selectedClothes[2]}/${selectedClothes[10]}/${selectedClothes[9]}/${selectedClothes[7]}.png`,
+                url: `https://apis.fiereu.de/pokemmoclothes/v1/${key}/2/1/${selectedClothes[6]}/${selectedClothes[12]}/${selectedClothes[4]}/${selectedClothes[5]}/${selectedClothes[8]}/${selectedClothes[3]}/${selectedClothes[2]}/${selectedClothes[10]}/${selectedClothes[9]}/${selectedClothes[7]}.png`,
                 hasFollower: scene === 'Back' || scene === 'Front' || scene === 'Side' ? true : false
             })
         }
