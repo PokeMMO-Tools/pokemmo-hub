@@ -1,10 +1,8 @@
 import { InterfaceItems } from '../interface/items'
-
 import apiItems from '../data/apiItems.json'
 import berries from '../data/pokemmo/item-berry.json'
 import cosmetics from '../data/pokemmo/item-cosmetic.json'
 import items from '../data/pokemmo/item.json'
-
 import itemsData from '../data/pokemmo/item_lookup.json'
 
 /* export const DEFAULT_CLOTHES = {
