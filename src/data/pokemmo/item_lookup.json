@@ -4179,6 +4179,28 @@
             "tw": "A stick of leek to be held by a FARFETCH'D. It raises FARFETCH'D's critical-hit ratio"
         }
     },
+    "226": {
+        "name": {
+            "en": "Moomoo Milk",
+            "cn": "哞哞鲜奶",
+            "de": "Moomoo Milk",
+            "fr": "Moomoo Milk",
+            "it": "Moomoo Milk",
+            "es": "Moomoo Milk",
+            "ja": "Moomoo Milk",
+            "tw": "Moomoo Milk"
+        },
+        "description": {
+            "en": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "cn": "营养百分百的牛奶。能让1只宝可梦回复100HP",
+            "de": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "fr": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "it": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "es": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "ja": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points",
+            "tw": "Highly nutritious milk. It restores the HP of one POKéMON by 100 points"
+        }
+    },
     "254": {
         "name": {
             "en": "Red Scarf",
