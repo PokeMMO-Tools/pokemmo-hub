@@ -29,7 +29,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     )
 
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket()
-    const { n, _id, slug, category } = allItems.find(({ item_id }) => item_id === investment.i)
+    const { _id, slug, category } = allItems.find(({ item_id }) => item_id === investment.i)
     const sellTotal = currentPrice.min * investment.quantity    //prices.calculateSellGain(currentPrice.min) for listing fee deduction
     const boughtTotal = investment.boughtPrice * investment.quantity
     const boughtWorth = investment.quantity * currentPrice.min
