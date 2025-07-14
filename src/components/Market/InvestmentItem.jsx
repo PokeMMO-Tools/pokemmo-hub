@@ -34,7 +34,7 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     const boughtTotal = investment.boughtPrice * investment.quantity
     const boughtWorth = investment.quantity * currentPrice.min
     const gainTotal = sellTotal - boughtTotal
-    const gainPercent = gainTotal / boughtTotal * 100
+    const gainPercent = boughtTotal > 0 ? (gainTotal / boughtTotal * 100) : null
 
     useEffect(() => {
         if (currentPrice.isLoading)
@@ -84,7 +84,13 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
                     ? <Placeholder as="p" animation='glow' className="w-100 mb-0">
                         <Placeholder xs={12}></Placeholder>
                     </Placeholder>
-                    : <span className={`mb-0 ${gainPercent > 0 ? 'text-success' : 'text-danger'}`}>{prices.format(parseFloat(gainPercent.toFixed(1))) + "%"}</span>
+                    : (
+                        gainPercent !== null
+                            ? <span className={`mb-0 ${gainPercent > 0 ? 'text-success' : 'text-danger'}`}>
+                                {prices.format(parseFloat(gainPercent.toFixed(1))) + "%"}
+                            </span>
+                            : <span className="text-muted">Error</span>
+                    )
             }</Td>
             <Td align="right" className='border-0 w-5'>
                 <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'left', width: '100%' }} className="w-100 mb-0">
@@ -102,5 +108,3 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
 
     )
 }
-
-
