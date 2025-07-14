@@ -31,7 +31,16 @@ export const InvestmentItem = ({ investment, onPriceUpdate }) => {
     const { toggleInvestmentsModal, removeFromInvestments, allItems } = useMarket()
     const item = allItems.find(({ item_id }) => item_id === investment.i) || {}
     const {
-        n = "Item Error",
+        n = {
+            "en": "1,000RP Reward Point Voucher",
+            "cn": "1,000RP奖励点券(Reward Point Voucher)",
+            "de": "1.000RP Prämienpunkte-Gutschein",
+            "fr": "1.000RP Bon Point Récompense (RP)",
+            "it": "Buono da 1,000 Punti Premio",
+            "es": "1.000 PP Vale de Puntos de Premio",
+            "ja": "1,000RP Reward Point Voucher",
+            "tw": "1,000RP獎勵點券(Reward Point Voucher)"
+        },
         _id = 275,
         slug = "1000rp-reward-point-voucher",
         category = 0
