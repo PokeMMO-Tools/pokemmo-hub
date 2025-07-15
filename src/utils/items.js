@@ -116,7 +116,17 @@ export const getItemName = (id) => {
 
 export const getItemDescription = (id) => {
     const item = itemsData[id.toString()];
-    if (!item) return null;
+    const dummy = {
+        "en": "1,000RP Reward Point Voucher",
+        "cn": "1,000RP奖励点券(Reward Point Voucher)",
+        "de": "1.000RP Prämienpunkte-Gutschein",
+        "fr": "1.000RP Bon Point Récompense (RP)",
+        "it": "Buono da 1,000 Punti Premio",
+        "es": "1.000 PP Vale de Puntos de Premio",
+        "ja": "1,000RP Reward Point Voucher",
+        "tw": "1,000RP獎勵點券(Reward Point Voucher)"
+    }
+    if (!item) return dummy
 
     const cleanedDescription = {};
     for (const [lang, text] of Object.entries(item.description)) {
