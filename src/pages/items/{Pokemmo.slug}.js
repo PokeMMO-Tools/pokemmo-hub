@@ -12,14 +12,12 @@ import { Seo } from '../../components/SEO';
 import { useTranslations } from '../../context/TranslationsContext';
 import cosmeticInfo from '../../data/pokemmo/item-cosmetic';
 import { InterfaceItems } from '../../interface/items';
-import { getItemName, getItemDescription } from '../../utils/items';
+import { getItemName, getItemDescription, getItemInfo } from '../../utils/items';
 
 const ItemPage = ({ pageContext, data }) => {
   const item = data.pokemmo;
   const { language } = useTranslations();
   const itemInfo = cosmeticInfo.find(cosmetic => cosmetic.item_id === item._id)
-
-  console.log(item)
 
   return (
     <Page breadcrumbs={pageContext.breadcrumb} label={item.n[language]}>
@@ -41,6 +39,13 @@ const ItemPage = ({ pageContext, data }) => {
             )}
           </>
         )}
+        <>
+          {
+            getItemInfo(item._id).buy_bp && getItemInfo(item._id).buy_bp > 0
+              ? <Badge>{getItemInfo(item._id).buy_bp} BP</Badge>
+              : <></>
+          }
+        </>
 
       </div>
       <ItemDrop itemId={item.item_id} />

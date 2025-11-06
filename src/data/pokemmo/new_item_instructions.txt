@@ -2,15 +2,14 @@ Once new items are added here are the steps to follow:
 
 1. look at yibu github pokedex -> dist -> database -> item.json
 
-2. copy and paste new items to our item.json (you will have to reformat)
+2. copy and paste new items to our item.json (you will have to reformat), dont forget es, and fr_name.
+dex = api id
 
-3. add es and fr _name's field to each entry. leave empty, only used for front page market widget list
+4. now go to apiItems.json and map dexid's to respective id.
 
-4. now go to apiItems.json and manually check the api id's and map them to yibu's ones.
-
-5. NOW CHECK if EVENT BAGS AND add them. find the id's of the event bags, the years use the same id's in yibu's item.json, then just map that to the new api id
+5. NOW CHECK if EVENT BAGS AND add them to item_lookup. find the id's of the event bags, the years use the same id's in yibu's item.json, then just map that to the new api id
     example goodie bag is always id 801, and pumpking is 802. just need to map the api id to it.
 
-6. if not a cosmetic, update item images, yibus github, static -> images -> item, and paste new images in our same data structure 
+6. if not a cosmetic, update item images, yibus github, static -> images -> item, and paste new images in our same data structure (static, images.)
 
 7. ALSO UPDATE THE item_cosmetic.json (if its a cosmetic item) or cosmetic images wont render

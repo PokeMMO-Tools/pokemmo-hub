@@ -20267,5 +20267,455 @@
     "fr_name": "Pierre Magma",
     "en_name": "Magma Stone",
     "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "Summons a Pokémon which will use Sweet Scent outside of a battle. Cannot be used in certain instances. This item has PP charges and must be recharged to use",
+      "zh": "召唤一只能在战斗外使用甜甜香气的宝可梦。一些副本中不能使用。需要PP补给"
+    },
+    "dex": 1179,
+    "id": 2247,
+    "key": "sweet-scent-ocarina",
+    "en_name": "Sweet Scent Ocarina",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 5,
+    "description": {
+      "en": "Use to assign this particle to a Pokémon. Consumed upon use.",
+      "zh": "使用即可装备给宝可梦。一次性消耗品"
+    },
+    "dex": 1339,
+    "id": 2248,
+    "key": "lotus-field-particle-effect",
+    "en_name": "Lotus Field Particle Effect",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 5,
+    "description": {
+      "en": "Use to assign this particle to a Pokémon. Consumed upon use.",
+      "zh": "使用即可装备给宝可梦。一次性消耗品"
+    },
+    "dex": 1340,
+    "id": 2249,
+    "key": "blood-lotus-field-particle-effect",
+    "en_name": "Blood Lotus Field Particle Effect",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A well-built Incubator used for hatching eggs. It has unlimited uses",
+      "zh": "孵蛋神器。无限次使用"
+    },
+    "dex": 1542,
+    "id": 2250,
+    "key": "egg-incubator",
+    "en_name": "Egg Incubator",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "An Incubator used for hatching eggs. It can be used up to 500 times before it breaks. Up to 7 temporary Incubator can be used at the same time",
+      "zh": "能使用500次的孵蛋器。同一时间最多开启7个临时孵蛋器"
+    },
+    "dex": 1543,
+    "id": 2251,
+    "key": "temporary-egg-incubator",
+    "en_name": "Temporary Egg Incubator",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A very pungent bucket of fish lure. Pokémon will always be caught while fishing. Sometimes, you may fish up more than 1 Pokémon. Consumed upon use. Effects last 1 hour",
+      "zh": "极具诱惑的饵料桶。钓竿时一定会有宝可梦上钩。有时候甚至能同时上钩多只宝可梦。一次性消耗品。有效期1小时"
+    },
+    "dex": 1547,
+    "id": 2252,
+    "key": "chum-bucket",
+    "en_name": "Chum Bucket",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
+      "zh": "装着未知奖励的神秘黑暗球。高基础闪率(1/6,000)获得闪光宝可梦"
+    },
+    "dex": 1587,
+    "id": 2253,
+    "key": "mysterious-dusk-ball",
+    "en_name": "Mysterious Dusk Ball",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A strange box which contains an unknown reward. May contain exclusive items for Halloween 2025. Use to open",
+      "zh": "装着未知奖励的神秘的箱子。可能含有2025万圣节独家物品。使用后打开"
+    },
+    "dex": 1590,
+    "id": 2256,
+    "key": "halloween-mystery-box",
+    "en_name": "Halloween Mystery Box",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2560,
+    "id": 2257,
+    "key": "mermaid-hair",
+    "en_name": "Mermaid Hair",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2787,
+    "id": 2258,
+    "key": "villain-mask",
+    "en_name": "Villain Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3045,
+    "id": 2259,
+    "key": "kitty-face-mask",
+    "en_name": "Kitty Face Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3046,
+    "id": 2260,
+    "key": "frowny-face-mask",
+    "en_name": "Frowny Face Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3047,
+    "id": 2261,
+    "key": "cheeky-face-mask",
+    "en_name": "Cheeky Face Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3383,
+    "id": 2262,
+    "key": "ancient-coin",
+    "en_name": "Ancient Coin",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3384,
+    "id": 2263,
+    "key": "orange-flaming-wings",
+    "en_name": "Orange Flaming Wings",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3385,
+    "id": 2264,
+    "key": "blue-flaming-wings",
+    "en_name": "Blue Flaming Wings",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3386,
+    "id": 2265,
+    "key": "strange-tentacles",
+    "en_name": "Strange Tentacles",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3716,
+    "id": 2266,
+    "key": "frankenstein-coat",
+    "en_name": "Frankenstein Coat",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3717,
+    "id": 2267,
+    "key": "puffy-witch-dress",
+    "en_name": "Puffy Witch Dress",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3718,
+    "id": 2268,
+    "key": "mermaid-costume",
+    "en_name": "Mermaid Costume",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3808,
+    "id": 2269,
+    "key": "orange-flaming-sword",
+    "en_name": "Orange Flaming Sword",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3809,
+    "id": 2270,
+    "key": "blue-flaming-sword",
+    "en_name": "Blue Flaming Sword",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4309,
+    "id": 2271,
+    "key": "frankenstein-pants",
+    "en_name": "Frankenstein Pants",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4698,
+    "id": 2272,
+    "key": "charcoal-dragon-horns",
+    "en_name": "Charcoal Dragon Horns",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4699,
+    "id": 2273,
+    "key": "blue-dragon-horns",
+    "en_name": "Blue Dragon Horns",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
   }
 ]
