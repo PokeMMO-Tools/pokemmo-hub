@@ -20266,7 +20266,8 @@
     "es_name": "Piedra Magma",
     "fr_name": "Pierre Magma",
     "en_name": "Magma Stone",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20284,7 +20285,8 @@
     "en_name": "Sweet Scent Ocarina",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20302,7 +20304,8 @@
     "en_name": "Lotus Field Particle Effect",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20320,7 +20323,8 @@
     "en_name": "Blood Lotus Field Particle Effect",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20338,7 +20342,8 @@
     "en_name": "Egg Incubator",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20356,7 +20361,8 @@
     "en_name": "Temporary Egg Incubator",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20374,7 +20380,8 @@
     "en_name": "Chum Bucket",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20392,7 +20399,8 @@
     "en_name": "Mysterious Dusk Ball",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20410,7 +20418,8 @@
     "en_name": "Halloween Mystery Box",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20428,7 +20437,8 @@
     "en_name": "Mermaid Hair",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20446,7 +20456,8 @@
     "en_name": "Villain Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20464,7 +20475,8 @@
     "en_name": "Kitty Face Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20482,7 +20494,8 @@
     "en_name": "Frowny Face Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20500,7 +20513,8 @@
     "en_name": "Cheeky Face Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20518,7 +20532,8 @@
     "en_name": "Ancient Coin",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20536,7 +20551,8 @@
     "en_name": "Orange Flaming Wings",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20554,7 +20570,8 @@
     "en_name": "Blue Flaming Wings",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20572,7 +20589,8 @@
     "en_name": "Strange Tentacles",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20590,7 +20608,8 @@
     "en_name": "Frankenstein Coat",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20608,7 +20627,8 @@
     "en_name": "Puffy Witch Dress",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20626,7 +20646,8 @@
     "en_name": "Mermaid Costume",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20644,7 +20665,8 @@
     "en_name": "Orange Flaming Sword",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20662,7 +20684,8 @@
     "en_name": "Blue Flaming Sword",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20680,7 +20703,8 @@
     "en_name": "Frankenstein Pants",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20698,7 +20722,8 @@
     "en_name": "Charcoal Dragon Horns",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20716,7 +20741,8 @@
     "en_name": "Blue Dragon Horns",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20734,7 +20760,8 @@
     "en_name": "Frankenstein Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20752,7 +20779,8 @@
     "en_name": "Puffy Witch Hat",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20770,7 +20798,8 @@
     "en_name": "Cyclops Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20788,7 +20817,8 @@
     "en_name": "Demon Horns",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20806,7 +20836,8 @@
     "en_name": "Springy Mushroom",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20824,7 +20855,8 @@
     "en_name": "Noh Mask",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20842,7 +20874,8 @@
     "en_name": "Green Slime",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20860,7 +20893,8 @@
     "en_name": "Deer Skull",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20878,7 +20912,8 @@
     "en_name": "Demon Queen Crown",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20896,7 +20931,8 @@
     "en_name": "Froggy",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20914,7 +20950,8 @@
     "en_name": "Lunar Wing",
     "fr_name": "",
     "es_name": "",
-    "sale_pokeyen": 0
+    "sale_pokeyen": 0,
+    "name": ""
   },
   {
     "buy_bp": 0,
@@ -20932,6 +20969,47 @@
     "en_name": "Red Lotus Crown",
     "fr_name": "",
     "es_name": "",
+    "sale_pokeyen": 0,
+    "name": ""
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A scary looking goodie bag which contains an unknown reward. May contain exclusive items for Halloween 2024. Use to open",
+      "zh": "装着神秘奖励的惊悚礼袋。可能含有2024万圣节独家物品。使用后打开"
+    },
+    "dex": 1574,
+    "id": 2171,
+    "key": "goodie-bag-2024",
+    "name": "万圣节礼袋-2024",
+    "en_name": "Goodie Bag (2024)",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A scary looking goodie bag which contains an unknown reward. May contain exclusive items for Halloween 2024. Use to open",
+      "zh": "装着神秘奖励的惊悚礼袋。可能含有2024万圣节独家物品。使用后打开"
+    },
+    "dex": 1575,
+    "id": 2172,
+    "key": "pumpking-goodie-bag-2024",
+    "name": "南瓜王礼袋-2024",
+    "en_name": "Pumpking Goodie Bag (2024)",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
     "sale_pokeyen": 0
   }
 ]
