@@ -12959,14 +12959,14 @@
     },
     "1498": {
         "name": {
-            "en": "Mysterious Dusk Ball",
-            "cn": "神秘Dusk Ball",
-            "de": "Geheimnisvoller Finsterball",
-            "fr": "Sombre Ball Mystérieuse",
-            "it": "Scuro Ball Misteriosa",
-            "es": "Ocaso Ball Misteriosa",
-            "ja": "Mysterious ダークボール",
-            "tw": "神祕Dusk Ball"
+            "en": "Mysterious Dusk Ball (2024)",
+            "cn": "神秘Dusk Ball (2024)",
+            "de": "Geheimnisvoller Finsterball (2024)",
+            "fr": "Sombre Ball Mystérieuse (2024)",
+            "it": "Scuro Ball Misteriosa (2024)",
+            "es": "Ocaso Ball Misteriosa (2024)",
+            "ja": "Mysterious ダークボール (2024)",
+            "tw": "神祕Dusk Ball (2024)"
         },
         "description": {
             "en": "A mysterious Dusk Ball which contains\nan unknown reward. It has a high base\nchance to contain a Shiny Pokémon\n(1/6,000).",
@@ -13861,14 +13861,14 @@
     },
     "1574": {
         "name": {
-            "en": "Goodie Bag",
-            "cn": "万圣节礼袋(Goodie Bag)",
-            "de": "Süßwarentüte",
-            "fr": "Sac de Bonbons",
-            "it": "Busta Regalo",
-            "es": "Bolsita de Regalo",
-            "ja": "Goodie Bag",
-            "tw": "萬聖節禮袋(Goodie Bag)"
+            "en": "Goodie Bag (2024)",
+            "cn": "万圣节礼袋(Goodie Bag) (2024)",
+            "de": "Süßwarentüte (2024)",
+            "fr": "Sac de Bonbons (2024)",
+            "it": "Busta Regalo (2024)",
+            "es": "Bolsita de Regalo (2024)",
+            "ja": "Goodie Bag (2024)",
+            "tw": "萬聖節禮袋(Goodie Bag) (2024)"
         },
         "description": {
             "en": "A scary looking goodie bag which\ncontains an unknown reward.\n\nMay contain exclusive items for\nHalloween 2024. Use to open.",
@@ -13883,14 +13883,14 @@
     },
     "1575": {
         "name": {
-            "en": "Pumpking Goodie Bag",
-            "cn": "南瓜王礼袋(Pumpking Goodie Bag)",
-            "de": "Kürbiskönig Süßigkeitentüte",
-            "fr": "Sac de Bonbons du Pumpking",
-            "it": "Busta Regalo a forma di Zucca",
-            "es": "Bolsita de regalo del Rey Calabaza",
-            "ja": "Pumpking Goodie Bag",
-            "tw": "南瓜王禮袋(Pumpking Goodie Bag)"
+            "en": "Pumpking Goodie Bag (2024)",
+            "cn": "南瓜王礼袋(Pumpking Goodie Bag) (2024)",
+            "de": "Kürbiskönig Süßigkeitentüte (2024)",
+            "fr": "Sac de Bonbons du Pumpking (2024)",
+            "it": "Busta Regalo a forma di Zucca (2024)",
+            "es": "Bolsita de regalo del Rey Calabaza (2024)",
+            "ja": "Pumpking Goodie Bag (2024)",
+            "tw": "南瓜王禮袋(Pumpking Goodie Bag) (2024)"
         },
         "description": {
             "en": "A scary looking goodie bag which\ncontains an unknown reward.\n\nMay contain exclusive items for\nHalloween 2024. Use to open.",
@@ -43914,23 +43914,23 @@
     "1587": {
         "name": {
             "en": "Mysterious Dusk Ball",
-            "cn": "神秘黑暗球",
-            "de": "Mysterious Dusk Ball",
-            "fr": "Mysterious Dusk Ball",
-            "it": "Mysterious Dusk Ball",
-            "es": "Mysterious Dusk Ball",
-            "ja": "Mysterious Dusk Ball",
-            "tw": "神秘黑暗球"
+            "cn": "神秘Dusk Ball",
+            "de": "Geheimnisvoller Finsterball",
+            "fr": "Sombre Ball Mystérieuse",
+            "it": "Scuro Ball Misteriosa",
+            "es": "Ocaso Ball Misteriosa",
+            "ja": "Mysterious ダークボール",
+            "tw": "神祕Dusk Ball"
         },
         "description": {
-            "en": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "cn": "装着未知奖励的神秘黑暗球。高基础闪率(1/6,000)获得闪光宝可梦",
-            "de": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "fr": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "it": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "es": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "ja": "A mysterious Dusk Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000)",
-            "tw": "装着未知奖励的神秘黑暗球。高基础闪率(1/6,000)获得闪光宝可梦"
+            "en": "A mysterious Dusk Ball which contains\nan unknown reward. It has a high base\nchance to contain a Shiny Pokémon\n(1/6,000).",
+            "cn": "装着未知奖励的神秘Dusk Ball. 高基础闪率(1/6,000)获得闪\n光Pokémon.",
+            "de": "Eine geheimnisvolle Finsterball, die\neine unbekannte Belohnung enthält. Es\nhat eine hohe Basischance, ein\nglänzendes Pokémon zu enthalten\n(1/6.000).",
+            "fr": "Une mystérieuse Sombre Ball qui\ncontient une récompense inconnue.\nElle a une forte chance de contenir\nun Pokémon shiny (1/6 000).",
+            "it": "Una Scuro Ball misteriosa che contiene\nuna ricompensa sconosciuta. Ha\nun'alta probabilità di contenere un\nPokémon Cromatico (1/6.000).",
+            "es": "Una Ocaso Ball misteriosa que contiene\nuna recompensa desconocida. Tiene una\nalta probabilidad de contener un\nPokémon Variocolor (1/6,000).",
+            "ja": "A mysterious ダークボール which contains an\nunknown reward. It has a high base\nchance to contain a Shiny ポケモン\n(1/6,000).",
+            "tw": "裝著未知獎勵的神祕Dusk Ball. 高基礎閃率(1/6,000)獲得閃\n光Pokémon."
         }
     },
     "1588": {
@@ -44493,6 +44493,116 @@
             "es": "Green Slime",
             "ja": "Green Slime",
             "tw": "绿史莱姆"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4706": {
+        "name": {
+            "en": "Deer Skull",
+            "cn": "鹿头骨",
+            "de": "Deer Skull",
+            "fr": "Deer Skull",
+            "it": "Deer Skull",
+            "es": "Deer Skull",
+            "ja": "Deer Skull",
+            "tw": "鹿头骨"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4707": {
+        "name": {
+            "en": "Demon Queen Crown",
+            "cn": "魔后王冠",
+            "de": "Demon Queen Crown",
+            "fr": "Demon Queen Crown",
+            "it": "Demon Queen Crown",
+            "es": "Demon Queen Crown",
+            "ja": "Demon Queen Crown",
+            "tw": "魔后王冠"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4708": {
+        "name": {
+            "en": "Froggy",
+            "cn": "青蛙",
+            "de": "Froggy",
+            "fr": "Froggy",
+            "it": "Froggy",
+            "es": "Froggy",
+            "ja": "Froggy",
+            "tw": "青蛙"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "1591": {
+        "name": {
+            "en": "Lunar Wing",
+            "cn": "新月之羽",
+            "de": "Lunar Wing",
+            "fr": "Lunar Wing",
+            "it": "Lunar Wing",
+            "es": "Lunar Wing",
+            "ja": "Lunar Wing",
+            "tw": "新月之羽"
+        },
+        "description": {
+            "en": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "cn": "可以修正某些宝可梦1点个体值的造梦者遗留之羽。一次性消耗品",
+            "de": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "fr": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "it": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "es": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "ja": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "tw": "可以修正某些宝可梦1点个体值的造梦者遗留之羽。一次性消耗品"
+        }
+    },
+    "4709": {
+        "name": {
+            "en": "Red Lotus Crown",
+            "cn": "血莲花冠",
+            "de": "Red Lotus Crown",
+            "fr": "Red Lotus Crown",
+            "it": "Red Lotus Crown",
+            "es": "Red Lotus Crown",
+            "ja": "Red Lotus Crown",
+            "tw": "血莲花冠"
         },
         "description": {
             "en": "A cosmetic item which can be used to modify your appearance",

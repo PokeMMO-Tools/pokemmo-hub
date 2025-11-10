@@ -7,7 +7,10 @@ dex = api id
 
 4. now go to apiItems.json and map dexid's to respective id.
 
-5. NOW CHECK if EVENT BAGS AND add them to item_lookup. find the id's of the event bags, the years use the same id's in yibu's item.json, then just map that to the new api id
+5. NOW CHECK if EVENT BAGS AND add them to item_lookup. for previous years, find and add the year, like (2025), to the name and key. this is in item.json and item_lookup.
+then apiItems
+
+//ignore this i thinkg find the id's of the event bags, the years use the same id's in yibu's item.json, then just map that to the new api id
     example goodie bag is always id 801, and pumpking is 802. just need to map the api id to it.
 
 6. if not a cosmetic, update item images, yibus github, static -> images -> item, and paste new images in our same data structure (static, images.)

@@ -19122,11 +19122,11 @@
     "buy_pokeyen": 0,
     "buy_rp": 0,
     "category": 0,
-    "es_name": "Ocaso Ball Misteriosa",
-    "fr_name": "Sombre Ball Mystérieuse",
-    "en_name": "Mysterious Dusk Ball",
+    "es_name": "Ocaso Ball Misteriosa (2024)",
+    "fr_name": "Sombre Ball Mystérieuse (2024)",
+    "en_name": "Mysterious Dusk Ball (2024)",
     "id": 2165,
-    "key": "mysterious-dusk-ball",
+    "key": "mysterious-dusk-ball-2024",
     "name": "神秘黑暗球",
     "sale_pokeyen": 0
   },
@@ -20714,6 +20714,222 @@
     "id": 2273,
     "key": "blue-dragon-horns",
     "en_name": "Blue Dragon Horns",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4699,
+    "id": 2273,
+    "key": "frankenstein-mask",
+    "en_name": "Frankenstein Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4700,
+    "id": 2274,
+    "key": "puffy-witch-hat",
+    "en_name": "Puffy Witch Hat",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4701,
+    "id": 2275,
+    "key": "cyclops-mask",
+    "en_name": "Cyclops Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4702,
+    "id": 2276,
+    "key": "demon-horns",
+    "en_name": "Demon Horns",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4703,
+    "id": 2277,
+    "key": "springy-mushroom",
+    "en_name": "Springy Mushroom",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4704,
+    "id": 2278,
+    "key": "noh-mask",
+    "en_name": "Noh Mask",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4705,
+    "id": 2279,
+    "key": "green-slime",
+    "en_name": "Green Slime",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4706,
+    "id": 2280,
+    "key": "deer-skull",
+    "en_name": "Deer Skull",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4707,
+    "id": 2281,
+    "key": "demon-queen-crown",
+    "en_name": "Demon Queen Crown",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4708,
+    "id": 2282,
+    "key": "froggy",
+    "en_name": "Froggy",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A feather left behind by a dream-maker. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+      "zh": "可以修正某些宝可梦1点个体值的造梦者遗留之羽。一次性消耗品"
+    },
+    "dex": 1591,
+    "id": 2283,
+    "key": "lunar-wing",
+    "en_name": "Lunar Wing",
+    "fr_name": "",
+    "es_name": "",
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4709,
+    "id": 2284,
+    "key": "red-lotus-crown",
+    "en_name": "Red Lotus Crown",
     "fr_name": "",
     "es_name": "",
     "sale_pokeyen": 0
