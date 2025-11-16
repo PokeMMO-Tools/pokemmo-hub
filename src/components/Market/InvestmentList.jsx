@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { Link } from 'gatsby'
 import * as XLSX from 'xlsx'
 import { saveAs } from 'file-saver'
@@ -11,158 +11,139 @@ import { useTranslations } from '../../context/TranslationsContext'
 import { Card, Table as DesktopTable, Typography, Button } from '../Atoms'
 import { InvestmentItem } from './InvestmentItem'
 import { InvestmentTotal } from './InvestmentTotal'
-import { getItemName } from '../../utils/items';
+import { getItemName } from '../../utils/items'
 
 export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
     const { t, language } = useTranslations()
-    const [investmentsGain, setInvestmentsGain] = useState([]);
-    const [totals, setTotals] = useState({});
-    let { investments, allItems } = useMarket()
+    const { investments: rawInvestments, allItems } = useMarket()
+
+    const [investmentsGain, setInvestmentsGain] = useState([])
+    const [totals, setTotals] = useState({})
+    const [sortConfig, setSortConfig] = useState([])
+
+    let investments = rawInvestments
+    if (i) {
+        investments = investments.filter(item => item.i === i)
+    }
 
     const addInvestmentGain = (investmentId, gain, spent) => {
         setInvestmentsGain(prev => {
-            const index = prev.findIndex(item => item.investmentId === investmentId)
-            if (!prev.length || index === -1)
-                return [...prev, { investmentId, gain, spent }]
-
-            return prev.map((item, i) => (
-                i === index ? { investmentId, gain, spent } : item
-            ))
+            const idx = prev.findIndex(x => x.investmentId === investmentId)
+            if (idx === -1) return [...prev, { investmentId, gain, spent }]
+            return prev.map((item, i) => (i === idx ? { investmentId, gain, spent } : item))
         })
     }
 
-    function calculateTotal() {
-        const { gain, spent, value } = investmentsGain.reduce((prev, curr) => (
-            {
+    const calculateTotal = () => {
+        const { gain, spent, value } = investmentsGain.reduce(
+            (prev, curr) => ({
                 gain: prev.gain + curr.gain,
                 spent: prev.spent + curr.spent,
-                value: (prev.gain + curr.gain) + (prev.spent + curr.spent)
-            }
-        ), { gain: 0, spent: 0, value: 0 })
-
-        const gainPercent = parseFloat(gain / spent * 100).toFixed(2)
+                value: prev.spent + curr.spent + prev.gain + curr.gain
+            }),
+            { gain: 0, spent: 0, value: 0 }
+        )
+        const gainPercent = spent > 0 ? parseFloat((gain / spent) * 100).toFixed(2) : 0
         setTotals({ gain, gainPercent, spent, value })
     }
 
     useEffect(() => {
-        if (investmentsGain.length !== investments.length)
-            return
-
+        if (investmentsGain.length !== investments.length) return
         calculateTotal()
-
     }, [investmentsGain, investments])
 
-    if (i) {
-        investments = investments.filter((item) => item.i === i)
-        if (investments.length === 0 && !fallbackIfEmpty)
-            return false;
+    const toggleSort = (key) => {
+        setSortConfig(prev => {
+            const existing = prev.length > 0 && prev[0].key === key ? prev[0] : null
+            if (!existing) {
+                // first click - asc
+                return [{ key, direction: 'asc' }]
+            }
+            if (existing.direction === 'asc') {
+                // second click - desc
+                return [{ key, direction: 'desc' }]
+            }
+            // third click - clear
+            return []
+        })
     }
 
-    //excel export
-    const exportToExcel = () => {
+    const getSortArrow = (key) => {
+        if (sortConfig.length === 0 || sortConfig[0].key !== key) return ''
+        return sortConfig[0].direction === 'asc' ? '▲' : '▼'
+    }
 
-        const headerRow = ['Name', 'Quantity', 'Per Unit', 'Total Cost', 'Current Value', 'Gain', 'Gain %'];
-        const dataRows = investments.map(investment => {
-            const { n } = allItems.find(({ item_id }) => item_id === investment.i) || { n: {} };
-            const gainInfo = investmentsGain.find(item => item.investmentId === investment.id) || { gain: 0, spent: 0 };
-            const name = getItemName(investment.i)[language] || investment.name || 'Unknown';
-            const quantity = investment.quantity || 0;
-            const perUnit = investment.perUnit || (quantity > 0 ? gainInfo.spent / quantity : 0);
-            const spent = gainInfo.spent || 0;
-            const totalValue = spent + (gainInfo.gain || 0);
+    const gainLookup = useMemo(() => {
+        const map = {}
+        investmentsGain.forEach(g => { map[g.investmentId] = g })
+        return map
+    }, [investmentsGain])
 
-            return [name, quantity, perUnit, spent, totalValue, 0, 0];
-        });
-        const blankRow = ['', '', '', '', '', '', ''];
-        const totalsHeaderRow = ['PORTFOLIO SUMMARY', '', 'Total Spent', 'Total Value', 'Total Gain', 'Total Gain %', 'Net Worth'];
-        const totalsRow = ['Total', '', 0, 0, 0, 0, 0];
-        const allRows = [
-            totalsHeaderRow,
-            totalsRow,
-            blankRow,
-            headerRow,
-            ...dataRows
-        ];
-        const worksheet = XLSX.utils.aoa_to_sheet(allRows);
-        const firstDataRow = 5;
-        const lastDataRow = firstDataRow + dataRows.length - 1;
+    const sortedInvestments = useMemo(() => {
+        if (sortConfig.length === 0) return investments
 
-        // Total Spent (column D)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 2 })] = {
-            f: `SUM(D${firstDataRow}:D${firstDataRow + 1000})`,
-            t: 'n',
-            z: '$#,##0'
-        };
-
-        // Total Value (column E)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 3 })] = {
-            f: `SUM(E${firstDataRow}:E${firstDataRow + 1000})`,
-            t: 'n',
-            z: '$#,##0'
-        };
-
-        // Gain (column F)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 4 })] = {
-            f: `D2-C2`,
-            t: 'n',
-            z: '$#,##0'
-        };
-
-        // Gain % (column F)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 5 })] = {
-            f: `IFERROR(E2/C2, 0)`,
-            t: 'n',
-            z: '0%'
-        };
-
-        // Net Worth (column G)
-        worksheet[XLSX.utils.encode_cell({ r: 1, c: 6 })] = {
-            f: `E2-C2`,
-            t: 'n',
-            z: '$#,##0'
-        };
-
-        for (let i = 0; i < dataRows.length; i++) {
-            const rowIndex = firstDataRow - 1 + i;
-            worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 5 })] = {
-                f: `E${rowIndex + 1}-D${rowIndex + 1}`,
-                t: 'n',
-                z: '$#,##0'
-            };
-
-            worksheet[XLSX.utils.encode_cell({ r: rowIndex, c: 6 })] = {
-                f: `IFERROR(F${rowIndex + 1}/D${rowIndex + 1}, 0)`,
-                t: 'n',
-                z: '0%'
-            };
-        }
-
-        worksheet['!cols'] = [
-            { wch: 20 }, // Name
-            { wch: 10 }, // Quantity
-            { wch: 10 }, // Per Unit
-            { wch: 15 }, // Total Spent
-            { wch: 15 }, // Total Value
-            { wch: 15 }, // Gain
-            { wch: 10 }  // Gain %
-        ];
-        for (let i = firstDataRow - 1; i < firstDataRow + dataRows.length - 1; i++) {
-            // Format currency cells (Per Unit, Total Spent, Total Value)
-            for (const C of [2, 3, 4]) {
-                const cell_ref = XLSX.utils.encode_cell({ r: i, c: C });
-                if (worksheet[cell_ref]) {
-                    worksheet[cell_ref].z = '$#,##0'
-                }
+        const getValue = (inv, key) => {
+            const gain = gainLookup[inv.id] || { gain: 0, spent: 0 }
+            switch (key) {
+                case 'name': return getItemName(inv.i)[language] || ''
+                case 'quantity': return inv.quantity
+                case 'perUnit': return inv.boughtPrice
+                case 'currentPrice': return inv.boughtPrice
+                case 'spent': return gain.spent
+                case 'value': return gain.spent + gain.gain
+                case 'gain': return gain.gain
+                case 'gainPercent': return gain.spent ? gain.gain / gain.spent : 0
+                default: return ''
             }
         }
 
-        const workbook = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(workbook, worksheet, 'Investments');
+        return [...investments].sort((a, b) => {
+            for (const rule of sortConfig) {
+                let A = getValue(a, rule.key)
+                let B = getValue(b, rule.key)
 
-        const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
-        const fileData = new Blob([excelBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-        saveAs(fileData, 'investment-list.xlsx');
-    };
+                if (typeof A === 'string') {
+                    A = A.toLowerCase(); B = B.toLowerCase()
+                }
+
+                if (A < B) return rule.direction === 'asc' ? -1 : 1
+                if (A > B) return rule.direction === 'asc' ? 1 : -1
+            }
+            return 0
+        })
+    }, [investments, sortConfig, gainLookup, language])
+
+    const exportToExcel = () => {
+        const headerRow = ['Name', 'Quantity', 'Per Unit', 'Total Spent', 'Total Value', 'Gain', 'Gain %']
+        const dataRows = investments.map(inv => {
+            const gain = gainLookup[inv.id] || { gain: 0, spent: 0 }
+            const name = getItemName(inv.i)[language] || inv.name || 'Unknown'
+            const quantity = inv.quantity || 0
+            const perUnit = inv.boughtPrice || 0
+            const spent = gain.spent || 0
+            const totalValue = spent + (gain.gain || 0)
+            return [name, quantity, perUnit, spent, totalValue, 0, 0]
+        })
+
+        const blankRow = ['', '', '', '', '', '', '']
+        const totalsHeaderRow = ['PORTFOLIO SUMMARY', '', 'Total Spent', 'Total Value', 'Total Gain', 'Total Gain %', 'Net Worth']
+        const totalsRow = ['Total', '', 0, 0, 0, 0, 0]
+
+        const allRows = [totalsHeaderRow, totalsRow, blankRow, headerRow, ...dataRows]
+        const ws = XLSX.utils.aoa_to_sheet(allRows)
+        const firstDataRow = 5
+
+        ws[XLSX.utils.encode_cell({ r: 1, c: 2 })] = { f: `SUM(D${firstDataRow}:D${firstDataRow + 1000})`, t: 'n' }
+        ws[XLSX.utils.encode_cell({ r: 1, c: 3 })] = { f: `SUM(E${firstDataRow}:E${firstDataRow + 1000})`, t: 'n' }
+        ws[XLSX.utils.encode_cell({ r: 1, c: 4 })] = { f: `D2-C2`, t: 'n' }
+        ws[XLSX.utils.encode_cell({ r: 1, c: 5 })] = { f: `IFERROR(E2/C2,0)`, t: 'n' }
+        ws[XLSX.utils.encode_cell({ r: 1, c: 6 })] = { f: `E2-C2`, t: 'n' }
+
+        const wb = XLSX.utils.book_new()
+        XLSX.utils.book_append_sheet(wb, ws, 'Investments')
+        const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' })
+        saveAs(new Blob([excelBuffer]), 'investment-list.xlsx')
+    }
 
     const Table = isMobile && !isTablet ? SrTable : DesktopTable
     const Thead = isMobile && !isTablet ? SrThead : 'thead'
@@ -170,67 +151,74 @@ export const InvestmentList = ({ i, title, fallbackIfEmpty, showTotals }) => {
     const Th = isMobile && !isTablet ? SrTh : 'td'
     const Tr = isMobile && !isTablet ? SrTr : 'tr'
 
+    if (i && investments.length === 0 && !fallbackIfEmpty) {
+        return null
+    }
+
     return (
-        investments.length
-            ? <Stack gap={2}>
-                {showTotals ?
+        investments.length ? (
+            <Stack gap={2}>
+                {showTotals && (
                     <>
                         <Stack direction="horizontal" className="justify-content-between">
                             <Typography className='mb-0'>Portfolio Totals</Typography>
-                            <Button as={Link} to="/items" size="sm" variant='info' style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>All Items</Button>
+                            <Button as={Link} to="/items" size="sm" variant='info'
+                                style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>
+                                All Items
+                            </Button>
                         </Stack>
-                        <Card>
-                            <InvestmentTotal totals={totals} />
-                        </Card>
+                        <Card><InvestmentTotal totals={totals} /></Card>
                     </>
-                    :
-                    <></>
-                }
-                {/* Excel download button */}
+                )}
+
                 <Stack direction="horizontal" className="justify-content-between">
                     <Typography className='mb-0'>Investment List</Typography>
-                    <Button size="sm" variant="primary" onClick={exportToExcel} style={{ backgroundColor: "#369102", color: "white", borderColor: "#369102" }}>
+                    <Button size="sm" variant="primary" onClick={exportToExcel}
+                        style={{ backgroundColor: "#369102", color: "white", borderColor: "#369102" }}>
                         Download as Excel
                     </Button>
                 </Stack>
 
                 <Card>
-                    {title ? title : false}
-                    <Table responsive={true} withBaseStyles={{ breakpoint: "920px" }}>
+                    {title || false}
+                    <Table responsive withBaseStyles={{ breakpoint: "920px" }}>
                         <Thead>
                             <Tr>
-                                <Th>Name</Th>
-                                <Th>{t('Price and Supply')}</Th>
-                                <Th align="right">{t('Quantity')}</Th>
-                                <Th align="right">{t('Per Unit')}</Th>
-                                <Th align="right">{t('Total Spent')}</Th>
-                                <Th align="right">{t('Total Value')}</Th>
-                                <Th align="right">{t('Gain')}</Th>
-                                <Th align="right">{t('Gain %')}</Th>
+                                <Th onClick={() => toggleSort('name')} style={{ cursor: 'pointer' }}>Name {getSortArrow('name')}</Th>
+                                <Th onClick={() => toggleSort('currentPrice')} style={{ cursor: 'pointer' }}>{t('Price and Supply')} {getSortArrow('currentPrice')}</Th>
+                                <Th onClick={() => toggleSort('quantity')} align="right" style={{ cursor: 'pointer' }}>{t('Quantity')} {getSortArrow('quantity')}</Th>
+                                <Th onClick={() => toggleSort('perUnit')} align="right" style={{ cursor: 'pointer' }}>{t('Per Unit')} {getSortArrow('perUnit')}</Th>
+                                <Th onClick={() => toggleSort('spent')} align="right" style={{ cursor: 'pointer' }}>{t('Total Spent')} {getSortArrow('spent')}</Th>
+                                <Th onClick={() => toggleSort('value')} align="right" style={{ cursor: 'pointer' }}>{t('Total Value')} {getSortArrow('value')}</Th>
+                                <Th onClick={() => toggleSort('gain')} align="right" style={{ cursor: 'pointer' }}>{t('Gain')} {getSortArrow('gain')}</Th>
+                                <Th onClick={() => toggleSort('gainPercent')} align="right" style={{ cursor: 'pointer' }}>{t('Gain %')} {getSortArrow('gainPercent')}</Th>
                                 <Th align="center">{t('Trend')}</Th>
-                                <Th align="right"></Th>
+                                <Th></Th>
                             </Tr>
                         </Thead>
+
                         <Tbody>
-                            {
-                                investments.map((investment) => (
-                                    <InvestmentItem
-                                        key={investment.id}
-                                        onPriceUpdate={(id, gain, spent) => addInvestmentGain(id, gain, spent)}
-                                        investment={investment}
-                                    />
-                                ))
-                            }
+                            {sortedInvestments.map(investment => (
+                                <InvestmentItem
+                                    key={investment.id}
+                                    onPriceUpdate={(id, g, s) => addInvestmentGain(id, g, s)}
+                                    investment={investment}
+                                />
+                            ))}
                         </Tbody>
                     </Table>
                 </Card>
             </Stack>
-            :
+        ) : (
             <Card>
                 <Stack direction="horizontal" className="flex-wrap justify-content-between">
                     <Typography className='mb-0'>No investments found. Start now by going to "All Items" and creating an investment.</Typography>
-                    <Button as={Link} to="/items" size="sm" variant='info' style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>All Items</Button>
+                    <Button as={Link} to="/items" size="sm" variant='info'
+                        style={{ backgroundColor: "#ffcb05", color: "black", borderColor: "#ffcb05" }}>
+                        All Items
+                    </Button>
                 </Stack>
             </Card>
+        )
     )
 }
