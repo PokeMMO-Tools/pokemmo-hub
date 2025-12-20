@@ -41,7 +41,7 @@ const ItemPage = ({ pageContext, data }) => {
         )}
         <>
           {
-            getItemInfo(item._id).buy_bp && getItemInfo(item._id).buy_bp > 0
+            getItemInfo(item._id)?.buy_bp > 0
               ? <Badge>{getItemInfo(item._id).buy_bp} BP</Badge>
               : <></>
           }
