@@ -13905,14 +13905,14 @@
     },
     "1576": {
         "name": {
-            "en": "Mysterious Poké Ball",
-            "cn": "神秘Poké Ball",
-            "de": "Geheimnisvoller Pokéball",
-            "fr": "Mystérieuse Poké Ball",
-            "it": "Poké Ball Misteriosa",
-            "es": "Poké Ball Misteriosa",
-            "ja": "Mysterious モンスターボール",
-            "tw": "神祕Poké Ball"
+            "en": "Mysterious Poké Ball (2024)",
+            "cn": "神秘Poké Ball (2024)",
+            "de": "Geheimnisvoller Pokéball (2024)",
+            "fr": "Mystérieuse Poké Ball (2024)",
+            "it": "Poké Ball Misteriosa (2024)",
+            "es": "Poké Ball Misteriosa (2024)",
+            "ja": "Mysterious モンスターボール (2024)",
+            "tw": "神祕Poké Ball (2024)"
         },
         "description": {
             "en": "A mysterious Poké Ball which contains\nan unknown reward. It has a high base\nchance to contain a Shiny Pokémon\n(1/8,000).\n\nExclusive to Xmas 2024.",
@@ -13927,14 +13927,14 @@
     },
     "1577": {
         "name": {
-            "en": "Mysterious Great Ball",
-            "cn": "神秘Great Ball",
-            "de": "Geheimnisvoller Superball",
-            "fr": "Mystérieuse Super Ball",
-            "it": "Mega Ball Misteriosa",
-            "es": "Superball Misteriosa",
-            "ja": "Mysterious スーパーボール",
-            "tw": "神祕Great Ball"
+            "en": "Mysterious Great Ball (2024)",
+            "cn": "神秘Great Ball (2024)",
+            "de": "Geheimnisvoller Superball (2024)",
+            "fr": "Mystérieuse Super Ball (2024)",
+            "it": "Mega Ball Misteriosa (2024)",
+            "es": "Superball Misteriosa (2024)",
+            "ja": "Mysterious スーパーボール (2024)",
+            "tw": "神祕Great Ball (2024)"
         },
         "description": {
             "en": "A mysterious Great Ball which contains\nan unknown reward. It has a high base\nchance to contain a Shiny Pokémon\n(1/6,000).\n\nExclusive to Xmas 2024.",
@@ -13949,14 +13949,14 @@
     },
     "1578": {
         "name": {
-            "en": "Mysterious Ultra Ball",
-            "cn": "神秘Ultra Ball",
-            "de": "Mysteriöser Hyperball",
-            "fr": "Mystérieuse Hyper Ball",
-            "it": "Ultra Ball Misteriosa",
-            "es": "Ultraball Misteriosa",
-            "ja": "Mysterious ハイパーボール",
-            "tw": "神祕Ultra Ball"
+            "en": "Mysterious Ultra Ball (2024)",
+            "cn": "神秘Ultra Ball (2024)",
+            "de": "Mysteriöser Hyperball (2024)",
+            "fr": "Mystérieuse Hyper Ball (2024)",
+            "it": "Ultra Ball Misteriosa (2024)",
+            "es": "Ultraball Misteriosa (2024)",
+            "ja": "Mysterious ハイパーボール (2024)",
+            "tw": "神祕Ultra Ball (2024)"
         },
         "description": {
             "en": "A mysterious Ultra Ball which contains\nan unknown reward. It has a very high\nbase chance to contain a Shiny\nPokémon (1/4,000).\n\nExclusive to Xmas 2024.",
@@ -14037,14 +14037,14 @@
     },
     "1582": {
         "name": {
-            "en": "Xmas Present",
-            "cn": "圣诞节礼物(Xmas Present)",
-            "de": "Weihnachtsgeschenk",
-            "fr": "Cadeau de Noël",
-            "it": "Regalo di Natale",
-            "es": "Regalo de Navidad",
-            "ja": "Xmas Present",
-            "tw": "聖誕節禮物(Xmas Present)"
+            "en": "Xmas Present (2024)",
+            "cn": "圣诞节礼物(Xmas Present) (2024)",
+            "de": "Weihnachtsgeschenk (2024)",
+            "fr": "Cadeau de Noël (2024)",
+            "it": "Regalo di Natale (2024)",
+            "es": "Regalo de Navidad (2024)",
+            "ja": "Xmas Present (2024)",
+            "tw": "聖誕節禮物(Xmas Present) (2024)"
         },
         "description": {
             "en": "A fancy looking present which contains\nan unknown reward.\n\nMay contain exclusive items for Xmas\n2024. Use to open.",
@@ -14059,14 +14059,14 @@
     },
     "1583": {
         "name": {
-            "en": "Santa's Present",
-            "cn": "圣诞老人的礼物(Santa's Present)",
-            "de": "Geschenk des Weihnachtsmanns",
-            "fr": "Cadeau du Père Noël",
-            "it": "Regalo di Babbo Natale",
-            "es": "Regalo de Papá Noel",
-            "ja": "Santa's Present",
-            "tw": "聖誕老人的禮物(Santa's Present)"
+            "en": "Santa's Present (2024)",
+            "cn": "圣诞老人的礼物(Santa's Present) (2024)",
+            "de": "Geschenk des Weihnachtsmanns (2024)",
+            "fr": "Cadeau du Père Noël (2024)",
+            "it": "Regalo di Babbo Natale (2024)",
+            "es": "Regalo de Papá Noel (2024)",
+            "ja": "Santa's Present (2024)",
+            "tw": "聖誕老人的禮物(Santa's Present) (2024)"
         },
         "description": {
             "en": "A fancy looking present which contains\nan unknown reward.\n\nMay contain exclusive items for Xmas\n2024. Use to open.",
@@ -44603,6 +44603,600 @@
             "es": "Red Lotus Crown",
             "ja": "Red Lotus Crown",
             "tw": "血莲花冠"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "1592": {
+        "name": {
+            "en": "Mysterious Poké Ball",
+            "cn": "神秘精灵球",
+            "de": "Mysterious Poké Ball",
+            "fr": "Mysterious Poké Ball",
+            "it": "Mysterious Poké Ball",
+            "es": "Mysterious Poké Ball",
+            "ja": "Mysterious Poké Ball",
+            "tw": "神秘精灵球"
+        },
+        "description": {
+            "en": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "cn": "装着未知奖励的神秘精灵球。1/8000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有",
+            "de": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "fr": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "it": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "es": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "ja": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "tw": "装着未知奖励的神秘精灵球。1/8000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+        }
+    },
+    "1593": {
+        "name": {
+            "en": "Mysterious Great Ball",
+            "cn": "神秘超级球",
+            "de": "Mysterious Great Ball",
+            "fr": "Mysterious Great Ball",
+            "it": "Mysterious Great Ball",
+            "es": "Mysterious Great Ball",
+            "ja": "Mysterious Great Ball",
+            "tw": "神秘超级球"
+        },
+        "description": {
+            "en": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "cn": "装着未知奖励的神秘超级球。1/6500基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有",
+            "de": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "fr": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "it": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "es": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "ja": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "tw": "装着未知奖励的神秘超级球。1/6500基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+        }
+    },
+    "1594": {
+        "name": {
+            "en": "Mysterious Ultra Ball",
+            "cn": "神秘高级球",
+            "de": "Mysterious Ultra Ball",
+            "fr": "Mysterious Ultra Ball",
+            "it": "Mysterious Ultra Ball",
+            "es": "Mysterious Ultra Ball",
+            "ja": "Mysterious Ultra Ball",
+            "tw": "神秘高级球"
+        },
+        "description": {
+            "en": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "cn": "装着未知奖励的神秘高级球。1/5000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有",
+            "de": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "fr": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "it": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "es": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "ja": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+            "tw": "装着未知奖励的神秘高级球。1/5000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+        }
+    },
+    "1595": {
+        "name": {
+            "en": "Relic Note",
+            "cn": "古老音符",
+            "de": "Relic Note",
+            "fr": "Relic Note",
+            "it": "Relic Note",
+            "es": "Relic Note",
+            "ja": "Relic Note",
+            "tw": "古老音符"
+        },
+        "description": {
+            "en": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "cn": "可以修正某些宝可梦1点个体值的音符石。一次性消耗品",
+            "de": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "fr": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "it": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "es": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "ja": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "tw": "可以修正某些宝可梦1点个体值的音符石。一次性消耗品"
+        }
+    },
+    "1596": {
+        "name": {
+            "en": "Xmas Present",
+            "cn": "圣诞节礼物",
+            "de": "Xmas Present",
+            "fr": "Xmas Present",
+            "it": "Xmas Present",
+            "es": "Xmas Present",
+            "ja": "Xmas Present",
+            "tw": "圣诞节礼物"
+        },
+        "description": {
+            "en": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "cn": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开",
+            "de": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "fr": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "it": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "es": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "ja": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "tw": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开"
+        }
+    },
+    "1597": {
+        "name": {
+            "en": "Santa's Present",
+            "cn": "圣诞老人的礼物",
+            "de": "Santa's Present",
+            "fr": "Santa's Present",
+            "it": "Santa's Present",
+            "es": "Santa's Present",
+            "ja": "Santa's Present",
+            "tw": "圣诞老人的礼物"
+        },
+        "description": {
+            "en": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "cn": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开",
+            "de": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "fr": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "it": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "es": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "ja": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "tw": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开"
+        }
+    },
+    "1598": {
+        "name": {
+            "en": "Xmas Mystery Box",
+            "cn": "圣诞神秘盒子",
+            "de": "Xmas Mystery Box",
+            "fr": "Xmas Mystery Box",
+            "it": "Xmas Mystery Box",
+            "es": "Xmas Mystery Box",
+            "ja": "Xmas Mystery Box",
+            "tw": "圣诞神秘盒子"
+        },
+        "description": {
+            "en": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "cn": "装着未知奖励的神秘的箱子。可能含有2025圣诞节独家物品。使用后打开",
+            "de": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "fr": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "it": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "es": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "ja": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+            "tw": "装着未知奖励的神秘的箱子。可能含有2025圣诞节独家物品。使用后打开"
+        }
+    },
+    "2562": {
+        "name": {
+            "en": "Elven Ponytail",
+            "cn": "精灵马尾",
+            "de": "Elven Ponytail",
+            "fr": "Elven Ponytail",
+            "it": "Elven Ponytail",
+            "es": "Elven Ponytail",
+            "ja": "Elven Ponytail",
+            "tw": "精灵马尾"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3387": {
+        "name": {
+            "en": "Elven Quiver",
+            "cn": "精灵箭筒",
+            "de": "Elven Quiver",
+            "fr": "Elven Quiver",
+            "it": "Elven Quiver",
+            "es": "Elven Quiver",
+            "ja": "Elven Quiver",
+            "tw": "精灵箭筒"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3719": {
+        "name": {
+            "en": "Elven Outfit",
+            "cn": "精灵制服",
+            "de": "Elven Outfit",
+            "fr": "Elven Outfit",
+            "it": "Elven Outfit",
+            "es": "Elven Outfit",
+            "ja": "Elven Outfit",
+            "tw": "精灵制服"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3720": {
+        "name": {
+            "en": "Peppermint Shirt",
+            "cn": "拐杖糖衫",
+            "de": "Peppermint Shirt",
+            "fr": "Peppermint Shirt",
+            "it": "Peppermint Shirt",
+            "es": "Peppermint Shirt",
+            "ja": "Peppermint Shirt",
+            "tw": "拐杖糖衫"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3721": {
+        "name": {
+            "en": "Festive Dress",
+            "cn": "圣诞裙",
+            "de": "Festive Dress",
+            "fr": "Festive Dress",
+            "it": "Festive Dress",
+            "es": "Festive Dress",
+            "ja": "Festive Dress",
+            "tw": "圣诞裙"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3722": {
+        "name": {
+            "en": "Spruce Coat",
+            "cn": "云杉大衣",
+            "de": "Spruce Coat",
+            "fr": "Spruce Coat",
+            "it": "Spruce Coat",
+            "es": "Spruce Coat",
+            "ja": "Spruce Coat",
+            "tw": "云杉大衣"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3723": {
+        "name": {
+            "en": "Peace Apple Overalls",
+            "cn": "苹安服",
+            "de": "Peace Apple Overalls",
+            "fr": "Peace Apple Overalls",
+            "it": "Peace Apple Overalls",
+            "es": "Peace Apple Overalls",
+            "ja": "Peace Apple Overalls",
+            "tw": "苹安服"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3810": {
+        "name": {
+            "en": "Elven Bow",
+            "cn": "精灵弓",
+            "de": "Elven Bow",
+            "fr": "Elven Bow",
+            "it": "Elven Bow",
+            "es": "Elven Bow",
+            "ja": "Elven Bow",
+            "tw": "精灵弓"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4310": {
+        "name": {
+            "en": "Spruce Pants",
+            "cn": "云杉裤",
+            "de": "Spruce Pants",
+            "fr": "Spruce Pants",
+            "it": "Spruce Pants",
+            "es": "Spruce Pants",
+            "ja": "Spruce Pants",
+            "tw": "云杉裤"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4710": {
+        "name": {
+            "en": "Weasel Headdress",
+            "cn": "恶鼬头饰",
+            "de": "Weasel Headdress",
+            "fr": "Weasel Headdress",
+            "it": "Weasel Headdress",
+            "es": "Weasel Headdress",
+            "ja": "Weasel Headdress",
+            "tw": "恶鼬头饰"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4711": {
+        "name": {
+            "en": "Star Hairband",
+            "cn": "星星发带",
+            "de": "Star Hairband",
+            "fr": "Star Hairband",
+            "it": "Star Hairband",
+            "es": "Star Hairband",
+            "ja": "Star Hairband",
+            "tw": "星星发带"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4712": {
+        "name": {
+            "en": "Christmas Present Hat",
+            "cn": "圣诞礼物帽",
+            "de": "Christmas Present Hat",
+            "fr": "Christmas Present Hat",
+            "it": "Christmas Present Hat",
+            "es": "Christmas Present Hat",
+            "ja": "Christmas Present Hat",
+            "tw": "圣诞礼物帽"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4713": {
+        "name": {
+            "en": "Ice Horns",
+            "cn": "冰角",
+            "de": "Ice Horns",
+            "fr": "Ice Horns",
+            "it": "Ice Horns",
+            "es": "Ice Horns",
+            "ja": "Ice Horns",
+            "tw": "冰角"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4714": {
+        "name": {
+            "en": "Melty the Snowman",
+            "cn": "融化雪人",
+            "de": "Melty the Snowman",
+            "fr": "Melty the Snowman",
+            "it": "Melty the Snowman",
+            "es": "Melty the Snowman",
+            "ja": "Melty the Snowman",
+            "tw": "融化雪人"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4715": {
+        "name": {
+            "en": "Pudgy Penguin",
+            "cn": "胖企鹅",
+            "de": "Pudgy Penguin",
+            "fr": "Pudgy Penguin",
+            "it": "Pudgy Penguin",
+            "es": "Pudgy Penguin",
+            "ja": "Pudgy Penguin",
+            "tw": "胖企鹅"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4716": {
+        "name": {
+            "en": "Christmas Camo",
+            "cn": "圣诞迷彩",
+            "de": "Christmas Camo",
+            "fr": "Christmas Camo",
+            "it": "Christmas Camo",
+            "es": "Christmas Camo",
+            "ja": "Christmas Camo",
+            "tw": "圣诞迷彩"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4718": {
+        "name": {
+            "en": "Peace Apple Hat",
+            "cn": "苹安帽",
+            "de": "Peace Apple Hat",
+            "fr": "Peace Apple Hat",
+            "it": "Peace Apple Hat",
+            "es": "Peace Apple Hat",
+            "ja": "Peace Apple Hat",
+            "tw": "苹安帽"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4719": {
+        "name": {
+            "en": "Winter Deer Antlers",
+            "cn": "冬鹿角",
+            "de": "Winter Deer Antlers",
+            "fr": "Winter Deer Antlers",
+            "it": "Winter Deer Antlers",
+            "es": "Winter Deer Antlers",
+            "ja": "Winter Deer Antlers",
+            "tw": "冬鹿角"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4720": {
+        "name": {
+            "en": "Winter Fawn Bow",
+            "cn": "冬小鹿蝴蝶结",
+            "de": "Winter Fawn Bow",
+            "fr": "Winter Fawn Bow",
+            "it": "Winter Fawn Bow",
+            "es": "Winter Fawn Bow",
+            "ja": "Winter Fawn Bow",
+            "tw": "冬小鹿蝴蝶结"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4873": {
+        "name": {
+            "en": "Rudolph",
+            "cn": "鲁道夫",
+            "de": "Rudolph",
+            "fr": "Rudolph",
+            "it": "Rudolph",
+            "es": "Rudolph",
+            "ja": "Rudolph",
+            "tw": "鲁道夫"
         },
         "description": {
             "en": "A cosmetic item which can be used to modify your appearance",

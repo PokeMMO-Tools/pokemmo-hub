@@ -21011,5 +21011,545 @@
     "es_name": "",
     "region": 6,
     "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A mysterious Poké Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/8,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+      "zh": "装着未知奖励的神秘精灵球。1/8000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+    },
+    "dex": 1592,
+    "id": 2285,
+    "key": "mysterious-poke-ball",
+    "name": "神秘精灵球",
+    "en_name": "Mysterious Poké Ball",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A mysterious Great Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,500). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+      "zh": "装着未知奖励的神秘超级球。1/6500基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+    },
+    "dex": 1593,
+    "id": 2286,
+    "key": "mysterious-great-ball",
+    "name": "神秘超级球",
+    "en_name": "Mysterious Great Ball",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A mysterious Ultra Ball which contains an unknown reward. It has a very high base chance to contain a Shiny Pokémon (1/5,000). The Shiny rate increases by 15% during the 2025 Xmas Event. Exclusive to Xmas 2025",
+      "zh": "装着未知奖励的神秘高级球。1/5000基础闪率开出闪光宝可梦。闪率在2025圣诞节期间增加15%。2025圣诞节特有"
+    },
+    "dex": 1594,
+    "id": 2287,
+    "key": "mysterious-ultra-ball",
+    "name": "神秘高级球",
+    "en_name": "Mysterious Ultra Ball",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A stone musical note which emanates a soft sound. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+      "zh": "可以修正某些宝可梦1点个体值的音符石。一次性消耗品"
+    },
+    "dex": 1595,
+    "id": 2288,
+    "key": "relic-note",
+    "name": "古老音符",
+    "en_name": "Relic Note",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+      "zh": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开"
+    },
+    "dex": 1596,
+    "id": 2289,
+    "key": "xmas-present",
+    "name": "圣诞节礼物",
+    "en_name": "Xmas Present",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A fancy looking present which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+      "zh": "装着神秘奖励的精美礼物。可能含有2025圣诞节独家物品。使用后打开"
+    },
+    "dex": 1597,
+    "id": 2290,
+    "key": "santa-s-present",
+    "name": "圣诞老人的礼物",
+    "en_name": "Santa's Present",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A strange box which contains an unknown reward. May contain exclusive items for Xmas 2025. Use to open",
+      "zh": "装着未知奖励的神秘的箱子。可能含有2025圣诞节独家物品。使用后打开"
+    },
+    "dex": 1598,
+    "id": 2291,
+    "key": "xmas-mystery-box",
+    "name": "圣诞神秘盒子",
+    "en_name": "Xmas Mystery Box",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2562,
+    "id": 2292,
+    "key": "elven-ponytail",
+    "name": "精灵马尾",
+    "en_name": "Elven Ponytail",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3387,
+    "id": 2293,
+    "key": "elven-quiver",
+    "name": "精灵箭筒",
+    "en_name": "Elven Quiver",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3719,
+    "id": 2294,
+    "key": "elven-outfit",
+    "name": "精灵制服",
+    "en_name": "Elven Outfit",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3720,
+    "id": 2295,
+    "key": "peppermint-shirt",
+    "name": "拐杖糖衫",
+    "en_name": "Peppermint Shirt",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3721,
+    "id": 2296,
+    "key": "festive-dress",
+    "name": "圣诞裙",
+    "en_name": "Festive Dress",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3722,
+    "id": 2297,
+    "key": "spruce-coat",
+    "name": "云杉大衣",
+    "en_name": "Spruce Coat",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3723,
+    "id": 2298,
+    "key": "peace-apple-overalls",
+    "name": "苹安服",
+    "en_name": "Peace Apple Overalls",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3810,
+    "id": 2299,
+    "key": "elven-bow",
+    "name": "精灵弓",
+    "en_name": "Elven Bow",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4310,
+    "id": 2300,
+    "key": "spruce-pants",
+    "name": "云杉裤",
+    "en_name": "Spruce Pants",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4710,
+    "id": 2301,
+    "key": "weasel-headdress",
+    "name": "恶鼬头饰",
+    "en_name": "Weasel Headdress",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4711,
+    "id": 2302,
+    "key": "star-hairband",
+    "name": "星星发带",
+    "en_name": "Star Hairband",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4712,
+    "id": 2303,
+    "key": "christmas-present-hat",
+    "name": "圣诞礼物帽",
+    "en_name": "Christmas Present Hat",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4713,
+    "id": 2304,
+    "key": "ice-horns",
+    "name": "冰角",
+    "en_name": "Ice Horns",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4714,
+    "id": 2305,
+    "key": "melty-the-snowman",
+    "name": "融化雪人",
+    "en_name": "Melty the Snowman",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4715,
+    "id": 2306,
+    "key": "pudgy-penguin",
+    "name": "胖企鹅",
+    "en_name": "Pudgy Penguin",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4716,
+    "id": 2307,
+    "key": "christmas-camo",
+    "name": "圣诞迷彩",
+    "en_name": "Christmas Camo",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4717,
+    "id": 2308,
+    "key": "xmas-socks",
+    "name": "圣诞袜子",
+    "en_name": "Xmas Socks",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4718,
+    "id": 2309,
+    "key": "jingle-bell-necklace",
+    "name": "叮叮铃项链",
+    "en_name": "Jingle Bell Necklace",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4719,
+    "id": 2310,
+    "key": "christmas-tree-backpack",
+    "name": "圣诞树背包",
+    "en_name": "Christmas Tree Backpack",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4720,
+    "id": 2311,
+    "key": "snowflake-earrings",
+    "name": "雪花耳环",
+    "en_name": "Snowflake Earrings",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
   }
 ]
