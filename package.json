@@ -65,10 +65,7 @@
     "react-time-picker": "^5.2.0",
     "recharts": "^2.15.1",
     "rss-parser": "^3.12.0",
-    "xlsx": "^0.18.5",
-    "sharp": "0.30.7",
-    "@netlify/plugin-gatsby": "3.5.0",
-    "clipboardy": "3.0.0",
-    "@netlify/serverless-functions-api": "1.25.1"
+    "sharp": "^0.31.x",
+    "xlsx": "^0.18.5"
   }
 }
