@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import catchRates from '../data/catchRates.json'
 
 export const BALLS = [
@@ -148,21 +148,21 @@ export const calculateCatchRate = (pkmn_rate, max_hp, current_hp, pokeball, stat
 }
 
 export const useCatchRate = (dex_id, max_hp) => {
-    const [results, setResults] = useState([]);
     const rateObj = catchRates.find(({ id }) => id === dex_id)
-
     const pkmn_rate = typeof rateObj !== "undefined" ? rateObj.rate : 0
 
-    useEffect(() => {
+    const results = useMemo(() => {
+        const res = [];
         BALLS.forEach(ball => {
             STATUSES.forEach(status => {
                 if (!ball.status && status !== null) return;
-                setResults(prev => [...prev, calculateCatchRate(pkmn_rate, max_hp, max_hp, ball, status)])
+                res.push(calculateCatchRate(pkmn_rate, max_hp, max_hp, ball, status))
                 if (!ball.health) return;
-                setResults(prev => [...prev, calculateCatchRate(pkmn_rate, max_hp, 1, ball, status)])
+                res.push(calculateCatchRate(pkmn_rate, max_hp, 1, ball, status))
             })
         });
-    }, [max_hp, pkmn_rate])
+        return res;
+    }, [max_hp, pkmn_rate]);
 
     return results;
 }
