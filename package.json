@@ -11,6 +11,9 @@
     "pokemmo guide",
     "react"
   ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -24,7 +27,6 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.8",
     "@mui/x-date-pickers": "^5.0.18",
-    "@netlify/serverless-functions-api": "^1.22.0",
     "axios": "^1.3.3",
     "bootstrap": "^5.2.0",
     "canvas-confetti": "^1.6.0",
@@ -66,14 +68,10 @@
     "react-time-picker": "^5.2.0",
     "recharts": "^2.15.1",
     "rss-parser": "^3.12.0",
-    "sharp": "0.30.7",
+    "sharp": "^0.31.3",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@netlify/plugin-gatsby": "3.7.0"
-  },
-  "resolutions": {
-    "execa": "7.1.1",
-    "clipboardy": "3.0.0"
+    "@netlify/plugin-gatsby": "^3.8.4"
   }
 }
