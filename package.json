@@ -19,6 +19,9 @@
     "clean": "gatsby clean",
     "test": "gatsby build && gatsby serve"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -65,6 +68,16 @@
     "react-time-picker": "^5.2.0",
     "recharts": "^2.15.1",
     "rss-parser": "^3.12.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "sharp": "0.30.7",
+    "common-tags": "^1.8.2",
+    "@gatsbyjs/reach-router": "^1.3.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-gatsby": "3.7.0"
+  },
+  "resolutions": {
+    "execa": "7.1.1",
+    "clipboardy": "3.0.0"
   }
 }
