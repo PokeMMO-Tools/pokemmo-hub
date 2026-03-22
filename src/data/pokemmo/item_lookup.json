@@ -14081,14 +14081,14 @@
     },
     "1584": {
         "name": {
-            "en": "Mysterious Cherish Ball",
-            "cn": "神秘Cherish Ball",
-            "de": "Mysteriöser Jubelball",
-            "fr": "Mémoire Ball Mystérieuse",
-            "it": "Pregio Ball Misteriosa",
-            "es": "Gloria Ball Misteriosa",
-            "ja": "Mysterious プレシャスボール",
-            "tw": "神祕Cherish Ball"
+            "en": "Mysterious Cherish Ball (2025)",
+            "cn": "神秘Cherish Ball (2025)",
+            "de": "Mysteriöser Jubelball (2025)",
+            "fr": "Mémoire Ball Mystérieuse (2025)",
+            "it": "Pregio Ball Misteriosa (2025)",
+            "es": "Gloria Ball Misteriosa (2025)",
+            "ja": "Mysterious プレシャスボール (2025)",
+            "tw": "神祕Cherish Ball (2025)"
         },
         "description": {
             "en": "A mysterious Cherish Ball which\ncontains an unknown reward. It has a\nhigh base chance to contain a Shiny\nPokémon (1/6,000).\n\nExclusive to Lunar New Year 2025.",
@@ -14103,14 +14103,14 @@
     },
     "1585": {
         "name": {
-            "en": "Red Envelope",
-            "cn": "红包(Red Envelope)",
-            "de": "Roter Umschlag",
-            "fr": "Enveloppe rouge",
-            "it": "Busta Rossa",
-            "es": "Sobre rojo",
-            "ja": "Red Envelope",
-            "tw": "紅包(Red Envelope)"
+            "en": "Red Envelope (2025)",
+            "cn": "红包(Red Envelope) (2025)",
+            "de": "Roter Umschlag (2025)",
+            "fr": "Enveloppe rouge (2025)",
+            "it": "Busta Rossa (2025)",
+            "es": "Sobre rojo (2025)",
+            "ja": "Red Envelope (2025)",
+            "tw": "紅包(Red Envelope) (2025)"
         },
         "description": {
             "en": "A red envelope which contains an\nunknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2025.\nUse to open.",
@@ -14125,14 +14125,14 @@
     },
     "1586": {
         "name": {
-            "en": "Lucky Red Envelope",
-            "cn": "幸运大红包(Lucky Red Envelope)",
-            "de": "Glückbringender Roter Umschlag",
-            "fr": "Enveloppe Rouge Chanceuse",
-            "it": "Busta Rossa Fortunata",
-            "es": "Sobre rojo afortunado",
-            "ja": "Lucky Red Envelope",
-            "tw": "幸運大紅包(Lucky Red Envelope)"
+            "en": "Lucky Red Envelope (2025)",
+            "cn": "幸运大红包(Lucky Red Envelope) (2025)",
+            "de": "Glückbringender Roter Umschlag (2025)",
+            "fr": "Enveloppe Rouge Chanceuse (2025)",
+            "it": "Busta Rossa Fortunata (2025)",
+            "es": "Sobre rojo afortunado (2025)",
+            "ja": "Lucky Red Envelope (2025)",
+            "tw": "幸運大紅包(Lucky Red Envelope (2025)"
         },
         "description": {
             "en": "An extra lucky red envelope which\ncontains an unknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2025.\nUse to open.",
@@ -45197,6 +45197,556 @@
             "es": "Rudolph",
             "ja": "Rudolph",
             "tw": "鲁道夫"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4719": {
+        "name": {
+            "en": "Horse Plush",
+            "cn": "毛绒马",
+            "de": "Horse Plush",
+            "fr": "Horse Plush",
+            "it": "Horse Plush",
+            "es": "Horse Plush",
+            "ja": "Horse Plush",
+            "tw": "毛绒马"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4720": {
+        "name": {
+            "en": "Winter Fawn Bow",
+            "cn": "冬小鹿蝴蝶结",
+            "de": "Winter Fawn Bow",
+            "fr": "Winter Fawn Bow",
+            "it": "Winter Fawn Bow",
+            "es": "Winter Fawn Bow",
+            "ja": "Winter Fawn Bow",
+            "tw": "冬小鹿蝴蝶结"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4873": {
+        "name": {
+            "en": "Rudolph",
+            "cn": "鲁道夫",
+            "de": "Rudolph",
+            "fr": "Rudolph",
+            "it": "Rudolph",
+            "es": "Rudolph",
+            "ja": "Rudolph",
+            "tw": "鲁道夫"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "1599": {
+        "name": {
+            "en": "Mysterious Cherish Ball",
+            "cn": "神秘Cherish Ball",
+            "de": "Mysteriöser Jubelball",
+            "fr": "Mystérieuse Mémoire Ball",
+            "it": "Pregio Ball Misteriosa",
+            "es": "Gloria Ball Misteriosa",
+            "ja": "Mysterious プレシャスボール",
+            "tw": "神祕Cherish Ball"
+        },
+        "description": {
+            "en": "A mysterious Cherish Ball which\ncontains an unknown reward. It has a\nhigh base chance to contain a Shiny\nPokémon (1/6,000).\n\nExclusive to Lunar New Year 2026.",
+            "cn": "装着未知奖励的神秘Cherish Ball. 高基础闪率(1/6,000)\n获得闪光Pokémon.\n\n2026春节特有.",
+            "de": "Eine geheimnisvolle Jubelball, die\neine unbekannte Belohnung enthält. Es\nhat eine hohe Basischance, ein\nglänzendes Pokémon zu enthalten\n(1/6.500).\n\nExklusiv für Lunar New Year 2026.",
+            "fr": "Une mystérieuse Mémoire Ball qui\ncontient une récompense inconnue. Il\na de fortes chances de contenir un\nPokémon shiny (1/6 000).\n\nExclusif au Nouvel An lunaire 2026.",
+            "it": "Una Pregio Ball misteriosa che\ncontiene una ricompensa sconosciuta.\nHa un'alta probabilità di contenere\nun Pokémon Cromatico (1/6000).\n\nEsclusivo del Nuovo Anno Lunare 2026.",
+            "es": "Una Gloria Ball misteriosa que\ncontiene una recompensa desconocida.\nTiene una alta probabilidad de\ncontener un Pokémon Variocolor\n(1/6,000).\n\nExclusivo del Año Nuevo Lunar 2026.",
+            "ja": "A mysterious プレシャスボール which contains\nan unknown reward. It has a high base\nchance to contain a Shiny ポケモン\n(1/6,000).\n\nExclusive to Lunar New Year 2026.",
+            "tw": "裝著未知獎勵的神祕Cherish Ball. 高基礎閃率(1/6,000)\n獲得閃光Pokémon.\n\n2026春節特有."
+        }
+    },
+    "1900": {
+        "name": {
+            "en": "Plume of Feathers",
+            "cn": "羽簇",
+            "de": "Plume of Feathers",
+            "fr": "Plume of Feathers",
+            "it": "Plume of Feathers",
+            "es": "Plume of Feathers",
+            "ja": "Plume of Feathers",
+            "tw": "羽簇"
+        },
+        "description": {
+            "en": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "cn": "可以修正某些宝可梦1点个体值的一簇羽毛。一次性消耗品",
+            "de": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "fr": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "it": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "es": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "ja": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+            "tw": "可以修正某些宝可梦1点个体值的一簇羽毛。一次性消耗品"
+        }
+    },
+    "1901": {
+        "name": {
+            "en": "Red Envelope",
+            "cn": "红包(Red Envelope)",
+            "de": "Roter Umschlag",
+            "fr": "Enveloppe rouge",
+            "it": "Busta Rossa",
+            "es": "Sobre rojo",
+            "ja": "Red Envelope",
+            "tw": "紅包(Red Envelope)"
+        },
+        "description": {
+            "en": "A red envelope which contains an\nunknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2026.\nUse to open.",
+            "cn": "装着神秘奖励的红包.\n可能内含2025春节的独家物品.\n\n使用后打开.",
+            "de": "Ein roter Umschlag, der eine\nunbekannte Belohnung enthält.\n\nEr kann exklusive Gegenstände für das\nMondneujahr 2026 enthalten.\nZum Öffnen verwenden.",
+            "fr": "Une enveloppe rouge contenant une\nrécompense inconnue.\n\nPeut contenir un objet exclusif du\nNouvel An Lunaire 2026.\nUtilisez pour ouvrir.",
+            "it": "Una busta rossa che contiene una\nricompensa sconosciuta.\n\nPotrebbe contenere oggetti esclusivi\ndel Nuovo Anno Lunare 2026.\nUsa per aprirla.",
+            "es": "Un sobre rojo que contiene una\nrecompensa misteriosa.\nPuede contener objetos exclusivos de\nAño Nuevo Lunar 2026.\nUsalo para abrir.",
+            "ja": "A red envelope which contains an\nunknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2026.\nUse to open.",
+            "tw": "裝著神祕獎勵的紅包.\n可能內含2026春節的獨家物品.\n\n使用後開啟."
+        }
+    },
+    "1902": {
+        "name": {
+            "en": "Lucky Red Envelope",
+            "cn": "幸运大红包(Lucky Red Envelope)",
+            "de": "Glückbringender Roter Umschlag",
+            "fr": "Enveloppe Rouge Chanceuse",
+            "it": "Busta Rossa Fortunata",
+            "es": "Sobre rojo afortunado",
+            "ja": "Lucky Red Envelope",
+            "tw": "幸運大紅包(Lucky Red Envelope"
+        },
+        "description": {
+            "en": "An extra lucky red envelope which\ncontains an unknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2026.\nUse to open.",
+            "cn": "装着神秘奖励的幸运红包.\n可能内含2025春节的独家物品.\n\n使用后打开.",
+            "de": "Ein besonders glücksbringender roter\nUmschlag, der eine unbekannte\nBelohnung enthält.\n\nSie kann exklusive Gegenstände für das\nMondneujahr 2026 enthalten.\nZum Aufmachen verwenden.",
+            "fr": "Une enveloppe rouge porte-bonheur\ncontenant une récompense inconnue.\n\nPeut contenir un objet exclusif du\nNouvel An Lunaire 2026.\nUtilisez pour ouvrir.",
+            "it": "Una busta rossa molto fortunata che\ncontiene una ricompensa sconosciuta.\n\nPotrebbe contenere oggetti esclusivi\ndel Nuovo Anno Lunare 2026.\nUsa per aprirla.",
+            "es": "Un sobre rojo afortunado que contiene\nuna recompensa misteriosa.\n\nPuede contener objetos exclusivos para\nAño Nuevo Lunar 2026.\nUsa para abrir.",
+            "ja": "An extra lucky red envelope which\ncontains an unknown reward.\n\nMay contain exclusive items for Lunar\nNew Year 2026.\nUse to open.",
+            "tw": "裝著神祕獎勵的幸運紅包.\n可能內含2026春節的獨家物品.\n\n使用後開啟."
+        }
+    },
+    "1903": {
+        "name": {
+            "en": "Lunar New Year Mystery Box",
+            "cn": "春节神秘盒子",
+            "de": "Lunar New Year Mystery Box",
+            "fr": "Lunar New Year Mystery Box",
+            "it": "Lunar New Year Mystery Box",
+            "es": "Lunar New Year Mystery Box",
+            "ja": "Lunar New Year Mystery Box",
+            "tw": "春节神秘盒子"
+        },
+        "description": {
+            "en": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "cn": "装着未知奖励的神秘的箱子。可能含有2026春节独家物品。使用后打开",
+            "de": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "fr": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "it": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "es": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "ja": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+            "tw": "装着未知奖励的神秘的箱子。可能含有2026春节独家物品。使用后打开"
+        }
+    },
+    "2563": {
+        "name": {
+            "en": "Elegant Ponytail",
+            "cn": "雅致马尾",
+            "de": "Elegant Ponytail",
+            "fr": "Elegant Ponytail",
+            "it": "Elegant Ponytail",
+            "es": "Elegant Ponytail",
+            "ja": "Elegant Ponytail",
+            "tw": "雅致马尾"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "2565": {
+        "name": {
+            "en": "Origin Hairstyle",
+            "cn": "起源发型",
+            "de": "Origin Hairstyle",
+            "fr": "Origin Hairstyle",
+            "it": "Origin Hairstyle",
+            "es": "Origin Hairstyle",
+            "ja": "Origin Hairstyle",
+            "tw": "起源发型"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "2566": {
+        "name": {
+            "en": "Colorful Unicorn Hair",
+            "cn": "多彩独角兽发",
+            "de": "Colorful Unicorn Hair",
+            "fr": "Colorful Unicorn Hair",
+            "it": "Colorful Unicorn Hair",
+            "es": "Colorful Unicorn Hair",
+            "ja": "Colorful Unicorn Hair",
+            "tw": "多彩独角兽发"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3388": {
+        "name": {
+            "en": "Red Petal Scarf",
+            "cn": "红花瓣围巾",
+            "de": "Red Petal Scarf",
+            "fr": "Red Petal Scarf",
+            "it": "Red Petal Scarf",
+            "es": "Red Petal Scarf",
+            "ja": "Red Petal Scarf",
+            "tw": "红花瓣围巾"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3389": {
+        "name": {
+            "en": "Origin Ring",
+            "cn": "起源环",
+            "de": "Origin Ring",
+            "fr": "Origin Ring",
+            "it": "Origin Ring",
+            "es": "Origin Ring",
+            "ja": "Origin Ring",
+            "tw": "起源环"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3724": {
+        "name": {
+            "en": "Musketeer Tabard",
+            "cn": "火枪手外套",
+            "de": "Musketeer Tabard",
+            "fr": "Musketeer Tabard",
+            "it": "Musketeer Tabard",
+            "es": "Musketeer Tabard",
+            "ja": "Musketeer Tabard",
+            "tw": "火枪手外套"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3725": {
+        "name": {
+            "en": "Origin Outfit",
+            "cn": "起源制服",
+            "de": "Origin Outfit",
+            "fr": "Origin Outfit",
+            "it": "Origin Outfit",
+            "es": "Origin Outfit",
+            "ja": "Origin Outfit",
+            "tw": "起源制服"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3811": {
+        "name": {
+            "en": "Musketeer Rapier",
+            "cn": "火枪手剑",
+            "de": "Musketeer Rapier",
+            "fr": "Musketeer Rapier",
+            "it": "Musketeer Rapier",
+            "es": "Musketeer Rapier",
+            "ja": "Musketeer Rapier",
+            "tw": "火枪手剑"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4721": {
+        "name": {
+            "en": "Panda Hat",
+            "cn": "熊猫帽",
+            "de": "Panda Hat",
+            "fr": "Panda Hat",
+            "it": "Panda Hat",
+            "es": "Panda Hat",
+            "ja": "Panda Hat",
+            "tw": "熊猫帽"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4722": {
+        "name": {
+            "en": "Gold Hair Ornament",
+            "cn": "金步摇",
+            "de": "Gold Hair Ornament",
+            "fr": "Gold Hair Ornament",
+            "it": "Gold Hair Ornament",
+            "es": "Gold Hair Ornament",
+            "ja": "Gold Hair Ornament",
+            "tw": "金步摇"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4723": {
+        "name": {
+            "en": "Red Tassel Hairclips",
+            "cn": "红缨发夹",
+            "de": "Red Tassel Hairclips",
+            "fr": "Red Tassel Hairclips",
+            "it": "Red Tassel Hairclips",
+            "es": "Red Tassel Hairclips",
+            "ja": "Red Tassel Hairclips",
+            "tw": "红缨发夹"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4724": {
+        "name": {
+            "en": "Horse Mask",
+            "cn": "马面",
+            "de": "Horse Mask",
+            "fr": "Horse Mask",
+            "it": "Horse Mask",
+            "es": "Horse Mask",
+            "ja": "Horse Mask",
+            "tw": "马面"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4725": {
+        "name": {
+            "en": "Musketeer Hat",
+            "cn": "火枪手帽",
+            "de": "Musketeer Hat",
+            "fr": "Musketeer Hat",
+            "it": "Musketeer Hat",
+            "es": "Musketeer Hat",
+            "ja": "Musketeer Hat",
+            "tw": "火枪手帽"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4727": {
+        "name": {
+            "en": "Plum Blossom Hairpin",
+            "cn": "梅花簪",
+            "de": "Plum Blossom Hairpin",
+            "fr": "Plum Blossom Hairpin",
+            "it": "Plum Blossom Hairpin",
+            "es": "Plum Blossom Hairpin",
+            "ja": "Plum Blossom Hairpin",
+            "tw": "梅花簪"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4878": {
+        "name": {
+            "en": "Noble Steed",
+            "cn": "宝马",
+            "de": "Noble Steed",
+            "fr": "Noble Steed",
+            "it": "Noble Steed",
+            "es": "Noble Steed",
+            "ja": "Noble Steed",
+            "tw": "宝马"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "3390": {
+        "name": {
+            "en": "Flower Cape",
+            "cn": "鲜花斗篷",
+            "de": "Flower Cape",
+            "fr": "Flower Cape",
+            "it": "Flower Cape",
+            "es": "Flower Cape",
+            "ja": "Flower Cape",
+            "tw": "鲜花斗篷"
+        },
+        "description": {
+            "en": "A cosmetic item which can be used to modify your appearance",
+            "cn": "改变角色外貌的道具",
+            "de": "A cosmetic item which can be used to modify your appearance",
+            "fr": "A cosmetic item which can be used to modify your appearance",
+            "it": "A cosmetic item which can be used to modify your appearance",
+            "es": "A cosmetic item which can be used to modify your appearance",
+            "ja": "A cosmetic item which can be used to modify your appearance",
+            "tw": "改变角色外貌的道具"
+        }
+    },
+    "4728": {
+        "name": {
+            "en": "Festive Lion Mask",
+            "cn": "舞狮面具",
+            "de": "Festive Lion Mask",
+            "fr": "Festive Lion Mask",
+            "it": "Festive Lion Mask",
+            "es": "Festive Lion Mask",
+            "ja": "Festive Lion Mask",
+            "tw": "舞狮面具"
         },
         "description": {
             "en": "A cosmetic item which can be used to modify your appearance",

@@ -21551,5 +21551,525 @@
     "es_name": "",
     "region": 6,
     "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4718,
+    "id": 2308,
+    "key": "peace-apple-hat",
+    "name": "苹安帽",
+    "en_name": "Peace Apple Hat",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4719,
+    "id": 2309,
+    "key": "horse-plush",
+    "name": "毛绒马",
+    "en_name": "Horse Plush",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4720,
+    "id": 2310,
+    "key": "winter-fawn-bow",
+    "name": "冬小鹿蝴蝶结",
+    "en_name": "Winter Fawn Bow",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 1500,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4873,
+    "id": 2311,
+    "key": "rudolph",
+    "name": "鲁道夫",
+    "en_name": "Rudolph",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A mysterious Cherish Ball which contains an unknown reward. It has a high base chance to contain a Shiny Pokémon (1/6,000). The Shiny rate increases by 15% during the 2026 Lunar New Year Event. Exclusive to Lunar New Year 2026",
+      "zh": "装着未知奖励的神秘贵重球。1/6000基础闪率开出闪光宝可梦。闪率在2026春节期间增加15%。2026春节特有"
+    },
+    "dex": 1599,
+    "id": 2312,
+    "key": "mysterious-cherish-ball",
+    "name": "神秘贵重球",
+    "en_name": "Mysterious Cherish Ball",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A collection of feathers from an unknown source. It may be used to alter the IVs of certain Pokémon by 1. Consumed upon use",
+      "zh": "可以修正某些宝可梦1点个体值的一簇羽毛。一次性消耗品"
+    },
+    "dex": 1900,
+    "id": 2313,
+    "key": "plume-of-feathers",
+    "name": "羽簇",
+    "en_name": "Plume of Feathers",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A red envelope which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+      "zh": "装着神秘奖励的红包。可能内含2026春节的独家物品。使用后打开"
+    },
+    "dex": 1901,
+    "id": 2314,
+    "key": "red-envelope",
+    "name": "红包",
+    "en_name": "Red Envelope",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "An extra lucky red envelope which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+      "zh": "装着神秘奖励的幸运红包。可能内含2026春节的独家物品。使用后打开"
+    },
+    "dex": 1902,
+    "id": 2315,
+    "key": "lucky-red-envelope",
+    "name": "幸运大红包",
+    "en_name": "Lucky Red Envelope",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 4,
+    "description": {
+      "en": "A strange box which contains an unknown reward. May contain exclusive items for Lunar New Year 2026. Use to open",
+      "zh": "装着未知奖励的神秘的箱子。可能含有2026春节独家物品。使用后打开"
+    },
+    "dex": 1903,
+    "id": 2316,
+    "key": "lunar-new-year-mystery-box",
+    "name": "春节神秘盒子",
+    "en_name": "Lunar New Year Mystery Box",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 0,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2563,
+    "id": 2317,
+    "key": "elegant-ponytail",
+    "name": "雅致马尾",
+    "en_name": "Elegant Ponytail",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2565,
+    "id": 2318,
+    "key": "origin-hairstyle",
+    "name": "起源发型",
+    "en_name": "Origin Hairstyle",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 2566,
+    "id": 2319,
+    "key": "colorful-unicorn-hair",
+    "name": "多彩独角兽发",
+    "en_name": "Colorful Unicorn Hair",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3388,
+    "id": 2320,
+    "key": "red-petal-scarf",
+    "name": "红花瓣围巾",
+    "en_name": "Red Petal Scarf",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3389,
+    "id": 2321,
+    "key": "origin-ring",
+    "name": "起源环",
+    "en_name": "Origin Ring",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 1000,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3724,
+    "id": 2322,
+    "key": "musketeer-tabard",
+    "name": "火枪手外套",
+    "en_name": "Musketeer Tabard",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3725,
+    "id": 2323,
+    "key": "origin-outfit",
+    "name": "起源制服",
+    "en_name": "Origin Outfit",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3811,
+    "id": 2324,
+    "key": "musketeer-rapier",
+    "name": "火枪手剑",
+    "en_name": "Musketeer Rapier",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4721,
+    "id": 2325,
+    "key": "panda-hat",
+    "name": "熊猫帽",
+    "en_name": "Panda Hat",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4722,
+    "id": 2326,
+    "key": "gold-hair-ornament",
+    "name": "金步摇",
+    "en_name": "Gold Hair Ornament",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4723,
+    "id": 2327,
+    "key": "red-tassel-hairclips",
+    "name": "红缨发夹",
+    "en_name": "Red Tassel Hairclips",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4724,
+    "id": 2328,
+    "key": "horse-mask",
+    "name": "马面",
+    "en_name": "Horse Mask",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 1000,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4725,
+    "id": 2329,
+    "key": "musketeer-hat",
+    "name": "火枪手帽",
+    "en_name": "Musketeer Hat",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4727,
+    "id": 2330,
+    "key": "plum-blossom-hairpin",
+    "name": "梅花簪",
+    "en_name": "Plum Blossom Hairpin",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 2000,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4878,
+    "id": 2331,
+    "key": "noble-steed",
+    "name": "宝马",
+    "en_name": "Noble Steed",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 3390,
+    "id": 2332,
+    "key": "flower-cape",
+    "name": "鲜花斗篷",
+    "en_name": "Flower Cape",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
+  },
+  {
+    "buy_bp": 0,
+    "buy_coin": 0,
+    "buy_pokeyen": 0,
+    "buy_rp": 0,
+    "category": 6,
+    "description": {
+      "en": "A cosmetic item which can be used to modify your appearance",
+      "zh": "改变角色外貌的道具"
+    },
+    "dex": 4728,
+    "id": 2333,
+    "key": "festive-lion-mask",
+    "name": "舞狮面具",
+    "en_name": "Festive Lion Mask",
+    "fr_name": "",
+    "es_name": "",
+    "region": 6,
+    "sale_pokeyen": 0
   }
 ]
