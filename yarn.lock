@@ -2674,6 +2674,13 @@
     tempy "^1.0.0"
     uuid "^8.3.2"
 
+"@netlify/serverless-functions-api@1.25.1":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@netlify/serverless-functions-api/-/serverless-functions-api-2.12.0.tgz#174174ef0ca940a5483c08cd71749d7b993a7d3c"
+  integrity sha512-/rCuQOAvDKeYxgfYqbVA0jAurbGGZwMcvcEw859/Wyd7dNiKMVQ0RnBEkidfDsQlwD3lGArwVUqrkXPpnjUhTA==
+  dependencies:
+    "@netlify/types" "^2.6.0"
+
 "@netlify/serverless-functions-api@1.26.1":
   version "1.26.1"
   resolved "https://registry.yarnpkg.com/@netlify/serverless-functions-api/-/serverless-functions-api-1.26.1.tgz#6d2792a7fdbb3a6b852c219e4fb13622b30a9ec5"
@@ -2681,6 +2688,11 @@
   dependencies:
     "@netlify/node-cookies" "^0.1.0"
     urlpattern-polyfill "8.0.2"
+
+"@netlify/types@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@netlify/types/-/types-2.6.0.tgz#f5927882d0fac98ed3198060933cf3ed435818d0"
+  integrity sha512-yD20EizHJDQxajJ66Vo8RTwLwR2jMNVxufPG8MHd2AScX8jW4z0VPnnJHArq2GYPFTFZRHmiAhDrXr5m8zof6w==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
