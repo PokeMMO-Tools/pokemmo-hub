@@ -18,8 +18,9 @@ import { PokemonMoveset } from './PokemonMoveset';
 import { TypeList } from './TypeList';
 
 export const PokemonSection = ({ children, show, title }) => {
+    if (!show) return null;
     return (
-        <div style={{ maxHeight: show ? 300 : 0, overflow: 'scroll', transition: '.3s' }} className="overflow-scroll">
+        <div style={{ maxHeight: 300, overflowY: 'auto' }} className="overflow-scroll">
             <div className='p-2'>
                 <Typography className="pt-2" as="h3">{title}</Typography>
                 {children}
