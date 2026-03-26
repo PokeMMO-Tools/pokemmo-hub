@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Placeholder, Stack } from 'react-bootstrap'
-import { TbBrandStackoverflow, TbMoneybag } from 'react-icons/tb'
+import { TbBrandStackoverflow, TbCashBanknote } from 'react-icons/tb'
 import { prices } from '../../utils/prices'
 import { Badge } from '../Atoms'
 import { ItemDifferentials } from './ItemDifferentials'
@@ -86,7 +86,7 @@ export const ItemPrices = ({ i, p, q, noDiff, onPriceUpdate = false }) => {
                 <Stack direction="horizontal" gap={1} className="flex-wrap">
                     {priceLoading
                         ? <BadgePlaceholder />
-                        : <ItemDifferentials icon={TbMoneybag} value={minPrice} differential={0} description="Current price." />}
+                        : <ItemDifferentials icon={TbCashBanknote} value={minPrice} differential={0} description="Current price." />}
                     {quantityLoading
                         ? <BadgePlaceholder />
                         : <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={quantity} differential={0} description="Current item supply in the market" />}
@@ -95,14 +95,14 @@ export const ItemPrices = ({ i, p, q, noDiff, onPriceUpdate = false }) => {
                 <Stack direction="horizontal" gap={2} className="flex-wrap">
                     {priceLoading
                         ? <BadgePlaceholder />
-                        : <ItemDifferentials icon={TbMoneybag} value={minPrice} differential={priceDifferentials} description="Current price." />}
+                        : <ItemDifferentials icon={TbCashBanknote} value={minPrice} differential={priceDifferentials} description="Current price." />}
                     {quantityLoading
                         ? <BadgePlaceholder />
                         : <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={quantity} differential={quantityDifferentials} description="Current item supply in the market" />}
                 </Stack>
             ) : (
                 <Stack direction="horizontal" gap={2} className="flex-wrap">
-                    <ItemDifferentials icon={TbMoneybag} value={p} differential={priceDifferentials} description="Current price." />
+                    <ItemDifferentials icon={TbCashBanknote} value={p} differential={priceDifferentials} description="Current price." />
                     <ItemDifferentials icon={TbBrandStackoverflow} invertColor={true} value={q} differential={quantityDifferentials} description="Current item supply in the market" />
                 </Stack>
             )}
