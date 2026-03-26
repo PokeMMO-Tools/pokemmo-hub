@@ -8,8 +8,6 @@ export const ItemDifferentials = ({ value, differential, icon, invertColor = fal
     const iconColor = invertColor ? 'var(--bs-warning)' : 'black'
     const Icon = icon;
 
-    console.log(icon);
-
     return (
         <Tooltip describeChild title={description}>
             <div>
