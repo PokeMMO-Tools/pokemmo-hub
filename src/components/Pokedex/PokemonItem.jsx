@@ -16,6 +16,7 @@ import { PokemonHeldItems } from './PokemonHeldItems';
 import { PokemonLocations } from './PokemonLocations';
 import { PokemonMoveset } from './PokemonMoveset';
 import { TypeList } from './TypeList';
+import {PokemonEvolutions} from "./PokemonEvolutions";
 
 export const PokemonSection = ({ children, show, title }) => {
     if (!show) return null;
@@ -99,21 +100,26 @@ export const PokemonItem = (pokemon) => {
                 </Stack>
             </Stack >
             <>
-                <PokemonSection show={itemActiveTab === TABS.LOCATION ? true : false} title={t("Locations")}>
+                <PokemonSection show={itemActiveTab === TABS.LOCATION} title={t("Locations")}>
                     <PokemonLocations dexID={id} locationList={locationList} />
                 </PokemonSection>
-                <PokemonSection show={itemActiveTab === TABS.MOVES ? true : false} title={t("Moveset")}>
+                <PokemonSection show={itemActiveTab === TABS.MOVES} title={t("Moveset")}>
                     <PokemonMoveset dexID={id} moves={pokemon.moves} />
                 </PokemonSection>
-                <PokemonSection show={itemActiveTab === TABS.CATCH_RATE ? true : false} title={t("Catch rates")}>
+                <PokemonSection show={itemActiveTab === TABS.CATCH_RATE} title={t("Catch rates")}>
                     <CatchResults
                         results={catchResults}
                     />
                 </PokemonSection>
                 <PokemonSection
-                    show={itemActiveTab === TABS.STATS ? true : false}
+                    show={itemActiveTab === TABS.STATS}
                     title={t("Stats")}>
                     <PokemonBaseStats hp={hp} atk={attack} def={defense} spatk={sp_attack} spdef={sp_defense} spe={speed} />
+                </PokemonSection>
+                <PokemonSection
+                    show={itemActiveTab === TABS.EVOLUTIONS}
+                    title={t("Evolutions")}>
+                    <PokemonEvolutions evolutions={pokemon.evolutions} />
                 </PokemonSection>
             </>
         </Card >

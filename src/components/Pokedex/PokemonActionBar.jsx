@@ -1,12 +1,11 @@
 import React from 'react'
-import { TbBow, TbChartBar, TbLocation, TbPokeball } from 'react-icons/tb'
+import {TbArrowUpRight, TbBow, TbChartBar, TbLocation, TbPokeball} from 'react-icons/tb'
 import { usePokedex } from '../../context/PokedexContext'
 import { ActionToggler } from './ActionToggler'
-import { useTheme } from '@emotion/react'
 import { useTranslations } from '../../context/TranslationsContext'
 import { isMobile, isTablet } from 'react-device-detect'
 
-export const PokemonActionBar = ({ locationList, active, onClick }) => {
+export const PokemonActionBar = ({ locationList, active, onClick, evolutions }) => {
     const { TABS } = usePokedex()
     const { t } = useTranslations()
     return (
@@ -15,7 +14,7 @@ export const PokemonActionBar = ({ locationList, active, onClick }) => {
                 {
                     locationList.length
                         ? <ActionToggler
-                            active={active === TABS.LOCATION ? true : false}
+                            active={active === TABS.LOCATION}
                             onClick={() => onClick(TABS.LOCATION)}
                             icon={<TbLocation />}
                             title={
@@ -29,7 +28,7 @@ export const PokemonActionBar = ({ locationList, active, onClick }) => {
                         : false
                 }
                 <ActionToggler
-                    active={active === TABS.MOVES ? true : false}
+                    active={active === TABS.MOVES}
                     onClick={() => onClick(TABS.MOVES)}
                     icon={<TbBow />}
                     title={
@@ -41,7 +40,7 @@ export const PokemonActionBar = ({ locationList, active, onClick }) => {
                     }
                 />
                 <ActionToggler
-                    active={active === TABS.CATCH_RATE ? true : false}
+                    active={active === TABS.CATCH_RATE}
                     onClick={() => onClick(TABS.CATCH_RATE)}
                     icon={<TbPokeball />}
                     title={
@@ -53,7 +52,7 @@ export const PokemonActionBar = ({ locationList, active, onClick }) => {
                     }
                 />
                 <ActionToggler
-                    active={active === TABS.STATS ? true : false}
+                    active={active === TABS.STATS}
                     onClick={() => onClick(TABS.STATS)}
                     icon={<TbChartBar />}
                     title={
@@ -64,6 +63,22 @@ export const PokemonActionBar = ({ locationList, active, onClick }) => {
                             false
                     }
                 />
+                {
+                    evolutions.length
+                        ? <ActionToggler
+                            active={active === TABS.EVOLUTIONS}
+                            onClick={() => onClick(TABS.EVOLUTIONS)}
+                            icon={<TbArrowUpRight />}
+                            title={
+                                !isMobile || isTablet
+                                    ?
+                                    t('evolutions')
+                                    :
+                                    false
+                            }
+                        />
+                        : false
+                }
             </>
         </div>
 

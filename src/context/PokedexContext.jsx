@@ -15,7 +15,8 @@ const TABS = {
     LOCATION: 'location',
     CATCH_RATE: 'catchrate',
     STATS: 'stats',
-    MOVES: 'moves'
+    MOVES: 'moves',
+    EVOLUTIONS: 'evolutions'
 }
 
 const PokedexContext = createContext({
