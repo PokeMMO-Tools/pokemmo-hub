@@ -94,7 +94,7 @@ export const MarketListing = ({ onLoadComplete }) => {
                         <ListGroup className='overflow-scroll mb-1' style={{ maxHeight: 393 }}>
                             {
                                 listing.map((item, index) => {
-                                    //  const itemAPI = allItems.find(({ i }) => i === parseInt(item.i))
+                                    // const itemAPI = allItems.find(({ i }) => i === parseInt(item.i))
                                     return (
                                         <Stack direction='horizontal' key={item.id}>
                                             <ListItem
