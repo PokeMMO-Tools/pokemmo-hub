@@ -5,8 +5,8 @@ const generateRoutes = (region_id) => {
     const routes = []
     const newLocations = []
     locations.forEach(location => {
-        if (!routes.includes(location.location)) {
-            routes.push(location.location)
+        if (!routes.includes(location.location_name_full)) {
+            routes.push(location.location_name_full)
             newLocations.push(location)
         }
     });
@@ -29,16 +29,17 @@ export const REGIONS = [
     'unova'
 ]
 
-export const ENCOUNTER_TRIGGERS = [
-    "Very Common",
-    "Common",
-    "Uncommon",
-    "Rare",
-    "Very Rare",
-    "Special",
-    "Horde",
-    "Lure",
+export const SEASONS = [
+    { key: "Spring", label: "Spring", icon: "🌸" },
+    { key: "Summer", label: "Summer", icon: "☀️" },
+    { key: "Autumn", label: "Autumn", icon: "🍂" },
+    { key: "Winter", label: "Winter", icon: "❄️" },
 ]
+
+export const getCurrentSeason = () => {
+    const month = new Date().getMonth() // 0-11
+    return SEASONS[month % 4].key
+}
 
 export const ENCOUNTER_TYPE = [
     "Grass",
@@ -83,11 +84,6 @@ export const getRegions = () => {
     return REGIONS.map(id => ({ key: id, label: id }))
 }
 
-export const getEncounterTriggers = () => {
-    return ENCOUNTER_TRIGGERS
-        .map(id => ({ key: id, label: id }))
-}
-
 export const getEncounterType = () => {
     return ENCOUNTER_TYPE
         .map(id => ({ key: id, label: id }))
@@ -102,5 +98,12 @@ export const getType = (type_id) => ENCOUNTER_TYPE[type_id]
 
 export const getRoute = (route) => {
     if (!route) return []
-    return ROUTES[route.toLowerCase()].map(location => ({ key: location.location, label: location.location }))
+    return ROUTES[route.toLowerCase()].map(location => ({ key: location.location_name_full, label: location.location_name_full }))
+}
+
+export const matchesHordeFilter = (location, hordeFilter) => {
+    if (!hordeFilter) return true
+    if (hordeFilter === '3x') return location.is_horde_3x
+    if (hordeFilter === '5x') return location.is_horde_5x
+    return location.is_horde_3x || location.is_horde_5x
 }

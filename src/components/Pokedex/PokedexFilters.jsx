@@ -3,7 +3,7 @@ import { Form, Spinner } from 'react-bootstrap'
 import { usePokedex } from '../../context/PokedexContext'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useDelay } from '../../hooks/useDelay'
-import { getEncounterTriggers, getEncounterType, getRegions, getTypes, getRoute } from '../../utils/location'
+import { getEncounterType, getRegions, getTypes, getRoute } from '../../utils/location'
 import { getEggGroups } from '../../utils/pokemon'
 import { Button } from '../Atoms'
 import { ActionToggler } from './ActionToggler'
@@ -13,8 +13,8 @@ const ACTIONS = {
     REGIONS: "region",
     ROUTE: "route",
     EGG_GROUP: "eggGroup",
-    ENCOUNTER_TRIGGER: 'encounterTrigger',
     ENCOUNTER_TYPE: 'encounterType',
+    HORDE: 'horde',
     TYPE: 'type'
 }
 
@@ -27,8 +27,12 @@ export const PokedexFilters = ({ prefilter }) => {
     const regions = getRegions();
     const routes = getRoute(filters.region)
     const eggGroups = getEggGroups()
-    const encounterTriggers = getEncounterTriggers()
     const encounterType = getEncounterType()
+    const hordeOptions = [
+        { key: 'all', label: 'Any Horde' },
+        { key: '3x', label: '3x Horde' },
+        { key: '5x', label: '5x Horde' },
+    ]
     const types = getTypes()
 
     function translateArrayLabel(array) {
@@ -40,8 +44,8 @@ export const PokedexFilters = ({ prefilter }) => {
     translateArrayLabel(regions)
     translateArrayLabel(routes)
     translateArrayLabel(eggGroups)
-    translateArrayLabel(encounterTriggers)
     translateArrayLabel(encounterType)
+    translateArrayLabel(hordeOptions)
     translateArrayLabel(types)
 
     routes.sort((a, b) => a.label.localeCompare(b.label))
@@ -114,18 +118,18 @@ export const PokedexFilters = ({ prefilter }) => {
                         title={"Egg Group"}
                     />
                     <FilterSelect
-                        value={filters.encounterTrigger}
-                        onChange={({ target }) => updateFilters(ACTIONS.ENCOUNTER_TRIGGER, target.value)}
-                        data={encounterTriggers}
-                        placeholder="Select an encounter trigger"
-                        title="Filter by encounter trigger"
-                    />
-                    <FilterSelect
                         value={filters.encounterType}
                         onChange={({ target }) => updateFilters(ACTIONS.ENCOUNTER_TYPE, target.value)}
                         data={encounterType}
                         placeholder="Select an encounter type"
                         title="Filter by encounter type"
+                    />
+                    <FilterSelect
+                        value={filters.horde}
+                        onChange={({ target }) => updateFilters(ACTIONS.HORDE, target.value)}
+                        data={hordeOptions}
+                        placeholder="Filter by horde encounters"
+                        title="Horde"
                     />
                     <FilterSelect
                         value={filters.type}

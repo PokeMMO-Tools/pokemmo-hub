@@ -4,7 +4,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 
 import { usePokedex } from '../../context/PokedexContext';
 import { useTranslations } from '../../context/TranslationsContext';
-import { getLocation } from '../../utils/location';
+import { matchesHordeFilter } from '../../utils/location';
 import { Adsense, Card } from '../Atoms';
 import { PokemonItem } from './PokemonItem';
 
@@ -79,7 +79,7 @@ const filterPokedex = (filters, t) => {
             }
             
             let hasNoLocations = !pokemon.locations.length;
-            let hasNoFilters = !filters.encounterType && !filters.encounterTrigger && !filters.route;
+            let hasNoFilters = !filters.encounterType && !filters.route && !filters.horde;
 
             // if there are no locations but there are filters, filter it out
             if (!hasNoFilters && hasNoLocations)
@@ -97,9 +97,9 @@ const filterPokedex = (filters, t) => {
                     continue;
                 if (filters.encounterType && filters.encounterType !== location.type)
                     continue;
-                if (filters.encounterTrigger && filters.encounterTrigger !== location.rarity)
+                if (filters.horde && !matchesHordeFilter(location, filters.horde))
                     continue;
-                if (filters.route && filters.route !== location.location)
+                if (filters.route && filters.route !== location.location_name_full)
                     continue;
 
                 locationCount++;
