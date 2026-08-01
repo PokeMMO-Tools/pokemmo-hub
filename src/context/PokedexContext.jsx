@@ -6,8 +6,8 @@ const DEFAULT_FILTERS = {
     region: false,
     route: false,
     eggGroup: false,
-    encounterTrigger: false,
     encounterType: false,
+    horde: false,
     type: false
 }
 
