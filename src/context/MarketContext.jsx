@@ -99,11 +99,6 @@ export function MarketProvider({ children }) {
 
         const updatedInvestments = market.investments.filter((investment) => investment.id !== id)
 
-        if (updatedInvestments.length === 0) {
-            console.warn("Prevented full investment deletion.")
-            return
-        }
-
         try {
             updateAccount({ market: { ...market, investments: updatedInvestments } })
         } catch (error) {
