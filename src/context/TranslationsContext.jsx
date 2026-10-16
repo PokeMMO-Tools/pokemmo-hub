@@ -2,6 +2,7 @@ import React, { createContext, isValidElement, useContext } from 'react';
 import reactStringReplace from 'react-string-replace';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import translations from '../locales';
+import { getPreferredLanguage } from '../utils/languages';
 
 const TranslationContext = createContext({
     language: 'en',
@@ -15,8 +16,8 @@ export function useTranslations() {
 }
 
 export function TranslationProvider({ children }) {
-    const [language, changeLanguage] = useLocalStorage('language', 'en');
     const languages = Object.keys(translations);
+    const [language, changeLanguage] = useLocalStorage('language', () => getPreferredLanguage(languages));
     document.t = translations;
 
     const t = (string, targetLang = language, ...variables) => {
