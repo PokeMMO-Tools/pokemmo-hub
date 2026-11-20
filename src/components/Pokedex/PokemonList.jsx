@@ -51,26 +51,32 @@ const filterPokedex = (filters, t) => {
             if (filters.region) {
                 // get the dex id for the region
                 const { kanto_dex, johto_dex, hoenn_dex, sinnoh_dex, unova_dex } = getPokeDexIDs(pokemon.id);
+                // check if the pokemon has a location entry for this region (covers PokéMMO-specific
+                // encounters for pokemon that have no regional dex number, e.g. Breloom in Sinnoh)
+                const hasLocationInRegion = pokemon.locations.some(
+                    loc => loc.region_name.toLowerCase() === filters.region.toLowerCase()
+                );
                 // if the pokemon doesn't have the dex id or 0, filter it out
+                // unless it has an actual encounter location in that region
                 switch(filters.region) {
                     case "kanto":
-                        if (!kanto_dex)
+                        if (!kanto_dex && !hasLocationInRegion)
                             return false;
                         break;
                     case "johto":
-                        if (!johto_dex)
+                        if (!johto_dex && !hasLocationInRegion)
                             return false;
                         break;
                     case "hoenn":
-                        if (!hoenn_dex)
+                        if (!hoenn_dex && !hasLocationInRegion)
                             return false;
                         break;
                     case "sinnoh":
-                        if (!sinnoh_dex)
+                        if (!sinnoh_dex && !hasLocationInRegion)
                             return false;
                         break;
                     case "unova":
-                        if (!unova_dex)
+                        if (!unova_dex && !hasLocationInRegion)
                             return false;
                         break;
                     default:
