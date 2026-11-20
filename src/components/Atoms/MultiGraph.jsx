@@ -1,13 +1,34 @@
-import React, { useEffect } from 'react'
-import { Stack } from 'react-bootstrap'
+import React, { useEffect, useMemo, useState } from 'react'
+import { Button, Stack } from 'react-bootstrap'
 import { HighchartsReact } from 'highcharts-react-official'
 import Highcharts from 'highcharts/highstock'
 import { useTranslations } from '../../context/TranslationsContext'
 import { Typography } from '../Atoms'
 
 
+export const normalizeSeriesToPercent = (seriesData) => seriesData.map(series => {
+    const basePoint = series.data.find(point => Number.isFinite(point.y) && point.y > 0);
+
+    if (!basePoint) return { ...series, data: [] };
+
+    return {
+        ...series,
+        data: series.data.map(point => ({
+            ...point,
+            rawPrice: point.y,
+            y: ((point.y / basePoint.y) - 1) * 100,
+        })),
+    };
+});
+
 export const MultiGraph = ({ seriesData }) => {
     const { t } = useTranslations();
+    const [displayMode, setDisplayMode] = useState('price');
+    const percentageMode = displayMode === 'percentage';
+    const displayedSeries = useMemo(
+        () => percentageMode ? normalizeSeriesToPercent(seriesData) : seriesData,
+        [percentageMode, seriesData]
+    );
     
     useEffect(() => {
         Highcharts.setOptions({
@@ -26,9 +47,29 @@ export const MultiGraph = ({ seriesData }) => {
         return (<Typography>{t("no results found...")}</Typography>)
     } else {
         return (
-            <HighchartsReact
-                highcharts={Highcharts}
-                options={{
+            <>
+                <Stack direction="horizontal" gap={2} className="mb-2">
+                    <span>Display:</span>
+                    <Button
+                        size="sm"
+                        variant={percentageMode ? 'outline-info' : 'info'}
+                        aria-pressed={!percentageMode}
+                        onClick={() => setDisplayMode('price')}
+                    >
+                        Price
+                    </Button>
+                    <Button
+                        size="sm"
+                        variant={percentageMode ? 'info' : 'outline-info'}
+                        aria-pressed={percentageMode}
+                        onClick={() => setDisplayMode('percentage')}
+                    >
+                        % Change
+                    </Button>
+                </Stack>
+                <HighchartsReact
+                    highcharts={Highcharts}
+                    options={{
                     styledMode: true,
                     // Better colors because the default colors don't have enough contrast on dark mode
                     colors: ['#058DC7', '#50B432', '#ED561B', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
@@ -39,11 +80,18 @@ export const MultiGraph = ({ seriesData }) => {
                     yAxis: [{
                         labels: {
                             align: 'right',
-                            x: -3
+                            x: -3,
+                            format: percentageMode ? '{value:.0f}%' : undefined,
                         },
                         title: {
-                            text: t('price')
+                            text: percentageMode ? '% change' : t('price')
                         },
+                        plotLines: percentageMode ? [{
+                            value: 0,
+                            color: '#888888',
+                            dashStyle: 'ShortDash',
+                            width: 1,
+                        }] : [],
                         height: '100%',
                         lineWidth: 2,
                         resize: {
@@ -55,7 +103,13 @@ export const MultiGraph = ({ seriesData }) => {
                         split: true,
                         xDateFormat: '%Y-%m-%d',
                         shared: true,
-                        pointFormat: '{series.name}: <b>{point.y:.0f}</b>',
+                        pointFormatter: function () {
+                            if (percentageMode) {
+                                const sign = this.y > 0 ? '+' : '';
+                                return `${this.series.name}: <b>${sign}${Highcharts.numberFormat(this.y, 2)}%</b> (${Highcharts.numberFormat(this.options.rawPrice, 0)})<br/>`;
+                            }
+                            return `${this.series.name}: <b>${Highcharts.numberFormat(this.y, 0)}</b><br/>`;
+                        },
                     },
                     rangeSelector: {
                         buttons: [{
@@ -96,10 +150,11 @@ export const MultiGraph = ({ seriesData }) => {
                             turboThreshold: 0,
                         }
                     },
-                    series: seriesData,
-                }}
-                constructorType={"stockChart"}
-            />
+                    series: displayedSeries,
+                    }}
+                    constructorType={"stockChart"}
+                />
+            </>
         )
     }
 }
